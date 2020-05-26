@@ -1,7 +1,7 @@
 platform :ios, '10.0'
 use_frameworks!
 
-target 'iOS Template' do
+target 'TWC iOS' do
   pod 'Alamofire'
   pod 'SVProgressHUD'
   pod 'SwiftyJSON'

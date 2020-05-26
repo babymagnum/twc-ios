@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E6921EFF5126083E0B89F34 /* Pods_iOS_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AEBE7467E5339A88A53126 /* Pods_iOS_Template.framework */; };
+		D8C10D4655F84D98548802BE /* Pods_TWC_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */; };
 		ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */; };
 		ED046AC1244154C90083C331 /* NotificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AC0244154C90083C331 /* NotificationVM.swift */; };
 		ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED10746422F5B98A00ADF055 /* WebKit.framework */; };
@@ -73,9 +73,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65AEBE7467E5339A88A53126 /* Pods_iOS_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEE3C58D1D269C55BEAD2586 /* Pods-iOS Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Template.debug.xcconfig"; path = "Target Support Files/Pods-iOS Template/Pods-iOS Template.debug.xcconfig"; sourceTree = "<group>"; };
-		CA1C8445C19108061F7BCD34 /* Pods-iOS Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Template.release.xcconfig"; path = "Target Support Files/Pods-iOS Template/Pods-iOS Template.release.xcconfig"; sourceTree = "<group>"; };
+		ABCE6282584CDDD30F198343 /* Pods-TWC iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.debug.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWC_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.release.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED046AC0244154C90083C331 /* NotificationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVM.swift; sourceTree = "<group>"; };
 		ED10746422F5B98A00ADF055 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -116,7 +116,7 @@
 		ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED858B0122F313FD00016EAD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ED8F239923136B34005D700C /* BaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworking.swift; sourceTree = "<group>"; };
-		ED95906422EBDF3300D696E5 /* iOS Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED95906422EBDF3300D696E5 /* TWC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED95906722EBDF3300D696E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED95906C22EBDF3300D696E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED95906E22EBDF3500D696E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			files = (
 				ED61BF2322F7DA6200776C25 /* iOSDropDown.framework in Frameworks */,
 				ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */,
-				3E6921EFF5126083E0B89F34 /* Pods_iOS_Template.framework in Frameworks */,
+				D8C10D4655F84D98548802BE /* Pods_TWC_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +172,7 @@
 			children = (
 				ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */,
 				ED10746422F5B98A00ADF055 /* WebKit.framework */,
-				65AEBE7467E5339A88A53126 /* Pods_iOS_Template.framework */,
+				C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 		50B37A2966BD13A09DDADB5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AEE3C58D1D269C55BEAD2586 /* Pods-iOS Template.debug.xcconfig */,
-				CA1C8445C19108061F7BCD34 /* Pods-iOS Template.release.xcconfig */,
+				ABCE6282584CDDD30F198343 /* Pods-TWC iOS.debug.xcconfig */,
+				CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 		ED95905B22EBDF3300D696E5 = {
 			isa = PBXGroup;
 			children = (
-				ED95906622EBDF3300D696E5 /* iOS Template */,
+				ED95906622EBDF3300D696E5 /* TWC iOS */,
 				ED95906522EBDF3300D696E5 /* Products */,
 				20053D93BB230457F60B0615 /* Frameworks */,
 				50B37A2966BD13A09DDADB5E /* Pods */,
@@ -268,12 +268,12 @@
 		ED95906522EBDF3300D696E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED95906422EBDF3300D696E5 /* iOS Template.app */,
+				ED95906422EBDF3300D696E5 /* TWC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED95906622EBDF3300D696E5 /* iOS Template */ = {
+		ED95906622EBDF3300D696E5 /* TWC iOS */ = {
 			isa = PBXGroup;
 			children = (
 				EDE8D9582478E89A00ED127B /* GoogleService-Info.plist */,
@@ -287,7 +287,7 @@
 				ED95907922EBE29C00D696E5 /* viewcontroller */,
 				EDA919672440461F00354F77 /* Localizable.strings */,
 			);
-			path = "iOS Template";
+			path = "TWC iOS";
 			sourceTree = "<group>";
 		};
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
@@ -395,24 +395,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED95906322EBDF3300D696E5 /* iOS Template */ = {
+		ED95906322EBDF3300D696E5 /* TWC iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED95907622EBDF3500D696E5 /* Build configuration list for PBXNativeTarget "iOS Template" */;
+			buildConfigurationList = ED95907622EBDF3500D696E5 /* Build configuration list for PBXNativeTarget "TWC iOS" */;
 			buildPhases = (
-				BBED0E95A2AE64B33A2563FB /* [CP] Check Pods Manifest.lock */,
+				AA77AB45B35FC3B473038CEB /* [CP] Check Pods Manifest.lock */,
 				ED95906022EBDF3300D696E5 /* Sources */,
 				ED95906122EBDF3300D696E5 /* Frameworks */,
 				ED95906222EBDF3300D696E5 /* Resources */,
-				38B15901E678389A8155EE0A /* [CP] Embed Pods Frameworks */,
-				954F68E7F3A406CAADDC705C /* [CP] Copy Pods Resources */,
+				AE567051131B3C74C7AD26AD /* [CP] Embed Pods Frameworks */,
+				5B22822127DE12B0300607AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "iOS Template";
+			name = "TWC iOS";
 			productName = "Angkasa Pura Solusi";
-			productReference = ED95906422EBDF3300D696E5 /* iOS Template.app */;
+			productReference = ED95906422EBDF3300D696E5 /* TWC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -430,7 +430,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED95905F22EBDF3300D696E5 /* Build configuration list for PBXProject "iOS Template" */;
+			buildConfigurationList = ED95905F22EBDF3300D696E5 /* Build configuration list for PBXProject "TWC iOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -444,7 +444,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED95906322EBDF3300D696E5 /* iOS Template */,
+				ED95906322EBDF3300D696E5 /* TWC iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -486,41 +486,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38B15901E678389A8155EE0A /* [CP] Embed Pods Frameworks */ = {
+		5B22822127DE12B0300607AF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS Template/Pods-iOS Template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS Template/Pods-iOS Template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Template/Pods-iOS Template-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		954F68E7F3A406CAADDC705C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS Template/Pods-iOS Template-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS Template/Pods-iOS Template-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Template/Pods-iOS Template-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBED0E95A2AE64B33A2563FB /* [CP] Check Pods Manifest.lock */ = {
+		AA77AB45B35FC3B473038CEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -535,11 +518,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOS Template-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TWC iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE567051131B3C74C7AD26AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -779,23 +779,23 @@
 		};
 		ED95907722EBDF3500D696E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEE3C58D1D269C55BEAD2586 /* Pods-iOS Template.debug.xcconfig */;
+			baseConfigurationReference = ABCE6282584CDDD30F198343 /* Pods-TWC iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/iOS Template/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TWC iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.6;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ariefzainuri.iostemplate;
-				PRODUCT_NAME = "iOS Template";
+				PRODUCT_NAME = TWC;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -804,23 +804,23 @@
 		};
 		ED95907822EBDF3500D696E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA1C8445C19108061F7BCD34 /* Pods-iOS Template.release.xcconfig */;
+			baseConfigurationReference = CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/iOS Template/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TWC iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.6;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ariefzainuri.iostemplate;
-				PRODUCT_NAME = "iOS Template";
+				PRODUCT_NAME = TWC;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -830,7 +830,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED95905F22EBDF3300D696E5 /* Build configuration list for PBXProject "iOS Template" */ = {
+		ED95905F22EBDF3300D696E5 /* Build configuration list for PBXProject "TWC iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED95907422EBDF3500D696E5 /* Debug */,
@@ -839,7 +839,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED95907622EBDF3500D696E5 /* Build configuration list for PBXNativeTarget "iOS Template" */ = {
+		ED95907622EBDF3500D696E5 /* Build configuration list for PBXNativeTarget "TWC iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED95907722EBDF3500D696E5 /* Debug */,
