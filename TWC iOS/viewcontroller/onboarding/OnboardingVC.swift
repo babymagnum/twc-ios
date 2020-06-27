@@ -83,9 +83,18 @@ extension OnboardingVC: UICollectionViewDataSource, UICollectionViewDelegateFlow
 }
 
 extension OnboardingVC {
-    @IBAction func yukMulaiClick(_ sender: Any) {
+    private func toLogin() {
+        preference.saveBool(value: true, key: constant.IS_ONBOARDING)
+        
+        guard let onboardingVC = navigationController?.viewControllers.last(where: { $0.isKind(of: OnboardingVC.self) }) else { return }
+        let index = navigationController?.viewControllers.lastIndex(of: onboardingVC) ?? 0
+        
+        navigationController?.pushViewController(LoginVC(), animated: true)
+
+        navigationController?.viewControllers.remove(at: index)
     }
     
-    @IBAction func skipClick(_ sender: Any) {
-    }
+    @IBAction func yukMulaiClick(_ sender: Any) { toLogin() }
+    
+    @IBAction func skipClick(_ sender: Any) { toLogin() }
 }

@@ -11,5 +11,5 @@ import DIKit
 import RxRelay
 
 class LoginVM: BaseViewModel {
-    var isLoading = BehaviorRelay(value: false)
+    var loading = BehaviorRelay(value: false)
 }

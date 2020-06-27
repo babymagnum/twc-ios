@@ -406,6 +406,14 @@ extension UIColor {
     @nonobjc class var azure: UIColor {
       return UIColor(red: 16.0 / 255.0, green: 142.0 / 255.0, blue: 233.0 / 255.0, alpha: 1.0)
     }
+
+    @nonobjc class var lightBlueGrey: UIColor {
+      return UIColor(red: 200.0 / 255.0, green: 199.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0)
+    }
+
+    @nonobjc class var veryLightPinkFour: UIColor {
+      return UIColor(white: 229.0 / 255.0, alpha: 1.0)
+    }
     
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
