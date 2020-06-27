@@ -55,6 +55,9 @@
 		EDA919652440461F00354F77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDA919672440461F00354F77 /* Localizable.strings */; };
 		EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB39326244471C2004BEC80 /* LoginVM.swift */; };
 		EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3932824447398004BEC80 /* BaseViewModel.swift */; };
+		EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6AC7524A7004F00457144 /* OnboardingCell.swift */; };
+		EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB6AC7624A7004F00457144 /* OnboardingCell.xib */; };
+		EDB6AC7B24A702F100457144 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6AC7A24A702F100457144 /* OnboardingItem.swift */; };
 		EDBF21BB23005BDD003F5DAF /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF21BA23005BDD003F5DAF /* CustomLabel.swift */; };
 		EDBF21BD2300DBA6003F5DAF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF21BC2300DBA6003F5DAF /* CustomButton.swift */; };
 		EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF21BE2300DCEE003F5DAF /* CustomImage.swift */; };
@@ -63,6 +66,13 @@
 		EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9590A322EBFB9000D696E5 /* Roboto-Medium.ttf */; };
 		EDC151FC23FE979400659A63 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9590A522EBFB9100D696E5 /* Roboto-Regular.ttf */; };
 		EDC151FD23FE979700659A63 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9590A422EBFB9000D696E5 /* Roboto-Bold.ttf */; };
+		EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */; };
+		EDCA7AD324A6F89C007CD973 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */; };
+		EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */; };
+		EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD524A6FAB4007CD973 /* SFProDisplay-Medium.ttf */; };
+		EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD624A6FAB4007CD973 /* SFProDisplay-Bold.ttf */; };
+		EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD724A6FAB4007CD973 /* SFProDisplay-Semibold.ttf */; };
+		EDCA7ADD24A6FAB4007CD973 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD824A6FAB4007CD973 /* SFProDisplay-Regular.ttf */; };
 		EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCFD2EF24440B3400A890F4 /* BerandaVM.swift */; };
 		EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE8D9582478E89A00ED127B /* GoogleService-Info.plist */; };
 		EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE8D95D2479069400ED127B /* DialogAlert.swift */; };
@@ -136,10 +146,20 @@
 		EDA919682440462300354F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EDB39326244471C2004BEC80 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		EDB3932824447398004BEC80 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		EDB6AC7524A7004F00457144 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		EDB6AC7624A7004F00457144 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
+		EDB6AC7A24A702F100457144 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		EDBF21BA23005BDD003F5DAF /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		EDBF21BC2300DBA6003F5DAF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		EDBF21BE2300DCEE003F5DAF /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		EDBF21C02301086A003F5DAF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
+		EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.ttf"; sourceTree = "<group>"; };
+		EDCA7AD524A6FAB4007CD973 /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		EDCA7AD624A6FAB4007CD973 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		EDCA7AD724A6FAB4007CD973 /* SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; };
+		EDCA7AD824A6FAB4007CD973 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		EDCFD2EC2444084500A890F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ProfileVC.strings; sourceTree = "<group>"; };
 		EDCFD2EE2444084600A890F4 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/ProfileVC.strings; sourceTree = "<group>"; };
 		EDCFD2EF24440B3400A890F4 /* BerandaVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVM.swift; sourceTree = "<group>"; };
@@ -293,6 +313,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				EDCA7ACF24A6F877007CD973 /* onboarding */,
 				EDE8D95C2479067600ED127B /* dialog_alert */,
 				ED33541C244017DE00656C25 /* profile */,
 				ED335417244017CD00656C25 /* notification */,
@@ -310,6 +331,7 @@
 		ED95907A22EBE2AC00D696E5 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				EDB6AC7924A702D500457144 /* onboarding */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -359,8 +381,35 @@
 		ED95909C22EBF98400D696E5 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				EDB6AC7424A7002500457144 /* onboarding_cell */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		EDB6AC7424A7002500457144 /* onboarding_cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDB6AC7524A7004F00457144 /* OnboardingCell.swift */,
+				EDB6AC7624A7004F00457144 /* OnboardingCell.xib */,
+			);
+			path = onboarding_cell;
+			sourceTree = "<group>";
+		};
+		EDB6AC7924A702D500457144 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EDB6AC7A24A702F100457144 /* OnboardingItem.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		EDCA7ACF24A6F877007CD973 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */,
+				EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */,
+			);
+			path = onboarding;
 			sourceTree = "<group>";
 		};
 		EDE8D95C2479067600ED127B /* dialog_alert */ = {
@@ -375,6 +424,11 @@
 		EDF797A223FE954700DAD3D4 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EDCA7AD624A6FAB4007CD973 /* SFProDisplay-Bold.ttf */,
+				EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */,
+				EDCA7AD524A6FAB4007CD973 /* SFProDisplay-Medium.ttf */,
+				EDCA7AD824A6FAB4007CD973 /* SFProDisplay-Regular.ttf */,
+				EDCA7AD724A6FAB4007CD973 /* SFProDisplay-Semibold.ttf */,
 				ED4C012A243DAB1100A1EB0A /* Poppins-Black.ttf */,
 				ED4C0124243DAB1100A1EB0A /* Poppins-Bold.ttf */,
 				ED4C0127243DAB1100A1EB0A /* Poppins-ExtraBold.ttf */,
@@ -457,6 +511,8 @@
 				ED4C0131243DAB1200A1EB0A /* Poppins-Light.ttf in Resources */,
 				ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */,
 				EDF750D5244201C4005C20C6 /* NotificationVC.xib in Resources */,
+				EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */,
+				EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */,
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
 				ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */,
 				ED4C0132243DAB1200A1EB0A /* Poppins-SemiBold.ttf in Resources */,
@@ -464,13 +520,17 @@
 				EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */,
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
 				EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */,
+				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
 				EDC151FD23FE979700659A63 /* Roboto-Bold.ttf in Resources */,
 				EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */,
 				ED507E9B243F8D130038CA6E /* LoginVC.xib in Resources */,
 				ED4C0134243DAB1200A1EB0A /* Poppins-Medium.ttf in Resources */,
+				EDCA7AD324A6F89C007CD973 /* OnboardingVC.xib in Resources */,
 				ED95909B22EBF4DC00D696E5 /* LaunchScreen.storyboard in Resources */,
 				EDA919652440461F00354F77 /* Localizable.strings in Resources */,
+				EDCA7ADD24A6FAB4007CD973 /* SFProDisplay-Regular.ttf in Resources */,
 				ED4C014E243DE8FE00A1EB0A /* HomeVC.xib in Resources */,
+				EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */,
 				ED95909522EBEE9300D696E5 /* SplashController.xib in Resources */,
 				ED95906D22EBDF3300D696E5 /* Main.storyboard in Resources */,
 				ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */,
@@ -478,6 +538,7 @@
 				ED4C012E243DAB1200A1EB0A /* Poppins-Regular.ttf in Resources */,
 				EDC151FA23FE978F00659A63 /* Roboto-Light.ttf in Resources */,
 				ED518D9B244841C7008BB273 /* ApprovalVC.xib in Resources */,
+				EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */,
 				EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */,
 				EDC151FC23FE979400659A63 /* Roboto-Regular.ttf in Resources */,
 			);
@@ -550,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED95909422EBEE9300D696E5 /* SplashController.swift in Sources */,
+				EDB6AC7B24A702F100457144 /* OnboardingItem.swift in Sources */,
 				ED33541A244017DA00656C25 /* NotificationVC.swift in Sources */,
 				ED335415244017C900656C25 /* ApprovalVC.swift in Sources */,
 				EDBF21C12301086A003F5DAF /* CustomTextField.swift in Sources */,
@@ -563,6 +625,7 @@
 				EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */,
 				EDBF21BD2300DBA6003F5DAF /* CustomButton.swift in Sources */,
 				ED95909922EBF26E00D696E5 /* BaseViewController.swift in Sources */,
+				EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */,
 				EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */,
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
@@ -576,6 +639,7 @@
 				ED95906822EBDF3300D696E5 /* AppDelegate.swift in Sources */,
 				ED95908022EBE77B00D696E5 /* Constant.swift in Sources */,
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
+				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED507E99243F857D0038CA6E /* CustomView.swift in Sources */,
 				EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */,
 				ED33541F244017E800656C25 /* ProfileVC.swift in Sources */,

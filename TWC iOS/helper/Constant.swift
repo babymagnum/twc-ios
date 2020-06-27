@@ -10,6 +10,7 @@ import Foundation
 
 class Constant {
     let IS_LOGIN = "IS_LOGIN"
+    let IS_ONBOARDING = "IS_ONBOARDING"
     let IS_RELEASE = "IS_RELEASE"
     let FCM_TOKEN = "FCM_TOKEN"
     let USER_ID = "USER_ID"

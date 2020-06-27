@@ -12,34 +12,35 @@ import DIKit
 
 class SplashController: BaseViewController {
     
-    @IBOutlet weak var imageLogo: UIImageView!
-    
     private let disposeBag = DisposeBag()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setupView()
-        
         preference.saveBool(value: true, key: constant.IS_RELEASE)
-                
+        
         changeScreen()
     }
     
-    private func setupView() {
-        imageLogo.image = UIImage(named: "logo")?.tinted(with: UIColor.white)
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) {
+            return .darkContent
+        } else {
+            return .default
+        }
     }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     
     private func changeScreen() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let isLogin = self.preference.getBool(key: self.constant.IS_LOGIN)
+            let isOnboarding = self.preference.getBool(key: self.constant.IS_ONBOARDING)
             
-            if isLogin {
-                self.navigationController?.pushViewController(HomeVC(), animated: true)
-            } else {
+            if !isOnboarding {
+                self.navigationController?.pushViewController(OnboardingVC(), animated: true)
+            } else if !isLogin {
                 self.navigationController?.pushViewController(LoginVC(), animated: true)
+            } else {
+                self.navigationController?.pushViewController(HomeVC(), animated: true)
             }
         }
     }

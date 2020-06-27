@@ -43,9 +43,9 @@ class HomeVC: UITabBarController {
             }
         } else {
             if isSelected {
-                return UIImage(named: "notifikasi")?.tinted(with: UIColor.windowsBlue)!
+                return UIImage(named: "notifikasi")?.tinted(with: UIColor.mediumGreen)!
             } else {
-                return UIImage(named: "notifikasi")?.tinted(with: UIColor.dark)!
+                return UIImage(named: "notifikasi")?.tinted(with: UIColor.brownGreyTwo)!
             }
         }
     }
@@ -72,9 +72,9 @@ class HomeVC: UITabBarController {
     }
     
     private func initBottomNavigation() {
-        UITabBar.appearance().tintColor = UIColor.windowsBlue
+        UITabBar.appearance().tintColor = UIColor.mediumGreen
         UITabBar.appearance().backgroundColor = UIColor.white
-        tabBar.unselectedItemTintColor = UIColor.dark
+        tabBar.unselectedItemTintColor = UIColor.brownGreyTwo
         tabBar.backgroundColor = UIColor.white
         tabBar.addShadow(CGSize(width: 2, height: 4), UIColor.black.withAlphaComponent(0.5), 4, 1)
         

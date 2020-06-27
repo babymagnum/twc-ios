@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingVC" customModule="TWC" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonSkip" destination="uNR-J5-n6J" id="vOn-RO-sy3"/>
+                <outlet property="buttonYukMulai" destination="QUR-br-ahh" id="C0f-TA-FPU"/>
+                <outlet property="collectionOnboarding" destination="SVM-Rl-Tdr" id="sxg-n7-0Rh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view1" destination="608-yF-xTz" id="XIJ-6L-PgV"/>
+                <outlet property="view2" destination="alY-Le-Xdd" id="aBF-Jb-C9E"/>
+                <outlet property="view3" destination="6T2-qY-tD5" id="tTb-L2-KJY"/>
+                <outlet property="view4" destination="g9D-kd-LGm" id="ah3-zV-Jhy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNR-J5-n6J" customClass="CustomButton" customModule="TWC" customModuleProvider="target">
+                    <rect key="frame" x="318" y="27" width="33" height="30"/>
+                    <state key="normal" title="SKIP">
+                        <color key="titleColor" red="1" green="0.58431372549019611" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="skipClick:" destination="-1" eventType="touchUpInside" id="d82-AS-Dsj"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SVM-Rl-Tdr">
+                    <rect key="frame" x="0.0" y="100" width="375" height="453"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="mI1-8b-BHn">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Wph-lf-IzZ">
+                    <rect key="frame" x="130" y="553" width="115" height="6"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="608-yF-xTz" customClass="CustomView" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="17" height="6"/>
+                            <color key="backgroundColor" red="0.2627450980392157" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedAllCorner" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alY-Le-Xdd" customClass="CustomView" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="33" y="0.0" width="16.5" height="6"/>
+                            <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedAllCorner" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T2-qY-tD5" customClass="CustomView" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="65.5" y="0.0" width="17" height="6"/>
+                            <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedAllCorner" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9D-kd-LGm" customClass="CustomView" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="98.5" y="0.0" width="16.5" height="6"/>
+                            <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedAllCorner" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="3qL-4c-YNg"/>
+                    </constraints>
+                </stackView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUR-br-ahh" customClass="CustomButton" customModule="TWC" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                    <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="Czi-G5-hkK" customClass="CustomMargin" customModule="TWC" customModuleProvider="target">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="multi">
+                                    <real key="value" value="0.14999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="Yuk mulai!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Semibold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="yukMulaiClick:" destination="-1" eventType="touchUpInside" id="Nm6-d3-xW4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Wph-lf-IzZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="130" id="0tE-rJ-4S5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Wph-lf-IzZ" secondAttribute="bottom" constant="108" id="2n8-O4-dOr"/>
+                <constraint firstItem="QUR-br-ahh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3fK-hb-7DN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QUR-br-ahh" secondAttribute="bottom" id="DSL-vl-IEP"/>
+                <constraint firstItem="SVM-Rl-Tdr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EJG-GL-sNF"/>
+                <constraint firstItem="uNR-J5-n6J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="ULC-nT-lR2"/>
+                <constraint firstItem="Wph-lf-IzZ" firstAttribute="top" secondItem="SVM-Rl-Tdr" secondAttribute="bottom" id="Zbv-7g-Eic"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uNR-J5-n6J" secondAttribute="trailing" constant="24" id="c8s-zq-2kJ"/>
+                <constraint firstItem="SVM-Rl-Tdr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dCo-Df-u7P"/>
+                <constraint firstItem="SVM-Rl-Tdr" firstAttribute="top" secondItem="uNR-J5-n6J" secondAttribute="bottom" constant="43" id="fAV-hx-c3k" customClass="CustomMargin" customModule="TWC" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="multi">
+                            <real key="value" value="0.12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="Wph-lf-IzZ" secondAttribute="trailing" constant="130" id="wOc-rc-qSr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QUR-br-ahh" secondAttribute="trailing" id="zMz-be-G7A"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="112.8" y="145.27736131934034"/>
+        </view>
+    </objects>
+</document>

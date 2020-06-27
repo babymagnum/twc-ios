@@ -47,7 +47,7 @@ class DialogAlert: BaseViewController {
         labelAction1.text = "understand".localize()
         if let _action2String = action2String {
             labelAction2.text = _action2String
-            viewAction2.giveBorder(1, UIColor.windowsBlue)
+            viewAction2.giveBorder(1, UIColor.mediumGreen)
         } else {
             viewAction1MarginBottom.constant = 0
             viewAction2Height.multi = 0

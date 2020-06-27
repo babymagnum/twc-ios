@@ -39,7 +39,7 @@ class BaseViewController: UIViewController {
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)),for: UIControl.Event.valueChanged)
-        refreshControl.tintColor = UIColor.windowsBlue
+        refreshControl.tintColor = UIColor.mediumGreen
         
         return refreshControl
     }()
