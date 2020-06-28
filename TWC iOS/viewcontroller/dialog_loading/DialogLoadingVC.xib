@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogLoadingVC" customModule="TWC" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1h-Ye-6VV" customClass="CustomView" customModule="TWC" customModuleProvider="target">
+                    <rect key="frame" x="53" y="289.5" width="269" height="88"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masuk ke aplikasi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-dO-lc9" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="16" y="22" width="237" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Semibold"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mengumpulkan data..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGs-O9-EPw" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="16" y="45" width="237" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lGs-O9-EPw" secondAttribute="trailing" constant="16" id="FVv-Dl-Ieu"/>
+                        <constraint firstItem="aaL-dO-lc9" firstAttribute="top" secondItem="U1h-Ye-6VV" secondAttribute="top" constant="22" id="Ltj-1x-XFy"/>
+                        <constraint firstItem="lGs-O9-EPw" firstAttribute="leading" secondItem="U1h-Ye-6VV" secondAttribute="leading" constant="16" id="YOX-9K-Kf7"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Zd0-3f-mlW"/>
+                        <constraint firstItem="lGs-O9-EPw" firstAttribute="top" secondItem="aaL-dO-lc9" secondAttribute="bottom" constant="2" id="d2v-3Z-b7i"/>
+                        <constraint firstAttribute="trailing" secondItem="aaL-dO-lc9" secondAttribute="trailing" constant="16" id="faj-ca-OLZ"/>
+                        <constraint firstAttribute="bottom" secondItem="lGs-O9-EPw" secondAttribute="bottom" constant="22" id="s8Z-7x-5e5"/>
+                        <constraint firstItem="aaL-dO-lc9" firstAttribute="leading" secondItem="U1h-Ye-6VV" secondAttribute="leading" constant="16" id="zjw-ej-CqF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U1h-Ye-6VV" secondAttribute="trailing" constant="53" id="PPX-HT-NNm" customClass="CustomMargin" customModule="TWC" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="multi">
+                            <real key="value" value="0.14000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="U1h-Ye-6VV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TDN-RI-bxy"/>
+                <constraint firstItem="U1h-Ye-6VV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="53" id="cL8-hw-CKz" customClass="CustomMargin" customModule="TWC" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="multi">
+                            <real key="value" value="0.14000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133" y="146"/>
+        </view>
+    </objects>
+</document>

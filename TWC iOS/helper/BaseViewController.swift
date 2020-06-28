@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import EzPopup
+import FittedSheets
 
 class BaseViewController: UIViewController {
     
@@ -36,6 +37,8 @@ class BaseViewController: UIViewController {
         return UIScreen.main.bounds.height
     }()
     
+    var baseVC: UINavigationController?
+    
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)),for: UIControl.Event.valueChanged)
@@ -48,6 +51,8 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        baseVC = navigationController
         
         hideKeyboardWhenTappedAround()
         
@@ -87,6 +92,13 @@ class BaseViewController: UIViewController {
         vc.stringDescription = description
         vc.image = image
         showCustomDialog(vc)
+    }
+    
+    func showBottomSheet(vc: UIViewController, handleColor: UIColor, height: CGFloat) {
+        let sheetController = SheetViewController(controller: vc, sizes: [.fixed(height)])
+        sheetController.handleColor = handleColor
+        // It is important to set animated to false or it behaves weird currently
+        self.present(sheetController, animated: false, completion: nil)
     }
     
     func showCustomDialog(_ vc: UIViewController) {

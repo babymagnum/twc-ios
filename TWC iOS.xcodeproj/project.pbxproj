@@ -15,6 +15,20 @@
 		ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB92302ED0700B854BC /* CustomDropDownField.swift */; };
 		ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1CDFF02440617600DD40FC /* BerandaVC.xib */; };
 		ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED213AAA2442C4CD00A18EBC /* ProfileVM.swift */; };
+		ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A3E9A24A83E900040D24B /* DialogLoadingVC.swift */; };
+		ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3E9B24A83E900040D24B /* DialogLoadingVC.xib */; };
+		ED2A3EA124A846510040D24B /* BottomSheetForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A3E9F24A846510040D24B /* BottomSheetForgotPasswordVC.swift */; };
+		ED2A3EA224A846510040D24B /* BottomSheetForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA024A846510040D24B /* BottomSheetForgotPasswordVC.xib */; };
+		ED2A3EAB24A849C10040D24B /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA324A849C00040D24B /* Nunito-Medium.ttf */; };
+		ED2A3EAC24A849C10040D24B /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA424A849C00040D24B /* Nunito-ExtraLight.ttf */; };
+		ED2A3EAD24A849C10040D24B /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA524A849C00040D24B /* Nunito-SemiBold.ttf */; };
+		ED2A3EAE24A849C10040D24B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA624A849C00040D24B /* Nunito-Light.ttf */; };
+		ED2A3EAF24A849C10040D24B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA724A849C00040D24B /* Nunito-Bold.ttf */; };
+		ED2A3EB024A849C10040D24B /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA824A849C00040D24B /* Nunito-ExtraBold.ttf */; };
+		ED2A3EB124A849C10040D24B /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EA924A849C00040D24B /* Nunito-Black.ttf */; };
+		ED2A3EB224A849C10040D24B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EAA24A849C00040D24B /* Nunito-Regular.ttf */; };
+		ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A3EB424A85E300040D24B /* LupaKataSandiBerhasilVC.swift */; };
+		ED2A3EB724A85E300040D24B /* LupaKataSandiBerhasilVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2A3EB524A85E300040D24B /* LupaKataSandiBerhasilVC.xib */; };
 		ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C9751244A79B00095927D /* InteractivePopRecognizer.swift */; };
 		ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3353DF243FF4EF00656C25 /* CustomMargin.swift */; };
 		ED335410244017B700656C25 /* BerandaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33540E244017B700656C25 /* BerandaVC.swift */; };
@@ -95,6 +109,20 @@
 		ED1CDFF32440617A00DD40FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BerandaVC.strings; sourceTree = "<group>"; };
 		ED1CDFF42440617F00DD40FC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/BerandaVC.strings; sourceTree = "<group>"; };
 		ED213AAA2442C4CD00A18EBC /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
+		ED2A3E9A24A83E900040D24B /* DialogLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogLoadingVC.swift; sourceTree = "<group>"; };
+		ED2A3E9B24A83E900040D24B /* DialogLoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogLoadingVC.xib; sourceTree = "<group>"; };
+		ED2A3E9F24A846510040D24B /* BottomSheetForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetForgotPasswordVC.swift; sourceTree = "<group>"; };
+		ED2A3EA024A846510040D24B /* BottomSheetForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetForgotPasswordVC.xib; sourceTree = "<group>"; };
+		ED2A3EA324A849C00040D24B /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		ED2A3EA424A849C00040D24B /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		ED2A3EA524A849C00040D24B /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		ED2A3EA624A849C00040D24B /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		ED2A3EA724A849C00040D24B /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		ED2A3EA824A849C00040D24B /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		ED2A3EA924A849C00040D24B /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		ED2A3EAA24A849C00040D24B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		ED2A3EB424A85E300040D24B /* LupaKataSandiBerhasilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LupaKataSandiBerhasilVC.swift; sourceTree = "<group>"; };
+		ED2A3EB524A85E300040D24B /* LupaKataSandiBerhasilVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LupaKataSandiBerhasilVC.xib; sourceTree = "<group>"; };
 		ED2C9751244A79B00095927D /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
 		ED3353DF243FF4EF00656C25 /* CustomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMargin.swift; sourceTree = "<group>"; };
 		ED33540E244017B700656C25 /* BerandaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVC.swift; sourceTree = "<group>"; };
@@ -206,6 +234,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED2A3E9924A83E720040D24B /* dialog_loading */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A3E9A24A83E900040D24B /* DialogLoadingVC.swift */,
+				ED2A3E9B24A83E900040D24B /* DialogLoadingVC.xib */,
+			);
+			path = dialog_loading;
+			sourceTree = "<group>";
+		};
+		ED2A3E9E24A846340040D24B /* bottom_sheet_forgot_password */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A3E9F24A846510040D24B /* BottomSheetForgotPasswordVC.swift */,
+				ED2A3EA024A846510040D24B /* BottomSheetForgotPasswordVC.xib */,
+			);
+			path = bottom_sheet_forgot_password;
+			sourceTree = "<group>";
+		};
+		ED2A3EB324A85E1B0040D24B /* lupa_kata_sandi_berhasil */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A3EB424A85E300040D24B /* LupaKataSandiBerhasilVC.swift */,
+				ED2A3EB524A85E300040D24B /* LupaKataSandiBerhasilVC.xib */,
+			);
+			path = lupa_kata_sandi_berhasil;
+			sourceTree = "<group>";
+		};
 		ED33540D244017A400656C25 /* beranda */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +368,9 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				ED2A3EB324A85E1B0040D24B /* lupa_kata_sandi_berhasil */,
+				ED2A3E9E24A846340040D24B /* bottom_sheet_forgot_password */,
+				ED2A3E9924A83E720040D24B /* dialog_loading */,
 				EDCA7ACF24A6F877007CD973 /* onboarding */,
 				EDE8D95C2479067600ED127B /* dialog_alert */,
 				ED33541C244017DE00656C25 /* profile */,
@@ -424,6 +482,14 @@
 		EDF797A223FE954700DAD3D4 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				ED2A3EA924A849C00040D24B /* Nunito-Black.ttf */,
+				ED2A3EA724A849C00040D24B /* Nunito-Bold.ttf */,
+				ED2A3EA824A849C00040D24B /* Nunito-ExtraBold.ttf */,
+				ED2A3EA424A849C00040D24B /* Nunito-ExtraLight.ttf */,
+				ED2A3EA624A849C00040D24B /* Nunito-Light.ttf */,
+				ED2A3EA324A849C00040D24B /* Nunito-Medium.ttf */,
+				ED2A3EAA24A849C00040D24B /* Nunito-Regular.ttf */,
+				ED2A3EA524A849C00040D24B /* Nunito-SemiBold.ttf */,
 				EDCA7AD624A6FAB4007CD973 /* SFProDisplay-Bold.ttf */,
 				EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */,
 				EDCA7AD524A6FAB4007CD973 /* SFProDisplay-Medium.ttf */,
@@ -512,19 +578,25 @@
 				ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */,
 				EDF750D5244201C4005C20C6 /* NotificationVC.xib in Resources */,
 				EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */,
+				ED2A3EAD24A849C10040D24B /* Nunito-SemiBold.ttf in Resources */,
 				EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */,
+				ED2A3EAF24A849C10040D24B /* Nunito-Bold.ttf in Resources */,
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
 				ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */,
 				ED4C0132243DAB1200A1EB0A /* Poppins-SemiBold.ttf in Resources */,
+				ED2A3EAB24A849C10040D24B /* Nunito-Medium.ttf in Resources */,
+				ED2A3EB224A849C10040D24B /* Nunito-Regular.ttf in Resources */,
 				ED4C0133243DAB1200A1EB0A /* Poppins-Black.ttf in Resources */,
 				EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */,
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
+				ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */,
 				EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */,
 				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
 				EDC151FD23FE979700659A63 /* Roboto-Bold.ttf in Resources */,
 				EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */,
 				ED507E9B243F8D130038CA6E /* LoginVC.xib in Resources */,
 				ED4C0134243DAB1200A1EB0A /* Poppins-Medium.ttf in Resources */,
+				ED2A3EA224A846510040D24B /* BottomSheetForgotPasswordVC.xib in Resources */,
 				EDCA7AD324A6F89C007CD973 /* OnboardingVC.xib in Resources */,
 				ED95909B22EBF4DC00D696E5 /* LaunchScreen.storyboard in Resources */,
 				EDA919652440461F00354F77 /* Localizable.strings in Resources */,
@@ -532,15 +604,20 @@
 				ED4C014E243DE8FE00A1EB0A /* HomeVC.xib in Resources */,
 				EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */,
 				ED95909522EBEE9300D696E5 /* SplashController.xib in Resources */,
+				ED2A3EB124A849C10040D24B /* Nunito-Black.ttf in Resources */,
 				ED95906D22EBDF3300D696E5 /* Main.storyboard in Resources */,
 				ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */,
 				ED4C0130243DAB1200A1EB0A /* Poppins-ExtraBold.ttf in Resources */,
+				ED2A3EB024A849C10040D24B /* Nunito-ExtraBold.ttf in Resources */,
 				ED4C012E243DAB1200A1EB0A /* Poppins-Regular.ttf in Resources */,
 				EDC151FA23FE978F00659A63 /* Roboto-Light.ttf in Resources */,
 				ED518D9B244841C7008BB273 /* ApprovalVC.xib in Resources */,
 				EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */,
+				ED2A3EAE24A849C10040D24B /* Nunito-Light.ttf in Resources */,
 				EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */,
+				ED2A3EB724A85E300040D24B /* LupaKataSandiBerhasilVC.xib in Resources */,
 				EDC151FC23FE979400659A63 /* Roboto-Regular.ttf in Resources */,
+				ED2A3EAC24A849C10040D24B /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +700,7 @@
 				ED046AC1244154C90083C331 /* NotificationVM.swift in Sources */,
 				EDBF21BB23005BDD003F5DAF /* CustomLabel.swift in Sources */,
 				EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */,
+				ED2A3EA124A846510040D24B /* BottomSheetForgotPasswordVC.swift in Sources */,
 				EDBF21BD2300DBA6003F5DAF /* CustomButton.swift in Sources */,
 				ED95909922EBF26E00D696E5 /* BaseViewController.swift in Sources */,
 				EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */,
@@ -630,11 +708,13 @@
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
+				ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */,
 				ED518DA324484215008BB273 /* ApprovalVM.swift in Sources */,
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
 				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
+				ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */,
 				ED4C014D243DE8FE00A1EB0A /* HomeVC.swift in Sources */,
 				ED95906822EBDF3300D696E5 /* AppDelegate.swift in Sources */,
 				ED95908022EBE77B00D696E5 /* Constant.swift in Sources */,

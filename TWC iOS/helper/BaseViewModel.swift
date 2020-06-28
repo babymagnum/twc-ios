@@ -31,7 +31,7 @@ class BaseViewModel {
         return UIScreen.main.bounds.height
     }()
     
-    func resetData(navigationController: UINavigationController?) {
+    func resetData() {
         preference.saveBool(value: false, key: constant.IS_LOGIN)
         preference.saveBool(value: false, key: constant.IS_SETUP_LANGUAGE)
         
@@ -39,10 +39,10 @@ class BaseViewModel {
         appDelegate.setupRootController(vc: SplashController(), animationOptions: nil)
     }
     
-    func showCustomDialog(destinationVC: UIViewController, navigationController: UINavigationController?) {
+    func showCustomDialog(destinationVC: UIViewController, originVC: UIViewController?) {
         let popupVc = PopupViewController(contentController: destinationVC, popupWidth: screenWidth, popupHeight: screenHeight)
         popupVc.shadowEnabled = false
-        navigationController?.present(popupVc, animated: true)
+        originVC?.present(popupVc, animated: true)
     }
     
     func showAlertDialog(image: String?, message: String, navigationController: UINavigationController?) {
@@ -55,13 +55,13 @@ class BaseViewModel {
         navigationController?.present(popupVc, animated: true)
     }
     
-    func forceLogout(navigationController: UINavigationController?) {
+    func forceLogout(originVC: UIViewController?) {
         let vc = DialogAlert()
         vc.stringDescription = "please_login_again".localize()
-        showCustomDialog(destinationVC: vc, navigationController: navigationController)
+        showCustomDialog(destinationVC: vc, originVC: originVC)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-            self.resetData(navigationController: navigationController)
+            self.resetData()
         })
     }
     
@@ -71,7 +71,7 @@ class BaseViewModel {
         vc.stringDescription = content
         vc.nc = nc
         vc.image = image
-        showCustomDialog(destinationVC: vc, navigationController: nc)
+        showCustomDialog(destinationVC: vc, originVC: nc)
     }
     
     func showDelegateDialogAlertWithAction2(image: String?, action2String: String?, delegate: DialogAlertProtocol?, content: String?, nc: UINavigationController?) {
@@ -81,6 +81,6 @@ class BaseViewModel {
         vc.nc = nc
         vc.image = image
         vc.action2String = action2String
-        showCustomDialog(destinationVC: vc, navigationController: nc)
+        showCustomDialog(destinationVC: vc, originVC: nc)
     }
 }

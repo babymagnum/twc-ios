@@ -22,29 +22,34 @@ class LoginVC: BaseViewController, UITextFieldDelegate {
     private var disposeBag = DisposeBag()
     private var passwordHide = true
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
         
-        observeData()
-        
         setupEvent()
+        
+        observeData()
+    }
+    
+    private func observeData() {
+        loginVM.successForgotPassword.subscribe(onNext: { value in
+            if value {
+                self.navigationController?.pushViewController(LupaKataSandiBerhasilVC(), animated: true)
+                self.loginVM.successForgotPassword.accept(false)
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func setupView() {
         buttonShowHidePassword.setImage(UIImage(named: "invisible")?.tinted(with: UIColor.brownGreyTwo), for: .normal)
         buttonMasuk.isEnabled = false
-    }
-    
-    private func observeData() {
-        loginVM.loading.subscribe(onNext: { value in
-            if value {
-                SVProgressHUD.show(withStatus: "please_wait".localize())
-            } else {
-                SVProgressHUD.dismiss()
-            }
-        }).disposed(by: disposeBag)
     }
     
     private func setupEvent() {
@@ -73,22 +78,35 @@ extension LoginVC {
     }
     
     @objc func fieldEmaildDidChange(textField: UITextField) { changeButtonMasuk() }
+    
     @objc func fieldPasswordDidChange(textField: UITextField) {
         buttonShowHidePassword.setImage(UIImage(named: passwordHide ? "invisible" : "visibility")?.tinted(with: fieldPassword.trim() == "" ? UIColor.brownGreyTwo : UIColor.mediumGreen), for: .normal)
         changeButtonMasuk()
     }
+    
     @IBAction func showHidePasswordClick(_ sender: Any) {
         passwordHide = !passwordHide
         fieldPassword.isSecureTextEntry = passwordHide
         buttonShowHidePassword.setImage(UIImage(named: passwordHide ? "invisible" : "visibility")?.tinted(with: fieldPassword.trim() == "" ? UIColor.brownGreyTwo : UIColor.mediumGreen), for: .normal)
     }
+    
     @IBAction func daftarJadiAgenClick(_ sender: Any) {
         print("daftar jadi agen")
     }
+    
     @IBAction func masukClick(_ sender: Any) {
-        print("masuk")
+        loginVM.didLogin.accept(true)
+        loginVM.showLoading(originVC: self)
     }
+    
     @IBAction func forgotPasswordClick(_ sender: Any) {
-        print("forgot password")
+        let marginHorizontal = (screenWidth * 0.065) * 2
+        let titleHeight = "Lupa kata sandi".getHeight(withConstrainedWidth: screenWidth - marginHorizontal, font: UIFont(name: "Nunito-Bold", size: 24 + PublicFunction.dynamicSize()))
+        let descriptionHeight = "Masukan email anda yang telah teregistrasi".getHeight(withConstrainedWidth: screenWidth - marginHorizontal, font: UIFont(name: "Nunito-Regular", size: 16 + PublicFunction.dynamicSize()))
+        let emailHeight = "Email...".getHeight(withConstrainedWidth: screenWidth - marginHorizontal, font: UIFont(name: "Nunito-Regular", size: 17 + PublicFunction.dynamicSize()))
+        let sendHeight = screenWidth * 0.15
+        let bottomSheetHeight = 10 + 4 + 32 + titleHeight + 16 + descriptionHeight + 36 + emailHeight + 11 + 1 + 28 + sendHeight + 28 + 25
+//        let vc = UINavigationController.init(rootViewController: BottomSheetForgotPasswordVC())
+        showBottomSheet(vc: BottomSheetForgotPasswordVC(), handleColor: UIColor.clear, height: bottomSheetHeight)
     }
 }
