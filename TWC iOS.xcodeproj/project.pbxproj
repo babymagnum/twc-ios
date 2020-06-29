@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		D8C10D4655F84D98548802BE /* Pods_TWC_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */; };
 		ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */; };
-		ED046AC1244154C90083C331 /* NotificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AC0244154C90083C331 /* NotificationVM.swift */; };
 		ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED10746422F5B98A00ADF055 /* WebKit.framework */; };
 		ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB72302EC9000B854BC /* CustomTextView.swift */; };
 		ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB92302ED0700B854BC /* CustomDropDownField.swift */; };
+		ED1A383324A9686900110474 /* PesananVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A383124A9686900110474 /* PesananVC.swift */; };
+		ED1A383424A9686900110474 /* PesananVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1A383224A9686900110474 /* PesananVC.xib */; };
+		ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A383524A9687400110474 /* KotakMasukVC.swift */; };
+		ED1A383824A9687400110474 /* KotakMasukVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1A383624A9687400110474 /* KotakMasukVC.xib */; };
 		ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1CDFF02440617600DD40FC /* BerandaVC.xib */; };
 		ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED213AAA2442C4CD00A18EBC /* ProfileVM.swift */; };
 		ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A3E9A24A83E900040D24B /* DialogLoadingVC.swift */; };
@@ -32,8 +35,6 @@
 		ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2C9751244A79B00095927D /* InteractivePopRecognizer.swift */; };
 		ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3353DF243FF4EF00656C25 /* CustomMargin.swift */; };
 		ED335410244017B700656C25 /* BerandaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33540E244017B700656C25 /* BerandaVC.swift */; };
-		ED335415244017C900656C25 /* ApprovalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED335413244017C900656C25 /* ApprovalVC.swift */; };
-		ED33541A244017DA00656C25 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED335418244017DA00656C25 /* NotificationVC.swift */; };
 		ED33541F244017E800656C25 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33541D244017E700656C25 /* ProfileVC.swift */; };
 		ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED4C0123243DAB1100A1EB0A /* Poppins-ExtraLight.ttf */; };
 		ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED4C0124243DAB1100A1EB0A /* Poppins-Bold.ttf */; };
@@ -51,8 +52,6 @@
 		ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED507E96243F85490038CA6E /* CustomGradientView.swift */; };
 		ED507E99243F857D0038CA6E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED507E98243F857D0038CA6E /* CustomView.swift */; };
 		ED507E9B243F8D130038CA6E /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED507E9D243F8D130038CA6E /* LoginVC.xib */; };
-		ED518D9B244841C7008BB273 /* ApprovalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED518D9D244841C7008BB273 /* ApprovalVC.xib */; };
-		ED518DA324484215008BB273 /* ApprovalVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED518DA224484215008BB273 /* ApprovalVM.swift */; };
 		ED61BF2322F7DA6200776C25 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */; };
 		ED858B0222F313FD00016EAD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED858B0122F313FD00016EAD /* Networking.swift */; };
 		ED8F239A23136B34005D700C /* BaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F239923136B34005D700C /* BaseNetworking.swift */; };
@@ -92,7 +91,6 @@
 		EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE8D95D2479069400ED127B /* DialogAlert.swift */; };
 		EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE8D95F2479069800ED127B /* DialogAlert.xib */; };
 		EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE9D454247585DD0042C9F5 /* HomeVM.swift */; };
-		EDF750D5244201C4005C20C6 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF750D7244201C4005C20C6 /* NotificationVC.xib */; };
 		EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF750DE244207EB005C20C6 /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
 
@@ -101,10 +99,13 @@
 		C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWC_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.release.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		ED046AC0244154C90083C331 /* NotificationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVM.swift; sourceTree = "<group>"; };
 		ED10746422F5B98A00ADF055 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ED139BB72302EC9000B854BC /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		ED139BB92302ED0700B854BC /* CustomDropDownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDownField.swift; sourceTree = "<group>"; };
+		ED1A383124A9686900110474 /* PesananVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesananVC.swift; sourceTree = "<group>"; };
+		ED1A383224A9686900110474 /* PesananVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PesananVC.xib; sourceTree = "<group>"; };
+		ED1A383524A9687400110474 /* KotakMasukVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotakMasukVC.swift; sourceTree = "<group>"; };
+		ED1A383624A9687400110474 /* KotakMasukVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KotakMasukVC.xib; sourceTree = "<group>"; };
 		ED1CDFF12440617900DD40FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BerandaVC.xib; sourceTree = "<group>"; };
 		ED1CDFF32440617A00DD40FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BerandaVC.strings; sourceTree = "<group>"; };
 		ED1CDFF42440617F00DD40FC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/BerandaVC.strings; sourceTree = "<group>"; };
@@ -126,8 +127,6 @@
 		ED2C9751244A79B00095927D /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
 		ED3353DF243FF4EF00656C25 /* CustomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMargin.swift; sourceTree = "<group>"; };
 		ED33540E244017B700656C25 /* BerandaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVC.swift; sourceTree = "<group>"; };
-		ED335413244017C900656C25 /* ApprovalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalVC.swift; sourceTree = "<group>"; };
-		ED335418244017DA00656C25 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		ED33541D244017E700656C25 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		ED4C0123243DAB1100A1EB0A /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		ED4C0124243DAB1100A1EB0A /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -147,10 +146,6 @@
 		ED507E9E243F8D180038CA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginVC.xib; sourceTree = "<group>"; };
 		ED507EA0243F8D1A0038CA6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginVC.strings; sourceTree = "<group>"; };
 		ED507EA1243F8D1F0038CA6E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LoginVC.strings; sourceTree = "<group>"; };
-		ED518D9E244841CA008BB273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ApprovalVC.xib; sourceTree = "<group>"; };
-		ED518DA0244841CB008BB273 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ApprovalVC.strings; sourceTree = "<group>"; };
-		ED518DA1244841CE008BB273 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/ApprovalVC.strings; sourceTree = "<group>"; };
-		ED518DA224484215008BB273 /* ApprovalVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalVM.swift; sourceTree = "<group>"; };
 		ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED858B0122F313FD00016EAD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ED8F239923136B34005D700C /* BaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworking.swift; sourceTree = "<group>"; };
@@ -195,9 +190,6 @@
 		EDE8D95D2479069400ED127B /* DialogAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogAlert.swift; sourceTree = "<group>"; };
 		EDE8D95F2479069800ED127B /* DialogAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogAlert.xib; sourceTree = "<group>"; };
 		EDE9D454247585DD0042C9F5 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
-		EDF750D8244201C6005C20C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NotificationVC.xib; sourceTree = "<group>"; };
-		EDF750DA244201C8005C20C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NotificationVC.strings; sourceTree = "<group>"; };
-		EDF750DB244201CB005C20C6 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/NotificationVC.strings; sourceTree = "<group>"; };
 		EDF750DF244207ED005C20C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +224,24 @@
 				CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED1A382F24A9684F00110474 /* pesanan */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A383124A9686900110474 /* PesananVC.swift */,
+				ED1A383224A9686900110474 /* PesananVC.xib */,
+			);
+			path = pesanan;
+			sourceTree = "<group>";
+		};
+		ED1A383024A9685700110474 /* kotak_masuk */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A383524A9687400110474 /* KotakMasukVC.swift */,
+				ED1A383624A9687400110474 /* KotakMasukVC.xib */,
+			);
+			path = kotak_masuk;
 			sourceTree = "<group>";
 		};
 		ED2A3E9924A83E720040D24B /* dialog_loading */ = {
@@ -269,26 +279,6 @@
 				EDCFD2EF24440B3400A890F4 /* BerandaVM.swift */,
 			);
 			path = beranda;
-			sourceTree = "<group>";
-		};
-		ED335412244017BB00656C25 /* approval */ = {
-			isa = PBXGroup;
-			children = (
-				ED335413244017C900656C25 /* ApprovalVC.swift */,
-				ED518D9D244841C7008BB273 /* ApprovalVC.xib */,
-				ED518DA224484215008BB273 /* ApprovalVM.swift */,
-			);
-			path = approval;
-			sourceTree = "<group>";
-		};
-		ED335417244017CD00656C25 /* notification */ = {
-			isa = PBXGroup;
-			children = (
-				ED335418244017DA00656C25 /* NotificationVC.swift */,
-				EDF750D7244201C4005C20C6 /* NotificationVC.xib */,
-				ED046AC0244154C90083C331 /* NotificationVM.swift */,
-			);
-			path = notification;
 			sourceTree = "<group>";
 		};
 		ED33541C244017DE00656C25 /* profile */ = {
@@ -368,14 +358,14 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				ED1A383024A9685700110474 /* kotak_masuk */,
+				ED1A382F24A9684F00110474 /* pesanan */,
 				ED2A3EB324A85E1B0040D24B /* lupa_kata_sandi_berhasil */,
 				ED2A3E9E24A846340040D24B /* bottom_sheet_forgot_password */,
 				ED2A3E9924A83E720040D24B /* dialog_loading */,
 				EDCA7ACF24A6F877007CD973 /* onboarding */,
 				EDE8D95C2479067600ED127B /* dialog_alert */,
 				ED33541C244017DE00656C25 /* profile */,
-				ED335417244017CD00656C25 /* notification */,
-				ED335412244017BB00656C25 /* approval */,
 				ED33540D244017A400656C25 /* beranda */,
 				ED4C0138243DB7A700A1EB0A /* home */,
 				ED4C0137243DB7A200A1EB0A /* login */,
@@ -576,7 +566,6 @@
 			files = (
 				ED4C0131243DAB1200A1EB0A /* Poppins-Light.ttf in Resources */,
 				ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */,
-				EDF750D5244201C4005C20C6 /* NotificationVC.xib in Resources */,
 				EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */,
 				ED2A3EAD24A849C10040D24B /* Nunito-SemiBold.ttf in Resources */,
 				EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */,
@@ -591,6 +580,7 @@
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
 				ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */,
 				EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */,
+				ED1A383424A9686900110474 /* PesananVC.xib in Resources */,
 				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
 				EDC151FD23FE979700659A63 /* Roboto-Bold.ttf in Resources */,
 				EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */,
@@ -611,11 +601,11 @@
 				ED2A3EB024A849C10040D24B /* Nunito-ExtraBold.ttf in Resources */,
 				ED4C012E243DAB1200A1EB0A /* Poppins-Regular.ttf in Resources */,
 				EDC151FA23FE978F00659A63 /* Roboto-Light.ttf in Resources */,
-				ED518D9B244841C7008BB273 /* ApprovalVC.xib in Resources */,
 				EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */,
 				ED2A3EAE24A849C10040D24B /* Nunito-Light.ttf in Resources */,
 				EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */,
 				ED2A3EB724A85E300040D24B /* LupaKataSandiBerhasilVC.xib in Resources */,
+				ED1A383824A9687400110474 /* KotakMasukVC.xib in Resources */,
 				EDC151FC23FE979400659A63 /* Roboto-Regular.ttf in Resources */,
 				ED2A3EAC24A849C10040D24B /* Nunito-ExtraLight.ttf in Resources */,
 			);
@@ -689,15 +679,12 @@
 			files = (
 				ED95909422EBEE9300D696E5 /* SplashController.swift in Sources */,
 				EDB6AC7B24A702F100457144 /* OnboardingItem.swift in Sources */,
-				ED33541A244017DA00656C25 /* NotificationVC.swift in Sources */,
-				ED335415244017C900656C25 /* ApprovalVC.swift in Sources */,
 				EDBF21C12301086A003F5DAF /* CustomTextField.swift in Sources */,
 				EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */,
 				ED95907E22EBE3C500D696E5 /* Preference.swift in Sources */,
 				ED4C0147243DDDBF00A1EB0A /* LoginVC.swift in Sources */,
 				ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */,
 				ED858B0222F313FD00016EAD /* Networking.swift in Sources */,
-				ED046AC1244154C90083C331 /* NotificationVM.swift in Sources */,
 				EDBF21BB23005BDD003F5DAF /* CustomLabel.swift in Sources */,
 				EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */,
 				ED2A3EA124A846510040D24B /* BottomSheetForgotPasswordVC.swift in Sources */,
@@ -709,11 +696,11 @@
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
 				ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */,
-				ED518DA324484215008BB273 /* ApprovalVM.swift in Sources */,
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
 				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
+				ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */,
 				ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */,
 				ED4C014D243DE8FE00A1EB0A /* HomeVC.swift in Sources */,
 				ED95906822EBDF3300D696E5 /* AppDelegate.swift in Sources */,
@@ -726,6 +713,7 @@
 				ED335410244017B700656C25 /* BerandaVC.swift in Sources */,
 				ED8F239A23136B34005D700C /* BaseNetworking.swift in Sources */,
 				ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */,
+				ED1A383324A9686900110474 /* PesananVC.swift in Sources */,
 				ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,16 +741,6 @@
 			name = LoginVC.xib;
 			sourceTree = "<group>";
 		};
-		ED518D9D244841C7008BB273 /* ApprovalVC.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED518D9E244841CA008BB273 /* Base */,
-				ED518DA0244841CB008BB273 /* en */,
-				ED518DA1244841CE008BB273 /* id */,
-			);
-			name = ApprovalVC.xib;
-			sourceTree = "<group>";
-		};
 		ED95906B22EBDF3300D696E5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -778,16 +756,6 @@
 				EDA919682440462300354F77 /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		EDF750D7244201C4005C20C6 /* NotificationVC.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDF750D8244201C6005C20C6 /* Base */,
-				EDF750DA244201C8005C20C6 /* en */,
-				EDF750DB244201CB005C20C6 /* id */,
-			);
-			name = NotificationVC.xib;
 			sourceTree = "<group>";
 		};
 		EDF750DE244207EB005C20C6 /* ProfileVC.xib */ = {

@@ -18,20 +18,108 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lupa kata sandi berhasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-bM-knE">
-                    <rect key="frame" x="95" y="323" width="185" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33t-rW-N3f">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lupakatasandi" translatesAutoresizingMaskIntoConstraints="NO" id="CNV-y3-Ikv">
+                            <rect key="frame" x="97.5" y="20" width="180" height="180"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="CNV-y3-Ikv" secondAttribute="height" multiplier="1:1" id="y73-VB-tSW"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email set ulang kata sandi berhasil terkirim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMk-q1-bP7" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="24" y="216" width="327" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32o-sa-26l" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="24" y="258.5" width="327" height="109.5"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">Kami telah mengirimkan email berisi instruksi untuk men set ulang kata sandi, set ulang kata sandi anda kemudian masuk kembali dengan kata sandi yang baru</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="letterSpace">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-El-hUm" customClass="CustomButton" customModule="TWC" customModuleProvider="target">
+                            <rect key="frame" x="24" y="587" width="327" height="56"/>
+                            <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="rLY-s2-Py7" customClass="CustomMargin" customModule="TWC" customModuleProvider="target">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="multi">
+                                            <real key="value" value="0.14999999999999999"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                    <real key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="okClick:" destination="-1" eventType="touchUpInside" id="Wly-ja-bLu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="CNV-y3-Ikv" firstAttribute="top" secondItem="33t-rW-N3f" secondAttribute="top" constant="20" id="Cqd-Qm-33b"/>
+                        <constraint firstAttribute="bottom" secondItem="Ici-El-hUm" secondAttribute="bottom" constant="24" id="JrI-LC-JHm"/>
+                        <constraint firstItem="xMk-q1-bP7" firstAttribute="leading" secondItem="33t-rW-N3f" secondAttribute="leading" constant="24" id="OYu-N0-AFo"/>
+                        <constraint firstItem="xMk-q1-bP7" firstAttribute="top" secondItem="CNV-y3-Ikv" secondAttribute="bottom" constant="16" id="RcJ-Jx-Nqz"/>
+                        <constraint firstAttribute="trailing" secondItem="32o-sa-26l" secondAttribute="trailing" constant="24" id="Wz4-Ec-joF"/>
+                        <constraint firstAttribute="trailing" secondItem="Ici-El-hUm" secondAttribute="trailing" constant="24" id="Yyd-bG-qgu"/>
+                        <constraint firstItem="Ici-El-hUm" firstAttribute="leading" secondItem="33t-rW-N3f" secondAttribute="leading" constant="24" id="c2B-FM-hXO"/>
+                        <constraint firstItem="CNV-y3-Ikv" firstAttribute="centerX" secondItem="33t-rW-N3f" secondAttribute="centerX" id="hOI-FE-AXa"/>
+                        <constraint firstItem="32o-sa-26l" firstAttribute="top" secondItem="xMk-q1-bP7" secondAttribute="bottom" constant="22" id="lrI-Pf-CUh"/>
+                        <constraint firstAttribute="trailing" secondItem="xMk-q1-bP7" secondAttribute="trailing" constant="24" id="tlA-ys-2sv"/>
+                        <constraint firstItem="32o-sa-26l" firstAttribute="leading" secondItem="33t-rW-N3f" secondAttribute="leading" constant="24" id="z09-bg-LkN"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="ScA-bM-knE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VK9-6e-usu"/>
-                <constraint firstItem="ScA-bM-knE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sMi-nc-uxF"/>
+                <constraint firstItem="33t-rW-N3f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HXP-15-AGM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="33t-rW-N3f" secondAttribute="trailing" id="eyA-cc-fsv"/>
+                <constraint firstItem="CNV-y3-Ikv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.48" id="jPT-oi-0ry"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="33t-rW-N3f" secondAttribute="bottom" id="mGP-bI-J7q"/>
+                <constraint firstItem="33t-rW-N3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="raY-b8-Eh0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="131"/>
         </view>
     </objects>
+    <resources>
+        <image name="lupakatasandi" width="180" height="181.5"/>
+    </resources>
 </document>

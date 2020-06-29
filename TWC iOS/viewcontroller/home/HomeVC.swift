@@ -52,23 +52,18 @@ class HomeVC: UITabBarController {
     
     private func setTabbarItem(hasNotification: Bool) {
         let berandaVC = BerandaVC()
-        let approvalVC = ApprovalVC()
-        let notificationVC = NotificationVC()
+        let pesananVC = PesananVC()
+        let kotakMasukVC = KotakMasukVC()
         let profileVC = ProfileVC()
-        viewControllers = [berandaVC, approvalVC, notificationVC, profileVC]
+        viewControllers = [berandaVC, pesananVC, kotakMasukVC, profileVC]
         
-        berandaVC.tabBarItem = UITabBarItem(title: "home".localize(), image: UIImage(named: "home")?.tinted(with: UIColor.init(hexString: "253644")), selectedImage: UIImage(named: "home")?.tinted(with: UIColor.init(hexString: "347eb2")))
-        approvalVC.tabBarItem = UITabBarItem(title: "approval".localize(), image: UIImage(named: "persetujuan")?.tinted(with: UIColor.init(hexString: "253644")), selectedImage: UIImage(named: "persetujuan")?.tinted(with: UIColor.init(hexString: "347eb2")))
-        notificationVC.tabBarItem = UITabBarItem(title: "notification".localize(), image: checkNotifIcon(isSelected: false, hasNotification: hasNotification), selectedImage: checkNotifIcon(isSelected: true, hasNotification: hasNotification))
-        profileVC.tabBarItem = UITabBarItem(title: "profile".localize(), image: UIImage(named: "profil")?.tinted(with: UIColor.init(hexString: "253644")), selectedImage: UIImage(named: "profil")?.tinted(with: UIColor.init(hexString: "347eb2")))
+        berandaVC.tabBarItem = UITabBarItem(title: "home".localize(), image: UIImage(named: "homepage")?.tinted(with: UIColor.brownGreyTwo), selectedImage: UIImage(named: "homepage")?.tinted(with: UIColor.mediumGreen))
+        pesananVC.tabBarItem = UITabBarItem(title: "order".localize(), image: UIImage(named: "pesanan")?.tinted(with: UIColor.brownGreyTwo), selectedImage: UIImage(named: "persetujuan")?.tinted(with: UIColor.mediumGreen))
+//        kotakMasukVC.tabBarItem = UITabBarItem(title: "notification".localize(), image: checkNotifIcon(isSelected: false, hasNotification: hasNotification), selectedImage: checkNotifIcon(isSelected: true, hasNotification: hasNotification))
+        kotakMasukVC.tabBarItem = UITabBarItem(title: "inbox".localize(), image: UIImage(named: "mail")?.tinted(with: UIColor.brownGreyTwo), selectedImage: UIImage(named: "mail")?.tinted(with: UIColor.mediumGreen))
+        profileVC.tabBarItem = UITabBarItem(title: "profile".localize(), image: UIImage(named: "profile")?.tinted(with: UIColor.brownGreyTwo), selectedImage: UIImage(named: "profile")?.tinted(with: UIColor.mediumGreen))
         
         setViewControllers(viewControllers, animated: true)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        tabBar.roundCorners([.topLeft, .topRight], radius: 15)
     }
     
     private func initBottomNavigation() {

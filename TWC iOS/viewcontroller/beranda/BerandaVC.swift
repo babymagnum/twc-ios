@@ -14,20 +14,28 @@ import GoogleMaps
 
 class BerandaVC: BaseViewController {
     
-    @IBOutlet weak var imageUser: CustomImage!
-    @IBOutlet weak var viewCornerParent: CustomView!
-    @IBOutlet weak var labelName: CustomLabel!
-    @IBOutlet weak var labelShift: CustomLabel!
-    @IBOutlet weak var labelPresenceStatus: CustomLabel!
-    @IBOutlet weak var labelTime: CustomLabel!
-    @IBOutlet weak var collectionData: UICollectionView!
-    @IBOutlet weak var viewPresensi: UIView!
-    @IBOutlet weak var viewTukarShift: UIView!
-    @IBOutlet weak var viewIzinCuti: UIView!
-    @IBOutlet weak var viewJamKerja: UIView!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageTopMargin: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupView()
+    }
+    
+    private func setupView() {
+        var statusBarHeight: CGFloat = 0
+        if #available(iOS 13.0, *) {
+            statusBarHeight = UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+        } else {
+            statusBarHeight = UIApplication.shared.statusBarFrame.height
+        }
+        
+        imageTopMargin.constant = -statusBarHeight
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }

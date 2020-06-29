@@ -67,11 +67,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
     private func setupDependencyInjection() {
         DependencyContainer.defined(by: module {
             single { SplashVM() }
-            single { NotificationVM() }
             single { ProfileVM() }
             single { BerandaVM() }
             single { LoginVM() }
-            single { ApprovalVM() }
             single { HomeVM() }
         })
     }

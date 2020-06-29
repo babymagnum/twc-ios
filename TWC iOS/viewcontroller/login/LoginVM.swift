@@ -15,6 +15,7 @@ class LoginVM: BaseViewModel, DialogLoadingProtocol {
     var didForgotPassword = BehaviorRelay(value: false)
     var didLogin = BehaviorRelay(value: false)
     var successForgotPassword = BehaviorRelay(value: false)
+    var successLogin = BehaviorRelay(value: false)
     
     func loading(vc: UIViewController?) {
         if didForgotPassword.value {
@@ -27,6 +28,8 @@ class LoginVM: BaseViewModel, DialogLoadingProtocol {
             login {
                 self.didLogin.accept(false)
                 vc?.dismiss(animated: true, completion: nil)
+                self.preference.saveBool(value: true, key: self.constant.IS_LOGIN)
+                self.successLogin.accept(true)
             }
         }
     }

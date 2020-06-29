@@ -45,6 +45,20 @@ class LoginVC: BaseViewController, UITextFieldDelegate {
                 self.loginVM.successForgotPassword.accept(false)
             }
         }).disposed(by: disposeBag)
+        
+        loginVM.successLogin.subscribe(onNext: { value in
+            if value {
+                guard let loginVC = self.navigationController?.viewControllers.last(where: { $0.isKind(of: LoginVC.self) }) else { return }
+                let index = self.navigationController?.viewControllers.lastIndex(of: loginVC) ?? 0
+                self.navigationController?.pushViewController(HomeVC(), animated: true)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.navigationController?.viewControllers.remove(at: index)
+                }
+                
+                self.loginVM.successLogin.accept(false)
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func setupView() {
