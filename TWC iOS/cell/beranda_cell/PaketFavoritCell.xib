@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PaketFavoritCell" customModule="TWC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zli-0T-WHX" customClass="CustomView" customModule="TWC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEC-R3-QJ3">
+                                <rect key="frame" x="24" y="24" width="327" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 tempat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQC-Ab-BJy" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="KiP-Cc-45i">
+                                        <rect key="frame" x="307" y="0.0" width="20" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KiP-Cc-45i" secondAttribute="height" multiplier="5:4" id="8LB-cc-nZF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gQC-Ab-BJy" secondAttribute="bottom" id="3dW-YS-HlV"/>
+                                    <constraint firstItem="gQC-Ab-BJy" firstAttribute="top" secondItem="MEC-R3-QJ3" secondAttribute="top" id="BhV-5C-rmj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="FZt-nZ-LO6"/>
+                                    <constraint firstAttribute="trailing" secondItem="KiP-Cc-45i" secondAttribute="trailing" id="G9h-1M-EGZ"/>
+                                    <constraint firstItem="gQC-Ab-BJy" firstAttribute="centerY" secondItem="MEC-R3-QJ3" secondAttribute="centerY" id="MEf-1o-U0Q"/>
+                                    <constraint firstItem="KiP-Cc-45i" firstAttribute="top" secondItem="MEC-R3-QJ3" secondAttribute="top" id="Oc1-G8-Kmi"/>
+                                    <constraint firstItem="KiP-Cc-45i" firstAttribute="leading" secondItem="gQC-Ab-BJy" secondAttribute="trailing" constant="10" id="qRQ-3A-6dr"/>
+                                    <constraint firstAttribute="bottom" secondItem="KiP-Cc-45i" secondAttribute="bottom" id="uNq-nt-ns8"/>
+                                    <constraint firstItem="gQC-Ab-BJy" firstAttribute="leading" secondItem="MEC-R3-QJ3" secondAttribute="leading" id="yxC-Vd-mgc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borobudur, Mendut, Punthuk Setum.." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE9-gB-CXA" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                                <rect key="frame" x="24" y="43" width="327" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Bold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QLd-on-oDI">
+                                <rect key="frame" x="0.0" y="68.5" width="375" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="UkL-FU-d54"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="6" minimumInteritemSpacing="6" id="9hc-dT-2FG">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWV-7l-f80">
+                                <rect key="frame" x="24" y="111.5" width="327" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO6-IQ-ey3" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Rp 320.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao5-aA-hVw" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                                        <rect key="frame" x="260.5" y="0.0" width="66.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.93725490196078431" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ao5-aA-hVw" firstAttribute="top" secondItem="SWV-7l-f80" secondAttribute="top" id="4Hu-ue-UIv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="7bs-nB-a99"/>
+                                    <constraint firstAttribute="bottom" secondItem="ao5-aA-hVw" secondAttribute="bottom" id="B8a-4t-jt0"/>
+                                    <constraint firstAttribute="bottom" secondItem="kO6-IQ-ey3" secondAttribute="bottom" id="HKW-fK-CUe"/>
+                                    <constraint firstAttribute="trailing" secondItem="ao5-aA-hVw" secondAttribute="trailing" id="gWM-7w-PCB"/>
+                                    <constraint firstItem="ao5-aA-hVw" firstAttribute="leading" secondItem="kO6-IQ-ey3" secondAttribute="trailing" constant="10" id="ray-mP-lz9"/>
+                                    <constraint firstItem="kO6-IQ-ey3" firstAttribute="top" secondItem="SWV-7l-f80" secondAttribute="top" id="xaY-2l-n2B"/>
+                                    <constraint firstItem="kO6-IQ-ey3" firstAttribute="leading" secondItem="SWV-7l-f80" secondAttribute="leading" id="y7f-bN-xFd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Rp 300.000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEo-RM-PKW" customClass="CustomLabel" customModule="TWC" customModuleProvider="target">
+                                <rect key="frame" x="24" y="130" width="327" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Bold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MEC-R3-QJ3" firstAttribute="leading" secondItem="Zli-0T-WHX" secondAttribute="leading" constant="24" id="2wo-I1-Pd2"/>
+                            <constraint firstItem="SWV-7l-f80" firstAttribute="top" secondItem="QLd-on-oDI" secondAttribute="bottom" constant="5" id="2z9-yO-8c5"/>
+                            <constraint firstItem="tE9-gB-CXA" firstAttribute="top" secondItem="MEC-R3-QJ3" secondAttribute="bottom" constant="3" id="6zx-zT-2ro"/>
+                            <constraint firstItem="tE9-gB-CXA" firstAttribute="leading" secondItem="Zli-0T-WHX" secondAttribute="leading" constant="24" id="BCy-UO-7ir"/>
+                            <constraint firstItem="LEo-RM-PKW" firstAttribute="leading" secondItem="Zli-0T-WHX" secondAttribute="leading" constant="24" id="BvG-zA-lv9"/>
+                            <constraint firstAttribute="trailing" secondItem="tE9-gB-CXA" secondAttribute="trailing" constant="24" id="Izn-XI-YDB"/>
+                            <constraint firstItem="SWV-7l-f80" firstAttribute="leading" secondItem="Zli-0T-WHX" secondAttribute="leading" constant="24" id="Ln5-EM-fAT"/>
+                            <constraint firstAttribute="trailing" secondItem="QLd-on-oDI" secondAttribute="trailing" id="QBr-Fy-GNr"/>
+                            <constraint firstItem="MEC-R3-QJ3" firstAttribute="top" secondItem="Zli-0T-WHX" secondAttribute="top" constant="24" id="XZ3-xh-TjM"/>
+                            <constraint firstItem="QLd-on-oDI" firstAttribute="top" secondItem="tE9-gB-CXA" secondAttribute="bottom" constant="6" id="ZoA-Vh-Ax3"/>
+                            <constraint firstAttribute="trailing" secondItem="MEC-R3-QJ3" secondAttribute="trailing" constant="24" id="a5j-DM-y1T"/>
+                            <constraint firstItem="QLd-on-oDI" firstAttribute="leading" secondItem="Zli-0T-WHX" secondAttribute="leading" id="fQ5-do-CsP"/>
+                            <constraint firstItem="LEo-RM-PKW" firstAttribute="top" secondItem="SWV-7l-f80" secondAttribute="bottom" constant="4" id="gQX-0u-GOx"/>
+                            <constraint firstAttribute="trailing" secondItem="LEo-RM-PKW" secondAttribute="trailing" constant="24" id="t9H-i7-rNN"/>
+                            <constraint firstAttribute="trailing" secondItem="SWV-7l-f80" secondAttribute="trailing" constant="24" id="zBm-v0-irK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zli-0T-WHX" secondAttribute="trailing" id="458-Py-72b"/>
+                <constraint firstItem="Zli-0T-WHX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5GE-Al-SdK"/>
+                <constraint firstItem="KiP-Cc-45i" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.0533333" id="HSs-zq-Qja"/>
+                <constraint firstAttribute="bottom" secondItem="Zli-0T-WHX" secondAttribute="bottom" id="Z47-gq-cul"/>
+                <constraint firstItem="Zli-0T-WHX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gH9-zh-Dpu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="collectionImage" destination="QLd-on-oDI" id="dW2-Fi-ELg"/>
+                <outlet property="collectionImageHeight" destination="UkL-FU-d54" id="42P-Fn-lXV"/>
+                <outlet property="imageFavorite" destination="KiP-Cc-45i" id="esj-4Z-axW"/>
+                <outlet property="labelDiscountPrice" destination="LEo-RM-PKW" id="mdU-5f-PZT"/>
+                <outlet property="labelHari" destination="kO6-IQ-ey3" id="tF3-r6-Dur"/>
+                <outlet property="labelJumlahTempat" destination="gQC-Ab-BJy" id="Kvn-gp-mFu"/>
+                <outlet property="labelName" destination="tE9-gB-CXA" id="NbC-VX-5jD"/>
+                <outlet property="labelOriginPrice" destination="ao5-aA-hVw" id="oCv-zv-4Jk"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="favorite" width="20" height="16"/>
+    </resources>
+</document>

@@ -28,7 +28,7 @@ class CustomView: UIView {
         }
         
         if useShadow {
-            addShadow(CGSize(width: 1, height: 4), UIColor.black.withAlphaComponent(0.2), 3, 1)
+            addShadow(CGSize(width: 1, height: 2), UIColor.black.withAlphaComponent(0.2), 2, 1)
         }
         
         if giveBorder {

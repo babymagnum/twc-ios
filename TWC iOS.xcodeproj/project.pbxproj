@@ -36,6 +36,11 @@
 		ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3353DF243FF4EF00656C25 /* CustomMargin.swift */; };
 		ED335410244017B700656C25 /* BerandaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33540E244017B700656C25 /* BerandaVC.swift */; };
 		ED33541F244017E800656C25 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33541D244017E700656C25 /* ProfileVC.swift */; };
+		ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */; };
+		ED3B1CCB24AC55A30051DD71 /* PaketFavoritCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */; };
+		ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */; };
+		ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CCF24AC68C80051DD71 /* PaketFavoriteImageCell.swift */; };
+		ED3B1CD224AC68C80051DD71 /* PaketFavoriteImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1CD024AC68C80051DD71 /* PaketFavoriteImageCell.xib */; };
 		ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED4C0123243DAB1100A1EB0A /* Poppins-ExtraLight.ttf */; };
 		ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED4C0124243DAB1100A1EB0A /* Poppins-Bold.ttf */; };
 		ED4C012E243DAB1200A1EB0A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED4C0125243DAB1100A1EB0A /* Poppins-Regular.ttf */; };
@@ -128,6 +133,11 @@
 		ED3353DF243FF4EF00656C25 /* CustomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMargin.swift; sourceTree = "<group>"; };
 		ED33540E244017B700656C25 /* BerandaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVC.swift; sourceTree = "<group>"; };
 		ED33541D244017E700656C25 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoritCell.swift; sourceTree = "<group>"; };
+		ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaketFavoritCell.xib; sourceTree = "<group>"; };
+		ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoriteModel.swift; sourceTree = "<group>"; };
+		ED3B1CCF24AC68C80051DD71 /* PaketFavoriteImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoriteImageCell.swift; sourceTree = "<group>"; };
+		ED3B1CD024AC68C80051DD71 /* PaketFavoriteImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaketFavoriteImageCell.xib; sourceTree = "<group>"; };
 		ED4C0123243DAB1100A1EB0A /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		ED4C0124243DAB1100A1EB0A /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		ED4C0125243DAB1100A1EB0A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
@@ -291,6 +301,25 @@
 			path = profile;
 			sourceTree = "<group>";
 		};
+		ED3B1CC724AC557E0051DD71 /* beranda_cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */,
+				ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */,
+				ED3B1CCF24AC68C80051DD71 /* PaketFavoriteImageCell.swift */,
+				ED3B1CD024AC68C80051DD71 /* PaketFavoriteImageCell.xib */,
+			);
+			path = beranda_cell;
+			sourceTree = "<group>";
+		};
+		ED3B1CCC24AC675B0051DD71 /* beranda */ = {
+			isa = PBXGroup;
+			children = (
+				ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */,
+			);
+			path = beranda;
+			sourceTree = "<group>";
+		};
 		ED4C0137243DB7A200A1EB0A /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +408,7 @@
 		ED95907A22EBE2AC00D696E5 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				ED3B1CCC24AC675B0051DD71 /* beranda */,
 				EDB6AC7924A702D500457144 /* onboarding */,
 			);
 			path = model;
@@ -429,6 +459,7 @@
 		ED95909C22EBF98400D696E5 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				ED3B1CC724AC557E0051DD71 /* beranda_cell */,
 				EDB6AC7424A7002500457144 /* onboarding_cell */,
 			);
 			path = cell;
@@ -573,6 +604,7 @@
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
 				ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */,
 				ED4C0132243DAB1200A1EB0A /* Poppins-SemiBold.ttf in Resources */,
+				ED3B1CD224AC68C80051DD71 /* PaketFavoriteImageCell.xib in Resources */,
 				ED2A3EAB24A849C10040D24B /* Nunito-Medium.ttf in Resources */,
 				ED2A3EB224A849C10040D24B /* Nunito-Regular.ttf in Resources */,
 				ED4C0133243DAB1200A1EB0A /* Poppins-Black.ttf in Resources */,
@@ -604,6 +636,7 @@
 				EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */,
 				ED2A3EAE24A849C10040D24B /* Nunito-Light.ttf in Resources */,
 				EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */,
+				ED3B1CCB24AC55A30051DD71 /* PaketFavoritCell.xib in Resources */,
 				ED2A3EB724A85E300040D24B /* LupaKataSandiBerhasilVC.xib in Resources */,
 				ED1A383824A9687400110474 /* KotakMasukVC.xib in Resources */,
 				EDC151FC23FE979400659A63 /* Roboto-Regular.ttf in Resources */,
@@ -693,12 +726,15 @@
 				EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */,
 				EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */,
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
+				ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */,
+				ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */,
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
 				ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */,
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
 				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
+				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
 				ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */,
 				ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */,

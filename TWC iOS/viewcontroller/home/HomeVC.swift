@@ -66,11 +66,17 @@ class HomeVC: UITabBarController {
         setViewControllers(viewControllers, animated: true)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tabBar.roundCorners([.topLeft, .topRight], radius: 15)
+    }
+    
     private func initBottomNavigation() {
         UITabBar.appearance().tintColor = UIColor.mediumGreen
         UITabBar.appearance().backgroundColor = UIColor.white
         tabBar.unselectedItemTintColor = UIColor.brownGreyTwo
-        tabBar.backgroundColor = UIColor.white
+        tabBar.backgroundColor = UIColor.whiteThree
         tabBar.addShadow(CGSize(width: 2, height: 4), UIColor.black.withAlphaComponent(0.5), 4, 1)
         
         self.delegate = self

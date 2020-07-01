@@ -414,7 +414,15 @@ extension UIColor {
     @nonobjc class var veryLightPinkFour: UIColor {
       return UIColor(white: 229.0 / 255.0, alpha: 1.0)
     }
-    
+
+    @nonobjc class var whiteTwo: UIColor {
+      return UIColor(white: 249.0 / 255.0, alpha: 1.0)
+    }
+
+    @nonobjc class var whiteThree: UIColor {
+      return UIColor(white: 252.0 / 255.0, alpha: 1.0)
+    }
+
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
