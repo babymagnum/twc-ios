@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TanggalCell" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pH-p4-XFl" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hty-rz-Ofe" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Roboto-Regular"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hty-rz-Ofe" firstAttribute="leading" secondItem="9pH-p4-XFl" secondAttribute="leading" id="BRp-SX-h7F"/>
+                            <constraint firstAttribute="bottom" secondItem="hty-rz-Ofe" secondAttribute="bottom" id="H6k-j8-hTU"/>
+                            <constraint firstItem="hty-rz-Ofe" firstAttribute="top" secondItem="9pH-p4-XFl" secondAttribute="top" id="hLq-h9-aDe"/>
+                            <constraint firstAttribute="trailing" secondItem="hty-rz-Ofe" secondAttribute="trailing" id="vNj-K3-XAd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedAllCorner" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9pH-p4-XFl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="73I-6f-yJn"/>
+                <constraint firstAttribute="trailing" secondItem="9pH-p4-XFl" secondAttribute="trailing" id="Kyr-Xq-wG8"/>
+                <constraint firstItem="9pH-p4-XFl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TdX-wh-xqs"/>
+                <constraint firstAttribute="bottom" secondItem="9pH-p4-XFl" secondAttribute="bottom" id="bDu-E1-stB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="labelTanggal" destination="hty-rz-Ofe" id="EYs-un-hXh"/>
+                <outlet property="marginBottomViewParent" destination="bDu-E1-stB" id="ryZ-Dz-3o2"/>
+                <outlet property="marginLeftViewParent" destination="TdX-wh-xqs" id="zCo-lu-pRO"/>
+                <outlet property="marginRightViewParent" destination="Kyr-Xq-wG8" id="zxJ-Of-j4N"/>
+                <outlet property="marginTopViewParent" destination="73I-6f-yJn" id="Ens-qa-nly"/>
+                <outlet property="viewParent" destination="9pH-p4-XFl" id="Wiu-Ds-e5k"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="146"/>
+        </collectionViewCell>
+    </objects>
+</document>

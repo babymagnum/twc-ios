@@ -36,6 +36,10 @@
 		ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3353DF243FF4EF00656C25 /* CustomMargin.swift */; };
 		ED335410244017B700656C25 /* BerandaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33540E244017B700656C25 /* BerandaVC.swift */; };
 		ED33541F244017E800656C25 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33541D244017E700656C25 /* ProfileVC.swift */; };
+		ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3688A324AD5B9D00AEC88A /* BottomSheetTanggalVC.swift */; };
+		ED3688A624AD5B9D00AEC88A /* BottomSheetTanggalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */; };
+		ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3688A824AD691500AEC88A /* TanggalCell.swift */; };
+		ED3688AB24AD691500AEC88A /* TanggalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3688A924AD691500AEC88A /* TanggalCell.xib */; };
 		ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */; };
 		ED3B1CCB24AC55A30051DD71 /* PaketFavoritCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */; };
 		ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */; };
@@ -133,6 +137,10 @@
 		ED3353DF243FF4EF00656C25 /* CustomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMargin.swift; sourceTree = "<group>"; };
 		ED33540E244017B700656C25 /* BerandaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVC.swift; sourceTree = "<group>"; };
 		ED33541D244017E700656C25 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		ED3688A324AD5B9D00AEC88A /* BottomSheetTanggalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTanggalVC.swift; sourceTree = "<group>"; };
+		ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTanggalVC.xib; sourceTree = "<group>"; };
+		ED3688A824AD691500AEC88A /* TanggalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanggalCell.swift; sourceTree = "<group>"; };
+		ED3688A924AD691500AEC88A /* TanggalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TanggalCell.xib; sourceTree = "<group>"; };
 		ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoritCell.swift; sourceTree = "<group>"; };
 		ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaketFavoritCell.xib; sourceTree = "<group>"; };
 		ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoriteModel.swift; sourceTree = "<group>"; };
@@ -159,7 +167,7 @@
 		ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED858B0122F313FD00016EAD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ED8F239923136B34005D700C /* BaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworking.swift; sourceTree = "<group>"; };
-		ED95906422EBDF3300D696E5 /* TWC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED95906422EBDF3300D696E5 /* Taman Wisata Candi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taman Wisata Candi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED95906722EBDF3300D696E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED95906C22EBDF3300D696E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED95906E22EBDF3500D696E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -301,6 +309,24 @@
 			path = profile;
 			sourceTree = "<group>";
 		};
+		ED3688A224AD5B8200AEC88A /* bottom_sheet_tanggal */ = {
+			isa = PBXGroup;
+			children = (
+				ED3688A324AD5B9D00AEC88A /* BottomSheetTanggalVC.swift */,
+				ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */,
+			);
+			path = bottom_sheet_tanggal;
+			sourceTree = "<group>";
+		};
+		ED3688A724AD68FA00AEC88A /* bottom_sheet_tanggal */ = {
+			isa = PBXGroup;
+			children = (
+				ED3688A824AD691500AEC88A /* TanggalCell.swift */,
+				ED3688A924AD691500AEC88A /* TanggalCell.xib */,
+			);
+			path = bottom_sheet_tanggal;
+			sourceTree = "<group>";
+		};
 		ED3B1CC724AC557E0051DD71 /* beranda_cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,7 +388,7 @@
 		ED95906522EBDF3300D696E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED95906422EBDF3300D696E5 /* TWC.app */,
+				ED95906422EBDF3300D696E5 /* Taman Wisata Candi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,6 +413,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				ED3688A224AD5B8200AEC88A /* bottom_sheet_tanggal */,
 				ED1A383024A9685700110474 /* kotak_masuk */,
 				ED1A382F24A9684F00110474 /* pesanan */,
 				ED2A3EB324A85E1B0040D24B /* lupa_kata_sandi_berhasil */,
@@ -459,6 +486,7 @@
 		ED95909C22EBF98400D696E5 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				ED3688A724AD68FA00AEC88A /* bottom_sheet_tanggal */,
 				ED3B1CC724AC557E0051DD71 /* beranda_cell */,
 				EDB6AC7424A7002500457144 /* onboarding_cell */,
 			);
@@ -553,7 +581,7 @@
 			);
 			name = "TWC iOS";
 			productName = "Angkasa Pura Solusi";
-			productReference = ED95906422EBDF3300D696E5 /* TWC.app */;
+			productReference = ED95906422EBDF3300D696E5 /* Taman Wisata Candi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -599,6 +627,7 @@
 				ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */,
 				EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */,
 				ED2A3EAD24A849C10040D24B /* Nunito-SemiBold.ttf in Resources */,
+				ED3688A624AD5B9D00AEC88A /* BottomSheetTanggalVC.xib in Resources */,
 				EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */,
 				ED2A3EAF24A849C10040D24B /* Nunito-Bold.ttf in Resources */,
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
@@ -624,6 +653,7 @@
 				EDA919652440461F00354F77 /* Localizable.strings in Resources */,
 				EDCA7ADD24A6FAB4007CD973 /* SFProDisplay-Regular.ttf in Resources */,
 				ED4C014E243DE8FE00A1EB0A /* HomeVC.xib in Resources */,
+				ED3688AB24AD691500AEC88A /* TanggalCell.xib in Resources */,
 				EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */,
 				ED95909522EBEE9300D696E5 /* SplashController.xib in Resources */,
 				ED2A3EB124A849C10040D24B /* Nunito-Black.ttf in Resources */,
@@ -730,8 +760,10 @@
 				ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */,
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
+				ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */,
 				ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */,
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
+				ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
 				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
 				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
@@ -943,7 +975,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ariefzainuri.iostemplate;
-				PRODUCT_NAME = TWC;
+				PRODUCT_NAME = "Taman Wisata Candi";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -968,7 +1000,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ariefzainuri.iostemplate;
-				PRODUCT_NAME = TWC;
+				PRODUCT_NAME = "Taman Wisata Candi";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

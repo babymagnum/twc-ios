@@ -176,32 +176,30 @@ class PublicFunction {
     }
     
     static func getStringDate(pattern: String) -> String {
-        let preference = Preference()
         let formater = DateFormatter()
         formater.dateFormat = pattern
-        formater.locale = Locale(identifier: preference.getString(key: Constant().LANGUAGE))
+        formater.locale = getLocale()
         return formater.string(from: Date())
     }
     
     static func dateStringTo(date: String, fromPattern: String, toPattern: String) -> String {
         let inputFormatter = DateFormatter()
+        inputFormatter.locale = getLocale()
         inputFormatter.dateFormat = fromPattern
         let showDate = inputFormatter.date(from: date == "" ? getStringDate(pattern: fromPattern) : date) ?? Date()
         inputFormatter.dateFormat = toPattern
         return inputFormatter.string(from: showDate)
     }
     
-    static func dateStringTo(date: String, fromPattern: String, toPattern: String, locale: Locale) -> String {
-        let inputFormatter = DateFormatter()
-        inputFormatter.locale = locale
-        inputFormatter.dateFormat = fromPattern
-        let showDate = inputFormatter.date(from: date == "" ? getStringDate(pattern: fromPattern) : date) ?? Date()
-        inputFormatter.dateFormat = toPattern
-        return inputFormatter.string(from: showDate)
+    static func getLocale() -> Locale {
+        let preference = Preference()
+        let constant = Constant()
+        return Locale(identifier: preference.getString(key: constant.LANGUAGE))
     }
     
     static func dateToString(_ date: Date, _ pattern: String) -> String {
         let dateformatter = DateFormatter()
+        dateformatter.locale = getLocale()
         dateformatter.dateFormat = pattern
         return dateformatter.string(from: date)
     }
@@ -216,6 +214,7 @@ class PublicFunction {
     
     static func stringToDate(date: String, pattern: String) -> Date {
         let dateformatter = DateFormatter()
+        dateformatter.locale = getLocale()
         dateformatter.dateFormat = pattern
         return dateformatter.date(from: date == "" ? getStringDate(pattern: pattern) : date) ?? Date()
     }
@@ -527,7 +526,7 @@ extension UICollectionView {
 extension UIView {
     
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height), byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: frame.width, height: frame.height), byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()
         mask.path = path.cgPath
         self.layer.mask = mask
