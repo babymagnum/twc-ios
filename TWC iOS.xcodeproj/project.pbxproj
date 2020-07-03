@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D8C10D4655F84D98548802BE /* Pods_TWC_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */; };
 		ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */; };
+		ED0AFFF824AF19FA0091AB39 /* BottomSheetPeserta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */; };
+		ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */; };
+		ED0AFFFB24AF219D0091AB39 /* BottomSheetPesertaVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0AFFFA24AF219D0091AB39 /* BottomSheetPesertaVM.swift */; };
 		ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED10746422F5B98A00ADF055 /* WebKit.framework */; };
 		ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB72302EC9000B854BC /* CustomTextView.swift */; };
 		ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB92302ED0700B854BC /* CustomDropDownField.swift */; };
@@ -108,6 +111,9 @@
 		C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWC_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.release.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPeserta.swift; sourceTree = "<group>"; };
+		ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetPeserta.xib; sourceTree = "<group>"; };
+		ED0AFFFA24AF219D0091AB39 /* BottomSheetPesertaVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPesertaVM.swift; sourceTree = "<group>"; };
 		ED10746422F5B98A00ADF055 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ED139BB72302EC9000B854BC /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		ED139BB92302ED0700B854BC /* CustomDropDownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDownField.swift; sourceTree = "<group>"; };
@@ -242,6 +248,16 @@
 				CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED0AFFF524AF19DD0091AB39 /* bottom_sheet_peserta */ = {
+			isa = PBXGroup;
+			children = (
+				ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */,
+				ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */,
+				ED0AFFFA24AF219D0091AB39 /* BottomSheetPesertaVM.swift */,
+			);
+			path = bottom_sheet_peserta;
 			sourceTree = "<group>";
 		};
 		ED1A382F24A9684F00110474 /* pesanan */ = {
@@ -413,6 +429,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				ED0AFFF524AF19DD0091AB39 /* bottom_sheet_peserta */,
 				ED3688A224AD5B8200AEC88A /* bottom_sheet_tanggal */,
 				ED1A383024A9685700110474 /* kotak_masuk */,
 				ED1A382F24A9684F00110474 /* pesanan */,
@@ -640,6 +657,7 @@
 				EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */,
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
 				ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */,
+				ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */,
 				EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */,
 				ED1A383424A9686900110474 /* PesananVC.xib in Resources */,
 				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
@@ -755,6 +773,7 @@
 				ED95909922EBF26E00D696E5 /* BaseViewController.swift in Sources */,
 				EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */,
 				EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */,
+				ED0AFFFB24AF219D0091AB39 /* BottomSheetPesertaVM.swift in Sources */,
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
 				ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */,
 				ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */,
@@ -781,6 +800,7 @@
 				ED335410244017B700656C25 /* BerandaVC.swift in Sources */,
 				ED8F239A23136B34005D700C /* BaseNetworking.swift in Sources */,
 				ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */,
+				ED0AFFF824AF19FA0091AB39 /* BottomSheetPeserta.swift in Sources */,
 				ED1A383324A9686900110474 /* PesananVC.swift in Sources */,
 				ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */,
 			);

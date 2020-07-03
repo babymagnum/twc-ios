@@ -97,16 +97,16 @@ extension BerandaVC {
     @IBAction func selengkapnyaClick(_ sender: Any) {
     }
     @IBAction func anakClick(_ sender: Any) {
+        showBottomSheet(vc: BottomSheetPeserta(), handleColor: UIColor.clear, height: screenHeight * 0.6)
     }
     @IBAction func dewasaClick(_ sender: Any) {
+        showBottomSheet(vc: BottomSheetPeserta(), handleColor: UIColor.clear, height: screenHeight * 0.6)
     }
     @IBAction func tanggalSelesaiClick(_ sender: Any) {
-        self.present(BottomSheetTanggalVC(), animated: true)
-        //showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
+        showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
     }
     @IBAction func tanggalMulaiClick(_ sender: Any) {
-        self.present(BottomSheetTanggalVC(), animated: true)
-        //showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
+        showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
     }
     @IBAction func rencanakanPerjalananClick(_ sender: Any) {
     }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED95906322EBDF3300D696E5"
-               BuildableName = "TWC.app"
+               BuildableName = "Taman Wisata Candi.app"
                BlueprintName = "TWC iOS"
                ReferencedContainer = "container:TWC iOS.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED95906322EBDF3300D696E5"
-            BuildableName = "TWC.app"
+            BuildableName = "Taman Wisata Candi.app"
             BlueprintName = "TWC iOS"
             ReferencedContainer = "container:TWC iOS.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED95906322EBDF3300D696E5"
-            BuildableName = "TWC.app"
+            BuildableName = "Taman Wisata Candi.app"
             BlueprintName = "TWC iOS"
             ReferencedContainer = "container:TWC iOS.xcodeproj">
          </BuildableReference>

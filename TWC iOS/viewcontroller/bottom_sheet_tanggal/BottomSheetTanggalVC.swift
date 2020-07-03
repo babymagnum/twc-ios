@@ -28,6 +28,7 @@ class BottomSheetTanggalVC: BaseViewController {
     private func setupView() {
         imageCalendar.image = UIImage(named: "calendarToday")?.tinted(with: UIColor.charcoalGrey)
         labelFullDate.text = PublicFunction.getStringDate(pattern: "EEEE, dd MMMM yyyy")
+        labelMonth.text = PublicFunction.getStringDate(pattern: "MMMM yyyy")
     }
     
     private func initCollection() {
@@ -37,7 +38,6 @@ class BottomSheetTanggalVC: BaseViewController {
         collectionCalendar.allowsMultipleSelection = true
         collectionCalendar.minimumLineSpacing = 0
         collectionCalendar.minimumInteritemSpacing = 0
-        //collectionCalendar.scrollToDate(Date())
     }
     
     override func viewDidLayoutSubviews() {
@@ -76,39 +76,62 @@ extension BottomSheetTanggalVC: JTACMonthViewDataSource, JTACMonthViewDelegate {
             return
         }
         
+        currentCell.marginRightViewParent.constant = 3
+        currentCell.marginLeftViewParent.constant = 3
+        currentCell.marginTopViewParent.constant = 2
+        currentCell.marginBottomViewParent.constant = 2
+        
         if cellState.isSelected{
-            currentCell.marginRightViewParent.constant = 3
-            currentCell.marginLeftViewParent.constant = 3
-            currentCell.marginTopViewParent.constant = 2
-            currentCell.marginBottomViewParent.constant = 2
             currentCell.labelTanggal.textColor = UIColor.white
             currentCell.viewParent.backgroundColor = UIColor.mediumGreen
             currentCell.backgroundColor = UIColor.mediumGreen.withAlphaComponent(0.2)
+            
             let modifiedDate = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
             let firstDate = collectionCalendar.selectedDates.first ?? modifiedDate
             let lastDate = collectionCalendar.selectedDates.last ?? modifiedDate
             
-            if cellState.date == firstDate && PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() || cellState.date == firstDate && PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
-                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
-            } else if cellState.date == lastDate && PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() || cellState.date == lastDate && PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
-                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
+            if collectionCalendar.selectedDates.count == 1 {
+                currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: currentCell.frame.height / 2)
             } else if cellState.date == firstDate {
-                currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
-            } else if cellState.date == collectionCalendar.selectedDates.last ?? modifiedDate {
-                currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
-            } else if PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() {
-                currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
-            } else if PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
-                currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
+                if PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() {
+                    currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: currentCell.frame.height / 2)
+                } else {
+                    currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
+                }
+            } else if cellState.date == lastDate {
+                if PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
+                    currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: currentCell.frame.height / 2)
+                } else {
+                    currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
+                }
             } else {
-                currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: 0)
+                if PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() {
+                    currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
+                } else if PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
+                    currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
+                } else {
+                    currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: 0)
+                }
             }
-        }else{
-            currentCell.marginRightViewParent.constant = 3
-            currentCell.marginLeftViewParent.constant = 3
-            currentCell.marginTopViewParent.constant = 2
-            currentCell.marginBottomViewParent.constant = 2
-                        
+            
+//            if collectionCalendar.selectedDates.count == 1 {
+//                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
+//            } else if cellState.date == firstDate && PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() || cellState.date == firstDate && PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() && collectionCalendar.selectedDates.count > 2 {
+//                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
+//            } else if cellState.date == lastDate && PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() || cellState.date == lastDate && PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() && collectionCalendar.selectedDates.count > 2 {
+//                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
+//            } else if cellState.date == firstDate {
+//                currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
+//            } else if cellState.date == lastDate {
+//                currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
+//            } else if PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() {
+//                currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
+//            } else if PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
+//                currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
+//            } else {
+//                currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: 0)
+//            }
+        } else {
             currentCell.backgroundColor = UIColor.white
             currentCell.viewParent.backgroundColor = UIColor.white
             
@@ -116,8 +139,10 @@ extension BottomSheetTanggalVC: JTACMonthViewDataSource, JTACMonthViewDelegate {
             
             if cellState.dateBelongsTo == .thisMonth && cellState.date >= modifiedDate {
                 currentCell.labelTanggal.textColor = UIColor.black
+                currentCell.isUserInteractionEnabled = true
             } else {
                 currentCell.labelTanggal.textColor = UIColor.gray
+                currentCell.isUserInteractionEnabled = false
             }
         }
     }
@@ -136,8 +161,6 @@ extension BottomSheetTanggalVC: JTACMonthViewDataSource, JTACMonthViewDelegate {
     }
     
     func calendar(_ calendar: JTACMonthView, didSelectDate date: Date, cell: JTACDayCell?, cellState: CellState, indexPath: IndexPath) {
-        
-        //collectionCalendar.selectDates(from: PublicFunction.stringToDate(date: "2020-07-01", pattern: "yyyy-MM-dd"), to: PublicFunction.stringToDate(date: "2020-07-07", pattern: "yyyy-MM-dd"), triggerSelectionDelegate: true, keepSelectionIfMultiSelectionAllowed: true)
           
         let firstDate = collectionCalendar.selectedDates.first ?? Date()
         let lastDate = collectionCalendar.selectedDates.last ?? Date()
@@ -167,7 +190,7 @@ extension BottomSheetTanggalVC: JTACMonthViewDataSource, JTACMonthViewDelegate {
 
         let parameters = ConfigurationParameters(startDate: startDate,
                                 endDate: endDate,
-                                numberOfRows: 6,
+                                numberOfRows: 5,
                                 calendar: Calendar.current,
                                 generateInDates: .forAllMonths,
                                 generateOutDates: .tillEndOfRow,
