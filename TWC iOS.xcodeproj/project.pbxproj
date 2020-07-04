@@ -91,6 +91,16 @@
 		EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9590A322EBFB9000D696E5 /* Roboto-Medium.ttf */; };
 		EDC151FC23FE979400659A63 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9590A522EBFB9100D696E5 /* Roboto-Regular.ttf */; };
 		EDC151FD23FE979700659A63 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9590A422EBFB9000D696E5 /* Roboto-Bold.ttf */; };
+		EDC465E924B0AE1100F4CA39 /* RencanaPerjalananVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC465E724B0AE1100F4CA39 /* RencanaPerjalananVC.swift */; };
+		EDC465EA24B0AE1100F4CA39 /* RencanaPerjalananVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465E824B0AE1100F4CA39 /* RencanaPerjalananVC.xib */; };
+		EDC465F224B0C3A800F4CA39 /* WaktuPesertaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC465F024B0C3A800F4CA39 /* WaktuPesertaVC.swift */; };
+		EDC465F324B0C3A800F4CA39 /* WaktuPesertaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465F124B0C3A800F4CA39 /* WaktuPesertaVC.xib */; };
+		EDC465F624B0C3B700F4CA39 /* PembayaranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC465F424B0C3B700F4CA39 /* PembayaranVC.swift */; };
+		EDC465F724B0C3B700F4CA39 /* PembayaranVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465F524B0C3B700F4CA39 /* PembayaranVC.xib */; };
+		EDC465FA24B0C3C300F4CA39 /* RangkumanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC465F824B0C3C300F4CA39 /* RangkumanVC.swift */; };
+		EDC465FB24B0C3C300F4CA39 /* RangkumanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465F924B0C3C300F4CA39 /* RangkumanVC.xib */; };
+		EDC465FE24B0C3D000F4CA39 /* TujuanWisataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC465FC24B0C3D000F4CA39 /* TujuanWisataVC.swift */; };
+		EDC465FF24B0C3D000F4CA39 /* TujuanWisataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465FD24B0C3D000F4CA39 /* TujuanWisataVC.xib */; };
 		EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */; };
 		EDCA7AD324A6F89C007CD973 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */; };
 		EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */; };
@@ -200,6 +210,16 @@
 		EDBF21BC2300DBA6003F5DAF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		EDBF21BE2300DCEE003F5DAF /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		EDBF21C02301086A003F5DAF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EDC465E724B0AE1100F4CA39 /* RencanaPerjalananVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RencanaPerjalananVC.swift; sourceTree = "<group>"; };
+		EDC465E824B0AE1100F4CA39 /* RencanaPerjalananVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RencanaPerjalananVC.xib; sourceTree = "<group>"; };
+		EDC465F024B0C3A800F4CA39 /* WaktuPesertaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktuPesertaVC.swift; sourceTree = "<group>"; };
+		EDC465F124B0C3A800F4CA39 /* WaktuPesertaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaktuPesertaVC.xib; sourceTree = "<group>"; };
+		EDC465F424B0C3B700F4CA39 /* PembayaranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembayaranVC.swift; sourceTree = "<group>"; };
+		EDC465F524B0C3B700F4CA39 /* PembayaranVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PembayaranVC.xib; sourceTree = "<group>"; };
+		EDC465F824B0C3C300F4CA39 /* RangkumanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangkumanVC.swift; sourceTree = "<group>"; };
+		EDC465F924B0C3C300F4CA39 /* RangkumanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangkumanVC.xib; sourceTree = "<group>"; };
+		EDC465FC24B0C3D000F4CA39 /* TujuanWisataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujuanWisataVC.swift; sourceTree = "<group>"; };
+		EDC465FD24B0C3D000F4CA39 /* TujuanWisataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TujuanWisataVC.xib; sourceTree = "<group>"; };
 		EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
 		EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.ttf"; sourceTree = "<group>"; };
@@ -429,6 +449,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				EDC465E624B0ADFB00F4CA39 /* rencana_perjalanan */,
 				ED0AFFF524AF19DD0091AB39 /* bottom_sheet_peserta */,
 				ED3688A224AD5B8200AEC88A /* bottom_sheet_tanggal */,
 				ED1A383024A9685700110474 /* kotak_masuk */,
@@ -525,6 +546,55 @@
 				EDB6AC7A24A702F100457144 /* OnboardingItem.swift */,
 			);
 			path = onboarding;
+			sourceTree = "<group>";
+		};
+		EDC465E624B0ADFB00F4CA39 /* rencana_perjalanan */ = {
+			isa = PBXGroup;
+			children = (
+				EDC465EF24B0C39500F4CA39 /* waktu_peserta */,
+				EDC465EE24B0C37300F4CA39 /* pembayaran */,
+				EDC465ED24B0C36E00F4CA39 /* rangkuman */,
+				EDC465EC24B0C36600F4CA39 /* tujuan_wisata */,
+				EDC465E724B0AE1100F4CA39 /* RencanaPerjalananVC.swift */,
+				EDC465E824B0AE1100F4CA39 /* RencanaPerjalananVC.xib */,
+			);
+			path = rencana_perjalanan;
+			sourceTree = "<group>";
+		};
+		EDC465EC24B0C36600F4CA39 /* tujuan_wisata */ = {
+			isa = PBXGroup;
+			children = (
+				EDC465FC24B0C3D000F4CA39 /* TujuanWisataVC.swift */,
+				EDC465FD24B0C3D000F4CA39 /* TujuanWisataVC.xib */,
+			);
+			path = tujuan_wisata;
+			sourceTree = "<group>";
+		};
+		EDC465ED24B0C36E00F4CA39 /* rangkuman */ = {
+			isa = PBXGroup;
+			children = (
+				EDC465F824B0C3C300F4CA39 /* RangkumanVC.swift */,
+				EDC465F924B0C3C300F4CA39 /* RangkumanVC.xib */,
+			);
+			path = rangkuman;
+			sourceTree = "<group>";
+		};
+		EDC465EE24B0C37300F4CA39 /* pembayaran */ = {
+			isa = PBXGroup;
+			children = (
+				EDC465F424B0C3B700F4CA39 /* PembayaranVC.swift */,
+				EDC465F524B0C3B700F4CA39 /* PembayaranVC.xib */,
+			);
+			path = pembayaran;
+			sourceTree = "<group>";
+		};
+		EDC465EF24B0C39500F4CA39 /* waktu_peserta */ = {
+			isa = PBXGroup;
+			children = (
+				EDC465F024B0C3A800F4CA39 /* WaktuPesertaVC.swift */,
+				EDC465F124B0C3A800F4CA39 /* WaktuPesertaVC.xib */,
+			);
+			path = waktu_peserta;
 			sourceTree = "<group>";
 		};
 		EDCA7ACF24A6F877007CD973 /* onboarding */ = {
@@ -642,6 +712,7 @@
 			files = (
 				ED4C0131243DAB1200A1EB0A /* Poppins-Light.ttf in Resources */,
 				ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */,
+				EDC465FB24B0C3C300F4CA39 /* RangkumanVC.xib in Resources */,
 				EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */,
 				ED2A3EAD24A849C10040D24B /* Nunito-SemiBold.ttf in Resources */,
 				ED3688A624AD5B9D00AEC88A /* BottomSheetTanggalVC.xib in Resources */,
@@ -654,6 +725,8 @@
 				ED2A3EAB24A849C10040D24B /* Nunito-Medium.ttf in Resources */,
 				ED2A3EB224A849C10040D24B /* Nunito-Regular.ttf in Resources */,
 				ED4C0133243DAB1200A1EB0A /* Poppins-Black.ttf in Resources */,
+				EDC465F724B0C3B700F4CA39 /* PembayaranVC.xib in Resources */,
+				EDC465FF24B0C3D000F4CA39 /* TujuanWisataVC.xib in Resources */,
 				EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */,
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
 				ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */,
@@ -663,6 +736,7 @@
 				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
 				EDC151FD23FE979700659A63 /* Roboto-Bold.ttf in Resources */,
 				EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */,
+				EDC465F324B0C3A800F4CA39 /* WaktuPesertaVC.xib in Resources */,
 				ED507E9B243F8D130038CA6E /* LoginVC.xib in Resources */,
 				ED4C0134243DAB1200A1EB0A /* Poppins-Medium.ttf in Resources */,
 				ED2A3EA224A846510040D24B /* BottomSheetForgotPasswordVC.xib in Resources */,
@@ -679,6 +753,7 @@
 				ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */,
 				ED4C0130243DAB1200A1EB0A /* Poppins-ExtraBold.ttf in Resources */,
 				ED2A3EB024A849C10040D24B /* Nunito-ExtraBold.ttf in Resources */,
+				EDC465EA24B0AE1100F4CA39 /* RencanaPerjalananVC.xib in Resources */,
 				ED4C012E243DAB1200A1EB0A /* Poppins-Regular.ttf in Resources */,
 				EDC151FA23FE978F00659A63 /* Roboto-Light.ttf in Resources */,
 				EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */,
@@ -764,14 +839,17 @@
 				EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */,
 				ED95907E22EBE3C500D696E5 /* Preference.swift in Sources */,
 				ED4C0147243DDDBF00A1EB0A /* LoginVC.swift in Sources */,
+				EDC465F624B0C3B700F4CA39 /* PembayaranVC.swift in Sources */,
 				ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */,
 				ED858B0222F313FD00016EAD /* Networking.swift in Sources */,
 				EDBF21BB23005BDD003F5DAF /* CustomLabel.swift in Sources */,
 				EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */,
 				ED2A3EA124A846510040D24B /* BottomSheetForgotPasswordVC.swift in Sources */,
+				EDC465FE24B0C3D000F4CA39 /* TujuanWisataVC.swift in Sources */,
 				EDBF21BD2300DBA6003F5DAF /* CustomButton.swift in Sources */,
 				ED95909922EBF26E00D696E5 /* BaseViewController.swift in Sources */,
 				EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */,
+				EDC465F224B0C3A800F4CA39 /* WaktuPesertaVC.swift in Sources */,
 				EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */,
 				ED0AFFFB24AF219D0091AB39 /* BottomSheetPesertaVM.swift in Sources */,
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
@@ -784,6 +862,7 @@
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
+				EDC465FA24B0C3C300F4CA39 /* RangkumanVC.swift in Sources */,
 				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
 				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
@@ -795,6 +874,7 @@
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
 				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED507E99243F857D0038CA6E /* CustomView.swift in Sources */,
+				EDC465E924B0AE1100F4CA39 /* RencanaPerjalananVC.swift in Sources */,
 				EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */,
 				ED33541F244017E800656C25 /* ProfileVC.swift in Sources */,
 				ED335410244017B700656C25 /* BerandaVC.swift in Sources */,

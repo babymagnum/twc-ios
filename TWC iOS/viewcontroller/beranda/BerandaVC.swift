@@ -109,5 +109,6 @@ extension BerandaVC {
         showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
     }
     @IBAction func rencanakanPerjalananClick(_ sender: Any) {
+        navigationController?.pushViewController(RencanaPerjalananVC(), animated: true)
     }
 }
