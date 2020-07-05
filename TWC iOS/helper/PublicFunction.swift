@@ -618,6 +618,12 @@ extension String {
         return ceil(boundingBox.height)
     }
     
+    func getWidth(font: UIFont?) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = (self as NSString).size(withAttributes: fontAttributes)
+        return size.width
+    }
+    
     func trim() -> String{
         return self.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
     }

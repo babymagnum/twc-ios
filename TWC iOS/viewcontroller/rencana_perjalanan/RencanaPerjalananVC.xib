@@ -102,7 +102,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="7vv-T5-WHp" firstAttribute="leading" secondItem="b1A-cK-eJB" secondAttribute="leading" id="CAc-Ys-jx4"/>
                                         <constraint firstItem="clj-rC-MIS" firstAttribute="leading" secondItem="b1A-cK-eJB" secondAttribute="leading" id="CxJ-gu-pjr"/>
@@ -178,7 +178,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="aTV-0i-OHB" firstAttribute="leading" secondItem="rpB-7o-2on" secondAttribute="leading" id="Iwp-Hd-oSI"/>
                                         <constraint firstAttribute="trailing" secondItem="xNm-PU-Swz" secondAttribute="trailing" id="aj0-Br-UiM"/>
@@ -204,7 +204,7 @@
                                                 </view>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX2-tE-7Wm" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                                     <rect key="frame" x="32" y="0.0" width="30" height="30"/>
-                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="aX2-tE-7Wm" secondAttribute="height" multiplier="1:1" id="w86-qF-9cG"/>
                                                     </constraints>
@@ -254,7 +254,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="uVd-ac-lHa" secondAttribute="bottom" constant="9" id="0li-wW-56C"/>
                                         <constraint firstItem="zGE-dK-xMf" firstAttribute="leading" secondItem="Ioc-3K-f1E" secondAttribute="leading" id="1fI-fU-JYJ"/>
@@ -280,7 +280,7 @@
                                                 </view>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoV-5h-ruF" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                                     <rect key="frame" x="31.5" y="0.0" width="30" height="30"/>
-                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="QoV-5h-ruF" secondAttribute="height" multiplier="1:1" id="HJg-Kl-2In"/>
                                                     </constraints>
@@ -330,7 +330,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="83t-f8-xc5" secondAttribute="trailing" id="2XH-2f-YRH"/>
                                         <constraint firstItem="83t-f8-xc5" firstAttribute="leading" secondItem="yS1-Yk-psP" secondAttribute="leading" id="A86-d0-XYh"/>
