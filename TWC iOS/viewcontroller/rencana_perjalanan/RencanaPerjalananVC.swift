@@ -51,7 +51,7 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
     private func setupView() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.tintColor = UIColor.mediumGreen
-        self.title = "Lupa kata sandi"
+        self.title = "Rencana Perjalanan"
         self.containerView.isScrollEnabled = false
     }
     

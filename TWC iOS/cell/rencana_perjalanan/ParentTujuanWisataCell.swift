@@ -102,22 +102,35 @@ extension ParentTujuanWisataCell {
     @objc func buttonHapusClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionTujuanWisata.indexPathForItem(at: sender.location(in: collectionTujuanWisata)) else { return }
         
-        print("button hapus click \(indexPath.item)")
+        rencanaPerjalananVM.deleteTujuanWisata(tujuanWisata: listTujuanWisata[indexPath.item])
     }
     
     @objc func buttonMinClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionTujuanWisata.indexPathForItem(at: sender.location(in: collectionTujuanWisata)) else { return }
         
-        print("button min click \(indexPath.item)")
+        let oldItem = listTujuanWisata[indexPath.item]
+        
+        if oldItem.durasi == 1 {
+            self.makeToast("Minimal durasi adalah 1 jam")
+        } else {
+            var newItem = listTujuanWisata[indexPath.item]
+            newItem.durasi -= 1
+            
+            rencanaPerjalananVM.updateTujuanWisata(oldTujuanWisata: oldItem, newTujuanWisata: newItem)
+        }
     }
     
     @objc func buttonPlusClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionTujuanWisata.indexPathForItem(at: sender.location(in: collectionTujuanWisata)) else { return }
         
-        print("button plus click \(indexPath.item)")
+        let oldItem = listTujuanWisata[indexPath.item]
+        var newItem = listTujuanWisata[indexPath.item]
+        newItem.durasi += 1
+        
+        rencanaPerjalananVM.updateTujuanWisata(oldTujuanWisata: oldItem, newTujuanWisata: newItem)
     }
     
     @objc func viewTambahTujuanWisataClick() {
-        rencanaPerjalananVM.addTujuanWisata(tujuanWisata: TujuanWisataModel(id: rencanaPerjalananVM.listTujuanWisata.value.count + 1, name: "Candi Ijo", image: "https://4.bp.blogspot.com/-rXV48AAXKq4/VctwCBY4rKI/AAAAAAAAb-s/wLQCed7D18o/s1600/Candi%2BPrambanan.jpg", harga: "Rp 100.000", durasi: 1, hari: hari ?? 0))
+        rencanaPerjalananVM.addTujuanWisata(tujuanWisata: TujuanWisataModel(id: rencanaPerjalananVM.listTujuanWisataCounter.value, name: "Candi Ijo", image: "https://4.bp.blogspot.com/-rXV48AAXKq4/VctwCBY4rKI/AAAAAAAAb-s/wLQCed7D18o/s1600/Candi%2BPrambanan.jpg", harga: "Rp 100.000", durasi: 1, hari: hari ?? 0))
     }
 }

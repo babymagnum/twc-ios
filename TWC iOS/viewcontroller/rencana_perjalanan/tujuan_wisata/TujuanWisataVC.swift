@@ -22,8 +22,7 @@ class TujuanWisataVC: BaseViewController, IndicatorInfoProvider, UICollectionVie
     private var disposeBag = DisposeBag()
     @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     private var listHari = [
-        HariModel(name: "Hari 1", selected: true),
-        HariModel(name: "Hari 2", selected: false),
+        HariModel(name: "Hari 1", selected: true)
     ]
     
     override func viewDidLoad() {
@@ -84,6 +83,9 @@ extension TujuanWisataVC {
     }
     
     @IBAction func tambahHariClick(_ sender: Any) {
+        listHari.append(HariModel(name: "Hari \(listHari.count + 1)", selected: false))
+        collectionHari.reloadData()
+        collectionTujuanWisata.reloadData()
     }
     
     @objc func viewParentHariClick(sender: UITapGestureRecognizer) {
