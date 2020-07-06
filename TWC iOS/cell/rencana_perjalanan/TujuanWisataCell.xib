@@ -45,7 +45,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 100.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrX-b3-gqK" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                <rect key="frame" x="95" y="35.5" width="256" height="21.5"/>
+                                <rect key="frame" x="95" y="32.5" width="256" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTt-Pk-aDi">
-                                <rect key="frame" x="95" y="69" width="256" height="36"/>
+                                <rect key="frame" x="95" y="66" width="256" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Durasi (jam)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAc-ym-Q2h" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="209" height="12"/>
@@ -179,7 +179,7 @@
                             <constraint firstItem="uTt-Pk-aDi" firstAttribute="leading" secondItem="0RC-ah-BMS" secondAttribute="trailing" constant="10" id="RyT-pR-LDc"/>
                             <constraint firstItem="QTz-TQ-HIb" firstAttribute="top" secondItem="eVZ-Ik-eIe" secondAttribute="top" constant="10" id="WpA-7m-Jee"/>
                             <constraint firstAttribute="trailing" secondItem="QTz-TQ-HIb" secondAttribute="trailing" constant="24" id="mll-cG-cal"/>
-                            <constraint firstItem="LrX-b3-gqK" firstAttribute="top" secondItem="QTz-TQ-HIb" secondAttribute="bottom" constant="6" id="rls-cW-19W"/>
+                            <constraint firstItem="LrX-b3-gqK" firstAttribute="top" secondItem="QTz-TQ-HIb" secondAttribute="bottom" constant="3" id="rls-cW-19W"/>
                             <constraint firstItem="0RC-ah-BMS" firstAttribute="top" secondItem="eVZ-Ik-eIe" secondAttribute="top" constant="10" id="zdf-6l-5h5"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>

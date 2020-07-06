@@ -12,13 +12,6 @@ import RxSwift
 
 class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
 
-    @IBOutlet weak var collectionTujuanWisata: UICollectionView!
-    @IBOutlet weak var collectionTujuanWisataHeight: NSLayoutConstraint!
-    @IBOutlet weak var viewTambahTujuanWisata: CustomView!
-    @IBOutlet weak var viewEmpty: UIView!
-    @IBOutlet weak var viewEmptyHeight: NSLayoutConstraint!
-    @IBOutlet weak var collectionTujuanWisataMarginTop: NSLayoutConstraint!
-    
     var hari: Int? {
         didSet {
             if let _hari = hari {
@@ -26,15 +19,26 @@ class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
             }
         }
     }
+    var viewController: UIViewController?
+    var navigationController: UINavigationController?
+    
+    @IBOutlet weak var collectionTujuanWisata: UICollectionView!
+    @IBOutlet weak var collectionTujuanWisataHeight: NSLayoutConstraint!
+    @IBOutlet weak var viewTambahTujuanWisata: CustomView!
+    @IBOutlet weak var viewEmpty: UIView!
+    @IBOutlet weak var viewEmptyHeight: NSLayoutConstraint!
+    @IBOutlet weak var collectionTujuanWisataMarginTop: NSLayoutConstraint!
     
     private var disposeBag = DisposeBag()
-    var listTujuanWisata = [TujuanWisataModel]()
+    private var listTujuanWisata = [TujuanWisataModel]()
     @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     
     override func awakeFromNib() {
         super.awakeFromNib()                
         
         setupCollection()
+                        
+        observeData(hari: hari ?? 1)
         
         setupEvent()
     }
@@ -53,12 +57,13 @@ class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
             
             self.collectionTujuanWisata.reloadData()
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
                 UIView.animate(withDuration: 0.2) {
                     self.collectionTujuanWisataMarginTop.constant = self.listTujuanWisata.count == 0 ? 0 : 10
                     self.viewEmptyHeight.constant = self.listTujuanWisata.count == 0 ? 1000 : 0
                     self.viewEmpty.isHidden = self.listTujuanWisata.count > 0
                     self.collectionTujuanWisataHeight.constant = self.collectionTujuanWisata.contentSize.height
+                    self.layoutIfNeeded()
                 }
             }
         }).disposed(by: disposeBag)
@@ -99,10 +104,20 @@ extension ParentTujuanWisataCell: UICollectionViewDataSource, UICollectionViewDe
 }
 
 extension ParentTujuanWisataCell {
+    @objc func viewTambahTujuanWisataClick() {
+        let vc = PilihTujuanWisataVC()
+        vc.selectedHari = hari ?? 1
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @objc func buttonHapusClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionTujuanWisata.indexPathForItem(at: sender.location(in: collectionTujuanWisata)) else { return }
         
-        rencanaPerjalananVM.deleteTujuanWisata(tujuanWisata: listTujuanWisata[indexPath.item])
+        guard let _vc = viewController else { return }
+        
+        PublicFunction.showUnderstandDialog(_vc, listTujuanWisata[indexPath.item].name, "Anda yakin ingin menghapus \(listTujuanWisata[indexPath.item].name) dari tujuan wisata?", "Hapus", "Cancel") {
+            self.rencanaPerjalananVM.deleteTujuanWisata(tujuanWisata: self.listTujuanWisata[indexPath.item])
+        }
     }
     
     @objc func buttonMinClick(sender: UITapGestureRecognizer) {
@@ -128,9 +143,5 @@ extension ParentTujuanWisataCell {
         newItem.durasi += 1
         
         rencanaPerjalananVM.updateTujuanWisata(oldTujuanWisata: oldItem, newTujuanWisata: newItem)
-    }
-    
-    @objc func viewTambahTujuanWisataClick() {
-        rencanaPerjalananVM.addTujuanWisata(tujuanWisata: TujuanWisataModel(id: rencanaPerjalananVM.listTujuanWisataCounter.value, name: "Candi Ijo", image: "https://4.bp.blogspot.com/-rXV48AAXKq4/VctwCBY4rKI/AAAAAAAAb-s/wLQCed7D18o/s1600/Candi%2BPrambanan.jpg", harga: "Rp 100.000", durasi: 1, hari: hari ?? 0))
     }
 }

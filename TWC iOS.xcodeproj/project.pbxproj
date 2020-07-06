@@ -87,6 +87,12 @@
 		ED95909922EBF26E00D696E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95909822EBF26E00D696E5 /* BaseViewController.swift */; };
 		ED95909B22EBF4DC00D696E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED95909A22EBF4DC00D696E5 /* LaunchScreen.storyboard */; };
 		EDA919652440461F00354F77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDA919672440461F00354F77 /* Localizable.strings */; };
+		EDAF371924B2C53C00A27FF1 /* PilihTujuanWisataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF371724B2C53C00A27FF1 /* PilihTujuanWisataVC.swift */; };
+		EDAF371A24B2C53C00A27FF1 /* PilihTujuanWisataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAF371824B2C53C00A27FF1 /* PilihTujuanWisataVC.xib */; };
+		EDAF371E24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF371C24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift */; };
+		EDAF371F24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAF371D24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib */; };
+		EDAF372224B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */; };
+		EDAF372424B2D34D00A27FF1 /* PilihTujuanWisataVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF372324B2D34D00A27FF1 /* PilihTujuanWisataVM.swift */; };
 		EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB39326244471C2004BEC80 /* LoginVM.swift */; };
 		EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3932824447398004BEC80 /* BaseViewModel.swift */; };
 		EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6AC7524A7004F00457144 /* OnboardingCell.swift */; };
@@ -219,6 +225,12 @@
 		ED9590A622EBFB9100D696E5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		EDA919662440461F00354F77 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EDA919682440462300354F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EDAF371724B2C53C00A27FF1 /* PilihTujuanWisataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihTujuanWisataVC.swift; sourceTree = "<group>"; };
+		EDAF371824B2C53C00A27FF1 /* PilihTujuanWisataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PilihTujuanWisataVC.xib; sourceTree = "<group>"; };
+		EDAF371C24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihTujuanWisataCell.swift; sourceTree = "<group>"; };
+		EDAF371D24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PilihTujuanWisataCell.xib; sourceTree = "<group>"; };
+		EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanTujuanWisataModel.swift; sourceTree = "<group>"; };
+		EDAF372324B2D34D00A27FF1 /* PilihTujuanWisataVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihTujuanWisataVM.swift; sourceTree = "<group>"; };
 		EDB39326244471C2004BEC80 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		EDB3932824447398004BEC80 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		EDB6AC7524A7004F00457144 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
@@ -489,6 +501,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF371624B2C52600A27FF1 /* pilih_tujuan_wisata */,
 				EDC465E624B0ADFB00F4CA39 /* rencana_perjalanan */,
 				ED0AFFF524AF19DD0091AB39 /* bottom_sheet_peserta */,
 				ED3688A224AD5B8200AEC88A /* bottom_sheet_tanggal */,
@@ -513,6 +526,7 @@
 		ED95907A22EBE2AC00D696E5 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF372024B2D19900A27FF1 /* pilihan_tujuan_wisata */,
 				ED053AA624B1B401000FAE15 /* rencana_perjalanan */,
 				ED3B1CCC24AC675B0051DD71 /* beranda */,
 				EDB6AC7924A702D500457144 /* onboarding */,
@@ -565,12 +579,40 @@
 		ED95909C22EBF98400D696E5 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF371B24B2C94C00A27FF1 /* pilih_tujuan_wisata */,
 				ED053AA124B1B2F4000FAE15 /* rencana_perjalanan */,
 				ED3688A724AD68FA00AEC88A /* bottom_sheet_tanggal */,
 				ED3B1CC724AC557E0051DD71 /* beranda_cell */,
 				EDB6AC7424A7002500457144 /* onboarding_cell */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		EDAF371624B2C52600A27FF1 /* pilih_tujuan_wisata */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF371724B2C53C00A27FF1 /* PilihTujuanWisataVC.swift */,
+				EDAF371824B2C53C00A27FF1 /* PilihTujuanWisataVC.xib */,
+				EDAF372324B2D34D00A27FF1 /* PilihTujuanWisataVM.swift */,
+			);
+			path = pilih_tujuan_wisata;
+			sourceTree = "<group>";
+		};
+		EDAF371B24B2C94C00A27FF1 /* pilih_tujuan_wisata */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF371C24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift */,
+				EDAF371D24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib */,
+			);
+			path = pilih_tujuan_wisata;
+			sourceTree = "<group>";
+		};
+		EDAF372024B2D19900A27FF1 /* pilihan_tujuan_wisata */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */,
+			);
+			path = pilihan_tujuan_wisata;
 			sourceTree = "<group>";
 		};
 		EDB6AC7424A7002500457144 /* onboarding_cell */ = {
@@ -762,6 +804,7 @@
 				EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */,
 				ED2A3EAF24A849C10040D24B /* Nunito-Bold.ttf in Resources */,
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
+				EDAF371F24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib in Resources */,
 				ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */,
 				ED4C0132243DAB1200A1EB0A /* Poppins-SemiBold.ttf in Resources */,
 				ED3B1CD224AC68C80051DD71 /* PaketFavoriteImageCell.xib in Resources */,
@@ -782,6 +825,7 @@
 				ED053AA524B1B316000FAE15 /* HariCell.xib in Resources */,
 				EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */,
 				EDC465F324B0C3A800F4CA39 /* WaktuPesertaVC.xib in Resources */,
+				EDAF371A24B2C53C00A27FF1 /* PilihTujuanWisataVC.xib in Resources */,
 				ED507E9B243F8D130038CA6E /* LoginVC.xib in Resources */,
 				ED4C0134243DAB1200A1EB0A /* Poppins-Medium.ttf in Resources */,
 				ED2A3EA224A846510040D24B /* BottomSheetForgotPasswordVC.xib in Resources */,
@@ -898,6 +942,7 @@
 				EDC465F224B0C3A800F4CA39 /* WaktuPesertaVC.swift in Sources */,
 				EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */,
 				ED0AFFFB24AF219D0091AB39 /* BottomSheetPesertaVM.swift in Sources */,
+				EDAF371924B2C53C00A27FF1 /* PilihTujuanWisataVC.swift in Sources */,
 				ED053AAF24B1B92D000FAE15 /* TujuanWisataCell.swift in Sources */,
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
 				ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */,
@@ -908,6 +953,7 @@
 				ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */,
 				ED053AB424B1D1F8000FAE15 /* RencanaPerjalananVM.swift in Sources */,
 				ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */,
+				EDAF371E24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift in Sources */,
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
@@ -926,6 +972,7 @@
 				ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */,
 				ED507E99243F857D0038CA6E /* CustomView.swift in Sources */,
 				ED053AB224B1CC89000FAE15 /* TujuanWisataModel.swift in Sources */,
+				EDAF372224B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift in Sources */,
 				EDC465E924B0AE1100F4CA39 /* RencanaPerjalananVC.swift in Sources */,
 				EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */,
 				ED33541F244017E800656C25 /* ProfileVC.swift in Sources */,
@@ -933,6 +980,7 @@
 				ED8F239A23136B34005D700C /* BaseNetworking.swift in Sources */,
 				ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */,
 				ED0AFFF824AF19FA0091AB39 /* BottomSheetPeserta.swift in Sources */,
+				EDAF372424B2D34D00A27FF1 /* PilihTujuanWisataVM.swift in Sources */,
 				ED1A383324A9686900110474 /* PesananVC.swift in Sources */,
 				ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */,
 			);

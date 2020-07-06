@@ -58,7 +58,7 @@ tujuan wisata di hari terpilih</string>
                                             <constraint firstItem="4UK-k2-4Yn" firstAttribute="top" secondItem="Tk9-99-g3r" secondAttribute="bottom" constant="18" id="rDf-7T-wQM"/>
                                         </constraints>
                                     </view>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q3K-7j-Yqb">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3K-7j-Yqb">
                                         <rect key="frame" x="0.0" y="308.5" width="375" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>

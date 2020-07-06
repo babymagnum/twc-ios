@@ -342,7 +342,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.70881932218309862" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8Zw-h3-GC2"/>
                             </constraints>

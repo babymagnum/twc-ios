@@ -28,7 +28,13 @@ class TujuanWisataVC: BaseViewController, IndicatorInfoProvider, UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resetData()
+        
         setupCollection()
+    }
+    
+    private func resetData() {
+        rencanaPerjalananVM.listTujuanWisata.accept([TujuanWisataModel]())
     }
     
     private func setupCollection() {
@@ -64,6 +70,8 @@ extension TujuanWisataVC: UICollectionViewDataSource, UICollectionViewDelegateFl
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ParentTujuanWisataCell", for: indexPath) as! ParentTujuanWisataCell
             cell.hari = indexPath.item + 1
+            cell.viewController = self
+            cell.navigationController = self.navigationController
             return cell
         }
     }
