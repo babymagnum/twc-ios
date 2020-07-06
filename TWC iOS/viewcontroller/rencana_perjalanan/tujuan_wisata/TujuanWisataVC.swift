@@ -88,6 +88,7 @@ extension TujuanWisataVC: UICollectionViewDataSource, UICollectionViewDelegateFl
 
 extension TujuanWisataVC {
     @IBAction func selanjutnyaClick(_ sender: Any) {
+        rencanaPerjalananVM.generateRencanaPerjalanan()
     }
     
     @IBAction func tambahHariClick(_ sender: Any) {

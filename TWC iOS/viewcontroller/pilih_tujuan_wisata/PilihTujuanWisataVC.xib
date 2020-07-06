@@ -71,7 +71,6 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstItem="bii-JJ-HZl" firstAttribute="leading" secondItem="xGk-iA-AfS" secondAttribute="trailing" constant="10" id="GNY-SW-2de"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ISh-7T-zoh"/>
@@ -151,7 +150,6 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstItem="mNP-tJ-zbd" firstAttribute="leading" secondItem="5Tz-bh-XwE" secondAttribute="trailing" constant="10" id="HUG-Wk-LPv"/>
                                                         <constraint firstAttribute="trailing" secondItem="mNP-tJ-zbd" secondAttribute="trailing" id="PRc-2J-KRD"/>
@@ -164,7 +162,7 @@
                                                 </view>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="A75-en-HoG">
                                                     <rect key="frame" x="0.0" y="62.5" width="375" height="81.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="81.5" id="7bF-Fr-Z1d"/>
                                                     </constraints>
@@ -229,7 +227,6 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstItem="ZE1-AO-6pF" firstAttribute="leading" secondItem="qbG-gw-hRA" secondAttribute="leading" id="FNE-Tm-BF7"/>
                                                         <constraint firstItem="Lhc-07-nFZ" firstAttribute="centerY" secondItem="qbG-gw-hRA" secondAttribute="centerY" id="dWE-0h-iL0"/>
@@ -242,7 +239,7 @@
                                                 </view>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-uV-dA2">
                                                     <rect key="frame" x="0.0" y="62.5" width="375" height="81.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="81.5" id="fji-hU-qFp"/>
                                                     </constraints>

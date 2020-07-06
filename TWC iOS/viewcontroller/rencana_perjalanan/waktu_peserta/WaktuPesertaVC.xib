@@ -10,6 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaktuPesertaVC" customModule="Taman_Wisata_Candi" customModuleProvider="target">
             <connections>
+                <outlet property="imageCalendar" destination="h9g-iM-WaD" id="SqR-KV-Wm7"/>
+                <outlet property="labelAnak" destination="SBZ-r8-SMn" id="3CO-Pl-Vcl"/>
+                <outlet property="labelDewasa" destination="CyZ-VL-X5V" id="NmK-VN-7jQ"/>
+                <outlet property="labelHarga" destination="KMv-ca-Nuk" id="qi1-kQ-YAV"/>
+                <outlet property="labelHari" destination="fuO-bV-adw" id="5ph-Cu-lXk"/>
+                <outlet property="labelTanggalMulai" destination="2O1-8z-eRO" id="kzW-Zr-iNG"/>
+                <outlet property="labelTanggalSelesai" destination="Ocd-cd-tzt" id="qvs-gt-nVq"/>
+                <outlet property="labelTempat" destination="DQE-Mi-oxH" id="yAd-6M-qNq"/>
+                <outlet property="labelTotalTempat" destination="n5T-Dd-jNG" id="xL5-ZS-MBz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +27,527 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waktu Peserta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNW-Ax-mWN">
-                    <rect key="frame" x="131.5" y="323" width="112" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QF7-4Z-Ie4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-Lw-N1L">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-0b-QqF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Db-Aw-dPF" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="24" width="327" height="128"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 tempat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5T-Dd-jNG" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                    <rect key="frame" x="17" y="12" width="293" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQE-Mi-oxH" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                    <rect key="frame" x="17" y="40" width="293" height="38.5"/>
+                                                    <string key="text">Candi Ratu Boko, Candi Prambanan,
+Candi Ijo</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mP-hb-sKB">
+                                                    <rect key="frame" x="17" y="92.5" width="293" height="19.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarToday" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-iM-WaD">
+                                                            <rect key="frame" x="0.0" y="2" width="16" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="h9g-iM-WaD" secondAttribute="height" multiplier="1:1" id="SIz-LN-E27"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuO-bV-adw" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                            <rect key="frame" x="18" y="2.5" width="179.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Rp 240.000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMv-ca-Nuk" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                            <rect key="frame" x="207.5" y="0.0" width="85.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                    <real key="value" value="16"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="KMv-ca-Nuk" firstAttribute="leading" secondItem="fuO-bV-adw" secondAttribute="trailing" constant="10" id="0U5-4s-CMO"/>
+                                                        <constraint firstItem="fuO-bV-adw" firstAttribute="centerY" secondItem="1mP-hb-sKB" secondAttribute="centerY" id="3Mc-8M-Ne2"/>
+                                                        <constraint firstItem="fuO-bV-adw" firstAttribute="leading" secondItem="h9g-iM-WaD" secondAttribute="trailing" constant="2" id="CX5-rQ-wky"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KMv-ca-Nuk" secondAttribute="bottom" id="DLd-vi-FKi"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KMv-ca-Nuk" secondAttribute="trailing" id="P2s-bd-am2"/>
+                                                        <constraint firstItem="h9g-iM-WaD" firstAttribute="leading" secondItem="1mP-hb-sKB" secondAttribute="leading" id="a5q-LB-zZ7"/>
+                                                        <constraint firstItem="h9g-iM-WaD" firstAttribute="centerY" secondItem="1mP-hb-sKB" secondAttribute="centerY" id="ptv-rG-I24"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="rCT-99-Szs"/>
+                                                        <constraint firstItem="KMv-ca-Nuk" firstAttribute="top" secondItem="1mP-hb-sKB" secondAttribute="top" id="sMF-25-ZD3"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="DQE-Mi-oxH" firstAttribute="leading" secondItem="2Db-Aw-dPF" secondAttribute="leading" constant="17" id="1Yr-zm-fzj"/>
+                                                <constraint firstItem="n5T-Dd-jNG" firstAttribute="leading" secondItem="2Db-Aw-dPF" secondAttribute="leading" constant="17" id="GQp-oE-bUl"/>
+                                                <constraint firstItem="DQE-Mi-oxH" firstAttribute="top" secondItem="n5T-Dd-jNG" secondAttribute="bottom" constant="11" id="L06-Jn-9e7"/>
+                                                <constraint firstItem="1mP-hb-sKB" firstAttribute="leading" secondItem="2Db-Aw-dPF" secondAttribute="leading" constant="17" id="Nqh-og-bou"/>
+                                                <constraint firstItem="n5T-Dd-jNG" firstAttribute="top" secondItem="2Db-Aw-dPF" secondAttribute="top" constant="12" id="SlN-df-odg"/>
+                                                <constraint firstAttribute="trailing" secondItem="n5T-Dd-jNG" secondAttribute="trailing" constant="17" id="fu3-fu-NBx"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="jbp-9m-RmI"/>
+                                                <constraint firstAttribute="trailing" secondItem="1mP-hb-sKB" secondAttribute="trailing" constant="17" id="nO4-6J-Ggg"/>
+                                                <constraint firstItem="1mP-hb-sKB" firstAttribute="top" secondItem="DQE-Mi-oxH" secondAttribute="bottom" constant="14" id="sL8-rD-wfu"/>
+                                                <constraint firstAttribute="trailing" secondItem="DQE-Mi-oxH" secondAttribute="trailing" constant="17" id="tG8-Mu-yap"/>
+                                                <constraint firstAttribute="bottom" secondItem="1mP-hb-sKB" secondAttribute="bottom" constant="16" id="ytM-ha-AqJ"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waktu dan peserta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az5-No-ZKX" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="176" width="327" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Aa-TG-Jmx" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="211.5" width="327" height="164"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="puo-F7-7VT">
+                                                    <rect key="frame" x="16" y="17" width="295" height="51"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhx-Bk-Gio">
+                                                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="51"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarToday" translatesAutoresizingMaskIntoConstraints="NO" id="6xP-zv-kwU">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="6xP-zv-kwU" secondAttribute="height" multiplier="1:1" id="nLh-bT-Vc4"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanggal mulai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDf-Vj-gqI" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                    <rect key="frame" x="20" y="1" width="117.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                            <real key="value" value="12"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O1-8z-eRO" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="18" width="137.5" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="nqw-pj-YOk"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="Kam, 13 Jan 2020">
+                                                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoR-3n-JB2">
+                                                                    <rect key="frame" x="0.0" y="50" width="137.5" height="1"/>
+                                                                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="neg-6K-hm3"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="2O1-8z-eRO" firstAttribute="top" secondItem="6xP-zv-kwU" secondAttribute="bottom" constant="2" id="1Ta-q0-loV"/>
+                                                                <constraint firstItem="rDf-Vj-gqI" firstAttribute="leading" secondItem="6xP-zv-kwU" secondAttribute="trailing" constant="4" id="5rA-Lk-1nZ"/>
+                                                                <constraint firstItem="6xP-zv-kwU" firstAttribute="leading" secondItem="dhx-Bk-Gio" secondAttribute="leading" id="N7G-Yl-bR5"/>
+                                                                <constraint firstAttribute="trailing" secondItem="2O1-8z-eRO" secondAttribute="trailing" id="VI2-Yu-7rK"/>
+                                                                <constraint firstItem="rDf-Vj-gqI" firstAttribute="top" secondItem="dhx-Bk-Gio" secondAttribute="top" constant="1" id="WwK-7E-r7L"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="b4q-V0-O7I"/>
+                                                                <constraint firstItem="6xP-zv-kwU" firstAttribute="top" secondItem="dhx-Bk-Gio" secondAttribute="top" id="fNa-b5-sSc"/>
+                                                                <constraint firstAttribute="trailing" secondItem="rDf-Vj-gqI" secondAttribute="trailing" id="g7e-4s-YPd"/>
+                                                                <constraint firstAttribute="trailing" secondItem="NoR-3n-JB2" secondAttribute="trailing" id="gUA-Jv-1q0"/>
+                                                                <constraint firstAttribute="bottom" secondItem="NoR-3n-JB2" secondAttribute="bottom" id="gta-Rd-F8W"/>
+                                                                <constraint firstItem="NoR-3n-JB2" firstAttribute="top" secondItem="2O1-8z-eRO" secondAttribute="bottom" constant="2" id="lTa-Eg-Sti"/>
+                                                                <constraint firstItem="NoR-3n-JB2" firstAttribute="leading" secondItem="dhx-Bk-Gio" secondAttribute="leading" id="ua7-lo-f35"/>
+                                                                <constraint firstItem="2O1-8z-eRO" firstAttribute="leading" secondItem="dhx-Bk-Gio" secondAttribute="leading" id="zyn-Pj-sgI"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khi-zZ-RBN">
+                                                            <rect key="frame" x="157.5" y="0.0" width="137.5" height="51"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarToday" translatesAutoresizingMaskIntoConstraints="NO" id="ISD-h1-SmL">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="ISD-h1-SmL" secondAttribute="height" multiplier="1:1" id="9Hr-Qh-S72"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanggal selesai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA0-16-KFz" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                    <rect key="frame" x="20" y="1" width="117.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                            <real key="value" value="12"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-cd-tzt" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="18" width="137.5" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="v6W-jC-7hE"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="Kam, 13 Jan 2020">
+                                                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chD-uC-Z0D">
+                                                                    <rect key="frame" x="0.0" y="50" width="137.5" height="1"/>
+                                                                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="AtY-kX-IFA"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="BA0-16-KFz" firstAttribute="top" secondItem="khi-zZ-RBN" secondAttribute="top" constant="1" id="1qf-zz-ohe"/>
+                                                                <constraint firstAttribute="trailing" secondItem="chD-uC-Z0D" secondAttribute="trailing" id="5Go-kK-M80"/>
+                                                                <constraint firstItem="chD-uC-Z0D" firstAttribute="leading" secondItem="khi-zZ-RBN" secondAttribute="leading" id="AKJ-5v-xyG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Ocd-cd-tzt" secondAttribute="trailing" id="FG8-YP-Itr"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="HNn-Nd-OpI"/>
+                                                                <constraint firstAttribute="bottom" secondItem="chD-uC-Z0D" secondAttribute="bottom" id="Nti-eM-EF2"/>
+                                                                <constraint firstItem="ISD-h1-SmL" firstAttribute="top" secondItem="khi-zZ-RBN" secondAttribute="top" id="Y52-iy-eRP"/>
+                                                                <constraint firstItem="Ocd-cd-tzt" firstAttribute="leading" secondItem="khi-zZ-RBN" secondAttribute="leading" id="agC-CW-Bbe"/>
+                                                                <constraint firstItem="ISD-h1-SmL" firstAttribute="leading" secondItem="khi-zZ-RBN" secondAttribute="leading" id="bp7-kS-z1I"/>
+                                                                <constraint firstItem="BA0-16-KFz" firstAttribute="leading" secondItem="ISD-h1-SmL" secondAttribute="trailing" constant="4" id="dVT-hh-Zlp"/>
+                                                                <constraint firstItem="chD-uC-Z0D" firstAttribute="top" secondItem="Ocd-cd-tzt" secondAttribute="bottom" constant="2" id="j61-b9-4H5"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BA0-16-KFz" secondAttribute="trailing" id="l1G-KZ-vm0"/>
+                                                                <constraint firstItem="Ocd-cd-tzt" firstAttribute="top" secondItem="ISD-h1-SmL" secondAttribute="bottom" constant="2" id="zdc-Nj-w1l"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="sNk-ix-0wy"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gbp-Ta-RD1">
+                                                    <rect key="frame" x="16" y="88" width="295" height="51"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hr-SA-qmv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="51"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2z-Pz-lk6">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="14.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Dewasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-zL-gOT" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="44.5" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                                    <real key="value" value="12"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="751" text="(12+ tahun)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvI-tb-iEQ" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                            <rect key="frame" x="52.5" y="0.0" width="46" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="KbN-zL-gOT" secondAttribute="bottom" id="GlR-Bf-aGr"/>
+                                                                        <constraint firstItem="KbN-zL-gOT" firstAttribute="leading" secondItem="P2z-Pz-lk6" secondAttribute="leading" id="KI9-28-zEy"/>
+                                                                        <constraint firstItem="KbN-zL-gOT" firstAttribute="top" secondItem="P2z-Pz-lk6" secondAttribute="top" id="UGy-oC-7l5"/>
+                                                                        <constraint firstItem="KbN-zL-gOT" firstAttribute="leading" secondItem="P2z-Pz-lk6" secondAttribute="leading" id="cgz-h7-S5E"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="uvI-tb-iEQ" secondAttribute="bottom" id="exa-8R-5ub"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uvI-tb-iEQ" secondAttribute="trailing" id="ey2-ts-NDZ"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="q5v-B8-qho"/>
+                                                                        <constraint firstItem="uvI-tb-iEQ" firstAttribute="leading" secondItem="KbN-zL-gOT" secondAttribute="trailing" constant="8" id="rf1-YY-6Md"/>
+                                                                        <constraint firstItem="uvI-tb-iEQ" firstAttribute="top" secondItem="P2z-Pz-lk6" secondAttribute="top" id="xYh-3W-ZHM"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyZ-VL-X5V" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="14.5" width="137.5" height="33.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="pim-nw-ux4"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="2 dewasa">
+                                                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSz-EJ-gW4">
+                                                                    <rect key="frame" x="0.0" y="50" width="137.5" height="1"/>
+                                                                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="ZVG-bo-Zzk"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="P2z-Pz-lk6" firstAttribute="leading" secondItem="4Hr-SA-qmv" secondAttribute="leading" id="11D-kM-DW3"/>
+                                                                <constraint firstAttribute="trailing" secondItem="cSz-EJ-gW4" secondAttribute="trailing" id="1Py-zA-Tvh"/>
+                                                                <constraint firstAttribute="trailing" secondItem="CyZ-VL-X5V" secondAttribute="trailing" id="4gL-Qr-gn6"/>
+                                                                <constraint firstAttribute="bottom" secondItem="cSz-EJ-gW4" secondAttribute="bottom" id="DGH-RX-SkX"/>
+                                                                <constraint firstItem="cSz-EJ-gW4" firstAttribute="top" secondItem="CyZ-VL-X5V" secondAttribute="bottom" constant="2" id="JoB-3l-xV0"/>
+                                                                <constraint firstItem="CyZ-VL-X5V" firstAttribute="top" secondItem="P2z-Pz-lk6" secondAttribute="bottom" id="KDs-yA-Vfm"/>
+                                                                <constraint firstItem="cSz-EJ-gW4" firstAttribute="leading" secondItem="4Hr-SA-qmv" secondAttribute="leading" id="MSE-dB-mLF"/>
+                                                                <constraint firstItem="CyZ-VL-X5V" firstAttribute="leading" secondItem="4Hr-SA-qmv" secondAttribute="leading" id="VFa-F6-9AW"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="YRi-ZB-j1x"/>
+                                                                <constraint firstItem="P2z-Pz-lk6" firstAttribute="top" secondItem="4Hr-SA-qmv" secondAttribute="top" id="gGs-ZC-TCB"/>
+                                                                <constraint firstAttribute="trailing" secondItem="P2z-Pz-lk6" secondAttribute="trailing" id="q5A-cj-bbU"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jQ-bF-Nmd">
+                                                            <rect key="frame" x="157.5" y="0.0" width="137.5" height="51"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9m-8Q-ECS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="14.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Anak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RI-to-d0d" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="28.5" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                                    <real key="value" value="12"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="751" text="(3-11 tahun)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGq-hl-4sO" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                            <rect key="frame" x="36.5" y="0.0" width="48.5" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qGq-hl-4sO" secondAttribute="trailing" id="5Io-dU-0KF"/>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="HBl-Ks-WsN"/>
+                                                                        <constraint firstItem="5RI-to-d0d" firstAttribute="leading" secondItem="u9m-8Q-ECS" secondAttribute="leading" id="Kjv-Ht-mxc"/>
+                                                                        <constraint firstItem="5RI-to-d0d" firstAttribute="top" secondItem="u9m-8Q-ECS" secondAttribute="top" id="R2i-02-sed"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="qGq-hl-4sO" secondAttribute="bottom" id="RPm-e4-FjP"/>
+                                                                        <constraint firstItem="qGq-hl-4sO" firstAttribute="leading" secondItem="5RI-to-d0d" secondAttribute="trailing" constant="8" id="Ssw-gQ-vE8"/>
+                                                                        <constraint firstItem="qGq-hl-4sO" firstAttribute="top" secondItem="u9m-8Q-ECS" secondAttribute="top" id="g5r-Im-1cO"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="5RI-to-d0d" secondAttribute="bottom" id="wUu-i5-oiB"/>
+                                                                        <constraint firstItem="5RI-to-d0d" firstAttribute="leading" secondItem="u9m-8Q-ECS" secondAttribute="leading" id="zFF-Ed-Kwk"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-r8-SMn" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="14.5" width="137.5" height="33.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="hZn-Po-AEK"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="1 anak">
+                                                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4S-vC-XGI">
+                                                                    <rect key="frame" x="0.0" y="50" width="137.5" height="1"/>
+                                                                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="SXg-uD-xOO"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="u9m-8Q-ECS" secondAttribute="trailing" id="FTd-9E-tQk"/>
+                                                                <constraint firstItem="SBZ-r8-SMn" firstAttribute="leading" secondItem="4jQ-bF-Nmd" secondAttribute="leading" id="MZ7-f0-hDX"/>
+                                                                <constraint firstItem="q4S-vC-XGI" firstAttribute="leading" secondItem="4jQ-bF-Nmd" secondAttribute="leading" id="OL9-gE-XKs"/>
+                                                                <constraint firstAttribute="trailing" secondItem="q4S-vC-XGI" secondAttribute="trailing" id="P0o-NQ-i0r"/>
+                                                                <constraint firstItem="SBZ-r8-SMn" firstAttribute="top" secondItem="u9m-8Q-ECS" secondAttribute="bottom" id="aSu-1j-Wsl"/>
+                                                                <constraint firstItem="q4S-vC-XGI" firstAttribute="top" secondItem="SBZ-r8-SMn" secondAttribute="bottom" constant="2" id="bVl-Eg-OYF"/>
+                                                                <constraint firstItem="u9m-8Q-ECS" firstAttribute="leading" secondItem="4jQ-bF-Nmd" secondAttribute="leading" id="dax-cd-w3G"/>
+                                                                <constraint firstItem="u9m-8Q-ECS" firstAttribute="top" secondItem="4jQ-bF-Nmd" secondAttribute="top" id="qlr-xi-19F"/>
+                                                                <constraint firstAttribute="trailing" secondItem="SBZ-r8-SMn" secondAttribute="trailing" id="rJ8-Ct-4ln"/>
+                                                                <constraint firstAttribute="bottom" secondItem="q4S-vC-XGI" secondAttribute="bottom" id="sTO-XS-5uh"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="xt4-ud-KcD"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cyA-Re-Opr"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Gbp-Ta-RD1" firstAttribute="top" secondItem="puo-F7-7VT" secondAttribute="bottom" constant="20" id="1eU-Yv-c2v"/>
+                                                <constraint firstItem="Gbp-Ta-RD1" firstAttribute="leading" secondItem="3Aa-TG-Jmx" secondAttribute="leading" constant="16" id="6lH-hW-8ZJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gbp-Ta-RD1" secondAttribute="trailing" constant="16" id="8s0-HV-3TP"/>
+                                                <constraint firstAttribute="trailing" secondItem="puo-F7-7VT" secondAttribute="trailing" constant="16" id="eYY-ai-mvY"/>
+                                                <constraint firstItem="puo-F7-7VT" firstAttribute="leading" secondItem="3Aa-TG-Jmx" secondAttribute="leading" constant="16" id="iMz-aT-Kd3"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gbp-Ta-RD1" secondAttribute="bottom" constant="25" id="kT9-1h-9Zo"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="nV6-mH-gwm"/>
+                                                <constraint firstItem="puo-F7-7VT" firstAttribute="top" secondItem="3Aa-TG-Jmx" secondAttribute="top" constant="17" id="zOz-8k-tkW"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWz-vm-EOg" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="463.5" width="327" height="56"/>
+                                            <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                                            <state key="normal" title="Selanjutnya">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                    <real key="value" value="14"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="selanjutnyaClick:" destination="-1" eventType="touchUpInside" id="hV6-Pj-1lf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="az5-No-ZKX" firstAttribute="top" secondItem="2Db-Aw-dPF" secondAttribute="bottom" constant="24" id="0Fb-2J-b2h"/>
+                                        <constraint firstAttribute="trailing" secondItem="AWz-vm-EOg" secondAttribute="trailing" constant="24" id="72V-Ld-dLI"/>
+                                        <constraint firstItem="2Db-Aw-dPF" firstAttribute="top" secondItem="LS0-0b-QqF" secondAttribute="top" constant="24" id="783-6s-RBz"/>
+                                        <constraint firstItem="3Aa-TG-Jmx" firstAttribute="leading" secondItem="LS0-0b-QqF" secondAttribute="leading" constant="24" id="7s5-0t-3Fa"/>
+                                        <constraint firstAttribute="trailing" secondItem="az5-No-ZKX" secondAttribute="trailing" constant="24" id="E3x-c4-bof"/>
+                                        <constraint firstItem="2Db-Aw-dPF" firstAttribute="leading" secondItem="LS0-0b-QqF" secondAttribute="leading" constant="24" id="EBJ-2a-fgh"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Aa-TG-Jmx" secondAttribute="trailing" constant="24" id="Yy8-Jm-3df"/>
+                                        <constraint firstItem="AWz-vm-EOg" firstAttribute="top" secondItem="3Aa-TG-Jmx" secondAttribute="bottom" constant="88" id="deM-Yw-CKU" customClass="CustomMargin" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="multi">
+                                                    <real key="value" value="0.23499999999999999"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </constraint>
+                                        <constraint firstItem="3Aa-TG-Jmx" firstAttribute="top" secondItem="az5-No-ZKX" secondAttribute="bottom" constant="16" id="kvd-nt-jDa"/>
+                                        <constraint firstAttribute="trailing" secondItem="2Db-Aw-dPF" secondAttribute="trailing" constant="24" id="lFZ-zb-Qu2"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AWz-vm-EOg" secondAttribute="bottom" constant="20" id="oDH-ou-JcK"/>
+                                        <constraint firstItem="az5-No-ZKX" firstAttribute="leading" secondItem="LS0-0b-QqF" secondAttribute="leading" constant="24" id="xlD-Y5-ee4"/>
+                                        <constraint firstItem="AWz-vm-EOg" firstAttribute="leading" secondItem="LS0-0b-QqF" secondAttribute="leading" constant="24" id="z8I-yp-efH"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="LS0-0b-QqF" firstAttribute="leading" secondItem="7Ns-Lw-N1L" secondAttribute="leading" id="2tj-4U-SMf"/>
+                                <constraint firstItem="LS0-0b-QqF" firstAttribute="height" secondItem="7Ns-Lw-N1L" secondAttribute="height" priority="250" id="C7F-ob-gkH"/>
+                                <constraint firstAttribute="trailing" secondItem="LS0-0b-QqF" secondAttribute="trailing" id="IWc-dd-Ima"/>
+                                <constraint firstItem="LS0-0b-QqF" firstAttribute="width" secondItem="7Ns-Lw-N1L" secondAttribute="width" id="hxw-1Z-0IE"/>
+                                <constraint firstAttribute="bottom" secondItem="LS0-0b-QqF" secondAttribute="bottom" id="l5m-Bz-Zmn"/>
+                                <constraint firstItem="LS0-0b-QqF" firstAttribute="top" secondItem="7Ns-Lw-N1L" secondAttribute="top" id="skr-Lg-R4y"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="7Ns-Lw-N1L" firstAttribute="leading" secondItem="QF7-4Z-Ie4" secondAttribute="leading" id="712-Df-wBu"/>
+                        <constraint firstAttribute="bottom" secondItem="7Ns-Lw-N1L" secondAttribute="bottom" id="RQ2-nZ-iff"/>
+                        <constraint firstItem="7Ns-Lw-N1L" firstAttribute="top" secondItem="QF7-4Z-Ie4" secondAttribute="top" id="aPy-gy-tKE"/>
+                        <constraint firstAttribute="trailing" secondItem="7Ns-Lw-N1L" secondAttribute="trailing" id="yUV-RR-Sap"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="jNW-Ax-mWN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qow-na-ghP"/>
-                <constraint firstItem="jNW-Ax-mWN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eHH-Ls-3CB"/>
+                <constraint firstItem="QF7-4Z-Ie4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5bs-jx-KKq"/>
+                <constraint firstItem="QF7-4Z-Ie4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZB0-zh-XnT"/>
+                <constraint firstItem="h9g-iM-WaD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0426667" id="fqn-wl-zQk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QF7-4Z-Ie4" secondAttribute="trailing" id="uVc-tB-Aln"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QF7-4Z-Ie4" secondAttribute="bottom" id="wxV-dC-HfW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="110" y="154"/>
+            <point key="canvasLocation" x="109.59999999999999" y="152.47376311844079"/>
         </view>
     </objects>
+    <resources>
+        <image name="calendarToday" width="16" height="16"/>
+    </resources>
 </document>

@@ -11,12 +11,10 @@
 		ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */; };
 		ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AA224B1B316000FAE15 /* HariCell.swift */; };
 		ED053AA524B1B316000FAE15 /* HariCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED053AA324B1B316000FAE15 /* HariCell.xib */; };
-		ED053AA824B1B412000FAE15 /* HariModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AA724B1B412000FAE15 /* HariModel.swift */; };
 		ED053AAB24B1B4B6000FAE15 /* ParentTujuanWisataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AA924B1B4B6000FAE15 /* ParentTujuanWisataCell.swift */; };
 		ED053AAC24B1B4B6000FAE15 /* ParentTujuanWisataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED053AAA24B1B4B6000FAE15 /* ParentTujuanWisataCell.xib */; };
 		ED053AAF24B1B92D000FAE15 /* TujuanWisataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AAD24B1B92D000FAE15 /* TujuanWisataCell.swift */; };
 		ED053AB024B1B92D000FAE15 /* TujuanWisataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED053AAE24B1B92D000FAE15 /* TujuanWisataCell.xib */; };
-		ED053AB224B1CC89000FAE15 /* TujuanWisataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AB124B1CC89000FAE15 /* TujuanWisataModel.swift */; };
 		ED053AB424B1D1F8000FAE15 /* RencanaPerjalananVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AB324B1D1F8000FAE15 /* RencanaPerjalananVM.swift */; };
 		ED0AFFF824AF19FA0091AB39 /* BottomSheetPeserta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */; };
 		ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */; };
@@ -48,6 +46,13 @@
 		ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3353DF243FF4EF00656C25 /* CustomMargin.swift */; };
 		ED335410244017B700656C25 /* BerandaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33540E244017B700656C25 /* BerandaVC.swift */; };
 		ED33541F244017E800656C25 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33541D244017E700656C25 /* ProfileVC.swift */; };
+		ED3620FF24B3312800307602 /* RencanaPerjalananCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3620FD24B3312800307602 /* RencanaPerjalananCell.swift */; };
+		ED36210024B3312800307602 /* RencanaPerjalananCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3620FE24B3312800307602 /* RencanaPerjalananCell.xib */; };
+		ED36210424B3337400307602 /* RencanaPerjalananModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36210324B3337400307602 /* RencanaPerjalananModel.swift */; };
+		ED36210924B3340B00307602 /* RencanaPerjalananTempatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36210724B3340B00307602 /* RencanaPerjalananTempatCell.swift */; };
+		ED36210A24B3340B00307602 /* RencanaPerjalananTempatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED36210824B3340B00307602 /* RencanaPerjalananTempatCell.xib */; };
+		ED36210D24B3425000307602 /* DataPesertaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36210B24B3425000307602 /* DataPesertaCell.swift */; };
+		ED36210E24B3425000307602 /* DataPesertaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED36210C24B3425000307602 /* DataPesertaCell.xib */; };
 		ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3688A324AD5B9D00AEC88A /* BottomSheetTanggalVC.swift */; };
 		ED3688A624AD5B9D00AEC88A /* BottomSheetTanggalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */; };
 		ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3688A824AD691500AEC88A /* TanggalCell.swift */; };
@@ -138,12 +143,10 @@
 		ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED053AA224B1B316000FAE15 /* HariCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HariCell.swift; sourceTree = "<group>"; };
 		ED053AA324B1B316000FAE15 /* HariCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HariCell.xib; sourceTree = "<group>"; };
-		ED053AA724B1B412000FAE15 /* HariModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HariModel.swift; sourceTree = "<group>"; };
 		ED053AA924B1B4B6000FAE15 /* ParentTujuanWisataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTujuanWisataCell.swift; sourceTree = "<group>"; };
 		ED053AAA24B1B4B6000FAE15 /* ParentTujuanWisataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParentTujuanWisataCell.xib; sourceTree = "<group>"; };
 		ED053AAD24B1B92D000FAE15 /* TujuanWisataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujuanWisataCell.swift; sourceTree = "<group>"; };
 		ED053AAE24B1B92D000FAE15 /* TujuanWisataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TujuanWisataCell.xib; sourceTree = "<group>"; };
-		ED053AB124B1CC89000FAE15 /* TujuanWisataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujuanWisataModel.swift; sourceTree = "<group>"; };
 		ED053AB324B1D1F8000FAE15 /* RencanaPerjalananVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RencanaPerjalananVM.swift; sourceTree = "<group>"; };
 		ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPeserta.swift; sourceTree = "<group>"; };
 		ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetPeserta.xib; sourceTree = "<group>"; };
@@ -177,6 +180,13 @@
 		ED3353DF243FF4EF00656C25 /* CustomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMargin.swift; sourceTree = "<group>"; };
 		ED33540E244017B700656C25 /* BerandaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVC.swift; sourceTree = "<group>"; };
 		ED33541D244017E700656C25 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		ED3620FD24B3312800307602 /* RencanaPerjalananCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RencanaPerjalananCell.swift; sourceTree = "<group>"; };
+		ED3620FE24B3312800307602 /* RencanaPerjalananCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RencanaPerjalananCell.xib; sourceTree = "<group>"; };
+		ED36210324B3337400307602 /* RencanaPerjalananModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RencanaPerjalananModel.swift; sourceTree = "<group>"; };
+		ED36210724B3340B00307602 /* RencanaPerjalananTempatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RencanaPerjalananTempatCell.swift; sourceTree = "<group>"; };
+		ED36210824B3340B00307602 /* RencanaPerjalananTempatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RencanaPerjalananTempatCell.xib; sourceTree = "<group>"; };
+		ED36210B24B3425000307602 /* DataPesertaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPesertaCell.swift; sourceTree = "<group>"; };
+		ED36210C24B3425000307602 /* DataPesertaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPesertaCell.xib; sourceTree = "<group>"; };
 		ED3688A324AD5B9D00AEC88A /* BottomSheetTanggalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTanggalVC.swift; sourceTree = "<group>"; };
 		ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTanggalVC.xib; sourceTree = "<group>"; };
 		ED3688A824AD691500AEC88A /* TanggalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanggalCell.swift; sourceTree = "<group>"; };
@@ -309,6 +319,12 @@
 				ED053AAA24B1B4B6000FAE15 /* ParentTujuanWisataCell.xib */,
 				ED053AAD24B1B92D000FAE15 /* TujuanWisataCell.swift */,
 				ED053AAE24B1B92D000FAE15 /* TujuanWisataCell.xib */,
+				ED3620FD24B3312800307602 /* RencanaPerjalananCell.swift */,
+				ED3620FE24B3312800307602 /* RencanaPerjalananCell.xib */,
+				ED36210724B3340B00307602 /* RencanaPerjalananTempatCell.swift */,
+				ED36210824B3340B00307602 /* RencanaPerjalananTempatCell.xib */,
+				ED36210B24B3425000307602 /* DataPesertaCell.swift */,
+				ED36210C24B3425000307602 /* DataPesertaCell.xib */,
 			);
 			path = rencana_perjalanan;
 			sourceTree = "<group>";
@@ -316,8 +332,7 @@
 		ED053AA624B1B401000FAE15 /* rencana_perjalanan */ = {
 			isa = PBXGroup;
 			children = (
-				ED053AA724B1B412000FAE15 /* HariModel.swift */,
-				ED053AB124B1CC89000FAE15 /* TujuanWisataModel.swift */,
+				ED36210324B3337400307602 /* RencanaPerjalananModel.swift */,
 			);
 			path = rencana_perjalanan;
 			sourceTree = "<group>";
@@ -813,7 +828,9 @@
 				ED2A3EB224A849C10040D24B /* Nunito-Regular.ttf in Resources */,
 				ED4C0133243DAB1200A1EB0A /* Poppins-Black.ttf in Resources */,
 				EDC465F724B0C3B700F4CA39 /* PembayaranVC.xib in Resources */,
+				ED36210024B3312800307602 /* RencanaPerjalananCell.xib in Resources */,
 				EDC465FF24B0C3D000F4CA39 /* TujuanWisataVC.xib in Resources */,
+				ED36210E24B3425000307602 /* DataPesertaCell.xib in Resources */,
 				EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */,
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
 				ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */,
@@ -838,6 +855,7 @@
 				ED3688AB24AD691500AEC88A /* TanggalCell.xib in Resources */,
 				EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */,
 				ED95909522EBEE9300D696E5 /* SplashController.xib in Resources */,
+				ED36210A24B3340B00307602 /* RencanaPerjalananTempatCell.xib in Resources */,
 				ED2A3EB124A849C10040D24B /* Nunito-Black.ttf in Resources */,
 				ED95906D22EBDF3300D696E5 /* Main.storyboard in Resources */,
 				ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */,
@@ -945,10 +963,10 @@
 				EDAF371924B2C53C00A27FF1 /* PilihTujuanWisataVC.swift in Sources */,
 				ED053AAF24B1B92D000FAE15 /* TujuanWisataCell.swift in Sources */,
 				EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */,
+				ED36210D24B3425000307602 /* DataPesertaCell.swift in Sources */,
 				ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */,
 				ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */,
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
-				ED053AA824B1B412000FAE15 /* HariModel.swift in Sources */,
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
 				ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */,
 				ED053AB424B1D1F8000FAE15 /* RencanaPerjalananVM.swift in Sources */,
@@ -960,6 +978,7 @@
 				ED053AAB24B1B4B6000FAE15 /* ParentTujuanWisataCell.swift in Sources */,
 				EDC465FA24B0C3C300F4CA39 /* RangkumanVC.swift in Sources */,
 				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
+				ED36210924B3340B00307602 /* RencanaPerjalananTempatCell.swift in Sources */,
 				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
 				ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */,
@@ -967,11 +986,11 @@
 				ED4C014D243DE8FE00A1EB0A /* HomeVC.swift in Sources */,
 				ED95906822EBDF3300D696E5 /* AppDelegate.swift in Sources */,
 				ED95908022EBE77B00D696E5 /* Constant.swift in Sources */,
+				ED3620FF24B3312800307602 /* RencanaPerjalananCell.swift in Sources */,
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
 				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */,
 				ED507E99243F857D0038CA6E /* CustomView.swift in Sources */,
-				ED053AB224B1CC89000FAE15 /* TujuanWisataModel.swift in Sources */,
 				EDAF372224B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift in Sources */,
 				EDC465E924B0AE1100F4CA39 /* RencanaPerjalananVC.swift in Sources */,
 				EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */,
@@ -983,6 +1002,7 @@
 				EDAF372424B2D34D00A27FF1 /* PilihTujuanWisataVM.swift in Sources */,
 				ED1A383324A9686900110474 /* PesananVC.swift in Sources */,
 				ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */,
+				ED36210424B3337400307602 /* RencanaPerjalananModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

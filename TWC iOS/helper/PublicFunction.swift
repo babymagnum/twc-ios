@@ -212,6 +212,14 @@ class PublicFunction {
         return Int64(Date().timeIntervalSince1970 * 1000)
     }
     
+    static func getPatternDate(pattern: String) -> Date {
+        let date = getStringDate(pattern: pattern)
+        let dateformatter = DateFormatter()
+        dateformatter.locale = getLocale()
+        dateformatter.dateFormat = pattern
+        return dateformatter.date(from: date == "" ? getStringDate(pattern: pattern) : date) ?? Date()
+    }
+    
     static func stringToDate(date: String, pattern: String) -> Date {
         let dateformatter = DateFormatter()
         dateformatter.locale = getLocale()

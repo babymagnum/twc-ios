@@ -8,28 +8,29 @@
 
 import UIKit
 import XLPagerTabStrip
+import RxSwift
+import DIKit
 
 class WaktuPesertaVC: BaseViewController, IndicatorInfoProvider {
-
+    
+    @IBOutlet weak var labelTotalTempat: CustomLabel!
+    @IBOutlet weak var labelTempat: CustomLabel!
+    @IBOutlet weak var labelHari: CustomLabel!
+    @IBOutlet weak var imageCalendar: UIImageView!
+    @IBOutlet weak var labelHarga: CustomLabel!
+    @IBOutlet weak var labelTanggalMulai: CustomButton!
+    @IBOutlet weak var labelTanggalSelesai: CustomButton!
+    @IBOutlet weak var labelDewasa: CustomButton!
+    @IBOutlet weak var labelAnak: CustomButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "Waktu Peserta")
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func selanjutnyaClick(_ sender: Any) {
     }
-    */
-
 }
