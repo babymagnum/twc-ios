@@ -11,13 +11,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RencanaPerjalananVC" customModule="Taman_Wisata_Candi" customModuleProvider="target">
             <connections>
                 <outlet property="barViewHeight" destination="hDm-km-YgH" id="6kb-mc-uM2"/>
-                <outlet property="button3" destination="aX2-tE-7Wm" id="6tl-Z0-8mw"/>
-                <outlet property="button4" destination="QoV-5h-ruF" id="uSJ-9s-3kB"/>
+                <outlet property="button2" destination="JLL-u7-cj2" id="dQe-kT-Vz8"/>
+                <outlet property="button3" destination="aX2-tE-7Wm" id="nVx-QY-uzd"/>
+                <outlet property="button4" destination="QoV-5h-ruF" id="5UP-p4-PF6"/>
                 <outlet property="buttonBarView" destination="vhc-Xz-VUa" id="KZ1-SJ-frx"/>
                 <outlet property="containerView" destination="Nfn-kg-r1q" id="OFa-1I-aPY"/>
+                <outlet property="labelView2" destination="aTV-0i-OHB" id="MmG-Ko-EJG"/>
+                <outlet property="labelView3" destination="uVd-ac-lHa" id="eEK-Ip-Whe"/>
+                <outlet property="labelView4" destination="4l4-dW-H87" id="crh-DG-ach"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="raB-n1-aKr"/>
                 <outlet property="view1" destination="b1A-cK-eJB" id="2oy-be-1eY"/>
+                <outlet property="view1Right" destination="xm6-Z5-DzH" id="3yG-py-6wH"/>
                 <outlet property="view2" destination="rpB-7o-2on" id="Cci-wu-vV8"/>
+                <outlet property="view2Left" destination="7ML-e0-w3a" id="i0R-GD-3Vr"/>
                 <outlet property="view2Right" destination="LR4-NO-4Z4" id="wMG-Qw-ymB"/>
                 <outlet property="view3" destination="Ioc-3K-f1E" id="FbG-av-Wwh"/>
                 <outlet property="view3Left" destination="Z5P-jM-vmK" id="Omq-EA-d1L"/>
@@ -70,7 +76,7 @@
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xm6-Z5-DzH">
                                                     <rect key="frame" x="62" y="14" width="32" height="2"/>
-                                                    <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="FQg-kG-Kmg"/>
                                                     </constraints>
@@ -121,14 +127,14 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ML-e0-w3a">
                                                     <rect key="frame" x="0.0" y="14" width="31.5" height="2"/>
-                                                    <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="9Uw-MC-loZ"/>
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLL-u7-cj2" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                                     <rect key="frame" x="31.5" y="0.0" width="30" height="30"/>
-                                                    <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="JLL-u7-cj2" secondAttribute="height" multiplier="1:1" id="yuN-1O-dI9"/>
                                                     </constraints>
@@ -146,7 +152,7 @@
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LR4-NO-4Z4">
                                                     <rect key="frame" x="61.5" y="14" width="32" height="2"/>
-                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="KdU-91-hme"/>
                                                     </constraints>
@@ -168,7 +174,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waktu peserta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aTV-0i-OHB" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="44" width="93.5" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
@@ -197,7 +203,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5P-jM-vmK">
                                                     <rect key="frame" x="0.0" y="14" width="32" height="2"/>
-                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="cMY-YI-q4D"/>
                                                     </constraints>
@@ -222,7 +228,7 @@
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-KG-pyu">
                                                     <rect key="frame" x="62" y="14" width="32" height="2"/>
-                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="ZO3-XL-JfQ"/>
                                                     </constraints>
@@ -244,7 +250,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rangkuman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-ac-lHa" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="44" width="94" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
@@ -273,7 +279,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adJ-mW-jc2">
                                                     <rect key="frame" x="0.0" y="14" width="31.5" height="2"/>
-                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="hhp-Se-TDl"/>
                                                     </constraints>
@@ -320,7 +326,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pembayaran" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4l4-dW-H87" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="44" width="93.5" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>

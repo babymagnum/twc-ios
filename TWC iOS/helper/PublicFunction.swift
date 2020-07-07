@@ -344,7 +344,7 @@ class PublicFunction {
             break
         }
         
-        return result
+        return "Rp \(result)"
     }
 }
 

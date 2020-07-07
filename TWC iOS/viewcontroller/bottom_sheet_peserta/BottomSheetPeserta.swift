@@ -14,17 +14,17 @@ class BottomSheetPeserta: BaseViewController, UIPickerViewDelegate {
     @IBOutlet weak var pickerViewDewasa: UIPickerView!
     @IBOutlet weak var pickerViewAnak: UIPickerView!
     
-    @Inject private var bottomSheetPesertaVM: BottomSheetPesertaVM
+    @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     
     lazy var listAnak : [Int] = {
         var list = [Int]()
-        for index in 1...20 { list.append(index) }
+        for index in 0...20 { list.append(index) }
         return list
     }()
     
     lazy var listDewasa : [Int] = {
         var list = [Int]()
-        for index in 1...20 { list.append(index) }
+        for index in 0...20 { list.append(index) }
         return list
     }()
     
@@ -41,8 +41,8 @@ class BottomSheetPeserta: BaseViewController, UIPickerViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let indexAnak = self.listAnak.firstIndex(of: self.bottomSheetPesertaVM.jumlahAnak.value) ?? 0
-        let indexDewasa = self.listDewasa.firstIndex(of: self.bottomSheetPesertaVM.jumlahDewasa.value) ?? 0
+        let indexAnak = self.listAnak.firstIndex(of: self.rencanaPerjalananVM.pesertaAnak.value) ?? 0
+        let indexDewasa = self.listDewasa.firstIndex(of: self.rencanaPerjalananVM.pesertaDewasa.value) ?? 0
         self.pickerViewAnak.selectRow(indexAnak, inComponent: 0, animated: true)
         self.pickerViewDewasa.selectRow(indexDewasa, inComponent: 0, animated: true)
     }
@@ -96,17 +96,10 @@ extension BottomSheetPeserta: UIPickerViewDataSource {
         if (picker == pickerViewDewasa) {
             // for multi array -> multiArray[component][row]
             // for single array -> singleArray[row]
-            bottomSheetPesertaVM.jumlahDewasa.accept(listDewasa[row])
+            rencanaPerjalananVM.pesertaDewasa.accept(listDewasa[row])
         } else {
-            bottomSheetPesertaVM.jumlahAnak.accept(listAnak[row])
+            rencanaPerjalananVM.pesertaAnak.accept(listAnak[row])
         }
         
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-//            if picker == self.pickerViewDewasa {
-//                self.pickerViewDewasa.reloadAllComponents()
-//            } else {
-//                self.pickerViewAnak.reloadAllComponents()
-//            }
-//        }
     }
 }

@@ -17,6 +17,7 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
     @IBOutlet weak var collectionRencanaPerjalananHeight: NSLayoutConstraint!
     @IBOutlet weak var viewSimpanPaketFavorite: UIView!
     @IBOutlet weak var labelObjekWisata: CustomLabel!
+    @IBOutlet weak var labelPeserta: CustomLabel!
     @IBOutlet weak var labelTotalPeserta: CustomLabel!
     @IBOutlet weak var labelDiskon: CustomLabel!
     @IBOutlet weak var labelTotal: CustomLabel!
@@ -47,6 +48,7 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
         }).disposed(by: disposeBag)
         
         rencanaPerjalananVM.listDataPeserta.subscribe(onNext: { value in
+            self.labelPeserta.text = "Total (x\(value.count) peserta)"
             self.collectionDataPeserta.reloadData()
             
             DispatchQueue.main.asyncAfter(deadline: .now()) {
@@ -55,6 +57,17 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
                     self.view.layoutIfNeeded()
                 }
             }
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.listTujuanWisata.subscribe(onNext: { value in
+            var hargaTiket = 0
+            var totalPeserta = self.rencanaPerjalananVM.listDataPeserta.value.count
+            
+            value.forEach { item in hargaTiket += item.harga }
+            
+            self.labelObjekWisata.text = PublicFunction.prettyRupiah("\(hargaTiket)")
+            self.labelTotalPeserta.text = PublicFunction.prettyRupiah("\(hargaTiket * totalPeserta)")
+            self.labelTotal.text = PublicFunction.prettyRupiah("\(hargaTiket * totalPeserta)")
         }).disposed(by: disposeBag)
     }
     
@@ -132,31 +145,12 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
                     }
                 }
                 
-//                if itemBefore is RencanaPerjalananHariModel && itemAfter is RencanaPerjalananHariModel {
-//                    cell.viewLineTop.isHidden = true
-//                    cell.viewLineBot.isHidden = true
-//                } else if itemBefore is RencanaPerjalananHariModel {
-//                    cell.viewLineTop.isHidden = true
-//                    cell.viewLineBot.isHidden = false
-//                } else if itemAfter != nil && itemAfter is RencanaPerjalananHariModel {
-//                    cell.viewLineBot.isHidden = true
-//                    cell.viewLineTop.isHidden = false
-//                } else if itemBefore is RencanaPerjalananHariModel && itemAfter == nil {
-//                    cell.viewLineTop.isHidden = true
-//                    cell.viewLineBot.isHidden = true
-//                } else if itemBefore is RencanaPerjalananTempatModel && itemAfter == nil {
-//                    cell.viewLineTop.isHidden = false
-//                    cell.viewLineBot.isHidden = true
-//                } else {
-//                    cell.viewLineTop.isHidden = false
-//                    cell.viewLineBot.isHidden = false
-//                }
-                
                 return cell
             }
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DataPesertaCell", for: indexPath) as! DataPesertaCell
             cell.item = rencanaPerjalananVM.listDataPeserta.value[indexPath.item]
+            cell.viewDivider.isHidden = indexPath.item == rencanaPerjalananVM.listDataPeserta.value.count - 1
             return cell
         }
     }

@@ -16,6 +16,7 @@
                 <outlet property="collectionRencanaPerjalananHeight" destination="mBw-FR-8SP" id="jdy-ay-cO7"/>
                 <outlet property="labelDiskon" destination="gbc-ME-j3z" id="Kw6-0W-tJF"/>
                 <outlet property="labelObjekWisata" destination="OUF-mZ-KGc" id="6gN-vB-NgQ"/>
+                <outlet property="labelPeserta" destination="Xwn-pd-Q4l" id="Qeq-5h-iR1"/>
                 <outlet property="labelTotal" destination="QFr-rB-HGp" id="yd1-2f-2DY"/>
                 <outlet property="labelTotalPeserta" destination="TJm-3q-oEX" id="Siu-ff-OYt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -394,7 +395,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="iyc-tb-9Oa"/>
                                                     </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UMj-5I-j7g">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="UMj-5I-j7g">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

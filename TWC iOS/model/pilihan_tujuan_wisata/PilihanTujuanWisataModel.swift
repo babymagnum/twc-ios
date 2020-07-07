@@ -11,6 +11,6 @@ import Foundation
 struct PilihanTujuanWisataModel {
     var nama: String
     var durasi: Int
-    var harga: String
+    var harga: Int
     var image: String
 }

@@ -15,6 +15,23 @@ class RencanaPerjalananVM: BaseViewModel {
     var listTujuanWisata = BehaviorRelay(value: [TujuanWisataModel]())
     var listRencanaPerjalanan = BehaviorRelay(value: [Any]())
     var listDataPeserta = BehaviorRelay(value: [DataPesertaModel]())
+    var pesertaDewasa = BehaviorRelay(value: 0)
+    var pesertaAnak = BehaviorRelay(value: 0)
+    var selectedDates = BehaviorRelay(value: [Date()])
+    var currentRencanaPerjalananPage = BehaviorRelay(value: 0)
+    var maxRencanaPerjalananPage = BehaviorRelay(value: 0)
+    
+    func resetAllData() {
+        listTujuanWisataCounter.accept(0)
+        listTujuanWisata.accept([TujuanWisataModel]())
+        listRencanaPerjalanan.accept([Any]())
+        listDataPeserta.accept([DataPesertaModel]())
+        pesertaDewasa.accept(0)
+        pesertaAnak.accept(0)
+        selectedDates.accept([Date()])
+        currentRencanaPerjalananPage.accept(0)
+        maxRencanaPerjalananPage.accept(0)
+    }
     
     func addTujuanWisata(tujuanWisata: TujuanWisataModel) {
         var list = listTujuanWisata.value
@@ -41,14 +58,31 @@ class RencanaPerjalananVM: BaseViewModel {
         listTujuanWisata.accept(list)
     }
     
+    func generateDataPeserta() {
+        var _listDataPeserta = [DataPesertaModel]()
+        
+        for index in 0...pesertaDewasa.value - 1 {
+            _listDataPeserta.append(DataPesertaModel(nama: "Dewasa \(index + 1)", peserta: "Lengkapi data peserta", typePeserta: "", nik: "", isKontak: false))
+        }
+        
+        if pesertaAnak.value > 0 {
+            for index in 0...pesertaAnak.value - 1 {
+                _listDataPeserta.append(DataPesertaModel(nama: "Anak \(index + 1)", peserta: "Lengkapi data peserta", typePeserta: "", nik: "", isKontak: false))
+            }
+        }
+        
+        listDataPeserta.accept(_listDataPeserta)
+    }
+    
     func generateRencanaPerjalanan() {
         var list = listTujuanWisata.value
         var _listRencanaPerjalanan = [Any]()
-        var firstDate = Date()
         
         list.sort { (item1, item2) -> Bool in
             return item1.hari < item2.hari
         }
+        
+        var firstDate = selectedDates.value.first ?? Date()
         
         for (index, item) in list.enumerated() {
             if index == 0 {

@@ -17,7 +17,7 @@ struct TujuanWisataModel {
     var id: Int
     var name: String
     var image: String
-    var harga: String
+    var harga: Int
     var durasi: Int
     var hari: Int
 }
@@ -30,7 +30,7 @@ struct RencanaPerjalananHariModel {
 struct RencanaPerjalananTempatModel {
     var nama: String
     var durasi: Int
-    var harga: String
+    var harga: Int
 }
 
 struct DataPesertaModel {

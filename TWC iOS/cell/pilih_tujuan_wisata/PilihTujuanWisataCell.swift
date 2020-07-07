@@ -22,7 +22,7 @@ class PilihTujuanWisataCell: UICollectionViewCell {
                 image.loadUrl(_item.image)
                 labelNama.text = _item.nama
                 labelDurasi.setTitle("Estimasi: \(_item.durasi) jam", for: .normal)
-                labelHarga.text = _item.harga
+                labelHarga.text = PublicFunction.prettyRupiah("\(_item.harga)")
             }
         }
     }

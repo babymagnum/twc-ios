@@ -21,8 +21,10 @@ class BerandaVC: BaseViewController, UICollectionViewDelegate {
     @IBOutlet weak var buttonDewasa: CustomButton!
     @IBOutlet weak var buttonAnak: CustomButton!
     @IBOutlet weak var collectionPaketFavorit: UICollectionView!
+    @IBOutlet weak var loadingPaketFavorite: UIActivityIndicatorView!
     
     @Inject private var berandaVM: BerandaVM
+    @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     private var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -37,11 +39,31 @@ class BerandaVC: BaseViewController, UICollectionViewDelegate {
         berandaVM.getPaketFavorite()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        observeData()
+    }
+    
     private func observeData() {
+        rencanaPerjalananVM.pesertaDewasa.subscribe(onNext: { value in
+            self.buttonDewasa.setTitle("\(value) dewasa", for: .normal)
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.pesertaAnak.subscribe(onNext: { value in
+            self.buttonAnak.setTitle("\(value) anak", for: .normal)
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.selectedDates.subscribe(onNext: { value in
+            self.buttonTanggalMulai.setTitle(PublicFunction.dateToString(value.first ?? Date(), "EEE, dd MMM yyyy"), for: .normal)
+            self.buttonTanggalSelesai.setTitle(PublicFunction.dateToString(value.last ?? Date(), "EEE, dd MMM yyyy"), for: .normal)
+        }).disposed(by: disposeBag)
+        
         berandaVM.listPaketFavorite.subscribe(onNext: { value in
             self.collectionPaketFavorit.reloadData()
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                self.loadingPaketFavorite.isHidden = value.count > 0
                 self.collectionPaketFavoriteHeight.constant = self.collectionPaketFavorit.contentSize.height
             }
         }).disposed(by: disposeBag)
@@ -96,19 +118,30 @@ extension BerandaVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
 extension BerandaVC {
     @IBAction func selengkapnyaClick(_ sender: Any) {
     }
+    
     @IBAction func anakClick(_ sender: Any) {
         showBottomSheet(vc: BottomSheetPeserta(), handleColor: UIColor.clear, height: screenHeight * 0.6)
     }
+    
     @IBAction func dewasaClick(_ sender: Any) {
         showBottomSheet(vc: BottomSheetPeserta(), handleColor: UIColor.clear, height: screenHeight * 0.6)
     }
+    
     @IBAction func tanggalSelesaiClick(_ sender: Any) {
         showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
     }
+    
     @IBAction func tanggalMulaiClick(_ sender: Any) {
         showBottomSheet(vc: BottomSheetTanggalVC(), handleColor: UIColor.clear, height: screenHeight * 0.85)
     }
+    
     @IBAction func rencanakanPerjalananClick(_ sender: Any) {
-        navigationController?.pushViewController(RencanaPerjalananVC(), animated: true)
+        let pesertaDewasa = rencanaPerjalananVM.pesertaDewasa.value
+        
+        if pesertaDewasa == 0 {
+            self.view.makeToast("Minimal perjalanan adalah untuk 1 orang dewasa.")
+        } else {
+            navigationController?.pushViewController(RencanaPerjalananVC(), animated: true)
+        }
     }
 }

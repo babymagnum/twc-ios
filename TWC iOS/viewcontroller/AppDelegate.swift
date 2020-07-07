@@ -71,7 +71,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             single { BerandaVM() }
             single { LoginVM() }
             single { HomeVM() }
-            single { BottomSheetPesertaVM() }
             single { RencanaPerjalananVM() }
             single { PilihTujuanWisataVM() }
         })

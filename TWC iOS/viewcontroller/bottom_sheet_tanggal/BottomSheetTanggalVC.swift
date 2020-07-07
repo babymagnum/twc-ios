@@ -8,6 +8,7 @@
 
 import UIKit
 import JTAppleCalendar
+import DIKit
 
 class BottomSheetTanggalVC: BaseViewController {
     
@@ -16,6 +17,7 @@ class BottomSheetTanggalVC: BaseViewController {
     @IBOutlet weak var labelFullDate: CustomLabel!
     @IBOutlet weak var collectionCalendar: JTACMonthView!
     
+    @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     private let formatter = DateFormatter()
     private var isFirstTimeOpen = true
     
@@ -38,6 +40,9 @@ class BottomSheetTanggalVC: BaseViewController {
         collectionCalendar.allowsMultipleSelection = true
         collectionCalendar.minimumLineSpacing = 0
         collectionCalendar.minimumInteritemSpacing = 0
+        
+        collectionCalendar.selectDates(rencanaPerjalananVM.selectedDates.value)
+        collectionCalendar.reloadDates(collectionCalendar.selectedDates)
     }
     
     override func viewDidLayoutSubviews() {
@@ -114,23 +119,6 @@ extension BottomSheetTanggalVC: JTACMonthViewDataSource, JTACMonthViewDelegate {
                 }
             }
             
-//            if collectionCalendar.selectedDates.count == 1 {
-//                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
-//            } else if cellState.date == firstDate && PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() || cellState.date == firstDate && PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() && collectionCalendar.selectedDates.count > 2 {
-//                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
-//            } else if cellState.date == lastDate && PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() || cellState.date == lastDate && PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() && collectionCalendar.selectedDates.count > 2 {
-//                currentCell.roundCorners([.topLeft, .bottomLeft, .topRight, .bottomRight], radius: currentCell.frame.height / 2)
-//            } else if cellState.date == firstDate {
-//                currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
-//            } else if cellState.date == lastDate {
-//                currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
-//            } else if PublicFunction.dateToString(cellState.date, "EEEE") == "saturday".localize() {
-//                currentCell.roundCorners([.topRight, .bottomRight], radius: currentCell.frame.height / 2)
-//            } else if PublicFunction.dateToString(cellState.date, "EEEE") == "sunday".localize() {
-//                currentCell.roundCorners([.topLeft, .bottomLeft], radius: currentCell.frame.height / 2)
-//            } else {
-//                currentCell.roundCorners([.topRight, .topLeft, .bottomRight, .bottomLeft], radius: 0)
-//            }
         } else {
             currentCell.backgroundColor = UIColor.white
             currentCell.viewParent.backgroundColor = UIColor.white
@@ -168,6 +156,7 @@ extension BottomSheetTanggalVC: JTACMonthViewDataSource, JTACMonthViewDelegate {
         collectionCalendar.selectDates(from: firstDate, to: lastDate, triggerSelectionDelegate: true, keepSelectionIfMultiSelectionAllowed: true)
         
         collectionCalendar.reloadDates(collectionCalendar.selectedDates)
+        rencanaPerjalananVM.selectedDates.accept(collectionCalendar.selectedDates)
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.configureCell(cell: cell, cellState: cellState)
         }

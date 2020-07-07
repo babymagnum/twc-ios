@@ -17,14 +17,21 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var button2: CustomButton!
     @IBOutlet weak var button3: CustomButton!
+    @IBOutlet weak var button4: CustomButton!
+    @IBOutlet weak var view1Right: UIView!
+    @IBOutlet weak var view2Left: UIView!
     @IBOutlet weak var view2Right: UIView!
     @IBOutlet weak var view3Left: UIView!
     @IBOutlet weak var view3Right: UIView!
     @IBOutlet weak var view4Left: UIView!
-    @IBOutlet weak var button4: CustomButton!
     @IBOutlet weak var barViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var labelView2: CustomLabel!
+    @IBOutlet weak var labelView3: CustomLabel!
+    @IBOutlet weak var labelView4: CustomLabel!
     
+    @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     private var disposeBag = DisposeBag()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,11 +41,40 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad()        
+        
         setupView()
         
         setupEvent()
+        
+        observeData()
+    }
+    
+    private func observeData() {
+        rencanaPerjalananVM.currentRencanaPerjalananPage.subscribe(onNext: { value in
+            self.moveToViewController(at: value, animated: true)
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.maxRencanaPerjalananPage.subscribe(onNext: { value in
+            UIView.animate(withDuration: 0.2) {
+                self.view1Right.backgroundColor = value > 0 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.view2Left.backgroundColor = value > 0 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.button2.backgroundColor = value > 0 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.labelView2.textColor = value > 0 ? UIColor.charcoalGrey : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                
+                self.view2Right.backgroundColor = value > 1 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.view3Left.backgroundColor = value > 1 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.button3.backgroundColor = value > 1 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.labelView3.textColor = value > 1 ? UIColor.charcoalGrey : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                
+                self.view3Right.backgroundColor = value > 2 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.view4Left.backgroundColor = value > 2 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.button4.backgroundColor = value > 2 ? UIColor.mediumGreen : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                self.labelView4.textColor = value > 2 ? UIColor.charcoalGrey : UIColor.brownGreyTwo.withAlphaComponent(0.8)
+                
+                self.view.layoutIfNeeded()
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func setupEvent() {
@@ -63,18 +99,18 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
 
 extension RencanaPerjalananVC {
     @objc func view1Click() {
-        moveToViewController(at: 0, animated: true)
+        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(0)
     }
     
     @objc func view2Click() {
-        moveToViewController(at: 1, animated: true)
+        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(1)
     }
     
     @objc func view3Click() {
-        moveToViewController(at: 2, animated: true)
+        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(2)
     }
     
     @objc func view4Click() {
-        moveToViewController(at: 3, animated: true)
+        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(3)
     }
 }

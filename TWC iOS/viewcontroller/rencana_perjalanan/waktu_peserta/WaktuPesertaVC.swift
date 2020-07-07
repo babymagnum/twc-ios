@@ -23,8 +23,43 @@ class WaktuPesertaVC: BaseViewController, IndicatorInfoProvider {
     @IBOutlet weak var labelDewasa: CustomButton!
     @IBOutlet weak var labelAnak: CustomButton!
     
+    @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
+    private var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        observeData()
+    }
+    
+    private func observeData() {
+        rencanaPerjalananVM.pesertaDewasa.subscribe(onNext: { value in
+            self.labelDewasa.setTitle("\(value) dewasa", for: .normal)
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.pesertaAnak.subscribe(onNext: { value in
+            self.labelAnak.setTitle("\(value) anak", for: .normal)
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.listTujuanWisata.subscribe(onNext: { value in
+            var totalHarga = 0
+            var tempat = ""
+            
+            value.forEach { item in
+                totalHarga += item.harga
+                tempat += "\(item.name), "
+            }
+            
+            self.labelHarga.text = PublicFunction.prettyRupiah("\(totalHarga)")
+            self.labelTotalTempat.text = "\(value.count) tempat"
+            self.labelTempat.text = "\(tempat.trim().dropLast())"
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.selectedDates.subscribe(onNext: { value in
+            self.labelTanggalMulai.setTitle(PublicFunction.dateToString(value.first ?? Date(), "EEE, dd MMM yyyy"), for: .normal)
+            self.labelTanggalSelesai.setTitle(PublicFunction.dateToString(value.last ?? Date(), "EEE, dd MMM yyyy"), for: .normal)
+            self.labelHari.text = "\(value.count) hari"
+        }).disposed(by: disposeBag)
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
@@ -32,5 +67,7 @@ class WaktuPesertaVC: BaseViewController, IndicatorInfoProvider {
     }
     
     @IBAction func selanjutnyaClick(_ sender: Any) {
+        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(2)
+        rencanaPerjalananVM.maxRencanaPerjalananPage.accept(2)
     }
 }

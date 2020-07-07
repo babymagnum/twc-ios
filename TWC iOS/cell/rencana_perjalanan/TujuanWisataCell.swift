@@ -23,7 +23,7 @@ class TujuanWisataCell: UICollectionViewCell {
             if let _item = item {
                 image.loadUrl(_item.image)
                 labelNama.text = _item.name
-                labelHarga.text = _item.harga
+                labelHarga.text = PublicFunction.prettyRupiah("\(_item.harga)")
                 labelDurasi.text = "\(_item.durasi)"
             }
         }

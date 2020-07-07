@@ -22,7 +22,7 @@ class RencanaPerjalananTempatCell: UICollectionViewCell {
             if let _item = item {
                 labelNama.text = _item.nama
                 labelDurasi.text = "Durasi \(_item.durasi) jam"
-                labelHarga.text = _item.harga
+                labelHarga.text = PublicFunction.prettyRupiah("\(_item.harga)")
             }
         }
     }

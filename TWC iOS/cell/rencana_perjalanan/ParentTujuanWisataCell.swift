@@ -96,7 +96,7 @@ extension ParentTujuanWisataCell: UICollectionViewDataSource, UICollectionViewDe
         let imageSize = screenWidth * 0.2
         let item = listTujuanWisata[indexPath.item]
         let titleHeight = item.name.getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Bold", size: 16 + PublicFunction.dynamicSize()))
-        let hargaHeight = item.harga.getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Bold", size: 18 + PublicFunction.dynamicSize()))
+        let hargaHeight = "\(item.harga)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Bold", size: 18 + PublicFunction.dynamicSize()))
         let durasiHeight = "Durasi (jam)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Regular", size: 10 + PublicFunction.dynamicSize()))
         let durasiValueHeight = "\(item.durasi)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "SFProDisplay-Regular", size: 14 + PublicFunction.dynamicSize()))
         return CGSize(width: screenWidth - (24 * 2), height: 46 + titleHeight + hargaHeight + durasiHeight + durasiValueHeight)

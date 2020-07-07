@@ -21,20 +21,45 @@ class TujuanWisataVC: BaseViewController, IndicatorInfoProvider, UICollectionVie
     
     private var disposeBag = DisposeBag()
     @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
-    private var listHari = [
-        HariModel(name: "Hari 1", selected: true)
-    ]
+    private var listHari = [HariModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resetData()
-        
         setupCollection()
+        
+        observeData()
     }
     
-    private func resetData() {
-        rencanaPerjalananVM.listTujuanWisata.accept([TujuanWisataModel]())
+    private func observeData() {
+        rencanaPerjalananVM.selectedDates.subscribe(onNext: { value in
+            self.listHari.removeAll()
+            
+            for (index, _) in value.enumerated() {
+                self.listHari.append(HariModel(name: "Hari \(index + 1)", selected: index == 0))
+            }
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.pesertaDewasa.subscribe(onNext: { value in
+            let anak = self.rencanaPerjalananVM.pesertaAnak.value
+            self.labelPeserta.text = "Total harga untuk \(value) dewasa\(anak == 0 ? "" : ", \(anak) anak")"
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.pesertaAnak.subscribe(onNext: { value in
+            let dewasa = self.rencanaPerjalananVM.pesertaDewasa.value
+            self.labelPeserta.text = "Total harga untuk \(dewasa) dewasa\(value == 0 ? "" : ", \(value) anak")"
+        }).disposed(by: disposeBag)
+        
+        rencanaPerjalananVM.listTujuanWisata.subscribe(onNext: { value in
+            var totalHarga = 0
+            let totalPeserta = self.rencanaPerjalananVM.pesertaAnak.value + self.rencanaPerjalananVM.pesertaDewasa.value
+            
+            value.forEach { item in
+                totalHarga += item.harga
+            }
+            
+            self.labelHarga.text = PublicFunction.prettyRupiah("\(totalHarga * totalPeserta)")
+        }).disposed(by: disposeBag)
     }
     
     private func setupCollection() {
@@ -88,13 +113,26 @@ extension TujuanWisataVC: UICollectionViewDataSource, UICollectionViewDelegateFl
 
 extension TujuanWisataVC {
     @IBAction func selanjutnyaClick(_ sender: Any) {
-        rencanaPerjalananVM.generateRencanaPerjalanan()
+        if rencanaPerjalananVM.listTujuanWisata.value.count == 0 {
+            self.view.makeToast("Anda belum memilih tujuan wisata")
+        } else {
+            rencanaPerjalananVM.generateRencanaPerjalanan()
+            rencanaPerjalananVM.generateDataPeserta()
+            rencanaPerjalananVM.currentRencanaPerjalananPage.accept(1)
+            rencanaPerjalananVM.maxRencanaPerjalananPage.accept(1)
+        }
     }
     
     @IBAction func tambahHariClick(_ sender: Any) {
         listHari.append(HariModel(name: "Hari \(listHari.count + 1)", selected: false))
         collectionHari.reloadData()
         collectionTujuanWisata.reloadData()
+        
+        let addedDate = Calendar.current.date(byAdding: .day, value: 1, to: rencanaPerjalananVM.selectedDates.value.last ?? Date()) ?? Date()
+        print("added date \(PublicFunction.dateToString(addedDate, "dd MMMM yyyy"))")
+        var _selectedDates = rencanaPerjalananVM.selectedDates.value
+        _selectedDates.append(addedDate)
+        rencanaPerjalananVM.selectedDates.accept(_selectedDates)
     }
     
     @objc func viewParentHariClick(sender: UITapGestureRecognizer) {
