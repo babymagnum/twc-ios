@@ -14,6 +14,7 @@ import UserNotifications
 import FirebaseInstanceID
 import FirebaseMessaging
 import DIKit
+import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
@@ -51,6 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         
         //firebase
         configureFirebase(application: application)
+        
+        //DropDown
+        DropDown.startListeningToKeyboard()
         
         //keyboard manager
         IQKeyboardManager.shared.enable = true

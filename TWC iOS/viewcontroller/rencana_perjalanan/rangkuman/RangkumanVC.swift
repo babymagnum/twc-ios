@@ -35,6 +35,12 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
         observeData()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        observeData()
+    }
+    
     private func observeData() {
         rencanaPerjalananVM.listRencanaPerjalanan.subscribe(onNext: { value in
             self.collectionRencanaPerjalanan.reloadData()
@@ -151,6 +157,7 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DataPesertaCell", for: indexPath) as! DataPesertaCell
             cell.item = rencanaPerjalananVM.listDataPeserta.value[indexPath.item]
             cell.viewDivider.isHidden = indexPath.item == rencanaPerjalananVM.listDataPeserta.value.count - 1
+            cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cellDataPesertaClick(sender:))))
             return cell
         }
     }
@@ -179,6 +186,12 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
 }
 
 extension RangkumanVC {
+    @objc func cellDataPesertaClick(sender: UITapGestureRecognizer) {
+        guard let indexPath = collectionDataPeserta.indexPathForItem(at: sender.location(in: collectionDataPeserta)) else { return }
+        
+        navigationController?.pushViewController(DataPesertaVC(), animated: true)
+    }
+    
     @IBAction func bayarClick(_ sender: Any) {
     }
     

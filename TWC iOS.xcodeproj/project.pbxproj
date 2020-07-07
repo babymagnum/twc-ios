@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8C10D4655F84D98548802BE /* Pods_TWC_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */; };
+		CCC48696EF6C4F5B7E82822C /* Pods_TWC_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE0C5078F9B1FD5B3789C6 /* Pods_TWC_iOS.framework */; };
 		ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */; };
 		ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AA224B1B316000FAE15 /* HariCell.swift */; };
 		ED053AA524B1B316000FAE15 /* HariCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED053AA324B1B316000FAE15 /* HariCell.xib */; };
@@ -20,7 +20,6 @@
 		ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */; };
 		ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED10746422F5B98A00ADF055 /* WebKit.framework */; };
 		ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB72302EC9000B854BC /* CustomTextView.swift */; };
-		ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB92302ED0700B854BC /* CustomDropDownField.swift */; };
 		ED1A383324A9686900110474 /* PesananVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A383124A9686900110474 /* PesananVC.swift */; };
 		ED1A383424A9686900110474 /* PesananVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1A383224A9686900110474 /* PesananVC.xib */; };
 		ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A383524A9687400110474 /* KotakMasukVC.swift */; };
@@ -138,9 +137,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ABCE6282584CDDD30F198343 /* Pods-TWC iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.debug.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWC_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.release.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.release.xcconfig"; sourceTree = "<group>"; };
+		71CF659BE268AD15782E1AE1 /* Pods-TWC iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.debug.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E0FE0C5078F9B1FD5B3789C6 /* Pods_TWC_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWC_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED046AB2244130940083C331 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED053AA224B1B316000FAE15 /* HariCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HariCell.swift; sourceTree = "<group>"; };
 		ED053AA324B1B316000FAE15 /* HariCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HariCell.xib; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 		ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetPeserta.xib; sourceTree = "<group>"; };
 		ED10746422F5B98A00ADF055 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ED139BB72302EC9000B854BC /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
-		ED139BB92302ED0700B854BC /* CustomDropDownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDownField.swift; sourceTree = "<group>"; };
 		ED1A383124A9686900110474 /* PesananVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesananVC.swift; sourceTree = "<group>"; };
 		ED1A383224A9686900110474 /* PesananVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PesananVC.xib; sourceTree = "<group>"; };
 		ED1A383524A9687400110474 /* KotakMasukVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotakMasukVC.swift; sourceTree = "<group>"; };
@@ -276,6 +273,7 @@
 		EDE8D95D2479069400ED127B /* DialogAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogAlert.swift; sourceTree = "<group>"; };
 		EDE8D95F2479069800ED127B /* DialogAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogAlert.xib; sourceTree = "<group>"; };
 		EDE9D454247585DD0042C9F5 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		EDEDAEBB7A852D44E62F2066 /* Pods-TWC iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.release.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDF750DF244207ED005C20C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,7 +284,7 @@
 			files = (
 				ED61BF2322F7DA6200776C25 /* iOSDropDown.framework in Frameworks */,
 				ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */,
-				D8C10D4655F84D98548802BE /* Pods_TWC_iOS.framework in Frameworks */,
+				CCC48696EF6C4F5B7E82822C /* Pods_TWC_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +296,7 @@
 			children = (
 				ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */,
 				ED10746422F5B98A00ADF055 /* WebKit.framework */,
-				C471A6DB6940B3C291C6693F /* Pods_TWC_iOS.framework */,
+				E0FE0C5078F9B1FD5B3789C6 /* Pods_TWC_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,8 +304,8 @@
 		50B37A2966BD13A09DDADB5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ABCE6282584CDDD30F198343 /* Pods-TWC iOS.debug.xcconfig */,
-				CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */,
+				71CF659BE268AD15782E1AE1 /* Pods-TWC iOS.debug.xcconfig */,
+				EDEDAEBB7A852D44E62F2066 /* Pods-TWC iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -581,7 +579,6 @@
 				EDBF21BE2300DCEE003F5DAF /* CustomImage.swift */,
 				EDBF21C02301086A003F5DAF /* CustomTextField.swift */,
 				ED139BB72302EC9000B854BC /* CustomTextView.swift */,
-				ED139BB92302ED0700B854BC /* CustomDropDownField.swift */,
 				ED507E96243F85490038CA6E /* CustomGradientView.swift */,
 				ED507E98243F857D0038CA6E /* CustomView.swift */,
 				ED3353DF243FF4EF00656C25 /* CustomMargin.swift */,
@@ -766,12 +763,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED95907622EBDF3500D696E5 /* Build configuration list for PBXNativeTarget "TWC iOS" */;
 			buildPhases = (
-				AA77AB45B35FC3B473038CEB /* [CP] Check Pods Manifest.lock */,
+				7856B2D1AED21B56607A2827 /* [CP] Check Pods Manifest.lock */,
 				ED95906022EBDF3300D696E5 /* Sources */,
 				ED95906122EBDF3300D696E5 /* Frameworks */,
 				ED95906222EBDF3300D696E5 /* Resources */,
-				AE567051131B3C74C7AD26AD /* [CP] Embed Pods Frameworks */,
-				5B22822127DE12B0300607AF /* [CP] Copy Pods Resources */,
+				8FB75092775496C11BF95C57 /* [CP] Embed Pods Frameworks */,
+				00C107F0186405C162447E82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -890,7 +887,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B22822127DE12B0300607AF /* [CP] Copy Pods Resources */ = {
+		00C107F0186405C162447E82 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -907,7 +904,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TWC iOS/Pods-TWC iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA77AB45B35FC3B473038CEB /* [CP] Check Pods Manifest.lock */ = {
+		7856B2D1AED21B56607A2827 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -929,7 +926,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE567051131B3C74C7AD26AD /* [CP] Embed Pods Frameworks */ = {
+		8FB75092775496C11BF95C57 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -988,7 +985,6 @@
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
 				ED053AAB24B1B4B6000FAE15 /* ParentTujuanWisataCell.swift in Sources */,
 				EDC465FA24B0C3C300F4CA39 /* RangkumanVC.swift in Sources */,
-				ED139BBA2302ED0700B854BC /* CustomDropDownField.swift in Sources */,
 				ED36210924B3340B00307602 /* RencanaPerjalananTempatCell.swift in Sources */,
 				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
@@ -1191,7 +1187,7 @@
 		};
 		ED95907722EBDF3500D696E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABCE6282584CDDD30F198343 /* Pods-TWC iOS.debug.xcconfig */;
+			baseConfigurationReference = 71CF659BE268AD15782E1AE1 /* Pods-TWC iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
@@ -1209,6 +1205,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ariefzainuri.iostemplate;
 				PRODUCT_NAME = "Taman Wisata Candi";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1216,7 +1213,7 @@
 		};
 		ED95907822EBDF3500D696E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF80A18A6AE2985BE5BEF5F8 /* Pods-TWC iOS.release.xcconfig */;
+			baseConfigurationReference = EDEDAEBB7A852D44E62F2066 /* Pods-TWC iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
@@ -1234,6 +1231,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ariefzainuri.iostemplate;
 				PRODUCT_NAME = "Taman Wisata Candi";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
