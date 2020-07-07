@@ -3,6 +3,7 @@ PODS:
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - DIKit (1.5.0)
+  - DropDown (2.3.13)
   - EzPopup (1.1)
   - Fabric (1.10.2)
   - Firebase/Analytics (6.21.0):
@@ -92,7 +93,6 @@ PODS:
   - GoogleUtilities/UserDefaults (6.5.2):
     - GoogleUtilities/Logger
   - HSAttachmentPicker (1.0.11)
-  - iOSDropDown (0.3.4)
   - IQKeyboardManagerSwift (6.5.5)
   - JTAppleCalendar (8.0.3)
   - Kingfisher (5.13.3):
@@ -120,6 +120,7 @@ DEPENDENCIES:
   - Alamofire
   - Crashlytics
   - DIKit
+  - DropDown
   - EzPopup
   - Fabric
   - Firebase/Analytics
@@ -129,7 +130,6 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - HSAttachmentPicker
-  - iOSDropDown
   - IQKeyboardManagerSwift
   - JTAppleCalendar
   - Kingfisher
@@ -145,6 +145,7 @@ SPEC REPOS:
     - Alamofire
     - Crashlytics
     - DIKit
+    - DropDown
     - EzPopup
     - Fabric
     - Firebase
@@ -164,7 +165,6 @@ SPEC REPOS:
     - GooglePlaces
     - GoogleUtilities
     - HSAttachmentPicker
-    - iOSDropDown
     - IQKeyboardManagerSwift
     - JTAppleCalendar
     - Kingfisher
@@ -183,6 +183,7 @@ SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
   DIKit: d44a18834f683ebdcc840f35d45fd640a639cde4
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   EzPopup: b959cfb0d70d782a28e770a96c454df0401467c7
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Firebase: f378c80340dd41c0ad0914af740c021eb282a04b
@@ -202,7 +203,6 @@ SPEC CHECKSUMS:
   GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
   GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
   HSAttachmentPicker: 8904e3fb4af16959b3eb6d93824c8448ede1c03d
-  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
@@ -217,6 +217,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 72f6f52fd91ba7b4378a7442593f73b5539847c6
+PODFILE CHECKSUM: 529126597a215c637e288810951fdce185394dad
 
 COCOAPODS: 1.9.1

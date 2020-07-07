@@ -56,6 +56,8 @@
 		ED3688A624AD5B9D00AEC88A /* BottomSheetTanggalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */; };
 		ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3688A824AD691500AEC88A /* TanggalCell.swift */; };
 		ED3688AB24AD691500AEC88A /* TanggalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3688A924AD691500AEC88A /* TanggalCell.xib */; };
+		ED3821E224B469D2003CD3A2 /* DataPesertaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3821E024B469D2003CD3A2 /* DataPesertaVC.swift */; };
+		ED3821E324B469D2003CD3A2 /* DataPesertaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3821E124B469D2003CD3A2 /* DataPesertaVC.xib */; };
 		ED3B1CCA24AC55A30051DD71 /* PaketFavoritCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */; };
 		ED3B1CCB24AC55A30051DD71 /* PaketFavoritCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */; };
 		ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */; };
@@ -189,6 +191,8 @@
 		ED3688A424AD5B9D00AEC88A /* BottomSheetTanggalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTanggalVC.xib; sourceTree = "<group>"; };
 		ED3688A824AD691500AEC88A /* TanggalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanggalCell.swift; sourceTree = "<group>"; };
 		ED3688A924AD691500AEC88A /* TanggalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TanggalCell.xib; sourceTree = "<group>"; };
+		ED3821E024B469D2003CD3A2 /* DataPesertaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPesertaVC.swift; sourceTree = "<group>"; };
+		ED3821E124B469D2003CD3A2 /* DataPesertaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPesertaVC.xib; sourceTree = "<group>"; };
 		ED3B1CC824AC55A30051DD71 /* PaketFavoritCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoritCell.swift; sourceTree = "<group>"; };
 		ED3B1CC924AC55A30051DD71 /* PaketFavoritCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaketFavoritCell.xib; sourceTree = "<group>"; };
 		ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaketFavoriteModel.swift; sourceTree = "<group>"; };
@@ -427,6 +431,15 @@
 			path = bottom_sheet_tanggal;
 			sourceTree = "<group>";
 		};
+		ED3821DF24B469C0003CD3A2 /* data_peserta */ = {
+			isa = PBXGroup;
+			children = (
+				ED3821E024B469D2003CD3A2 /* DataPesertaVC.swift */,
+				ED3821E124B469D2003CD3A2 /* DataPesertaVC.xib */,
+			);
+			path = data_peserta;
+			sourceTree = "<group>";
+		};
 		ED3B1CC724AC557E0051DD71 /* beranda_cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +526,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				ED3821DF24B469C0003CD3A2 /* data_peserta */,
 				EDAF371624B2C52600A27FF1 /* pilih_tujuan_wisata */,
 				EDC465E624B0ADFB00F4CA39 /* rencana_perjalanan */,
 				ED0AFFF524AF19DD0091AB39 /* bottom_sheet_peserta */,
@@ -832,6 +846,7 @@
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
 				ED2A3E9D24A83E900040D24B /* DialogLoadingVC.xib in Resources */,
 				ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */,
+				ED3821E324B469D2003CD3A2 /* DataPesertaVC.xib in Resources */,
 				EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */,
 				ED1A383424A9686900110474 /* PesananVC.xib in Resources */,
 				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
@@ -983,6 +998,7 @@
 				ED95906822EBDF3300D696E5 /* AppDelegate.swift in Sources */,
 				ED95908022EBE77B00D696E5 /* Constant.swift in Sources */,
 				ED3620FF24B3312800307602 /* RencanaPerjalananCell.swift in Sources */,
+				ED3821E224B469D2003CD3A2 /* DataPesertaVC.swift in Sources */,
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
 				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */,

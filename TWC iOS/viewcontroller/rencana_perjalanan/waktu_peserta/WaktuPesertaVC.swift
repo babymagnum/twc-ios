@@ -29,7 +29,13 @@ class WaktuPesertaVC: BaseViewController, IndicatorInfoProvider {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupView()
+        
         observeData()
+    }
+    
+    private func setupView() {
+        imageCalendar.image = UIImage(named: "calendarToday")?.tinted(with: UIColor.veryLightPinkTwo)
     }
     
     private func observeData() {

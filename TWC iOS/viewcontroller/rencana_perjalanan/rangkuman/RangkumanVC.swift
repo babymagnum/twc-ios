@@ -173,7 +173,7 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
             let item = rencanaPerjalananVM.listDataPeserta.value[indexPath.item]
             let namaHeight = item.nama.getHeight(withConstrainedWidth: screenWidth - (16 * 2) - (16 + 45), font: UIFont(name: "SFProDisplay-Regular", size: 16 + PublicFunction.dynamicSize()))
             let nikHeight = "546780456000022".getHeight(withConstrainedWidth: screenWidth - (16 * 2) - (16 + 45), font: UIFont(name: "SFProDisplay-Regular", size: 14 + PublicFunction.dynamicSize()))
-            return CGSize(width: screenWidth - 16, height: namaHeight + nikHeight + 30)
+            return CGSize(width: screenWidth - (8 * 2) - (16 * 2), height: namaHeight + nikHeight + 30)
         }
     }
 }

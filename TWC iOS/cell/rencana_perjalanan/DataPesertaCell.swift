@@ -33,7 +33,8 @@ class DataPesertaCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.roundCorners([.topLeft, .topRight, .bottomLeft, .bottomRight], radius: 8)
     }
 
 }

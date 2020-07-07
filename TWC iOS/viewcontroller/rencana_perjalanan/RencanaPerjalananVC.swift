@@ -52,6 +52,16 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
     
     private func observeData() {
         rencanaPerjalananVM.currentRencanaPerjalananPage.subscribe(onNext: { value in
+            if value == 0 {
+                self.title = "Tujuan wisata"
+            } else if value == 1 {
+                self.title = "Waktu peserta"
+            } else if value == 2 {
+                self.title = "Rangkuman"
+            } else {
+                self.title = "Pembayaran"
+            }
+            
             self.moveToViewController(at: value, animated: true)
         }).disposed(by: disposeBag)
         
@@ -87,7 +97,6 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
     private func setupView() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.tintColor = UIColor.mediumGreen
-        self.title = "Rencana Perjalanan"
         self.containerView.isScrollEnabled = false
     }
     
@@ -103,14 +112,20 @@ extension RencanaPerjalananVC {
     }
     
     @objc func view2Click() {
-        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(1)
+        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 1 {
+            rencanaPerjalananVM.currentRencanaPerjalananPage.accept(1)
+        }
     }
     
     @objc func view3Click() {
-        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(2)
+        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 2 {
+            rencanaPerjalananVM.currentRencanaPerjalananPage.accept(2)
+        }
     }
     
     @objc func view4Click() {
-        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(3)
+        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 3 {
+            rencanaPerjalananVM.currentRencanaPerjalananPage.accept(3)
+        }
     }
 }

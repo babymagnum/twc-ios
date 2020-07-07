@@ -35,7 +35,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50o-wM-y3b">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="814"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rencana perjalanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzA-Fl-PdO" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <rect key="frame" x="24" y="24" width="327" height="19.5"/>
@@ -387,10 +387,10 @@
                                             </userDefinedRuntimeAttributes>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdK-0P-rnb" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="644" width="359" height="50"/>
+                                            <rect key="frame" x="8" y="644" width="359" height="52"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KPa-UT-vru">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                                                    <rect key="frame" x="16" y="1" width="327" height="50"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="iyc-tb-9Oa"/>
@@ -405,11 +405,11 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="KPa-UT-vru" firstAttribute="leading" secondItem="AdK-0P-rnb" secondAttribute="leading" id="2Hg-VJ-NOW"/>
-                                                <constraint firstAttribute="bottom" secondItem="KPa-UT-vru" secondAttribute="bottom" id="G7R-lL-2AI"/>
-                                                <constraint firstItem="KPa-UT-vru" firstAttribute="top" secondItem="AdK-0P-rnb" secondAttribute="top" id="gkO-8G-a8Z"/>
+                                                <constraint firstItem="KPa-UT-vru" firstAttribute="leading" secondItem="AdK-0P-rnb" secondAttribute="leading" constant="16" id="2Hg-VJ-NOW"/>
+                                                <constraint firstAttribute="bottom" secondItem="KPa-UT-vru" secondAttribute="bottom" constant="1" id="G7R-lL-2AI"/>
+                                                <constraint firstItem="KPa-UT-vru" firstAttribute="top" secondItem="AdK-0P-rnb" secondAttribute="top" constant="1" id="gkO-8G-a8Z"/>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="h7R-y4-AcJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="KPa-UT-vru" secondAttribute="trailing" id="rNk-F8-rq9"/>
+                                                <constraint firstAttribute="trailing" secondItem="KPa-UT-vru" secondAttribute="trailing" constant="16" id="rNk-F8-rq9"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="YES"/>
@@ -419,7 +419,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0U-iX-UMI">
-                                            <rect key="frame" x="0.0" y="718" width="375" height="94"/>
+                                            <rect key="frame" x="0.0" y="720" width="375" height="94"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-fd-y73">
                                                     <rect key="frame" x="24" y="24" width="327" height="46"/>

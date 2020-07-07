@@ -199,6 +199,7 @@ fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DIKit/DIKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
@@ -215,12 +216,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DIKit/DIKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
@@ -237,7 +238,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
