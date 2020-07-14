@@ -113,8 +113,32 @@ extension TujuanWisataVC: UICollectionViewDataSource, UICollectionViewDelegateFl
 
 extension TujuanWisataVC {
     @IBAction func selanjutnyaClick(_ sender: Any) {
+        var _listFilledDays = [Int]()
+        var _listEmptyDays = [Int]()
+        var _days = ""
+        
+        rencanaPerjalananVM.listTujuanWisata.value.forEach { item in
+            if !_listFilledDays.contains(item.hari) {
+                _listFilledDays.append(item.hari)
+            }
+        }
+        
+        for index in 0...listHari.count - 1 {
+            if !_listFilledDays.contains(index + 1) {
+                _listEmptyDays.append(index + 1)
+            }
+        }
+        
+        _listEmptyDays.forEach { item in
+            _days += "\(item), "
+        }
+        
         if rencanaPerjalananVM.listTujuanWisata.value.count == 0 {
             self.view.makeToast("Anda belum memilih tujuan wisata")
+        } else if _listEmptyDays.count > 0 {
+            let index = (_listEmptyDays.first ?? 1) - 1
+            self.view.makeToast("Anda belum memilih tujuan wisata pada hari ke \(_days.dropLast(2))")
+            changeHariAndScrollTujuanWisata(indexPath: IndexPath(item: index, section: 0))
         } else {
             rencanaPerjalananVM.generateRencanaPerjalanan()
             rencanaPerjalananVM.generateDataPeserta()
@@ -141,6 +165,10 @@ extension TujuanWisataVC {
     @objc func viewParentHariClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionHari.indexPathForItem(at: sender.location(in: collectionHari)) else { return }
         
+        changeHariAndScrollTujuanWisata(indexPath: indexPath)
+    }
+    
+    private func changeHariAndScrollTujuanWisata(indexPath: IndexPath) {
         collectionTujuanWisata.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         
         for index in 0...listHari.count - 1 {

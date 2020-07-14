@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MetodePembayaranCell" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-cz-7mV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Weg-oI-Wxc">
+                                <rect key="frame" x="68" y="13" width="283" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bca" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-gz-zwp">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hOq-gz-zwp" secondAttribute="height" multiplier="1:1" id="g0z-K0-lfu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BCA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlI-bm-l57" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="0.0" width="217" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboardArrowRight24Px1" translatesAutoresizingMaskIntoConstraints="NO" id="u9S-BN-rrc">
+                                        <rect key="frame" x="271" y="10" width="12" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="3qY-Lu-hjS"/>
+                                            <constraint firstAttribute="width" constant="12" id="mCp-Lg-DGW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="u9S-BN-rrc" firstAttribute="leading" secondItem="zlI-bm-l57" secondAttribute="trailing" constant="10" id="2dK-UT-qfv"/>
+                                    <constraint firstAttribute="bottom" secondItem="zlI-bm-l57" secondAttribute="bottom" id="DCQ-ti-vce"/>
+                                    <constraint firstItem="hOq-gz-zwp" firstAttribute="top" secondItem="Weg-oI-Wxc" secondAttribute="top" id="Fug-sQ-RuC"/>
+                                    <constraint firstItem="zlI-bm-l57" firstAttribute="leading" secondItem="hOq-gz-zwp" secondAttribute="trailing" constant="12" id="Kzq-1a-fwv"/>
+                                    <constraint firstAttribute="trailing" secondItem="u9S-BN-rrc" secondAttribute="trailing" id="Paa-Tw-NQJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hOq-gz-zwp" secondAttribute="bottom" id="aJI-y0-7ic"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dqd-hu-NtJ"/>
+                                    <constraint firstItem="zlI-bm-l57" firstAttribute="top" secondItem="Weg-oI-Wxc" secondAttribute="top" id="lNw-v1-4uA"/>
+                                    <constraint firstItem="hOq-gz-zwp" firstAttribute="leading" secondItem="Weg-oI-Wxc" secondAttribute="leading" id="n88-aF-LGN"/>
+                                    <constraint firstItem="u9S-BN-rrc" firstAttribute="centerY" secondItem="Weg-oI-Wxc" secondAttribute="centerY" id="r3g-QU-nbz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S11-0Q-dyc">
+                                <rect key="frame" x="68" y="58" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yf5-8P-RAl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="S11-0Q-dyc" firstAttribute="leading" secondItem="AyJ-cz-7mV" secondAttribute="leading" constant="68" id="HX0-Ah-XVe"/>
+                            <constraint firstItem="Weg-oI-Wxc" firstAttribute="leading" secondItem="AyJ-cz-7mV" secondAttribute="leading" constant="68" id="Pg6-DB-yFf"/>
+                            <constraint firstItem="S11-0Q-dyc" firstAttribute="top" secondItem="Weg-oI-Wxc" secondAttribute="bottom" constant="13" id="cxO-DL-jYw"/>
+                            <constraint firstAttribute="trailing" secondItem="S11-0Q-dyc" secondAttribute="trailing" constant="7" id="fp3-cz-FUZ"/>
+                            <constraint firstItem="Weg-oI-Wxc" firstAttribute="top" secondItem="AyJ-cz-7mV" secondAttribute="top" constant="13" id="glO-II-XV2"/>
+                            <constraint firstAttribute="trailing" secondItem="Weg-oI-Wxc" secondAttribute="trailing" constant="24" id="k3p-Im-C2x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AyJ-cz-7mV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0IZ-Oi-FzC"/>
+                <constraint firstItem="AyJ-cz-7mV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Op6-Oj-Z4W"/>
+                <constraint firstAttribute="bottom" secondItem="AyJ-cz-7mV" secondAttribute="bottom" id="Rfy-eC-fXf"/>
+                <constraint firstAttribute="trailing" secondItem="AyJ-cz-7mV" secondAttribute="trailing" id="YLp-Qc-KY7"/>
+                <constraint firstItem="hOq-gz-zwp" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.0853333" id="xsT-rq-f5g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="image" destination="hOq-gz-zwp" id="Ykh-IW-1Zd"/>
+                <outlet property="label" destination="zlI-bm-l57" id="QUY-Ln-shf"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bca" width="32" height="32"/>
+        <image name="keyboardArrowRight24Px1" width="7" height="11.5"/>
+    </resources>
+</document>

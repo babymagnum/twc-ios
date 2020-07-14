@@ -111,17 +111,19 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
 
 extension RencanaPerjalananVC {
     @objc func view1Click() {
-        rencanaPerjalananVM.currentRencanaPerjalananPage.accept(0)
+        if rencanaPerjalananVM.maxRencanaPerjalananPage.value < 3 {
+            rencanaPerjalananVM.currentRencanaPerjalananPage.accept(0)
+        }
     }
     
     @objc func view2Click() {
-        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 1 {
+        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 1 && rencanaPerjalananVM.maxRencanaPerjalananPage.value < 3 {
             rencanaPerjalananVM.currentRencanaPerjalananPage.accept(1)
         }
     }
     
     @objc func view3Click() {
-        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 2 {
+        if rencanaPerjalananVM.maxRencanaPerjalananPage.value >= 2 && rencanaPerjalananVM.maxRencanaPerjalananPage.value < 3 {
             rencanaPerjalananVM.currentRencanaPerjalananPage.accept(2)
         }
     }

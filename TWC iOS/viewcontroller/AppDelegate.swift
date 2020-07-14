@@ -77,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             single { HomeVM() }
             single { RencanaPerjalananVM() }
             single { PilihTujuanWisataVM() }
+            single { PembayaranVM() }
         })
     }
     

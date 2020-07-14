@@ -24,6 +24,7 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
     @IBOutlet weak var collectionDataPeserta: UICollectionView!
     @IBOutlet weak var collectionDataPesertaHeight: NSLayoutConstraint!
     
+    @Inject private var pembayaranVM: PembayaranVM
     @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     private var disposeBag = DisposeBag()
     
@@ -202,10 +203,10 @@ extension RangkumanVC {
         }
         
         if emptyDataPeserta {
-            PublicFunction.showUnderstandDialog(self, "Taman Wisata Candi", "Anda belum melengkapi data peserta", "Ok")
+            PublicFunction.showUnderstandDialog(self, "Oops", "Anda belum melengkapi data peserta", "Ok")
             return false
         } else if emptyKontakPerson {
-            PublicFunction.showUnderstandDialog(self, "Taman Wisata Candi", "Anda belum menentukan kontak person", "Ok")
+            PublicFunction.showUnderstandDialog(self, "Oops", "Anda belum menentukan kontak person", "Ok")
             return false
         } else {
             return true
@@ -215,7 +216,10 @@ extension RangkumanVC {
     @IBAction func bayarClick(_ sender: Any) {
         if allowToNext() {
             PublicFunction.showUnderstandDialog(self, "Konfirmasi", "Apakah anda yakin rencana perjalanan anda sudah benar?", "Ya", "Batal") {
-                print("ok")
+                self.rencanaPerjalananVM.currentRencanaPerjalananPage.accept(3)
+                self.rencanaPerjalananVM.maxRencanaPerjalananPage.accept(3)
+                self.pembayaranVM.generateMetodePembayaran()
+                self.pembayaranVM.startTimer()
             }
         }
     }

@@ -1,37 +1,603 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PembayaranVC" customModule="Taman_Wisata_Candi" customModuleProvider="target">
             <connections>
+                <outlet property="buttonLihatSemuaATMTransfer" destination="cUR-NR-Di4" id="kNY-p8-X4y"/>
+                <outlet property="buttonLihatSemuaInternetBanking" destination="7Xc-RK-Smv" id="Zer-Fg-G5d"/>
+                <outlet property="collectionATMTransfer" destination="GAQ-TW-GhW" id="h7H-GB-pXS"/>
+                <outlet property="collectionATMTransferHeight" destination="8T0-AS-Sqt" id="9AP-dz-iM3"/>
+                <outlet property="collectionEmoney" destination="8F6-FZ-Lbj" id="TlI-aE-FBy"/>
+                <outlet property="collectionEmoneyHeight" destination="w4h-Vu-01L" id="Snw-bl-5wb"/>
+                <outlet property="collectionInternetBanking" destination="fuU-bo-QFq" id="qlO-3a-eqJ"/>
+                <outlet property="collectionInternetBankingHeight" destination="36Z-fT-tLu" id="mwD-YE-m2h"/>
+                <outlet property="collectionLainya" destination="haT-am-9TW" id="JmC-Vm-f2T"/>
+                <outlet property="collectionLainyaHeight" destination="Kv7-Ge-cHK" id="g8J-ql-ObW"/>
+                <outlet property="labelTimer" destination="B0I-fp-aGY" id="cFD-qy-1Dq"/>
+                <outlet property="labelTotalDibayar" destination="qR4-Nl-CIC" id="QjH-Zo-IkU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pembayaran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6t-jl-a8K">
-                    <rect key="frame" x="140" y="323" width="95" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBq-Mn-Zlk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPt-RC-OWe">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1156"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxJ-Qu-U5T" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="24" width="327" height="82"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbS-SX-08D">
+                                            <rect key="frame" x="41.5" y="13" width="244.5" height="18"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="errorwhite" translatesAutoresizingMaskIntoConstraints="NO" id="T1L-NF-pws">
+                                                    <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="T1L-NF-pws" secondAttribute="height" multiplier="1:1" id="Ncc-5A-fLF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selesaikan pembayaran sebelum :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-T1-M4k" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                    <rect key="frame" x="26" y="0.0" width="218.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="12A-7R-z0Y"/>
+                                                <constraint firstAttribute="trailing" secondItem="f4r-T1-M4k" secondAttribute="trailing" id="2sb-I4-I6s"/>
+                                                <constraint firstAttribute="bottom" secondItem="T1L-NF-pws" secondAttribute="bottom" id="PCQ-up-8my"/>
+                                                <constraint firstItem="T1L-NF-pws" firstAttribute="top" secondItem="gbS-SX-08D" secondAttribute="top" id="X9c-e6-cbD"/>
+                                                <constraint firstItem="f4r-T1-M4k" firstAttribute="leading" secondItem="T1L-NF-pws" secondAttribute="trailing" constant="8" id="iVo-FU-62Z"/>
+                                                <constraint firstItem="f4r-T1-M4k" firstAttribute="top" secondItem="gbS-SX-08D" secondAttribute="top" id="mb6-85-Cwo"/>
+                                                <constraint firstAttribute="bottom" secondItem="f4r-T1-M4k" secondAttribute="bottom" id="qs4-to-kuD"/>
+                                                <constraint firstItem="T1L-NF-pws" firstAttribute="leading" secondItem="gbS-SX-08D" secondAttribute="leading" id="qxX-Lh-Qgr"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 : 34 :45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0I-fp-aGY" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="40" width="287" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Medium"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="24"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.44705882352941173" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="9mD-ar-47R"/>
+                                        <constraint firstAttribute="bottom" secondItem="B0I-fp-aGY" secondAttribute="bottom" constant="13" id="LY5-EK-GhQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="B0I-fp-aGY" secondAttribute="trailing" constant="20" id="QLf-6F-yZh"/>
+                                        <constraint firstItem="B0I-fp-aGY" firstAttribute="leading" secondItem="pxJ-Qu-U5T" secondAttribute="leading" constant="20" id="R9M-RZ-kuc"/>
+                                        <constraint firstItem="B0I-fp-aGY" firstAttribute="top" secondItem="gbS-SX-08D" secondAttribute="bottom" constant="9" id="SSc-iE-1hc"/>
+                                        <constraint firstItem="gbS-SX-08D" firstAttribute="centerX" secondItem="pxJ-Qu-U5T" secondAttribute="centerX" id="WHK-Tc-edy"/>
+                                        <constraint firstItem="gbS-SX-08D" firstAttribute="top" secondItem="pxJ-Qu-U5T" secondAttribute="top" constant="13" id="jTV-vx-d5c"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w37-uC-JSB">
+                                    <rect key="frame" x="24" y="136" width="327" height="52.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total yang harus dibayar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sA-jl-uGW" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="275" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="14"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 960.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qR4-Nl-CIC" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="26" width="275" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="22"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivk-Nd-z6K" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="285" y="16.5" width="42" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="qR4-Nl-CIC" secondAttribute="bottom" id="5ys-jI-8ba"/>
+                                        <constraint firstAttribute="trailing" secondItem="ivk-Nd-z6K" secondAttribute="trailing" id="I6m-GJ-tNW"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Kqv-FJ-lBh"/>
+                                        <constraint firstItem="6sA-jl-uGW" firstAttribute="leading" secondItem="w37-uC-JSB" secondAttribute="leading" id="Ut4-q1-vrc"/>
+                                        <constraint firstItem="ivk-Nd-z6K" firstAttribute="leading" secondItem="qR4-Nl-CIC" secondAttribute="trailing" constant="10" id="VXx-0Y-UrF"/>
+                                        <constraint firstItem="qR4-Nl-CIC" firstAttribute="leading" secondItem="w37-uC-JSB" secondAttribute="leading" id="a5B-cl-PCx"/>
+                                        <constraint firstItem="ivk-Nd-z6K" firstAttribute="leading" secondItem="6sA-jl-uGW" secondAttribute="trailing" constant="10" id="aCw-eb-hqX"/>
+                                        <constraint firstItem="6sA-jl-uGW" firstAttribute="top" secondItem="w37-uC-JSB" secondAttribute="top" id="gm1-ge-Bma"/>
+                                        <constraint firstItem="ivk-Nd-z6K" firstAttribute="centerY" secondItem="w37-uC-JSB" secondAttribute="centerY" id="wfJ-w0-4WB"/>
+                                        <constraint firstItem="qR4-Nl-CIC" firstAttribute="top" secondItem="6sA-jl-uGW" secondAttribute="bottom" constant="9" id="yAk-af-KSJ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-oQ-NPR">
+                                    <rect key="frame" x="0.0" y="218.5" width="375" height="16"/>
+                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="Ne4-kB-U0A"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih metode pembayaran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhB-mg-TM8" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="258.5" width="327" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psq-FO-re7">
+                                    <rect key="frame" x="24" y="300" width="327" height="32"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kartukredit" translatesAutoresizingMaskIntoConstraints="NO" id="WqN-5q-XbP">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="WqN-5q-XbP" secondAttribute="height" multiplier="1:1" id="OBF-vV-7OW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kartu kredit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9E-Xw-Kqx" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="0.0" width="287" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="s9E-Xw-Kqx" firstAttribute="leading" secondItem="WqN-5q-XbP" secondAttribute="trailing" constant="8" id="B7r-T2-r7z"/>
+                                        <constraint firstItem="s9E-Xw-Kqx" firstAttribute="top" secondItem="psq-FO-re7" secondAttribute="top" id="G72-W9-p1B"/>
+                                        <constraint firstItem="WqN-5q-XbP" firstAttribute="top" secondItem="psq-FO-re7" secondAttribute="top" id="GjB-pw-BjR"/>
+                                        <constraint firstAttribute="bottom" secondItem="WqN-5q-XbP" secondAttribute="bottom" id="HTG-Rq-8yJ"/>
+                                        <constraint firstItem="WqN-5q-XbP" firstAttribute="leading" secondItem="psq-FO-re7" secondAttribute="leading" id="Pd3-hk-shT"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="W5D-he-dTn"/>
+                                        <constraint firstAttribute="bottom" secondItem="s9E-Xw-Kqx" secondAttribute="bottom" id="epK-DT-3JG"/>
+                                        <constraint firstAttribute="trailing" secondItem="s9E-Xw-Kqx" secondAttribute="trailing" id="lwG-rh-c46"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOi-nO-D7r">
+                                    <rect key="frame" x="68" y="353" width="283" height="40"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="hjE-iK-eF4">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="hjE-iK-eF4" secondAttribute="height" multiplier="1:1" id="0MV-4B-8br"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa" translatesAutoresizingMaskIntoConstraints="NO" id="z6g-1Z-GeM">
+                                            <rect key="frame" x="46" y="0.0" width="40" height="40"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboardArrowRight24Px1" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-bd-oka">
+                                            <rect key="frame" x="271" y="14" width="12" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Bdi-bd-oka" secondAttribute="height" multiplier="1:1" id="Nqr-x6-kKz"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="z6g-1Z-GeM" secondAttribute="bottom" id="3Eg-BH-dfI"/>
+                                        <constraint firstItem="z6g-1Z-GeM" firstAttribute="top" secondItem="gOi-nO-D7r" secondAttribute="top" id="6XH-ZS-91u"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="DZe-Vf-hrr"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bdi-bd-oka" secondAttribute="trailing" id="FqQ-Do-IyP"/>
+                                        <constraint firstItem="hjE-iK-eF4" firstAttribute="top" secondItem="gOi-nO-D7r" secondAttribute="top" id="GpS-G5-2zl"/>
+                                        <constraint firstItem="z6g-1Z-GeM" firstAttribute="leading" secondItem="hjE-iK-eF4" secondAttribute="trailing" constant="6" id="Gxi-hA-79B"/>
+                                        <constraint firstItem="Bdi-bd-oka" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="z6g-1Z-GeM" secondAttribute="trailing" constant="10" id="VWM-a3-HfV"/>
+                                        <constraint firstAttribute="bottom" secondItem="hjE-iK-eF4" secondAttribute="bottom" id="eGY-u2-GBX"/>
+                                        <constraint firstItem="Bdi-bd-oka" firstAttribute="centerY" secondItem="gOi-nO-D7r" secondAttribute="centerY" id="jQi-ad-RvL"/>
+                                        <constraint firstItem="z6g-1Z-GeM" firstAttribute="width" secondItem="z6g-1Z-GeM" secondAttribute="height" multiplier="1:1" id="lgh-tc-3XA"/>
+                                        <constraint firstItem="hjE-iK-eF4" firstAttribute="leading" secondItem="gOi-nO-D7r" secondAttribute="leading" id="uy4-zg-dRa"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZF-P7-Xge">
+                                    <rect key="frame" x="0.0" y="422" width="375" height="16"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="aVp-a1-v6c"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUh-jF-3eh">
+                                    <rect key="frame" x="24" y="462" width="327" height="32"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="internetbanking" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-jh-0Mk">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="QiP-jh-0Mk" secondAttribute="height" multiplier="1:1" id="fGY-t1-sxL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiR-Iv-yjA" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="0.0" width="287" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="QiP-jh-0Mk" secondAttribute="bottom" id="FR3-Um-7jG"/>
+                                        <constraint firstAttribute="trailing" secondItem="HiR-Iv-yjA" secondAttribute="trailing" id="Iyh-za-Sdd"/>
+                                        <constraint firstItem="HiR-Iv-yjA" firstAttribute="leading" secondItem="QiP-jh-0Mk" secondAttribute="trailing" constant="8" id="MAO-64-z3D"/>
+                                        <constraint firstItem="QiP-jh-0Mk" firstAttribute="leading" secondItem="SUh-jF-3eh" secondAttribute="leading" id="PPG-QV-BfN"/>
+                                        <constraint firstAttribute="bottom" secondItem="HiR-Iv-yjA" secondAttribute="bottom" id="iiG-12-Sk6"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="mMA-e8-Ktj"/>
+                                        <constraint firstItem="QiP-jh-0Mk" firstAttribute="top" secondItem="SUh-jF-3eh" secondAttribute="top" id="n7b-b8-tYx"/>
+                                        <constraint firstItem="HiR-Iv-yjA" firstAttribute="top" secondItem="SUh-jF-3eh" secondAttribute="top" id="sZJ-hX-7yX"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fuU-bo-QFq">
+                                    <rect key="frame" x="0.0" y="504" width="375" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="36Z-fT-tLu"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GDI-di-vB2">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xc-RK-Smv" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                    <rect key="frame" x="68" y="554" width="283" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="GXb-ce-olS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Lihat semua bank">
+                                        <color key="titleColor" red="0.062745098039215685" green="0.55686274509803924" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-sN-ede">
+                                    <rect key="frame" x="0.0" y="620" width="375" height="16"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="p36-ty-FAd"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adv-WK-RYU">
+                                    <rect key="frame" x="24" y="660" width="327" height="32"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transfer" translatesAutoresizingMaskIntoConstraints="NO" id="Skm-Xd-1eU">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Skm-Xd-1eU" secondAttribute="height" multiplier="1:1" id="TMt-Wc-gzC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATM Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwz-Ye-TDz" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="0.0" width="287" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Skm-Xd-1eU" secondAttribute="bottom" id="7LQ-0C-Rnl"/>
+                                        <constraint firstItem="gwz-Ye-TDz" firstAttribute="leading" secondItem="Skm-Xd-1eU" secondAttribute="trailing" constant="8" id="FXO-8o-aOe"/>
+                                        <constraint firstItem="Skm-Xd-1eU" firstAttribute="leading" secondItem="Adv-WK-RYU" secondAttribute="leading" id="IeJ-AW-Hlo"/>
+                                        <constraint firstAttribute="trailing" secondItem="gwz-Ye-TDz" secondAttribute="trailing" id="S0c-7E-zfX"/>
+                                        <constraint firstItem="Skm-Xd-1eU" firstAttribute="top" secondItem="Adv-WK-RYU" secondAttribute="top" id="Z08-ri-sMa"/>
+                                        <constraint firstAttribute="bottom" secondItem="gwz-Ye-TDz" secondAttribute="bottom" id="mDX-EC-pEZ"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ogJ-ps-eHs"/>
+                                        <constraint firstItem="gwz-Ye-TDz" firstAttribute="top" secondItem="Adv-WK-RYU" secondAttribute="top" id="tdC-hj-qPm"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GAQ-TW-GhW">
+                                    <rect key="frame" x="0.0" y="702" width="375" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="8T0-AS-Sqt"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="PnK-ow-BiO">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUR-NR-Di4" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                    <rect key="frame" x="68" y="752" width="283" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="aZV-IM-ljU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Lihat semua bank">
+                                        <color key="titleColor" red="0.062745098040000002" green="0.5568627451" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubx-MN-uGY">
+                                    <rect key="frame" x="0.0" y="818" width="375" height="16"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="0lE-kW-gB8"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpo-gl-H1H">
+                                    <rect key="frame" x="24" y="858" width="327" height="32"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoney" translatesAutoresizingMaskIntoConstraints="NO" id="3te-TI-mdS">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="3te-TI-mdS" secondAttribute="height" multiplier="1:1" id="xKv-zF-MPZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B14-az-IrF" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="0.0" width="287" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="B14-az-IrF" secondAttribute="trailing" id="9me-0l-NDB"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="GqH-9Y-mOo"/>
+                                        <constraint firstAttribute="bottom" secondItem="3te-TI-mdS" secondAttribute="bottom" id="QCY-rH-yuH"/>
+                                        <constraint firstItem="3te-TI-mdS" firstAttribute="leading" secondItem="vpo-gl-H1H" secondAttribute="leading" id="Tjs-Xn-HNS"/>
+                                        <constraint firstItem="B14-az-IrF" firstAttribute="leading" secondItem="3te-TI-mdS" secondAttribute="trailing" constant="8" id="cBA-8f-FeT"/>
+                                        <constraint firstAttribute="bottom" secondItem="B14-az-IrF" secondAttribute="bottom" id="gVN-J3-6Vh"/>
+                                        <constraint firstItem="B14-az-IrF" firstAttribute="top" secondItem="vpo-gl-H1H" secondAttribute="top" id="iIo-MB-IbU"/>
+                                        <constraint firstItem="3te-TI-mdS" firstAttribute="top" secondItem="vpo-gl-H1H" secondAttribute="top" id="mtY-lY-mvJ"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8F6-FZ-Lbj">
+                                    <rect key="frame" x="0.0" y="900" width="375" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="w4h-Vu-01L"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="cZN-qI-bNr">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvM-uZ-JCo">
+                                    <rect key="frame" x="0.0" y="979" width="375" height="16"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="gPW-bn-Mi1"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cb8-n5-GCi">
+                                    <rect key="frame" x="24" y="1019" width="327" height="32"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lainya" translatesAutoresizingMaskIntoConstraints="NO" id="gKa-cY-JQg">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="gKa-cY-JQg" secondAttribute="height" multiplier="1:1" id="jlx-nh-NVd"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lainnya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-YV-vG0" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="0.0" width="287" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="7gi-2B-Y0Y"/>
+                                        <constraint firstItem="6fv-YV-vG0" firstAttribute="top" secondItem="Cb8-n5-GCi" secondAttribute="top" id="9uc-i0-qqw"/>
+                                        <constraint firstAttribute="bottom" secondItem="6fv-YV-vG0" secondAttribute="bottom" id="Auj-Xn-zgv"/>
+                                        <constraint firstItem="6fv-YV-vG0" firstAttribute="leading" secondItem="gKa-cY-JQg" secondAttribute="trailing" constant="8" id="Kfv-rd-kFF"/>
+                                        <constraint firstItem="gKa-cY-JQg" firstAttribute="leading" secondItem="Cb8-n5-GCi" secondAttribute="leading" id="bcr-cB-sWa"/>
+                                        <constraint firstAttribute="trailing" secondItem="6fv-YV-vG0" secondAttribute="trailing" id="cwC-U0-Xrf"/>
+                                        <constraint firstAttribute="bottom" secondItem="gKa-cY-JQg" secondAttribute="bottom" id="lBN-0P-AwH"/>
+                                        <constraint firstItem="gKa-cY-JQg" firstAttribute="top" secondItem="Cb8-n5-GCi" secondAttribute="top" id="qZT-iH-W1a"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="haT-am-9TW">
+                                    <rect key="frame" x="0.0" y="1061" width="375" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Kv7-Ge-cHK"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GTJ-Mp-Y8n">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKI-Ql-JfZ">
+                                    <rect key="frame" x="0.0" y="1140" width="375" height="16"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="GDF-Bz-Pz7"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="d3c-sN-ede" firstAttribute="top" secondItem="7Xc-RK-Smv" secondAttribute="bottom" constant="29" id="0U2-o1-CkU"/>
+                                <constraint firstAttribute="trailing" secondItem="Cb8-n5-GCi" secondAttribute="trailing" constant="24" id="10K-Aj-OL6"/>
+                                <constraint firstItem="d3c-sN-ede" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="3fI-6H-VaD"/>
+                                <constraint firstAttribute="trailing" secondItem="yvM-uZ-JCo" secondAttribute="trailing" id="3pC-LP-6z7"/>
+                                <constraint firstAttribute="trailing" secondItem="haT-am-9TW" secondAttribute="trailing" id="59q-b6-rJy"/>
+                                <constraint firstAttribute="trailing" secondItem="7Xc-RK-Smv" secondAttribute="trailing" constant="24" id="8of-YN-iV3"/>
+                                <constraint firstItem="vpo-gl-H1H" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="9Iy-yy-FYt"/>
+                                <constraint firstItem="YhB-mg-TM8" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="Bc5-Ga-O22"/>
+                                <constraint firstItem="Rlt-oQ-NPR" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="CBe-2d-QKi"/>
+                                <constraint firstAttribute="trailing" secondItem="ubx-MN-uGY" secondAttribute="trailing" id="CJ6-sp-C4g"/>
+                                <constraint firstItem="8F6-FZ-Lbj" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="DJo-o2-l7z"/>
+                                <constraint firstAttribute="trailing" secondItem="Adv-WK-RYU" secondAttribute="trailing" constant="24" id="E5j-N3-35w"/>
+                                <constraint firstItem="SUh-jF-3eh" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="ECg-em-7Qt"/>
+                                <constraint firstItem="gOi-nO-D7r" firstAttribute="top" secondItem="psq-FO-re7" secondAttribute="bottom" constant="21" id="Ev0-UQ-gqk"/>
+                                <constraint firstAttribute="trailing" secondItem="pxJ-Qu-U5T" secondAttribute="trailing" constant="24" id="FD8-rU-ChN"/>
+                                <constraint firstItem="cUR-NR-Di4" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="68" id="H3f-km-lfU"/>
+                                <constraint firstItem="sZF-P7-Xge" firstAttribute="top" secondItem="gOi-nO-D7r" secondAttribute="bottom" constant="29" id="HYt-Cd-zgS"/>
+                                <constraint firstItem="GAQ-TW-GhW" firstAttribute="top" secondItem="Adv-WK-RYU" secondAttribute="bottom" constant="10" id="KOx-v1-pab"/>
+                                <constraint firstItem="pxJ-Qu-U5T" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="KX2-xP-Ph3"/>
+                                <constraint firstItem="pxJ-Qu-U5T" firstAttribute="top" secondItem="oPt-RC-OWe" secondAttribute="top" constant="24" id="KaQ-xn-EKd"/>
+                                <constraint firstItem="psq-FO-re7" firstAttribute="top" secondItem="YhB-mg-TM8" secondAttribute="bottom" constant="22" id="Lor-02-Aot"/>
+                                <constraint firstItem="yKI-Ql-JfZ" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="Mqr-3G-AHd"/>
+                                <constraint firstItem="sZF-P7-Xge" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="NQE-Kk-ygv"/>
+                                <constraint firstItem="YhB-mg-TM8" firstAttribute="top" secondItem="Rlt-oQ-NPR" secondAttribute="bottom" constant="24" id="Pgh-2l-6li"/>
+                                <constraint firstAttribute="trailing" secondItem="cUR-NR-Di4" secondAttribute="trailing" constant="24" id="QVw-9u-yof"/>
+                                <constraint firstItem="SUh-jF-3eh" firstAttribute="top" secondItem="sZF-P7-Xge" secondAttribute="bottom" constant="24" id="R4l-FC-xDY"/>
+                                <constraint firstItem="yvM-uZ-JCo" firstAttribute="top" secondItem="8F6-FZ-Lbj" secondAttribute="bottom" constant="29" id="T33-A0-LRx"/>
+                                <constraint firstAttribute="trailing" secondItem="fuU-bo-QFq" secondAttribute="trailing" id="Ubg-2J-ttN"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yKI-Ql-JfZ" secondAttribute="bottom" id="Uon-19-IIg"/>
+                                <constraint firstItem="w37-uC-JSB" firstAttribute="top" secondItem="pxJ-Qu-U5T" secondAttribute="bottom" constant="30" id="VDH-f5-tOU"/>
+                                <constraint firstAttribute="trailing" secondItem="psq-FO-re7" secondAttribute="trailing" constant="24" id="Vt4-tq-qpN"/>
+                                <constraint firstItem="ubx-MN-uGY" firstAttribute="top" secondItem="cUR-NR-Di4" secondAttribute="bottom" constant="29" id="WeB-sD-BEY"/>
+                                <constraint firstItem="GAQ-TW-GhW" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="WxD-Af-efz"/>
+                                <constraint firstItem="8F6-FZ-Lbj" firstAttribute="top" secondItem="vpo-gl-H1H" secondAttribute="bottom" constant="10" id="Xof-l6-ZLI"/>
+                                <constraint firstAttribute="trailing" secondItem="SUh-jF-3eh" secondAttribute="trailing" constant="24" id="Y6m-dY-PCa"/>
+                                <constraint firstItem="7Xc-RK-Smv" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="68" id="Z7w-BQ-A6X"/>
+                                <constraint firstAttribute="trailing" secondItem="w37-uC-JSB" secondAttribute="trailing" constant="24" id="br2-Mk-dUA"/>
+                                <constraint firstItem="yKI-Ql-JfZ" firstAttribute="top" secondItem="haT-am-9TW" secondAttribute="bottom" constant="29" id="cYA-MS-amO"/>
+                                <constraint firstAttribute="trailing" secondItem="GAQ-TW-GhW" secondAttribute="trailing" id="dbs-E9-Eum"/>
+                                <constraint firstItem="Cb8-n5-GCi" firstAttribute="top" secondItem="yvM-uZ-JCo" secondAttribute="bottom" constant="24" id="dgK-Y2-Dbo"/>
+                                <constraint firstAttribute="trailing" secondItem="vpo-gl-H1H" secondAttribute="trailing" constant="24" id="enC-jl-s3n"/>
+                                <constraint firstItem="gOi-nO-D7r" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="68" id="f58-IG-goq"/>
+                                <constraint firstAttribute="trailing" secondItem="8F6-FZ-Lbj" secondAttribute="trailing" id="feu-A8-0dI"/>
+                                <constraint firstItem="cUR-NR-Di4" firstAttribute="top" secondItem="GAQ-TW-GhW" secondAttribute="bottom" id="gEk-Ks-21c"/>
+                                <constraint firstAttribute="trailing" secondItem="sZF-P7-Xge" secondAttribute="trailing" id="hSi-7U-xg8"/>
+                                <constraint firstItem="Adv-WK-RYU" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="iQ6-jv-Wtr"/>
+                                <constraint firstItem="fuU-bo-QFq" firstAttribute="top" secondItem="SUh-jF-3eh" secondAttribute="bottom" constant="10" id="jzk-cW-gFD"/>
+                                <constraint firstItem="fuU-bo-QFq" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="kp2-p5-03e"/>
+                                <constraint firstItem="Rlt-oQ-NPR" firstAttribute="top" secondItem="w37-uC-JSB" secondAttribute="bottom" constant="30" id="oGR-ej-8fT"/>
+                                <constraint firstAttribute="trailing" secondItem="d3c-sN-ede" secondAttribute="trailing" id="pd0-AT-osM"/>
+                                <constraint firstItem="7Xc-RK-Smv" firstAttribute="top" secondItem="fuU-bo-QFq" secondAttribute="bottom" id="qxX-pS-UlL"/>
+                                <constraint firstItem="w37-uC-JSB" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="r18-II-2rF"/>
+                                <constraint firstItem="ubx-MN-uGY" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="r7u-en-zQC"/>
+                                <constraint firstAttribute="trailing" secondItem="yKI-Ql-JfZ" secondAttribute="trailing" id="s0U-aQ-amm"/>
+                                <constraint firstItem="haT-am-9TW" firstAttribute="top" secondItem="Cb8-n5-GCi" secondAttribute="bottom" constant="10" id="sfm-6r-SWW"/>
+                                <constraint firstItem="psq-FO-re7" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="sj8-bI-uPx"/>
+                                <constraint firstItem="Cb8-n5-GCi" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" constant="24" id="sjy-4v-0kY"/>
+                                <constraint firstAttribute="trailing" secondItem="Rlt-oQ-NPR" secondAttribute="trailing" id="tGb-N6-LT5"/>
+                                <constraint firstItem="haT-am-9TW" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="tUg-PJ-mSH"/>
+                                <constraint firstAttribute="trailing" secondItem="YhB-mg-TM8" secondAttribute="trailing" constant="24" id="tt8-oG-1BF"/>
+                                <constraint firstItem="Adv-WK-RYU" firstAttribute="top" secondItem="d3c-sN-ede" secondAttribute="bottom" constant="24" id="xpw-hZ-Ndr"/>
+                                <constraint firstAttribute="trailing" secondItem="gOi-nO-D7r" secondAttribute="trailing" constant="24" id="yAG-mq-ISr"/>
+                                <constraint firstItem="vpo-gl-H1H" firstAttribute="top" secondItem="ubx-MN-uGY" secondAttribute="bottom" constant="24" id="ycF-1r-VTR"/>
+                                <constraint firstItem="yvM-uZ-JCo" firstAttribute="leading" secondItem="oPt-RC-OWe" secondAttribute="leading" id="yjZ-ro-pTD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="oPt-RC-OWe" firstAttribute="width" secondItem="aBq-Mn-Zlk" secondAttribute="width" id="1mP-IZ-FwG"/>
+                        <constraint firstItem="oPt-RC-OWe" firstAttribute="leading" secondItem="aBq-Mn-Zlk" secondAttribute="leading" id="9Fo-Zr-IXr"/>
+                        <constraint firstItem="oPt-RC-OWe" firstAttribute="top" secondItem="aBq-Mn-Zlk" secondAttribute="top" id="KRO-s5-rUA"/>
+                        <constraint firstAttribute="trailing" secondItem="oPt-RC-OWe" secondAttribute="trailing" id="NTH-vQ-rHU"/>
+                        <constraint firstItem="oPt-RC-OWe" firstAttribute="height" secondItem="aBq-Mn-Zlk" secondAttribute="height" priority="250" id="WbT-HP-hCV"/>
+                        <constraint firstAttribute="bottom" secondItem="oPt-RC-OWe" secondAttribute="bottom" id="m0f-Jb-AkF"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="s6t-jl-a8K" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DtJ-tx-BJN"/>
-                <constraint firstItem="s6t-jl-a8K" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bSO-pX-kFO"/>
+                <constraint firstItem="hjE-iK-eF4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.106667" id="4ed-94-YpH"/>
+                <constraint firstItem="Bdi-bd-oka" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.032" id="A7v-t5-Ypn"/>
+                <constraint firstItem="aBq-Mn-Zlk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bhu-pf-mG3"/>
+                <constraint firstItem="T1L-NF-pws" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.048" id="Kuf-R4-Z4d"/>
+                <constraint firstAttribute="trailing" secondItem="aBq-Mn-Zlk" secondAttribute="trailing" id="LAu-Qr-oVO"/>
+                <constraint firstItem="WqN-5q-XbP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.085" id="SV6-eP-ieT"/>
+                <constraint firstItem="z6g-1Z-GeM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.106667" id="YNc-6N-hci"/>
+                <constraint firstAttribute="bottom" secondItem="aBq-Mn-Zlk" secondAttribute="bottom" id="hYa-Iu-3q5"/>
+                <constraint firstItem="aBq-Mn-Zlk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tGs-SP-gaY"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="154"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153.37331334332833"/>
         </view>
     </objects>
+    <resources>
+        <image name="emoney" width="32" height="32"/>
+        <image name="errorwhite" width="18" height="18"/>
+        <image name="internetbanking" width="32" height="32"/>
+        <image name="kartukredit" width="32" height="32"/>
+        <image name="keyboardArrowRight24Px1" width="7" height="11.5"/>
+        <image name="lainya" width="32" height="32"/>
+        <image name="mastercard" width="40" height="40"/>
+        <image name="transfer" width="32" height="32"/>
+        <image name="visa" width="40" height="40"/>
+    </resources>
 </document>
