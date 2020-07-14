@@ -149,10 +149,10 @@
             <connections>
                 <outlet property="imageContactMarginRight" destination="VaT-0R-npe" id="TDn-c2-Moe"/>
                 <outlet property="imageContactWidth" destination="Mkx-Op-0b3" id="CXY-CH-UWJ"/>
-                <outlet property="labelNIK" destination="8cC-4S-opd" id="gfl-qc-mfB"/>
                 <outlet property="labelNama" destination="RE2-eM-Bgz" id="nyO-GT-jJE"/>
+                <outlet property="labelNomorIdentitas" destination="8cC-4S-opd" id="bkN-2z-Ama"/>
                 <outlet property="labelPeserta" destination="c3r-4z-YgG" id="NZy-db-PAQ"/>
-                <outlet property="labelTypePeserta" destination="7bl-3l-h1c" id="apV-iT-u8Z"/>
+                <outlet property="labelTitle" destination="7bl-3l-h1c" id="H4b-lW-2w7"/>
                 <outlet property="viewDivider" destination="HT3-I8-HtK" id="CFW-g5-iEr"/>
             </connections>
             <point key="canvasLocation" x="130.43478260869566" y="153.34821428571428"/>

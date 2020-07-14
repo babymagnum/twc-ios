@@ -96,6 +96,9 @@ class RencanaPerjalananVC: ButtonBarPagerTabStripViewController {
     
     private func setupView() {
         navigationController?.setNavigationBarHidden(false, animated: true)
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = false
+        }
         navigationController?.navigationBar.tintColor = UIColor.mediumGreen
         self.containerView.isScrollEnabled = false
     }

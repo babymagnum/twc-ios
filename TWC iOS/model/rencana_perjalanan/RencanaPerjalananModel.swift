@@ -36,7 +36,15 @@ struct RencanaPerjalananTempatModel {
 struct DataPesertaModel {
     var nama: String
     var peserta: String
-    var typePeserta: String
-    var nik: String
+    var title: String
+    var nomorIdentitas: String
     var isKontak: Bool
+    var tipeIdentitas: String
+    var isFilled: Bool
+}
+
+struct DataKontakPerson {
+    var nomorHandphone: String?
+    var email: String?
+    var alamat: String?
 }

@@ -44,13 +44,12 @@ class PilihTujuanWisataVC: BaseViewController, UICollectionViewDelegate {
         pilihTujuanWisataVM.listDieng.subscribe(onNext: { value in
             if value.count > 0 {
                 self.collectionDieng.reloadData()
+                self.collectionDieng.layoutSubviews()
                 
-                DispatchQueue.main.asyncAfter(deadline: .now()) {
-                    UIView.animate(withDuration: 0.2) {
-                        self.loadingDieng.isHidden = true
-                        self.collectionDiengHeight.constant = self.screenWidth * 0.43
-                        self.view.layoutIfNeeded()
-                    }
+                UIView.animate(withDuration: 0.2) {
+                    self.loadingDieng.isHidden = true
+                    self.collectionDiengHeight.constant = self.screenWidth * 0.43
+                    self.view.layoutIfNeeded()
                 }
             }
         }).disposed(by: disposeBag)
@@ -58,13 +57,12 @@ class PilihTujuanWisataVC: BaseViewController, UICollectionViewDelegate {
         pilihTujuanWisataVM.listMagelang.subscribe(onNext: { value in
             if value.count > 0 {
                 self.collectionMagelang.reloadData()
+                self.collectionMagelang.layoutSubviews()
                 
-                DispatchQueue.main.asyncAfter(deadline: .now()) {
-                    UIView.animate(withDuration: 0.2) {
-                        self.loadingMagelang.isHidden = true
-                        self.collectionMagelangHeight.constant = self.screenWidth * 0.43
-                        self.view.layoutIfNeeded()
-                    }
+                UIView.animate(withDuration: 0.2) {
+                    self.loadingMagelang.isHidden = true
+                    self.collectionMagelangHeight.constant = self.screenWidth * 0.43
+                    self.view.layoutIfNeeded()
                 }
             }
         }).disposed(by: disposeBag)
@@ -72,13 +70,12 @@ class PilihTujuanWisataVC: BaseViewController, UICollectionViewDelegate {
         pilihTujuanWisataVM.listYogyakarta.subscribe(onNext: { value in
             if value.count > 0 {
                 self.collectionYogyakarta.reloadData()
+                self.collectionYogyakarta.layoutSubviews()
                 
-                DispatchQueue.main.asyncAfter(deadline: .now()) {
-                    UIView.animate(withDuration: 0.2) {
-                        self.loadingYogyakarta.isHidden = true
-                        self.collectionYogyakartaHeight.constant = self.screenWidth * 0.43
-                        self.view.layoutIfNeeded()
-                    }
+                UIView.animate(withDuration: 0.2) {
+                    self.loadingYogyakarta.isHidden = true
+                    self.collectionYogyakartaHeight.constant = self.screenWidth * 0.43
+                    self.view.layoutIfNeeded()
                 }
             }
         }).disposed(by: disposeBag)

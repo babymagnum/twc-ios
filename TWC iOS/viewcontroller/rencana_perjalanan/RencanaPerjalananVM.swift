@@ -20,6 +20,7 @@ class RencanaPerjalananVM: BaseViewModel {
     var selectedDates = BehaviorRelay(value: [Date()])
     var currentRencanaPerjalananPage = BehaviorRelay(value: 0)
     var maxRencanaPerjalananPage = BehaviorRelay(value: 0)
+    var dataKontakPerson = BehaviorRelay(value: DataKontakPerson())
     
     func resetAllData() {
         listTujuanWisataCounter.accept(0)
@@ -31,6 +32,20 @@ class RencanaPerjalananVM: BaseViewModel {
         selectedDates.accept([Date()])
         currentRencanaPerjalananPage.accept(0)
         maxRencanaPerjalananPage.accept(0)
+        dataKontakPerson.accept(DataKontakPerson())
+    }
+    
+    func updateDataPeserta(selectedIndex: Int, newData: DataPesertaModel) {
+        var _listPeserta = listDataPeserta.value
+        _listPeserta[selectedIndex] = newData
+        
+        for (index, _) in _listPeserta.enumerated() {
+            if index != selectedIndex {
+                _listPeserta[index].isKontak = false
+            }
+        }
+        
+        listDataPeserta.accept(_listPeserta)
     }
     
     func addTujuanWisata(tujuanWisata: TujuanWisataModel) {
@@ -62,12 +77,12 @@ class RencanaPerjalananVM: BaseViewModel {
         var _listDataPeserta = [DataPesertaModel]()
         
         for index in 0...pesertaDewasa.value - 1 {
-            _listDataPeserta.append(DataPesertaModel(nama: "Dewasa \(index + 1)", peserta: "Lengkapi data peserta", typePeserta: "", nik: "", isKontak: false))
+            _listDataPeserta.append(DataPesertaModel(nama: "Dewasa \(index + 1)", peserta: "Dewasa \(index + 1)", title: "", nomorIdentitas: "", isKontak: false, tipeIdentitas: "Tipe identitas", isFilled: false))
         }
         
         if pesertaAnak.value > 0 {
             for index in 0...pesertaAnak.value - 1 {
-                _listDataPeserta.append(DataPesertaModel(nama: "Anak \(index + 1)", peserta: "Lengkapi data peserta", typePeserta: "", nik: "", isKontak: false))
+                _listDataPeserta.append(DataPesertaModel(nama: "Anak \(index + 1)", peserta: "Anak \(index + 1)", title: "", nomorIdentitas: "", isKontak: false, tipeIdentitas: "Tipe identitas", isFilled: false))
             }
         }
         

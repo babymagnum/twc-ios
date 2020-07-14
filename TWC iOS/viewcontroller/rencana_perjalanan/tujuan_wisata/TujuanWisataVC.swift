@@ -126,8 +126,11 @@ extension TujuanWisataVC {
     @IBAction func tambahHariClick(_ sender: Any) {
         listHari.append(HariModel(name: "Hari \(listHari.count + 1)", selected: false))
         collectionHari.reloadData()
+        collectionHari.layoutSubviews()
         collectionTujuanWisata.reloadData()
+        collectionTujuanWisata.layoutSubviews()
         
+        /// Add data to selected dates in ViewModel
         let addedDate = Calendar.current.date(byAdding: .day, value: 1, to: rencanaPerjalananVM.selectedDates.value.last ?? Date()) ?? Date()
         print("added date \(PublicFunction.dateToString(addedDate, "dd MMMM yyyy"))")
         var _selectedDates = rencanaPerjalananVM.selectedDates.value
@@ -149,5 +152,6 @@ extension TujuanWisataVC {
         }
         
         collectionHari.reloadData()
+        collectionHari.layoutSubviews()
     }
 }

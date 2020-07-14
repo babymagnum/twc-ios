@@ -61,10 +61,12 @@ class BerandaVC: BaseViewController, UICollectionViewDelegate {
         
         berandaVM.listPaketFavorite.subscribe(onNext: { value in
             self.collectionPaketFavorit.reloadData()
+            self.collectionPaketFavorit.layoutSubviews()
             
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
+            UIView.animate(withDuration: 0.2) {
                 self.loadingPaketFavorite.isHidden = value.count > 0
                 self.collectionPaketFavoriteHeight.constant = self.collectionPaketFavorit.contentSize.height
+                self.view.layoutIfNeeded()
             }
         }).disposed(by: disposeBag)
     }

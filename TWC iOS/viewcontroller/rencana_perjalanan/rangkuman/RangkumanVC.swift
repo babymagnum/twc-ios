@@ -44,30 +44,28 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
     private func observeData() {
         rencanaPerjalananVM.listRencanaPerjalanan.subscribe(onNext: { value in
             self.collectionRencanaPerjalanan.reloadData()
+            self.collectionRencanaPerjalanan.layoutSubviews()
             
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
-                UIView.animate(withDuration: 0.2) {
-                    self.collectionRencanaPerjalananHeight.constant = self.collectionRencanaPerjalanan.contentSize.height
-                    self.view.layoutIfNeeded()
-                }
+            UIView.animate(withDuration: 0.2) {
+                self.collectionRencanaPerjalananHeight.constant = self.collectionRencanaPerjalanan.contentSize.height
+                self.view.layoutIfNeeded()
             }
         }).disposed(by: disposeBag)
         
         rencanaPerjalananVM.listDataPeserta.subscribe(onNext: { value in
             self.labelPeserta.text = "Total (x\(value.count) peserta)"
             self.collectionDataPeserta.reloadData()
+            self.collectionDataPeserta.layoutSubviews()
             
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
-                UIView.animate(withDuration: 0.2) {
-                    self.collectionDataPesertaHeight.constant = self.collectionDataPeserta.contentSize.height
-                    self.view.layoutIfNeeded()
-                }
+            UIView.animate(withDuration: 0.2) {
+                self.collectionDataPesertaHeight.constant = self.collectionDataPeserta.contentSize.height
+                self.view.layoutIfNeeded()
             }
         }).disposed(by: disposeBag)
         
         rencanaPerjalananVM.listTujuanWisata.subscribe(onNext: { value in
             var hargaTiket = 0
-            var totalPeserta = self.rencanaPerjalananVM.listDataPeserta.value.count
+            let totalPeserta = self.rencanaPerjalananVM.listDataPeserta.value.count
             
             value.forEach { item in hargaTiket += item.harga }
             
@@ -151,6 +149,8 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
                     }
                 }
                 
+                cell.viewDivider.isHidden = indexPath.item == rencanaPerjalananVM.listRencanaPerjalanan.value.count - 1
+                
                 return cell
             }
         } else {
@@ -186,15 +186,53 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
 }
 
 extension RangkumanVC {
-    @objc func cellDataPesertaClick(sender: UITapGestureRecognizer) {
-        guard let indexPath = collectionDataPeserta.indexPathForItem(at: sender.location(in: collectionDataPeserta)) else { return }
+    
+    private func allowToNext() -> Bool {
+        var emptyKontakPerson = true
+        var emptyDataPeserta = false
         
-        navigationController?.pushViewController(DataPesertaVC(), animated: true)
+        rencanaPerjalananVM.listDataPeserta.value.forEach { item in
+            if emptyKontakPerson && item.isKontak {
+                emptyKontakPerson = false
+            }
+            
+            if !emptyDataPeserta && item.nomorIdentitas == "" {
+                emptyDataPeserta = true
+            }
+        }
+        
+        if emptyDataPeserta {
+            PublicFunction.showUnderstandDialog(self, "Taman Wisata Candi", "Anda belum melengkapi data peserta", "Ok")
+            return false
+        } else if emptyKontakPerson {
+            PublicFunction.showUnderstandDialog(self, "Taman Wisata Candi", "Anda belum menentukan kontak person", "Ok")
+            return false
+        } else {
+            return true
+        }
     }
     
     @IBAction func bayarClick(_ sender: Any) {
+        if allowToNext() {
+            PublicFunction.showUnderstandDialog(self, "Konfirmasi", "Apakah anda yakin rencana perjalanan anda sudah benar?", "Ya", "Batal") {
+                print("ok")
+            }
+        }
     }
     
     @IBAction func simpanDuluClick(_ sender: Any) {
+        if allowToNext() {
+            print("next")
+        }
     }
+    
+    @objc func cellDataPesertaClick(sender: UITapGestureRecognizer) {
+        guard let indexPath = collectionDataPeserta.indexPathForItem(at: sender.location(in: collectionDataPeserta)) else { return }
+        
+        let vc = DataPesertaVC()
+        vc.selectedIndex = indexPath.item
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

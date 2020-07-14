@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataPesertaVC" customModule="Taman_Wisata_Candi" customModuleProvider="target">
             <connections>
+                <outlet property="buttonSelesai" destination="3Rd-Gy-Ld4" id="GUv-gW-wC9"/>
                 <outlet property="fieldAlamat" destination="YKi-dl-6CB" id="jLw-gC-U7a"/>
                 <outlet property="fieldEmail" destination="J56-gC-s4I" id="jdW-WT-uZb"/>
                 <outlet property="fieldNamaLengkap" destination="37q-Vb-SGV" id="uaL-DI-9s6"/>
@@ -100,7 +101,7 @@
                                                     <rect key="frame" x="24" y="130" width="327" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
@@ -157,7 +158,7 @@
                                                     <rect key="frame" x="24" y="243" width="327" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
@@ -288,7 +289,7 @@
                                                     <rect key="frame" x="24" y="74" width="327" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
@@ -307,7 +308,7 @@
                                                     <rect key="frame" x="24" y="131" width="327" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
@@ -326,7 +327,7 @@
                                                     <rect key="frame" x="24" y="188" width="327" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
@@ -386,6 +387,9 @@
                                                     <real key="value" value="14"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="selesaiClick:" destination="-1" eventType="touchUpInside" id="iJn-Kh-yRD"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

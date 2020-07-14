@@ -37,8 +37,6 @@ class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
         super.awakeFromNib()                
         
         setupCollection()
-                        
-        observeData(hari: hari ?? 1)
         
         setupEvent()
     }
@@ -56,22 +54,24 @@ class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
             }
             
             self.collectionTujuanWisata.reloadData()
+            self.collectionTujuanWisata.layoutSubviews()
             
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
-                UIView.animate(withDuration: 0.2) {
-                    self.collectionTujuanWisataMarginTop.constant = self.listTujuanWisata.count == 0 ? 0 : 10
-                    self.viewEmptyHeight.constant = self.listTujuanWisata.count == 0 ? 1000 : 0
-                    self.viewEmpty.isHidden = self.listTujuanWisata.count > 0
-                    self.collectionTujuanWisataHeight.constant = self.collectionTujuanWisata.contentSize.height
-                    self.layoutIfNeeded()
-                }
+            UIView.animate(withDuration: 0.2) {
+                self.collectionTujuanWisataMarginTop.constant = self.listTujuanWisata.count == 0 ? 0 : 10
+                self.viewEmptyHeight.constant = self.listTujuanWisata.count == 0 ? 10000 : 0
+                self.viewEmpty.isHidden = self.listTujuanWisata.count > 0
+                self.collectionTujuanWisataHeight.constant = self.collectionTujuanWisata.contentSize.height
+                self.layoutIfNeeded()
             }
         }).disposed(by: disposeBag)
     }
     
     private func setupCollection() {
-        collectionTujuanWisataMarginTop.constant = 0
-        collectionTujuanWisataHeight.constant = 0
+        UIView.animate(withDuration: 0.2) {
+            self.collectionTujuanWisataMarginTop.constant = 0
+            self.collectionTujuanWisataHeight.constant = 0
+            self.layoutIfNeeded()
+        }
         collectionTujuanWisata.register(UINib(nibName: "TujuanWisataCell", bundle: .main), forCellWithReuseIdentifier: "TujuanWisataCell")
         collectionTujuanWisata.delegate = self
         collectionTujuanWisata.dataSource = self
