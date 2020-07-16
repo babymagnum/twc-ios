@@ -162,17 +162,25 @@ extension PembayaranVC: UICollectionViewDataSource, UICollectionViewDelegateFlow
 extension PembayaranVC {
     @objc func cellInternetBankingClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionInternetBanking.indexPathForItem(at: sender.location(in: collectionInternetBanking)) else { return }
+        
+        navigationController?.pushViewController(DetailMetodePembayaranVC(), animated: true)
     }
     
     @objc func cellATMTransferClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionATMTransfer.indexPathForItem(at: sender.location(in: collectionATMTransfer)) else { return }
+        
+        navigationController?.pushViewController(DetailMetodePembayaranVC(), animated: true)
     }
     
     @objc func cellEmoneyClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionEmoney.indexPathForItem(at: sender.location(in: collectionEmoney)) else { return }
+        
+        navigationController?.pushViewController(DetailMetodePembayaranVC(), animated: true)
     }
     
     @objc func cellLainyaClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionLainya.indexPathForItem(at: sender.location(in: collectionLainya)) else { return }
+        
+        navigationController?.pushViewController(DetailMetodePembayaranVC(), animated: true)
     }
 }

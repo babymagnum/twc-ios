@@ -102,6 +102,11 @@
 		EDAF371F24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAF371D24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib */; };
 		EDAF372224B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */; };
 		EDAF372424B2D34D00A27FF1 /* PilihTujuanWisataVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF372324B2D34D00A27FF1 /* PilihTujuanWisataVM.swift */; };
+		EDB0256D24C02EB40026247D /* DetailMetodePembayaranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB0256B24C02EB40026247D /* DetailMetodePembayaranVC.swift */; };
+		EDB0256E24C02EB40026247D /* DetailMetodePembayaranVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB0256C24C02EB40026247D /* DetailMetodePembayaranVC.xib */; };
+		EDB0257224C034EF0026247D /* BankTransferStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB0257024C034EF0026247D /* BankTransferStepCell.swift */; };
+		EDB0257324C034EF0026247D /* BankTransferStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB0257124C034EF0026247D /* BankTransferStepCell.xib */; };
+		EDB0257624C037EA0026247D /* DetailMetodePembayaranModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */; };
 		EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB39326244471C2004BEC80 /* LoginVM.swift */; };
 		EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3932824447398004BEC80 /* BaseViewModel.swift */; };
 		EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6AC7524A7004F00457144 /* OnboardingCell.swift */; };
@@ -133,6 +138,9 @@
 		EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD724A6FAB4007CD973 /* SFProDisplay-Semibold.ttf */; };
 		EDCA7ADD24A6FAB4007CD973 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD824A6FAB4007CD973 /* SFProDisplay-Regular.ttf */; };
 		EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCFD2EF24440B3400A890F4 /* BerandaVM.swift */; };
+		EDD6528024C039B600617C06 /* DetailMetodePembayaranVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD6527F24C039B600617C06 /* DetailMetodePembayaranVM.swift */; };
+		EDD6528424C03FB600617C06 /* DetailHargaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD6528224C03FB600617C06 /* DetailHargaVC.swift */; };
+		EDD6528524C03FB600617C06 /* DetailHargaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD6528324C03FB600617C06 /* DetailHargaVC.xib */; };
 		EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE8D9582478E89A00ED127B /* GoogleService-Info.plist */; };
 		EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE8D95D2479069400ED127B /* DialogAlert.swift */; };
 		EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE8D95F2479069800ED127B /* DialogAlert.xib */; };
@@ -248,6 +256,11 @@
 		EDAF371D24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PilihTujuanWisataCell.xib; sourceTree = "<group>"; };
 		EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanTujuanWisataModel.swift; sourceTree = "<group>"; };
 		EDAF372324B2D34D00A27FF1 /* PilihTujuanWisataVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihTujuanWisataVM.swift; sourceTree = "<group>"; };
+		EDB0256B24C02EB40026247D /* DetailMetodePembayaranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMetodePembayaranVC.swift; sourceTree = "<group>"; };
+		EDB0256C24C02EB40026247D /* DetailMetodePembayaranVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMetodePembayaranVC.xib; sourceTree = "<group>"; };
+		EDB0257024C034EF0026247D /* BankTransferStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTransferStepCell.swift; sourceTree = "<group>"; };
+		EDB0257124C034EF0026247D /* BankTransferStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTransferStepCell.xib; sourceTree = "<group>"; };
+		EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMetodePembayaranModel.swift; sourceTree = "<group>"; };
 		EDB39326244471C2004BEC80 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		EDB3932824447398004BEC80 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		EDB6AC7524A7004F00457144 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
@@ -277,6 +290,9 @@
 		EDCFD2EC2444084500A890F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ProfileVC.strings; sourceTree = "<group>"; };
 		EDCFD2EE2444084600A890F4 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/ProfileVC.strings; sourceTree = "<group>"; };
 		EDCFD2EF24440B3400A890F4 /* BerandaVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerandaVM.swift; sourceTree = "<group>"; };
+		EDD6527F24C039B600617C06 /* DetailMetodePembayaranVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMetodePembayaranVM.swift; sourceTree = "<group>"; };
+		EDD6528224C03FB600617C06 /* DetailHargaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHargaVC.swift; sourceTree = "<group>"; };
+		EDD6528324C03FB600617C06 /* DetailHargaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHargaVC.xib; sourceTree = "<group>"; };
 		EDE8D9582478E89A00ED127B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDE8D95D2479069400ED127B /* DialogAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogAlert.swift; sourceTree = "<group>"; };
 		EDE8D95F2479069800ED127B /* DialogAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogAlert.xib; sourceTree = "<group>"; };
@@ -575,6 +591,7 @@
 		ED95907A22EBE2AC00D696E5 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				EDB0257424C037E10026247D /* detail_metode_pembayaran */,
 				ED28C08124BDA922008CD53D /* pembayaran */,
 				EDAF372024B2D19900A27FF1 /* pilihan_tujuan_wisata */,
 				ED053AA624B1B401000FAE15 /* rencana_perjalanan */,
@@ -628,6 +645,7 @@
 		ED95909C22EBF98400D696E5 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				EDB0256F24C034C70026247D /* detail_metode_pembayaran */,
 				ED28C07C24BDA754008CD53D /* pembayaran */,
 				EDAF371B24B2C94C00A27FF1 /* pilih_tujuan_wisata */,
 				ED053AA124B1B2F4000FAE15 /* rencana_perjalanan */,
@@ -665,6 +683,42 @@
 			path = pilihan_tujuan_wisata;
 			sourceTree = "<group>";
 		};
+		EDB0256924C02E970026247D /* detail_metode_pembayaran */ = {
+			isa = PBXGroup;
+			children = (
+				EDB0256B24C02EB40026247D /* DetailMetodePembayaranVC.swift */,
+				EDB0256C24C02EB40026247D /* DetailMetodePembayaranVC.xib */,
+				EDD6527F24C039B600617C06 /* DetailMetodePembayaranVM.swift */,
+			);
+			path = detail_metode_pembayaran;
+			sourceTree = "<group>";
+		};
+		EDB0256A24C02E9F0026247D /* detail_harga */ = {
+			isa = PBXGroup;
+			children = (
+				EDD6528224C03FB600617C06 /* DetailHargaVC.swift */,
+				EDD6528324C03FB600617C06 /* DetailHargaVC.xib */,
+			);
+			path = detail_harga;
+			sourceTree = "<group>";
+		};
+		EDB0256F24C034C70026247D /* detail_metode_pembayaran */ = {
+			isa = PBXGroup;
+			children = (
+				EDB0257024C034EF0026247D /* BankTransferStepCell.swift */,
+				EDB0257124C034EF0026247D /* BankTransferStepCell.xib */,
+			);
+			path = detail_metode_pembayaran;
+			sourceTree = "<group>";
+		};
+		EDB0257424C037E10026247D /* detail_metode_pembayaran */ = {
+			isa = PBXGroup;
+			children = (
+				EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */,
+			);
+			path = detail_metode_pembayaran;
+			sourceTree = "<group>";
+		};
 		EDB6AC7424A7002500457144 /* onboarding_cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +739,8 @@
 		EDC465E624B0ADFB00F4CA39 /* rencana_perjalanan */ = {
 			isa = PBXGroup;
 			children = (
+				EDB0256A24C02E9F0026247D /* detail_harga */,
+				EDB0256924C02E970026247D /* detail_metode_pembayaran */,
 				EDC465EF24B0C39500F4CA39 /* waktu_peserta */,
 				EDC465EE24B0C37300F4CA39 /* pembayaran */,
 				EDC465ED24B0C36E00F4CA39 /* rangkuman */,
@@ -893,12 +949,15 @@
 				ED3688AB24AD691500AEC88A /* TanggalCell.xib in Resources */,
 				EDCA7ADC24A6FAB4007CD973 /* SFProDisplay-Semibold.ttf in Resources */,
 				ED95909522EBEE9300D696E5 /* SplashController.xib in Resources */,
+				EDD6528524C03FB600617C06 /* DetailHargaVC.xib in Resources */,
 				ED36210A24B3340B00307602 /* RencanaPerjalananTempatCell.xib in Resources */,
 				ED2A3EB124A849C10040D24B /* Nunito-Black.ttf in Resources */,
+				EDB0256E24C02EB40026247D /* DetailMetodePembayaranVC.xib in Resources */,
 				ED95906D22EBDF3300D696E5 /* Main.storyboard in Resources */,
 				ED1CDFEE2440617600DD40FC /* BerandaVC.xib in Resources */,
 				ED4C0130243DAB1200A1EB0A /* Poppins-ExtraBold.ttf in Resources */,
 				ED2A3EB024A849C10040D24B /* Nunito-ExtraBold.ttf in Resources */,
+				EDB0257324C034EF0026247D /* BankTransferStepCell.xib in Resources */,
 				EDC465EA24B0AE1100F4CA39 /* RencanaPerjalananVC.xib in Resources */,
 				ED4C012E243DAB1200A1EB0A /* Poppins-Regular.ttf in Resources */,
 				EDC151FA23FE978F00659A63 /* Roboto-Light.ttf in Resources */,
@@ -1009,7 +1068,9 @@
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
 				ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */,
 				ED053AB424B1D1F8000FAE15 /* RencanaPerjalananVM.swift in Sources */,
+				EDD6528424C03FB600617C06 /* DetailHargaVC.swift in Sources */,
 				ED2A3EB624A85E300040D24B /* LupaKataSandiBerhasilVC.swift in Sources */,
+				EDB0257624C037EA0026247D /* DetailMetodePembayaranModel.swift in Sources */,
 				EDAF371E24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift in Sources */,
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */,
@@ -1018,6 +1079,7 @@
 				EDC465FA24B0C3C300F4CA39 /* RangkumanVC.swift in Sources */,
 				ED36210924B3340B00307602 /* RencanaPerjalananTempatCell.swift in Sources */,
 				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
+				EDB0256D24C02EB40026247D /* DetailMetodePembayaranVC.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
 				ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */,
 				ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */,
@@ -1026,10 +1088,12 @@
 				ED95908022EBE77B00D696E5 /* Constant.swift in Sources */,
 				ED3620FF24B3312800307602 /* RencanaPerjalananCell.swift in Sources */,
 				ED3821E224B469D2003CD3A2 /* DataPesertaVC.swift in Sources */,
+				EDD6528024C039B600617C06 /* DetailMetodePembayaranVM.swift in Sources */,
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
 				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */,
 				ED507E99243F857D0038CA6E /* CustomView.swift in Sources */,
+				EDB0257224C034EF0026247D /* BankTransferStepCell.swift in Sources */,
 				EDAF372224B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift in Sources */,
 				EDC465E924B0AE1100F4CA39 /* RencanaPerjalananVC.swift in Sources */,
 				EDCFD2F024440B3400A890F4 /* BerandaVM.swift in Sources */,

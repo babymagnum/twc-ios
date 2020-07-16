@@ -78,6 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             single { RencanaPerjalananVM() }
             single { PilihTujuanWisataVM() }
             single { PembayaranVM() }
+            single { DetailMetodePembayaranVM() }
         })
     }
     

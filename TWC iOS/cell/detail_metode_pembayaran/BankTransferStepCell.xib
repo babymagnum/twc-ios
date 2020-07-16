@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BankTransferStepCell" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="755" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZS-wh-Pce" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                        <rect key="frame" x="24" y="0.0" width="20" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Pxn-8q-niI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Pastikan data Virtual Account Anda benar, kemudian masukkan angka yang perlu Anda bayarkan, kemudian pilih “BENAR“" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S55-rb-2UM" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                        <rect key="frame" x="45" y="0.0" width="306" height="50.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="S55-rb-2UM" firstAttribute="leading" secondItem="nZS-wh-Pce" secondAttribute="trailing" constant="1" id="GoC-5N-BxC"/>
+                <constraint firstItem="S55-rb-2UM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WN1-SC-FVZ"/>
+                <constraint firstItem="nZS-wh-Pce" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="aMp-bv-BTp"/>
+                <constraint firstAttribute="trailing" secondItem="S55-rb-2UM" secondAttribute="trailing" constant="24" id="fIj-kP-ync"/>
+                <constraint firstItem="nZS-wh-Pce" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yqa-tP-PBp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="labelContent" destination="S55-rb-2UM" id="I04-FK-Nxd"/>
+                <outlet property="labelNumber" destination="nZS-wh-Pce" id="muu-cV-1Q7"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="129"/>
+        </collectionViewCell>
+    </objects>
+</document>
