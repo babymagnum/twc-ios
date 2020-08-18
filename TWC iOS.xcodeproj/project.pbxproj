@@ -21,6 +21,8 @@
 		ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED10746422F5B98A00ADF055 /* WebKit.framework */; };
 		ED1304AF24EB5F3400247904 /* RangkumanDaftarAgenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1304AD24EB5F3400247904 /* RangkumanDaftarAgenVC.swift */; };
 		ED1304B024EB5F3400247904 /* RangkumanDaftarAgenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1304AE24EB5F3400247904 /* RangkumanDaftarAgenVC.xib */; };
+		ED1304B424EB904A00247904 /* DialogBerhasilKirimDataAgen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1304B224EB904A00247904 /* DialogBerhasilKirimDataAgen.swift */; };
+		ED1304B524EB904A00247904 /* DialogBerhasilKirimDataAgen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1304B324EB904A00247904 /* DialogBerhasilKirimDataAgen.xib */; };
 		ED139BB82302EC9000B854BC /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED139BB72302EC9000B854BC /* CustomTextView.swift */; };
 		ED1A383324A9686900110474 /* PesananVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A383124A9686900110474 /* PesananVC.swift */; };
 		ED1A383424A9686900110474 /* PesananVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1A383224A9686900110474 /* PesananVC.xib */; };
@@ -30,8 +32,6 @@
 		ED1D8FA324EB5578005EA0BB /* DaftarJadiAgenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D8FA124EB5578005EA0BB /* DaftarJadiAgenVC.swift */; };
 		ED1D8FA424EB5578005EA0BB /* DaftarJadiAgenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1D8FA224EB5578005EA0BB /* DaftarJadiAgenVC.xib */; };
 		ED1D8FAA24EB5B65005EA0BB /* DaftarJadiAgenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D8FA924EB5B65005EA0BB /* DaftarJadiAgenVM.swift */; };
-		ED1D8FAD24EB5C63005EA0BB /* SelesaiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D8FAB24EB5C63005EA0BB /* SelesaiVC.swift */; };
-		ED1D8FAE24EB5C63005EA0BB /* SelesaiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1D8FAC24EB5C63005EA0BB /* SelesaiVC.xib */; };
 		ED1D8FB524EB5C80005EA0BB /* LegalDokumenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D8FB324EB5C80005EA0BB /* LegalDokumenVC.swift */; };
 		ED1D8FB624EB5C80005EA0BB /* LegalDokumenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1D8FB424EB5C80005EA0BB /* LegalDokumenVC.xib */; };
 		ED1D8FB924EB5C8B005EA0BB /* DataAgenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D8FB724EB5C8B005EA0BB /* DataAgenVC.swift */; };
@@ -93,7 +93,6 @@
 		ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED507E96243F85490038CA6E /* CustomGradientView.swift */; };
 		ED507E99243F857D0038CA6E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED507E98243F857D0038CA6E /* CustomView.swift */; };
 		ED507E9B243F8D130038CA6E /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED507E9D243F8D130038CA6E /* LoginVC.xib */; };
-		ED61BF2322F7DA6200776C25 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED61BF2222F7DA6200776C25 /* iOSDropDown.framework */; };
 		ED858B0222F313FD00016EAD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED858B0122F313FD00016EAD /* Networking.swift */; };
 		ED8F239A23136B34005D700C /* BaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F239923136B34005D700C /* BaseNetworking.swift */; };
 		ED95906822EBDF3300D696E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95906722EBDF3300D696E5 /* AppDelegate.swift */; };
@@ -175,6 +174,8 @@
 		ED10746422F5B98A00ADF055 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ED1304AD24EB5F3400247904 /* RangkumanDaftarAgenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangkumanDaftarAgenVC.swift; sourceTree = "<group>"; };
 		ED1304AE24EB5F3400247904 /* RangkumanDaftarAgenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangkumanDaftarAgenVC.xib; sourceTree = "<group>"; };
+		ED1304B224EB904A00247904 /* DialogBerhasilKirimDataAgen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBerhasilKirimDataAgen.swift; sourceTree = "<group>"; };
+		ED1304B324EB904A00247904 /* DialogBerhasilKirimDataAgen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogBerhasilKirimDataAgen.xib; sourceTree = "<group>"; };
 		ED139BB72302EC9000B854BC /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		ED1A383124A9686900110474 /* PesananVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesananVC.swift; sourceTree = "<group>"; };
 		ED1A383224A9686900110474 /* PesananVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PesananVC.xib; sourceTree = "<group>"; };
@@ -186,8 +187,6 @@
 		ED1D8FA124EB5578005EA0BB /* DaftarJadiAgenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarJadiAgenVC.swift; sourceTree = "<group>"; };
 		ED1D8FA224EB5578005EA0BB /* DaftarJadiAgenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaftarJadiAgenVC.xib; sourceTree = "<group>"; };
 		ED1D8FA924EB5B65005EA0BB /* DaftarJadiAgenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarJadiAgenVM.swift; sourceTree = "<group>"; };
-		ED1D8FAB24EB5C63005EA0BB /* SelesaiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelesaiVC.swift; sourceTree = "<group>"; };
-		ED1D8FAC24EB5C63005EA0BB /* SelesaiVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelesaiVC.xib; sourceTree = "<group>"; };
 		ED1D8FB324EB5C80005EA0BB /* LegalDokumenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalDokumenVC.swift; sourceTree = "<group>"; };
 		ED1D8FB424EB5C80005EA0BB /* LegalDokumenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LegalDokumenVC.xib; sourceTree = "<group>"; };
 		ED1D8FB724EB5C8B005EA0BB /* DataAgenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAgenVC.swift; sourceTree = "<group>"; };
@@ -328,7 +327,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED61BF2322F7DA6200776C25 /* iOSDropDown.framework in Frameworks */,
 				ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */,
 				CCC48696EF6C4F5B7E82822C /* Pods_TWC_iOS.framework in Frameworks */,
 			);
@@ -401,6 +399,15 @@
 			path = rangkuman;
 			sourceTree = "<group>";
 		};
+		ED1304B124EB903600247904 /* dialog_berhasil_kirim_data_agen */ = {
+			isa = PBXGroup;
+			children = (
+				ED1304B224EB904A00247904 /* DialogBerhasilKirimDataAgen.swift */,
+				ED1304B324EB904A00247904 /* DialogBerhasilKirimDataAgen.xib */,
+			);
+			path = dialog_berhasil_kirim_data_agen;
+			sourceTree = "<group>";
+		};
 		ED1A382F24A9684F00110474 /* pesanan */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,8 +429,8 @@
 		ED1D8FA024EB555F005EA0BB /* daftar_jadi_agen */ = {
 			isa = PBXGroup;
 			children = (
+				ED1304B124EB903600247904 /* dialog_berhasil_kirim_data_agen */,
 				ED1304AC24EB5F2100247904 /* rangkuman */,
-				ED1D8FA824EB55A7005EA0BB /* selesai */,
 				ED1D8FA624EB559B005EA0BB /* legal_dokumen */,
 				ED1D8FA524EB5592005EA0BB /* data_agen */,
 				ED1D8FA124EB5578005EA0BB /* DaftarJadiAgenVC.swift */,
@@ -449,15 +456,6 @@
 				ED1D8FB424EB5C80005EA0BB /* LegalDokumenVC.xib */,
 			);
 			path = legal_dokumen;
-			sourceTree = "<group>";
-		};
-		ED1D8FA824EB55A7005EA0BB /* selesai */ = {
-			isa = PBXGroup;
-			children = (
-				ED1D8FAB24EB5C63005EA0BB /* SelesaiVC.swift */,
-				ED1D8FAC24EB5C63005EA0BB /* SelesaiVC.xib */,
-			);
-			path = selesai;
 			sourceTree = "<group>";
 		};
 		ED28C07C24BDA754008CD53D /* pembayaran */ = {
@@ -985,7 +983,6 @@
 				ED2A3EAF24A849C10040D24B /* Nunito-Bold.ttf in Resources */,
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
 				EDAF371F24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib in Resources */,
-				ED1D8FAE24EB5C63005EA0BB /* SelesaiVC.xib in Resources */,
 				ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */,
 				ED4C0132243DAB1200A1EB0A /* Poppins-SemiBold.ttf in Resources */,
 				ED3B1CD224AC68C80051DD71 /* PaketFavoriteImageCell.xib in Resources */,
@@ -1003,6 +1000,7 @@
 				ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */,
 				ED3821E324B469D2003CD3A2 /* DataPesertaVC.xib in Resources */,
 				EDC151FB23FE979100659A63 /* Roboto-Medium.ttf in Resources */,
+				ED1304B524EB904A00247904 /* DialogBerhasilKirimDataAgen.xib in Resources */,
 				ED1D8FA424EB5578005EA0BB /* DaftarJadiAgenVC.xib in Resources */,
 				ED1A383424A9686900110474 /* PesananVC.xib in Resources */,
 				EDB6AC7824A7004F00457144 /* OnboardingCell.xib in Resources */,
@@ -1125,7 +1123,6 @@
 				EDC465F624B0C3B700F4CA39 /* PembayaranVC.swift in Sources */,
 				ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */,
 				ED858B0222F313FD00016EAD /* Networking.swift in Sources */,
-				ED1D8FAD24EB5C63005EA0BB /* SelesaiVC.swift in Sources */,
 				ED28C07F24BDA76D008CD53D /* MetodePembayaranCell.swift in Sources */,
 				EDBF21BB23005BDD003F5DAF /* CustomLabel.swift in Sources */,
 				EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */,
@@ -1173,6 +1170,7 @@
 				ED3821E224B469D2003CD3A2 /* DataPesertaVC.swift in Sources */,
 				EDD6528024C039B600617C06 /* DetailMetodePembayaranVM.swift in Sources */,
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
+				ED1304B424EB904A00247904 /* DialogBerhasilKirimDataAgen.swift in Sources */,
 				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED1D8FAA24EB5B65005EA0BB /* DaftarJadiAgenVM.swift in Sources */,
 				ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */,

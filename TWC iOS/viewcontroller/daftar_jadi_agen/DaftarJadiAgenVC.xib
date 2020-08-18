@@ -13,12 +13,10 @@
                 <outlet property="barViewHeight" destination="XTN-bb-igJ" id="XCb-bf-JXV"/>
                 <outlet property="button2" destination="arb-cm-SQu" id="vba-9l-Bwr"/>
                 <outlet property="button3" destination="H0Z-xe-wFM" id="8Bx-Og-4m1"/>
-                <outlet property="button4" destination="xWD-UL-QRc" id="2SX-5d-mm2"/>
                 <outlet property="buttonBarView" destination="flC-rg-qkP" id="R8f-ER-UO5"/>
                 <outlet property="containerView" destination="pi3-74-K8W" id="cmI-rl-l5d"/>
                 <outlet property="labelView2" destination="wy1-9M-aYJ" id="iWv-2h-Ig9"/>
                 <outlet property="labelView3" destination="57b-lR-bC5" id="XMj-Kj-BzB"/>
-                <outlet property="labelView4" destination="tds-yp-6d1" id="J8J-dW-LjH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="BlM-wm-Qpn"/>
                 <outlet property="view1" destination="Gfv-Wd-384" id="Ckk-2b-q6Y"/>
                 <outlet property="view1Right" destination="KER-4l-5NR" id="0vg-gd-nX2"/>
@@ -27,9 +25,6 @@
                 <outlet property="view2Right" destination="Rji-qF-Hd2" id="GWG-hR-F0u"/>
                 <outlet property="view3" destination="b0x-gg-v8f" id="cYI-aI-hXd"/>
                 <outlet property="view3Left" destination="cCI-DR-wTo" id="scL-qf-Waq"/>
-                <outlet property="view3Right" destination="j8f-wc-hda" id="Jn9-Yx-NQt"/>
-                <outlet property="view4" destination="6Iu-y3-KES" id="T4A-WG-P6E"/>
-                <outlet property="view4Left" destination="6sh-t6-MVe" id="kaq-7K-DXL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -44,20 +39,20 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-Wd-384">
-                                    <rect key="frame" x="0.0" y="0.0" width="94" height="65"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="65"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFU-mc-h1g">
-                                            <rect key="frame" x="0.0" y="9" width="94" height="30"/>
+                                            <rect key="frame" x="0.0" y="9" width="125" height="30"/>
                                             <subviews>
                                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p47-OC-10d">
-                                                    <rect key="frame" x="0.0" y="14" width="32" height="2"/>
+                                                    <rect key="frame" x="0.0" y="14" width="47.5" height="2"/>
                                                     <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="CXQ-PD-FSv"/>
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH7-eX-Lk1" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                    <rect key="frame" x="32" y="0.0" width="30" height="30"/>
+                                                    <rect key="frame" x="47.5" y="0.0" width="30" height="30"/>
                                                     <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="uH7-eX-Lk1" secondAttribute="height" multiplier="1:1" id="LCO-nF-vVq"/>
@@ -75,7 +70,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KER-4l-5NR">
-                                                    <rect key="frame" x="62" y="14" width="32" height="2"/>
+                                                    <rect key="frame" x="77.5" y="14" width="47.5" height="2"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="IDa-Bx-2AC"/>
@@ -96,7 +91,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data agen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="beP-h7-ARR" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="44" width="94" height="12"/>
+                                            <rect key="frame" x="0.0" y="44" width="125" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -120,20 +115,20 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vx6-UR-JeU">
-                                    <rect key="frame" x="94" y="0.0" width="93.5" height="65"/>
+                                    <rect key="frame" x="125" y="0.0" width="125" height="65"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZY-GP-fgi">
-                                            <rect key="frame" x="0.0" y="9" width="93.5" height="30"/>
+                                            <rect key="frame" x="0.0" y="9" width="125" height="30"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duA-Ow-QNQ">
-                                                    <rect key="frame" x="0.0" y="14" width="31.5" height="2"/>
+                                                    <rect key="frame" x="0.0" y="14" width="47.5" height="2"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="hGK-a9-FWt"/>
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arb-cm-SQu" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                    <rect key="frame" x="31.5" y="0.0" width="30" height="30"/>
+                                                    <rect key="frame" x="47.5" y="0.0" width="30" height="30"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="arb-cm-SQu" secondAttribute="height" multiplier="1:1" id="iCt-jZ-kvo"/>
@@ -151,7 +146,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rji-qF-Hd2">
-                                                    <rect key="frame" x="61.5" y="14" width="32" height="2"/>
+                                                    <rect key="frame" x="77.5" y="14" width="47.5" height="2"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="KAF-Sb-b9y"/>
@@ -172,7 +167,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal dokumen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-9M-aYJ" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="44" width="93.5" height="12"/>
+                                            <rect key="frame" x="0.0" y="44" width="125" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -196,20 +191,20 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0x-gg-v8f">
-                                    <rect key="frame" x="187.5" y="0.0" width="94" height="65"/>
+                                    <rect key="frame" x="250" y="0.0" width="125" height="65"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbq-i2-hOB">
-                                            <rect key="frame" x="0.0" y="9" width="94" height="30"/>
+                                            <rect key="frame" x="0.0" y="9" width="125" height="30"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCI-DR-wTo">
-                                                    <rect key="frame" x="0.0" y="14" width="32" height="2"/>
+                                                    <rect key="frame" x="0.0" y="14" width="47.5" height="2"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="zMx-qS-ubY"/>
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0Z-xe-wFM" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                    <rect key="frame" x="32" y="0.0" width="30" height="30"/>
+                                                    <rect key="frame" x="47.5" y="0.0" width="30" height="30"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="H0Z-xe-wFM" secondAttribute="height" multiplier="1:1" id="i2Q-DD-kLd"/>
@@ -226,9 +221,9 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8f-wc-hda">
-                                                    <rect key="frame" x="62" y="14" width="32" height="2"/>
-                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8f-wc-hda">
+                                                    <rect key="frame" x="77.5" y="14" width="47.5" height="2"/>
+                                                    <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="2" id="lf2-8J-QUC"/>
                                                     </constraints>
@@ -248,7 +243,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rangkuman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="57b-lR-bC5" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="44" width="94" height="12"/>
+                                            <rect key="frame" x="0.0" y="44" width="125" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -269,82 +264,6 @@
                                         <constraint firstItem="57b-lR-bC5" firstAttribute="top" secondItem="Mbq-i2-hOB" secondAttribute="bottom" constant="5" id="mko-xO-uys"/>
                                         <constraint firstAttribute="bottom" secondItem="57b-lR-bC5" secondAttribute="bottom" constant="9" id="sbT-Uq-UDp"/>
                                         <constraint firstAttribute="trailing" secondItem="Mbq-i2-hOB" secondAttribute="trailing" id="wbv-zS-uQH"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Iu-y3-KES">
-                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="65"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-2i-tb1">
-                                            <rect key="frame" x="0.0" y="9" width="93.5" height="30"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-t6-MVe">
-                                                    <rect key="frame" x="0.0" y="14" width="31.5" height="2"/>
-                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="2" id="44U-GZ-RsH"/>
-                                                    </constraints>
-                                                </view>
-                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWD-UL-QRc" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                    <rect key="frame" x="31.5" y="0.0" width="30" height="30"/>
-                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="xWD-UL-QRc" secondAttribute="height" multiplier="1:1" id="oST-Ew-DS9"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <state key="normal" title="4">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAllRounded" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Nunito-Regular"/>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                            <real key="value" value="12"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlC-Iq-D30">
-                                                    <rect key="frame" x="61.5" y="14" width="32" height="2"/>
-                                                    <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="2" id="Tb7-8E-Dux"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="6sh-t6-MVe" firstAttribute="centerY" secondItem="fzg-2i-tb1" secondAttribute="centerY" id="0IW-hj-XXQ"/>
-                                                <constraint firstItem="MlC-Iq-D30" firstAttribute="centerY" secondItem="fzg-2i-tb1" secondAttribute="centerY" id="3re-O3-qB0"/>
-                                                <constraint firstItem="xWD-UL-QRc" firstAttribute="leading" secondItem="6sh-t6-MVe" secondAttribute="trailing" id="5BO-Og-Pxd"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6iz-QG-J29"/>
-                                                <constraint firstItem="MlC-Iq-D30" firstAttribute="leading" secondItem="xWD-UL-QRc" secondAttribute="trailing" id="V0d-EM-h6t"/>
-                                                <constraint firstItem="6sh-t6-MVe" firstAttribute="leading" secondItem="fzg-2i-tb1" secondAttribute="leading" id="YuJ-V0-pOj"/>
-                                                <constraint firstAttribute="bottom" secondItem="xWD-UL-QRc" secondAttribute="bottom" id="ask-kZ-NPO"/>
-                                                <constraint firstItem="xWD-UL-QRc" firstAttribute="centerX" secondItem="fzg-2i-tb1" secondAttribute="centerX" id="dS3-oA-hGv"/>
-                                                <constraint firstAttribute="trailing" secondItem="MlC-Iq-D30" secondAttribute="trailing" id="fmF-UL-Q2o"/>
-                                                <constraint firstItem="xWD-UL-QRc" firstAttribute="top" secondItem="fzg-2i-tb1" secondAttribute="top" id="yNp-kx-WWL"/>
-                                            </constraints>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selesai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tds-yp-6d1" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="44" width="93.5" height="12"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                    <real key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="fzg-2i-tb1" secondAttribute="trailing" id="2WU-I8-Lbu"/>
-                                        <constraint firstItem="fzg-2i-tb1" firstAttribute="leading" secondItem="6Iu-y3-KES" secondAttribute="leading" id="F8h-en-4JI"/>
-                                        <constraint firstItem="tds-yp-6d1" firstAttribute="leading" secondItem="6Iu-y3-KES" secondAttribute="leading" id="I88-4v-7py"/>
-                                        <constraint firstAttribute="bottom" secondItem="tds-yp-6d1" secondAttribute="bottom" constant="9" id="S45-p8-Q8U"/>
-                                        <constraint firstItem="tds-yp-6d1" firstAttribute="top" secondItem="fzg-2i-tb1" secondAttribute="bottom" constant="5" id="cnq-lg-SkX"/>
-                                        <constraint firstItem="fzg-2i-tb1" firstAttribute="top" secondItem="6Iu-y3-KES" secondAttribute="top" constant="9" id="hFG-Qf-uCR"/>
-                                        <constraint firstAttribute="trailing" secondItem="tds-yp-6d1" secondAttribute="trailing" id="wyO-LC-Aiv"/>
                                     </constraints>
                                 </view>
                             </subviews>

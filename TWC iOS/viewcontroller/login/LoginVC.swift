@@ -105,7 +105,7 @@ extension LoginVC {
     }
     
     @IBAction func daftarJadiAgenClick(_ sender: Any) {
-        print("daftar jadi agen")
+        navigationController?.pushViewController(DaftarJadiAgenVC(), animated: true)
     }
     
     @IBAction func masukClick(_ sender: Any) {
