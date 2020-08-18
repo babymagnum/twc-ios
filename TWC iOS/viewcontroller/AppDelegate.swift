@@ -79,6 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             single { PilihTujuanWisataVM() }
             single { PembayaranVM() }
             single { DetailMetodePembayaranVM() }
+            single { DaftarJadiAgenVM() }
         })
     }
     

@@ -25,4 +25,5 @@ target 'TWC iOS' do
   pod 'RxCocoa'
   pod 'DIKit'
   pod 'DropDown'
+  pod 'MaterialComponents/TextFields'
 end
