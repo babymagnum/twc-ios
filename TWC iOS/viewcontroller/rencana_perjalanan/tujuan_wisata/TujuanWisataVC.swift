@@ -55,7 +55,10 @@ class TujuanWisataVC: BaseViewController, IndicatorInfoProvider, UICollectionVie
             let totalPeserta = self.rencanaPerjalananVM.pesertaAnak.value + self.rencanaPerjalananVM.pesertaDewasa.value
             
             value.forEach { item in
-                totalHarga += item.harga
+                item.listTicket.forEach { itemTiket in
+                    totalHarga += itemTiket.harga * itemTiket.peserta
+                }
+                //totalHarga += item.harga
             }
             
             self.labelHarga.text = PublicFunction.prettyRupiah("\(totalHarga * totalPeserta)")
@@ -71,8 +74,10 @@ class TujuanWisataVC: BaseViewController, IndicatorInfoProvider, UICollectionVie
         collectionTujuanWisata.dataSource = self
         collectionTujuanWisata.isScrollEnabled = false
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.collectionHariHeight.constant = self.collectionHari.contentSize.height
+            self.collectionTujuanWisata.reloadData()
+            self.collectionTujuanWisata.layoutSubviews()
         }
     }
     
@@ -82,6 +87,7 @@ class TujuanWisataVC: BaseViewController, IndicatorInfoProvider, UICollectionVie
 }
 
 extension TujuanWisataVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return listHari.count
     }

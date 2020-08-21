@@ -9,8 +9,16 @@
 import Foundation
 
 struct PilihanTujuanWisataModel {
-    var nama: String
+    var id: Int
+    var hari: Int
+    var name: String
     var durasi: Int
-    var harga: Int
     var image: String
+    var listTicket = [TiketItem]()
+}
+
+struct TiketItem {
+    var name: String
+    var harga: Int
+    var peserta: Int
 }

@@ -14,15 +14,13 @@ class PilihTujuanWisataCell: UICollectionViewCell {
     @IBOutlet weak var buttonAdd: UIButton!
     @IBOutlet weak var labelNama: CustomLabel!
     @IBOutlet weak var labelDurasi: CustomButton!
-    @IBOutlet weak var labelHarga: CustomLabel!
     
     var item: PilihanTujuanWisataModel? {
         didSet {
             if let _item = item {
                 image.loadUrl(_item.image)
-                labelNama.text = _item.nama
+                labelNama.text = _item.name
                 labelDurasi.setTitle("Estimasi: \(_item.durasi) jam", for: .normal)
-                labelHarga.text = PublicFunction.prettyRupiah("\(_item.harga)")
             }
         }
     }

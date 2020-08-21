@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,138 +16,148 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktx-eG-H9i">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYa-bl-vmX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-22-P2Q">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8A-Cv-Mjz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yq1-Qn-Qt0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="290.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-oV-XgT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rencanaperjalananempty" translatesAutoresizingMaskIntoConstraints="NO" id="Tk9-99-g3r">
-                                                <rect key="frame" x="86.5" y="32" width="202" height="202"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Tk9-99-g3r" secondAttribute="height" multiplier="1:1" id="ILp-BS-VLn"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UK-k2-4Yn" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="252" width="327" height="38.5"/>
-                                                <string key="text">Anda saat ini belum memiliki 
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gh-zA-qZt">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="290.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rencanaperjalananempty" translatesAutoresizingMaskIntoConstraints="NO" id="T7J-52-YsO">
+                                                        <rect key="frame" x="86.5" y="32" width="202" height="202"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="T7J-52-YsO" secondAttribute="height" multiplier="1:1" id="8Lz-xt-TG8"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfz-5N-xIX" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                        <rect key="frame" x="24" y="252" width="327" height="38.5"/>
+                                                        <string key="text">Anda saat ini belum memiliki 
 tujuan wisata di hari terpilih</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                        <real key="value" value="16"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="Tk9-99-g3r" firstAttribute="centerX" secondItem="yq1-Qn-Qt0" secondAttribute="centerX" id="7AN-7q-C8c"/>
-                                            <constraint firstItem="4UK-k2-4Yn" firstAttribute="leading" secondItem="yq1-Qn-Qt0" secondAttribute="leading" constant="24" id="HPU-de-X96"/>
-                                            <constraint firstItem="Tk9-99-g3r" firstAttribute="top" secondItem="yq1-Qn-Qt0" secondAttribute="top" constant="32" id="RIZ-ZU-fhg"/>
-                                            <constraint firstAttribute="bottom" secondItem="4UK-k2-4Yn" secondAttribute="bottom" id="YGf-5y-3BN"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="dgs-En-Z6z"/>
-                                            <constraint firstAttribute="trailing" secondItem="4UK-k2-4Yn" secondAttribute="trailing" constant="24" id="lWN-vX-lhe"/>
-                                            <constraint firstItem="4UK-k2-4Yn" firstAttribute="top" secondItem="Tk9-99-g3r" secondAttribute="bottom" constant="18" id="rDf-7T-wQM"/>
-                                        </constraints>
-                                    </view>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3K-7j-Yqb">
-                                        <rect key="frame" x="0.0" y="308.5" width="375" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="taa-ka-GmA"/>
-                                        </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="IcJ-Da-wLf">
-                                            <size key="itemSize" width="128" height="128"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="3"/>
-                                        </collectionViewFlowLayout>
-                                    </collectionView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QR4-NZ-lf4" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                        <rect key="frame" x="72" y="429.5" width="231" height="43"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add24Px2" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-76-oKd">
-                                                <rect key="frame" x="17" y="13.5" width="16" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9aU-76-oKd" secondAttribute="height" multiplier="1:1" id="Aea-lO-mun"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dfz-5N-xIX" secondAttribute="trailing" constant="24" id="0Zz-5i-bMX"/>
+                                                    <constraint firstItem="T7J-52-YsO" firstAttribute="centerX" secondItem="2gh-zA-qZt" secondAttribute="centerX" id="7GZ-Wl-asz"/>
+                                                    <constraint firstItem="T7J-52-YsO" firstAttribute="top" secondItem="2gh-zA-qZt" secondAttribute="top" constant="32" id="Hfn-Bx-9S0"/>
+                                                    <constraint firstItem="dfz-5N-xIX" firstAttribute="leading" secondItem="2gh-zA-qZt" secondAttribute="leading" constant="24" id="e7O-d9-qbh"/>
+                                                    <constraint firstItem="dfz-5N-xIX" firstAttribute="top" secondItem="T7J-52-YsO" secondAttribute="bottom" constant="18" id="eg3-WX-D8u"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dfz-5N-xIX" secondAttribute="bottom" id="tmk-lj-Mdo"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="zE9-gt-CBL"/>
                                                 </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tambahkan tujuan wisata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUs-2o-3lW" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                <rect key="frame" x="45" y="13" width="163" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2I-Hd-KZ6">
+                                                <rect key="frame" x="0.0" y="308.5" width="375" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="NcA-RO-D4X"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="lWM-tl-gtG">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="3"/>
+                                                </collectionViewFlowLayout>
+                                            </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7l2-QN-Zp6" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                <rect key="frame" x="72" y="379.5" width="231" height="43"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add24Px2" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-gd-fhJ">
+                                                        <rect key="frame" x="17" y="13.5" width="16" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="gGD-gd-fhJ" secondAttribute="height" multiplier="1:1" id="hl4-hx-kta"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tambahkan tujuan wisata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt1-Dq-723" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                                        <rect key="frame" x="45" y="13" width="163" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="dt1-Dq-723" firstAttribute="top" secondItem="7l2-QN-Zp6" secondAttribute="top" constant="13" id="0qG-gQ-dbH"/>
+                                                    <constraint firstItem="gGD-gd-fhJ" firstAttribute="leading" secondItem="7l2-QN-Zp6" secondAttribute="leading" constant="17" id="7Vv-3j-7Sb"/>
+                                                    <constraint firstItem="dt1-Dq-723" firstAttribute="leading" secondItem="gGD-gd-fhJ" secondAttribute="trailing" constant="12" id="8Yg-UU-4t6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dt1-Dq-723" secondAttribute="bottom" constant="13" id="BF1-NE-nYc"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="INK-zl-0eS"/>
+                                                    <constraint firstItem="gGD-gd-fhJ" firstAttribute="centerY" secondItem="7l2-QN-Zp6" secondAttribute="centerY" id="imK-47-orJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dt1-Dq-723" secondAttribute="trailing" constant="23" id="o7r-ye-Tji"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
                                                         <real key="value" value="14"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </label>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="jUs-2o-3lW" firstAttribute="leading" secondItem="9aU-76-oKd" secondAttribute="trailing" constant="12" id="71K-Pi-E1j"/>
-                                            <constraint firstItem="jUs-2o-3lW" firstAttribute="top" secondItem="QR4-NZ-lf4" secondAttribute="top" constant="13" id="7jA-8f-rXF"/>
-                                            <constraint firstItem="9aU-76-oKd" firstAttribute="centerY" secondItem="QR4-NZ-lf4" secondAttribute="centerY" id="Ij1-6v-DRW"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="QJd-e3-JbK"/>
-                                            <constraint firstAttribute="trailing" secondItem="jUs-2o-3lW" secondAttribute="trailing" constant="23" id="YLA-8A-DCk"/>
-                                            <constraint firstItem="9aU-76-oKd" firstAttribute="leading" secondItem="QR4-NZ-lf4" secondAttribute="leading" constant="17" id="cqE-r8-ZZb"/>
-                                            <constraint firstAttribute="bottom" secondItem="jUs-2o-3lW" secondAttribute="bottom" constant="13" id="p7N-LW-rKc"/>
+                                            <constraint firstItem="2gh-zA-qZt" firstAttribute="top" secondItem="hs6-oV-XgT" secondAttribute="top" id="KhJ-F0-ZNX"/>
+                                            <constraint firstItem="I2I-Hd-KZ6" firstAttribute="leading" secondItem="hs6-oV-XgT" secondAttribute="leading" id="QES-YX-IQO"/>
+                                            <constraint firstItem="2gh-zA-qZt" firstAttribute="leading" secondItem="hs6-oV-XgT" secondAttribute="leading" id="RW5-Rl-nvW"/>
+                                            <constraint firstItem="I2I-Hd-KZ6" firstAttribute="top" secondItem="2gh-zA-qZt" secondAttribute="bottom" constant="18" id="RtZ-dq-jQc"/>
+                                            <constraint firstItem="7l2-QN-Zp6" firstAttribute="top" secondItem="I2I-Hd-KZ6" secondAttribute="bottom" constant="21" id="aX4-Mc-ySD"/>
+                                            <constraint firstAttribute="trailing" secondItem="2gh-zA-qZt" secondAttribute="trailing" id="fG1-ok-MGc"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7l2-QN-Zp6" secondAttribute="bottom" constant="24" id="hdz-BR-bqY"/>
+                                            <constraint firstItem="7l2-QN-Zp6" firstAttribute="centerX" secondItem="hs6-oV-XgT" secondAttribute="centerX" id="mIj-Dz-8nn"/>
+                                            <constraint firstAttribute="trailing" secondItem="I2I-Hd-KZ6" secondAttribute="trailing" id="uFL-YT-fQF"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="yq1-Qn-Qt0" secondAttribute="trailing" id="1Jo-ZH-dCw"/>
-                                    <constraint firstItem="Q3K-7j-Yqb" firstAttribute="leading" secondItem="OP6-22-P2Q" secondAttribute="leading" id="5bm-fe-w9v"/>
-                                    <constraint firstItem="QR4-NZ-lf4" firstAttribute="centerX" secondItem="OP6-22-P2Q" secondAttribute="centerX" id="67D-gA-CIU"/>
-                                    <constraint firstItem="yq1-Qn-Qt0" firstAttribute="leading" secondItem="OP6-22-P2Q" secondAttribute="leading" id="6R7-FY-iWs"/>
-                                    <constraint firstAttribute="trailing" secondItem="Q3K-7j-Yqb" secondAttribute="trailing" id="D8Z-HI-KIc"/>
-                                    <constraint firstItem="Q3K-7j-Yqb" firstAttribute="top" secondItem="yq1-Qn-Qt0" secondAttribute="bottom" constant="18" id="UEH-mW-H44"/>
-                                    <constraint firstItem="yq1-Qn-Qt0" firstAttribute="top" secondItem="OP6-22-P2Q" secondAttribute="top" id="Uhm-HC-mBe"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QR4-NZ-lf4" secondAttribute="bottom" constant="20" id="ZLF-Vo-252"/>
-                                    <constraint firstItem="QR4-NZ-lf4" firstAttribute="top" secondItem="Q3K-7j-Yqb" secondAttribute="bottom" constant="21" id="n5h-tI-9W3"/>
+                                    <constraint firstItem="hs6-oV-XgT" firstAttribute="height" secondItem="S8A-Cv-Mjz" secondAttribute="height" priority="250" id="BaI-oU-Pxn"/>
+                                    <constraint firstItem="hs6-oV-XgT" firstAttribute="leading" secondItem="S8A-Cv-Mjz" secondAttribute="leading" id="M5a-PH-j2w"/>
+                                    <constraint firstAttribute="bottom" secondItem="hs6-oV-XgT" secondAttribute="bottom" id="UMl-6d-VMy"/>
+                                    <constraint firstItem="hs6-oV-XgT" firstAttribute="width" secondItem="S8A-Cv-Mjz" secondAttribute="width" id="YwH-eT-i97"/>
+                                    <constraint firstItem="hs6-oV-XgT" firstAttribute="top" secondItem="S8A-Cv-Mjz" secondAttribute="top" id="ef2-8d-KQ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="hs6-oV-XgT" secondAttribute="trailing" id="vdu-A5-BSL"/>
                                 </constraints>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="OP6-22-P2Q" firstAttribute="leading" secondItem="Ktx-eG-H9i" secondAttribute="leading" id="cye-wn-8wY"/>
-                            <constraint firstAttribute="trailing" secondItem="OP6-22-P2Q" secondAttribute="trailing" id="dau-Fj-bJA"/>
-                            <constraint firstAttribute="bottom" secondItem="OP6-22-P2Q" secondAttribute="bottom" id="gAD-P1-tzL"/>
-                            <constraint firstItem="OP6-22-P2Q" firstAttribute="height" secondItem="Ktx-eG-H9i" secondAttribute="height" priority="250" id="nh2-Ra-o6l"/>
-                            <constraint firstItem="OP6-22-P2Q" firstAttribute="width" secondItem="Ktx-eG-H9i" secondAttribute="width" id="odJ-2S-R64"/>
-                            <constraint firstItem="OP6-22-P2Q" firstAttribute="top" secondItem="Ktx-eG-H9i" secondAttribute="top" id="uWN-9z-Qe6"/>
+                            <constraint firstAttribute="trailing" secondItem="S8A-Cv-Mjz" secondAttribute="trailing" id="SqE-Pj-4W0"/>
+                            <constraint firstItem="S8A-Cv-Mjz" firstAttribute="top" secondItem="NYa-bl-vmX" secondAttribute="top" id="cFL-of-6Da"/>
+                            <constraint firstAttribute="bottom" secondItem="S8A-Cv-Mjz" secondAttribute="bottom" id="das-GY-GeV"/>
+                            <constraint firstItem="S8A-Cv-Mjz" firstAttribute="leading" secondItem="NYa-bl-vmX" secondAttribute="leading" id="ngV-2L-gz6"/>
                         </constraints>
-                    </scrollView>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Ktx-eG-H9i" secondAttribute="bottom" id="0Eh-ND-FL6"/>
-                <constraint firstAttribute="trailing" secondItem="Ktx-eG-H9i" secondAttribute="trailing" id="FYf-9F-qlX"/>
-                <constraint firstItem="Ktx-eG-H9i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jra-JX-N6D"/>
-                <constraint firstItem="Tk9-99-g3r" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.538667" id="rvq-x6-suO"/>
-                <constraint firstItem="Ktx-eG-H9i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="trA-yA-mMb"/>
+                <constraint firstItem="NYa-bl-vmX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kuu-Mg-cTh"/>
+                <constraint firstAttribute="bottom" secondItem="NYa-bl-vmX" secondAttribute="bottom" id="Nwi-Iu-DGH"/>
+                <constraint firstAttribute="trailing" secondItem="NYa-bl-vmX" secondAttribute="trailing" id="kCR-hL-pdC"/>
+                <constraint firstItem="NYa-bl-vmX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zW7-5X-6EI"/>
             </constraints>
             <connections>
-                <outlet property="collectionTujuanWisata" destination="Q3K-7j-Yqb" id="590-gH-tZD"/>
-                <outlet property="collectionTujuanWisataHeight" destination="taa-ka-GmA" id="elE-Nv-u8n"/>
-                <outlet property="collectionTujuanWisataMarginTop" destination="UEH-mW-H44" id="Nwe-WE-vyY"/>
-                <outlet property="viewEmpty" destination="yq1-Qn-Qt0" id="do4-12-lQe"/>
-                <outlet property="viewEmptyHeight" destination="dgs-En-Z6z" id="rW0-2j-ycE"/>
-                <outlet property="viewTambahTujuanWisata" destination="QR4-NZ-lf4" id="kpE-RK-jHn"/>
+                <outlet property="collectionTujuanWisata" destination="I2I-Hd-KZ6" id="djh-8E-Uvg"/>
+                <outlet property="collectionTujuanWisataHeight" destination="NcA-RO-D4X" id="bYv-22-hsC"/>
+                <outlet property="collectionTujuanWisataMarginTop" destination="RtZ-dq-jQc" id="kTI-4M-GPX"/>
+                <outlet property="viewEmpty" destination="2gh-zA-qZt" id="3Lp-f7-rUo"/>
+                <outlet property="viewEmptyHeight" destination="zE9-gt-CBL" id="IAL-84-VKQ"/>
+                <outlet property="viewTambahTujuanWisata" destination="7l2-QN-Zp6" id="m76-LZ-77B"/>
             </connections>
             <point key="canvasLocation" x="132" y="146"/>
         </collectionViewCell>

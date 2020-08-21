@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -38,7 +38,7 @@
                                 <state key="normal" image="buttonAdd"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candi Ratu Boko" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmN-3X-FbJ" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                <rect key="frame" x="20" y="105.5" width="220" height="20"/>
+                                <rect key="frame" x="20" y="109" width="220" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -50,10 +50,10 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAH-if-kWM">
-                                <rect key="frame" x="20" y="128.5" width="220" height="19.5"/>
+                                <rect key="frame" x="20" y="132" width="220" height="16"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1L-Fw-gCd" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="2" width="94" height="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="16"/>
                                         <color key="backgroundColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <inset key="contentEdgeInsets" minX="9" minY="2" maxX="9" maxY="2"/>
@@ -68,27 +68,13 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isAllRounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 100.000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opu-4f-d9P" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                        <rect key="frame" x="104" y="0.0" width="116" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Opu-4f-d9P" firstAttribute="leading" secondItem="I1L-Fw-gCd" secondAttribute="trailing" constant="10" id="1ee-Vf-cHf"/>
+                                    <constraint firstItem="I1L-Fw-gCd" firstAttribute="top" secondItem="qAH-if-kWM" secondAttribute="top" id="2Xn-7b-ScU"/>
+                                    <constraint firstAttribute="bottom" secondItem="I1L-Fw-gCd" secondAttribute="bottom" id="4Fl-4V-bL5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8Gt-DI-sNU"/>
-                                    <constraint firstAttribute="trailing" secondItem="Opu-4f-d9P" secondAttribute="trailing" id="Ejk-qR-7ck"/>
-                                    <constraint firstItem="I1L-Fw-gCd" firstAttribute="centerY" secondItem="qAH-if-kWM" secondAttribute="centerY" id="FnY-bg-seg"/>
-                                    <constraint firstItem="I1L-Fw-gCd" firstAttribute="leading" secondItem="qAH-if-kWM" secondAttribute="leading" id="L1z-yJ-Eyv"/>
-                                    <constraint firstAttribute="bottom" secondItem="Opu-4f-d9P" secondAttribute="bottom" id="RLM-X7-FaS"/>
-                                    <constraint firstItem="Opu-4f-d9P" firstAttribute="top" secondItem="qAH-if-kWM" secondAttribute="top" id="cEh-2y-OqN"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I1L-Fw-gCd" secondAttribute="trailing" id="Ack-Tk-8Tg"/>
+                                    <constraint firstItem="I1L-Fw-gCd" firstAttribute="leading" secondItem="qAH-if-kWM" secondAttribute="leading" id="iYz-ac-YkW"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -127,7 +113,6 @@
                 <outlet property="buttonAdd" destination="qIl-qg-Mxz" id="DJ4-HJ-qRz"/>
                 <outlet property="image" destination="q0n-Qe-GxY" id="otE-xe-oFO"/>
                 <outlet property="labelDurasi" destination="I1L-Fw-gCd" id="6St-lI-1SP"/>
-                <outlet property="labelHarga" destination="Opu-4f-d9P" id="N0h-MO-4gL"/>
                 <outlet property="labelNama" destination="RmN-3X-FbJ" id="fZj-rt-FyQ"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>

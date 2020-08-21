@@ -11,7 +11,14 @@ import DIKit
 import RxSwift
 
 class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
-
+    
+    @IBOutlet weak var collectionTujuanWisata: UICollectionView!
+    @IBOutlet weak var collectionTujuanWisataHeight: NSLayoutConstraint!
+    @IBOutlet weak var viewTambahTujuanWisata: CustomView!
+    @IBOutlet weak var viewEmpty: UIView!
+    @IBOutlet weak var viewEmptyHeight: NSLayoutConstraint!
+    @IBOutlet weak var collectionTujuanWisataMarginTop: NSLayoutConstraint!
+    
     var hari: Int? {
         didSet {
             if let _hari = hari {
@@ -22,15 +29,8 @@ class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
     var viewController: UIViewController?
     var navigationController: UINavigationController?
     
-    @IBOutlet weak var collectionTujuanWisata: UICollectionView!
-    @IBOutlet weak var collectionTujuanWisataHeight: NSLayoutConstraint!
-    @IBOutlet weak var viewTambahTujuanWisata: CustomView!
-    @IBOutlet weak var viewEmpty: UIView!
-    @IBOutlet weak var viewEmptyHeight: NSLayoutConstraint!
-    @IBOutlet weak var collectionTujuanWisataMarginTop: NSLayoutConstraint!
-    
     private var disposeBag = DisposeBag()
-    private var listTujuanWisata = [TujuanWisataModel]()
+    private var listTujuanWisata = [PilihanTujuanWisataModel]()
     @Inject private var rencanaPerjalananVM: RencanaPerjalananVM
     
     override func awakeFromNib() {
@@ -86,9 +86,10 @@ extension ParentTujuanWisataCell: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TujuanWisataCell", for: indexPath) as! TujuanWisataCell
         cell.item = listTujuanWisata[indexPath.item]
-        cell.buttonHapus.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonHapusClick(sender:))))
-        cell.buttonMin.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonMinClick(sender:))))
-        cell.buttonPlus.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonPlusClick(sender:))))
+        cell.viewTambahkanPeserta.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewTambahkanPesertaClick(sender:))))
+//        cell.buttonHapus.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonHapusClick(sender:))))
+//        cell.buttonMin.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonMinClick(sender:))))
+//        cell.buttonPlus.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonPlusClick(sender:))))
         return cell
     }
     
@@ -96,14 +97,30 @@ extension ParentTujuanWisataCell: UICollectionViewDataSource, UICollectionViewDe
         let imageSize = screenWidth * 0.2
         let item = listTujuanWisata[indexPath.item]
         let titleHeight = item.name.getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Bold", size: 16 + PublicFunction.dynamicSize()))
-        let hargaHeight = "\(item.harga)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Bold", size: 18 + PublicFunction.dynamicSize()))
-        let durasiHeight = "Durasi (jam)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Regular", size: 10 + PublicFunction.dynamicSize()))
-        let durasiValueHeight = "\(item.durasi)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "SFProDisplay-Regular", size: 14 + PublicFunction.dynamicSize()))
-        return CGSize(width: screenWidth - (24 * 2), height: 46 + titleHeight + hargaHeight + durasiHeight + durasiValueHeight)
+        let tambahkanPesertaHeight = "Tambahkan peserta".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - (16 * 2), font: UIFont(name: "Nunito-Regular", size: 14 + PublicFunction.dynamicSize()))
+        var collectionHeight: CGFloat = 0
+        
+        item.listTicket.forEach { value in
+            if value.peserta > 0 {
+                let hargaHeight = "\(value.harga)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - (26) - imageSize - 10, font: UIFont(name: "Nunito-Bold", size: 18 + PublicFunction.dynamicSize()))
+                let pesertaHeight = "Peserta".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - (26) - imageSize - 10, font: UIFont(name: "Nunito-Regular", size: 10 + PublicFunction.dynamicSize()))
+                collectionHeight += hargaHeight + pesertaHeight + 37
+            }
+        }
+        
+        return CGSize(width: screenWidth - (24 * 2), height: collectionHeight + tambahkanPesertaHeight + titleHeight + 53)
     }
 }
 
 extension ParentTujuanWisataCell {
+    @objc func viewTambahkanPesertaClick(sender: UITapGestureRecognizer) {
+        guard let indexPath = collectionTujuanWisata.indexPathForItem(at: sender.location(in: collectionTujuanWisata)) else { return }
+        let vc = DetailTempatWisataVC()
+        vc.selectedHari = hari
+        vc.tujuanWisata = listTujuanWisata[indexPath.item]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @objc func viewTambahTujuanWisataClick() {
         let vc = PilihTujuanWisataVC()
         vc.selectedHari = hari ?? 1

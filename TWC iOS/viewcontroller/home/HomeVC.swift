@@ -25,7 +25,7 @@ class HomeVC: UITabBarController {
     @Inject private var homeVM: HomeVM
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         
         initBottomNavigation()
         

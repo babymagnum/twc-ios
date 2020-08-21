@@ -30,6 +30,8 @@ class BerandaVC: BaseViewController, UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("screen width \(screenWidth)")
+        
         setupView()
         
         setupCollection()

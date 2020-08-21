@@ -12,7 +12,7 @@ import RxRelay
 
 class RencanaPerjalananVM: BaseViewModel {
     var listTujuanWisataCounter = BehaviorRelay(value: 0)
-    var listTujuanWisata = BehaviorRelay(value: [TujuanWisataModel]())
+    var listTujuanWisata = BehaviorRelay(value: [PilihanTujuanWisataModel]())
     var listRencanaPerjalanan = BehaviorRelay(value: [Any]())
     var listDataPeserta = BehaviorRelay(value: [DataPesertaModel]())
     var pesertaDewasa = BehaviorRelay(value: 0)
@@ -24,7 +24,7 @@ class RencanaPerjalananVM: BaseViewModel {
     
     func resetAllData() {
         listTujuanWisataCounter.accept(0)
-        listTujuanWisata.accept([TujuanWisataModel]())
+        listTujuanWisata.accept([PilihanTujuanWisataModel]())
         listRencanaPerjalanan.accept([Any]())
         listDataPeserta.accept([DataPesertaModel]())
         pesertaDewasa.accept(0)
@@ -48,7 +48,7 @@ class RencanaPerjalananVM: BaseViewModel {
         listDataPeserta.accept(_listPeserta)
     }
     
-    func addTujuanWisata(tujuanWisata: TujuanWisataModel) {
+    func addTujuanWisata(tujuanWisata: PilihanTujuanWisataModel) {
         var list = listTujuanWisata.value
         let counter = listTujuanWisataCounter.value
         list.append(tujuanWisata)
@@ -56,7 +56,7 @@ class RencanaPerjalananVM: BaseViewModel {
         listTujuanWisataCounter.accept(counter + 1)
     }
     
-    func updateTujuanWisata(oldTujuanWisata: TujuanWisataModel, newTujuanWisata: TujuanWisataModel) {
+    func updateTujuanWisata(oldTujuanWisata: PilihanTujuanWisataModel, newTujuanWisata: PilihanTujuanWisataModel) {
         var list = listTujuanWisata.value
         let selectedIndex = list.firstIndex { item -> Bool in
             return item.id == oldTujuanWisata.id
@@ -65,7 +65,7 @@ class RencanaPerjalananVM: BaseViewModel {
         listTujuanWisata.accept(list)
     }
     
-    func deleteTujuanWisata(tujuanWisata: TujuanWisataModel) {
+    func deleteTujuanWisata(tujuanWisata: PilihanTujuanWisataModel) {
         var list = listTujuanWisata.value
         list.removeAll { item -> Bool in
             return item.id == tujuanWisata.id
@@ -102,7 +102,6 @@ class RencanaPerjalananVM: BaseViewModel {
         for (index, item) in list.enumerated() {
             if index == 0 {
                 _listRencanaPerjalanan.append(RencanaPerjalananHariModel(nama: "Hari \(item.hari)", tanggal: PublicFunction.dateToString(firstDate, "dd MMMM yyyy")))
-                _listRencanaPerjalanan.append(RencanaPerjalananTempatModel(nama: item.name, durasi: item.durasi, harga: item.harga))
             } else {
                 let itemBefore = list[index - 1]
                 
@@ -110,10 +109,11 @@ class RencanaPerjalananVM: BaseViewModel {
                 
                 if item.hari > itemBefore.hari {
                     _listRencanaPerjalanan.append(RencanaPerjalananHariModel(nama: "Hari \(item.hari)", tanggal: PublicFunction.dateToString(firstDate, "dd MMMM yyyy")))
-                    _listRencanaPerjalanan.append(RencanaPerjalananTempatModel(nama: item.name, durasi: item.durasi, harga: item.harga))
-                } else {
-                    _listRencanaPerjalanan.append(RencanaPerjalananTempatModel(nama: item.name, durasi: item.durasi, harga: item.harga))
                 }
+            }
+            
+            item.listTicket.forEach { tiketItem in
+                _listRencanaPerjalanan.append(RencanaPerjalananTempatModel(nama: "\(item.name) X\(tiketItem.peserta)", typePeserta: tiketItem.name, peserta: tiketItem.peserta, harga: tiketItem.harga))
             }
         }
         

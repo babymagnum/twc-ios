@@ -13,7 +13,7 @@ class RencanaPerjalananTempatCell: UICollectionViewCell {
     @IBOutlet weak var viewLineTop: UIView!
     @IBOutlet weak var viewLineBot: UIView!
     @IBOutlet weak var labelNama: CustomLabel!
-    @IBOutlet weak var labelDurasi: CustomLabel!
+    @IBOutlet weak var labelTypePeserta: CustomLabel!
     @IBOutlet weak var labelHarga: CustomLabel!
     @IBOutlet weak var viewDivider: UIView!
     
@@ -21,7 +21,7 @@ class RencanaPerjalananTempatCell: UICollectionViewCell {
         didSet {
             if let _item = item {
                 labelNama.text = _item.nama
-                labelDurasi.text = "Durasi \(_item.durasi) jam"
+                labelTypePeserta.text = _item.typePeserta
                 labelHarga.text = PublicFunction.prettyRupiah("\(_item.harga)")
             }
         }

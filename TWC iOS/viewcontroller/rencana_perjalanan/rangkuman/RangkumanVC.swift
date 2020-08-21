@@ -68,7 +68,11 @@ class RangkumanVC: BaseViewController, IndicatorInfoProvider, UICollectionViewDe
             var hargaTiket = 0
             let totalPeserta = self.rencanaPerjalananVM.listDataPeserta.value.count
             
-            value.forEach { item in hargaTiket += item.harga }
+            value.forEach { item in
+                item.listTicket.forEach { itemTiket in
+                    hargaTiket += itemTiket.harga * itemTiket.peserta
+                }
+            }
             
             self.labelObjekWisata.text = PublicFunction.prettyRupiah("\(hargaTiket)")
             self.labelTotalPeserta.text = PublicFunction.prettyRupiah("\(hargaTiket * totalPeserta)")
@@ -174,7 +178,7 @@ extension RangkumanVC: UICollectionViewDataSource, UICollectionViewDelegateFlowL
             } else {
                 let itemTempat = item as? RencanaPerjalananTempatModel
                 let namaHeight = itemTempat?.nama.getHeight(withConstrainedWidth: screenWidth - (8 * 2) - 57, font: UIFont(name: "SFProDisplay-Regular", size: 16 + PublicFunction.dynamicSize())) ?? 0
-                let durasiHeight = "\(itemTempat?.durasi ?? 0)".getHeight(withConstrainedWidth: screenWidth - (8 * 2) - 57, font: UIFont(name: "SFProDisplay-Regular", size: 12 + PublicFunction.dynamicSize()))
+                let durasiHeight = itemTempat?.typePeserta.getHeight(withConstrainedWidth: screenWidth - (8 * 2) - 57, font: UIFont(name: "SFProDisplay-Regular", size: 12 + PublicFunction.dynamicSize())) ?? 0
                 return CGSize(width: screenWidth - 16, height: namaHeight + durasiHeight + 37)
             }
         } else {

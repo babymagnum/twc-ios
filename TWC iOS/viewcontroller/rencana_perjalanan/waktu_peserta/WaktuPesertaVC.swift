@@ -52,7 +52,9 @@ class WaktuPesertaVC: BaseViewController, IndicatorInfoProvider {
             var tempat = ""
             
             value.forEach { item in
-                totalHarga += item.harga
+                item.listTicket.forEach { itemTiket in
+                    totalHarga += itemTiket.harga * itemTiket.peserta
+                }
                 tempat += "\(item.name), "
             }
             

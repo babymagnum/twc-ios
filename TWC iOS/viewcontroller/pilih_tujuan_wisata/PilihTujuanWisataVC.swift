@@ -116,16 +116,19 @@ extension PilihTujuanWisataVC: UICollectionViewDataSource, UICollectionViewDeleg
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PilihTujuanWisataCell", for: indexPath) as! PilihTujuanWisataCell
             cell.item = pilihTujuanWisataVM.listYogyakarta.value[indexPath.item]
             cell.buttonAdd.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonAddYogyakarta(sender:))))
+            cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cellYogyakartaClick(sender:))))
             return cell
         } else if collectionView == collectionMagelang {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PilihTujuanWisataCell", for: indexPath) as! PilihTujuanWisataCell
             cell.item = pilihTujuanWisataVM.listMagelang.value[indexPath.item]
             cell.buttonAdd.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonAddMagelang(sender:))))
+            cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cellMagelangClick(sender:))))
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PilihTujuanWisataCell", for: indexPath) as! PilihTujuanWisataCell
             cell.item = pilihTujuanWisataVM.listDieng.value[indexPath.item]
             cell.buttonAdd.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonAddDieng(sender:))))
+            cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cellDiengClick(sender:))))
             return cell
         }
     }
@@ -137,9 +140,37 @@ extension PilihTujuanWisataVC: UICollectionViewDataSource, UICollectionViewDeleg
 
 extension PilihTujuanWisataVC {
     private func addTujuanWisata(item: PilihanTujuanWisataModel) {
-        PublicFunction.showUnderstandDialog(self, item.nama, "Yakin ingin menambah \(item.nama) ke dalam tujuan wisata anda?", "Tambahkan", "Cancel") {
-            self.rencanaPerjalananVM.addTujuanWisata(tujuanWisata: TujuanWisataModel(id: self.rencanaPerjalananVM.listTujuanWisataCounter.value, name: item.nama, image: item.image, harga: item.harga, durasi: item.durasi, hari: self.selectedHari ?? 0))
+        PublicFunction.showUnderstandDialog(self, item.name, "Yakin ingin menambah \(item.name) ke dalam tujuan wisata anda?", "Tambahkan", "Cancel") {
+            var newItem = item
+            newItem.id = self.rencanaPerjalananVM.listTujuanWisataCounter.value
+            newItem.hari = self.selectedHari ?? 0
+            
+            self.rencanaPerjalananVM.addTujuanWisata(tujuanWisata: newItem)
         }
+    }
+    
+    @objc func cellYogyakartaClick(sender: UITapGestureRecognizer) {
+        guard let indexPath = collectionYogyakarta.indexPathForItem(at: sender.location(in: collectionYogyakarta)) else { return }
+        let vc = DetailTempatWisataVC()
+        vc.tujuanWisata = pilihTujuanWisataVM.listYogyakarta.value[indexPath.item]
+        vc.selectedHari = selectedHari
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func cellDiengClick(sender: UITapGestureRecognizer) {
+        guard let indexPath = collectionDieng.indexPathForItem(at: sender.location(in: collectionDieng)) else { return }
+        let vc = DetailTempatWisataVC()
+        vc.tujuanWisata = pilihTujuanWisataVM.listDieng.value[indexPath.item]
+        vc.selectedHari = selectedHari
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func cellMagelangClick(sender: UITapGestureRecognizer) {
+        guard let indexPath = collectionMagelang.indexPathForItem(at: sender.location(in: collectionMagelang)) else { return }
+        let vc = DetailTempatWisataVC()
+        vc.tujuanWisata = pilihTujuanWisataVM.listMagelang.value[indexPath.item]
+        vc.selectedHari = selectedHari
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func buttonAddYogyakarta(sender: UITapGestureRecognizer) {

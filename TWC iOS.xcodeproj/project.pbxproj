@@ -16,6 +16,10 @@
 		ED053AAF24B1B92D000FAE15 /* TujuanWisataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AAD24B1B92D000FAE15 /* TujuanWisataCell.swift */; };
 		ED053AB024B1B92D000FAE15 /* TujuanWisataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED053AAE24B1B92D000FAE15 /* TujuanWisataCell.xib */; };
 		ED053AB424B1D1F8000FAE15 /* RencanaPerjalananVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED053AB324B1D1F8000FAE15 /* RencanaPerjalananVM.swift */; };
+		ED07D9BB24ED66EE007CB48C /* DetailTempatWisataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED07D9B924ED66EE007CB48C /* DetailTempatWisataVC.swift */; };
+		ED07D9BC24ED66EE007CB48C /* DetailTempatWisataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED07D9BA24ED66EE007CB48C /* DetailTempatWisataVC.xib */; };
+		ED07D9C024ED69D9007CB48C /* DetailTempatTiketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED07D9BE24ED69D9007CB48C /* DetailTempatTiketCell.swift */; };
+		ED07D9C124ED69D9007CB48C /* DetailTempatTiketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED07D9BF24ED69D9007CB48C /* DetailTempatTiketCell.xib */; };
 		ED0AFFF824AF19FA0091AB39 /* BottomSheetPeserta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */; };
 		ED0AFFF924AF19FA0091AB39 /* BottomSheetPeserta.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */; };
 		ED10746522F5B98A00ADF055 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED10746422F5B98A00ADF055 /* WebKit.framework */; };
@@ -155,6 +159,8 @@
 		EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE8D95D2479069400ED127B /* DialogAlert.swift */; };
 		EDE8D9632479069A00ED127B /* DialogAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE8D95F2479069800ED127B /* DialogAlert.xib */; };
 		EDE9D455247585DD0042C9F5 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE9D454247585DD0042C9F5 /* HomeVM.swift */; };
+		EDF4CDB824F01AAB0046829D /* TujuanWisataPesertaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4CDB624F01AAB0046829D /* TujuanWisataPesertaCell.swift */; };
+		EDF4CDB924F01AAB0046829D /* TujuanWisataPesertaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF4CDB724F01AAB0046829D /* TujuanWisataPesertaCell.xib */; };
 		EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF750DE244207EB005C20C6 /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +175,10 @@
 		ED053AAD24B1B92D000FAE15 /* TujuanWisataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujuanWisataCell.swift; sourceTree = "<group>"; };
 		ED053AAE24B1B92D000FAE15 /* TujuanWisataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TujuanWisataCell.xib; sourceTree = "<group>"; };
 		ED053AB324B1D1F8000FAE15 /* RencanaPerjalananVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RencanaPerjalananVM.swift; sourceTree = "<group>"; };
+		ED07D9B924ED66EE007CB48C /* DetailTempatWisataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTempatWisataVC.swift; sourceTree = "<group>"; };
+		ED07D9BA24ED66EE007CB48C /* DetailTempatWisataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTempatWisataVC.xib; sourceTree = "<group>"; };
+		ED07D9BE24ED69D9007CB48C /* DetailTempatTiketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTempatTiketCell.swift; sourceTree = "<group>"; };
+		ED07D9BF24ED69D9007CB48C /* DetailTempatTiketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTempatTiketCell.xib; sourceTree = "<group>"; };
 		ED0AFFF624AF19FA0091AB39 /* BottomSheetPeserta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPeserta.swift; sourceTree = "<group>"; };
 		ED0AFFF724AF19FA0091AB39 /* BottomSheetPeserta.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetPeserta.xib; sourceTree = "<group>"; };
 		ED10746422F5B98A00ADF055 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -319,6 +329,8 @@
 		EDE8D95F2479069800ED127B /* DialogAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogAlert.xib; sourceTree = "<group>"; };
 		EDE9D454247585DD0042C9F5 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		EDEDAEBB7A852D44E62F2066 /* Pods-TWC iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWC iOS.release.xcconfig"; path = "Target Support Files/Pods-TWC iOS/Pods-TWC iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EDF4CDB624F01AAB0046829D /* TujuanWisataPesertaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujuanWisataPesertaCell.swift; sourceTree = "<group>"; };
+		EDF4CDB724F01AAB0046829D /* TujuanWisataPesertaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TujuanWisataPesertaCell.xib; sourceTree = "<group>"; };
 		EDF750DF244207ED005C20C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -369,16 +381,28 @@
 				ED36210824B3340B00307602 /* RencanaPerjalananTempatCell.xib */,
 				ED36210B24B3425000307602 /* DataPesertaCell.swift */,
 				ED36210C24B3425000307602 /* DataPesertaCell.xib */,
+				EDF4CDB624F01AAB0046829D /* TujuanWisataPesertaCell.swift */,
+				EDF4CDB724F01AAB0046829D /* TujuanWisataPesertaCell.xib */,
 			);
 			path = rencana_perjalanan;
 			sourceTree = "<group>";
 		};
-		ED053AA624B1B401000FAE15 /* rencana_perjalanan */ = {
+		ED07D9B824ED66D6007CB48C /* detail_tempat_wisata */ = {
 			isa = PBXGroup;
 			children = (
-				ED36210324B3337400307602 /* RencanaPerjalananModel.swift */,
+				ED07D9B924ED66EE007CB48C /* DetailTempatWisataVC.swift */,
+				ED07D9BA24ED66EE007CB48C /* DetailTempatWisataVC.xib */,
 			);
-			path = rencana_perjalanan;
+			path = detail_tempat_wisata;
+			sourceTree = "<group>";
+		};
+		ED07D9BD24ED69B5007CB48C /* detail_tempat_wisata */ = {
+			isa = PBXGroup;
+			children = (
+				ED07D9BE24ED69D9007CB48C /* DetailTempatTiketCell.swift */,
+				ED07D9BF24ED69D9007CB48C /* DetailTempatTiketCell.xib */,
+			);
+			path = detail_tempat_wisata;
 			sourceTree = "<group>";
 		};
 		ED0AFFF524AF19DD0091AB39 /* bottom_sheet_peserta */ = {
@@ -463,14 +487,6 @@
 			children = (
 				ED28C07D24BDA76D008CD53D /* MetodePembayaranCell.swift */,
 				ED28C07E24BDA76D008CD53D /* MetodePembayaranCell.xib */,
-			);
-			path = pembayaran;
-			sourceTree = "<group>";
-		};
-		ED28C08124BDA922008CD53D /* pembayaran */ = {
-			isa = PBXGroup;
-			children = (
-				ED28C08224BDA936008CD53D /* MetodePembayaranModel.swift */,
 			);
 			path = pembayaran;
 			sourceTree = "<group>";
@@ -560,14 +576,6 @@
 			path = beranda_cell;
 			sourceTree = "<group>";
 		};
-		ED3B1CCC24AC675B0051DD71 /* beranda */ = {
-			isa = PBXGroup;
-			children = (
-				ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */,
-			);
-			path = beranda;
-			sourceTree = "<group>";
-		};
 		ED4C0137243DB7A200A1EB0A /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +643,7 @@
 		ED95907922EBE29C00D696E5 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				ED07D9B824ED66D6007CB48C /* detail_tempat_wisata */,
 				ED1D8FA024EB555F005EA0BB /* daftar_jadi_agen */,
 				ED3821DF24B469C0003CD3A2 /* data_peserta */,
 				EDAF371624B2C52600A27FF1 /* pilih_tujuan_wisata */,
@@ -662,12 +671,12 @@
 		ED95907A22EBE2AC00D696E5 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				EDB0257424C037E10026247D /* detail_metode_pembayaran */,
-				ED28C08124BDA922008CD53D /* pembayaran */,
-				EDAF372024B2D19900A27FF1 /* pilihan_tujuan_wisata */,
-				ED053AA624B1B401000FAE15 /* rencana_perjalanan */,
-				ED3B1CCC24AC675B0051DD71 /* beranda */,
-				EDB6AC7924A702D500457144 /* onboarding */,
+				EDB6AC7A24A702F100457144 /* OnboardingItem.swift */,
+				ED3B1CCD24AC676B0051DD71 /* PaketFavoriteModel.swift */,
+				ED28C08224BDA936008CD53D /* MetodePembayaranModel.swift */,
+				EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */,
+				ED36210324B3337400307602 /* RencanaPerjalananModel.swift */,
+				EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -716,6 +725,7 @@
 		ED95909C22EBF98400D696E5 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				ED07D9BD24ED69B5007CB48C /* detail_tempat_wisata */,
 				EDB0256F24C034C70026247D /* detail_metode_pembayaran */,
 				ED28C07C24BDA754008CD53D /* pembayaran */,
 				EDAF371B24B2C94C00A27FF1 /* pilih_tujuan_wisata */,
@@ -746,14 +756,6 @@
 			path = pilih_tujuan_wisata;
 			sourceTree = "<group>";
 		};
-		EDAF372024B2D19900A27FF1 /* pilihan_tujuan_wisata */ = {
-			isa = PBXGroup;
-			children = (
-				EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */,
-			);
-			path = pilihan_tujuan_wisata;
-			sourceTree = "<group>";
-		};
 		EDB0256924C02E970026247D /* detail_metode_pembayaran */ = {
 			isa = PBXGroup;
 			children = (
@@ -782,14 +784,6 @@
 			path = detail_metode_pembayaran;
 			sourceTree = "<group>";
 		};
-		EDB0257424C037E10026247D /* detail_metode_pembayaran */ = {
-			isa = PBXGroup;
-			children = (
-				EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */,
-			);
-			path = detail_metode_pembayaran;
-			sourceTree = "<group>";
-		};
 		EDB6AC7424A7002500457144 /* onboarding_cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,14 +791,6 @@
 				EDB6AC7624A7004F00457144 /* OnboardingCell.xib */,
 			);
 			path = onboarding_cell;
-			sourceTree = "<group>";
-		};
-		EDB6AC7924A702D500457144 /* onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				EDB6AC7A24A702F100457144 /* OnboardingItem.swift */,
-			);
-			path = onboarding;
 			sourceTree = "<group>";
 		};
 		EDC465E624B0ADFB00F4CA39 /* rencana_perjalanan */ = {
@@ -982,6 +968,7 @@
 				EDCA7ADA24A6FAB4007CD973 /* SFProDisplay-Medium.ttf in Resources */,
 				ED2A3EAF24A849C10040D24B /* Nunito-Bold.ttf in Resources */,
 				ED4C012F243DAB1200A1EB0A /* Poppins-Thin.ttf in Resources */,
+				ED07D9BC24ED66EE007CB48C /* DetailTempatWisataVC.xib in Resources */,
 				EDAF371F24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib in Resources */,
 				ED4C012C243DAB1200A1EB0A /* Poppins-ExtraLight.ttf in Resources */,
 				ED4C0132243DAB1200A1EB0A /* Poppins-SemiBold.ttf in Resources */,
@@ -993,6 +980,7 @@
 				EDC465F724B0C3B700F4CA39 /* PembayaranVC.xib in Resources */,
 				ED36210024B3312800307602 /* RencanaPerjalananCell.xib in Resources */,
 				EDC465FF24B0C3D000F4CA39 /* TujuanWisataVC.xib in Resources */,
+				ED07D9C124ED69D9007CB48C /* DetailTempatTiketCell.xib in Resources */,
 				ED36210E24B3425000307602 /* DataPesertaCell.xib in Resources */,
 				EDF750DC244207EB005C20C6 /* ProfileVC.xib in Resources */,
 				ED95906F22EBDF3500D696E5 /* Assets.xcassets in Resources */,
@@ -1038,6 +1026,7 @@
 				EDCA7ADB24A6FAB4007CD973 /* SFProDisplay-Bold.ttf in Resources */,
 				ED2A3EAE24A849C10040D24B /* Nunito-Light.ttf in Resources */,
 				ED1D8FB624EB5C80005EA0BB /* LegalDokumenVC.xib in Resources */,
+				EDF4CDB924F01AAB0046829D /* TujuanWisataPesertaCell.xib in Resources */,
 				EDE8D9592478E89A00ED127B /* GoogleService-Info.plist in Resources */,
 				ED3B1CCB24AC55A30051DD71 /* PaketFavoritCell.xib in Resources */,
 				ED2A3EB724A85E300040D24B /* LupaKataSandiBerhasilVC.xib in Resources */,
@@ -1116,6 +1105,7 @@
 			files = (
 				ED95909422EBEE9300D696E5 /* SplashController.swift in Sources */,
 				EDB6AC7B24A702F100457144 /* OnboardingItem.swift in Sources */,
+				ED07D9C024ED69D9007CB48C /* DetailTempatTiketCell.swift in Sources */,
 				EDBF21C12301086A003F5DAF /* CustomTextField.swift in Sources */,
 				EDE8D9612479069A00ED127B /* DialogAlert.swift in Sources */,
 				ED95907E22EBE3C500D696E5 /* Preference.swift in Sources */,
@@ -1145,6 +1135,7 @@
 				ED3B1CCE24AC676B0051DD71 /* PaketFavoriteModel.swift in Sources */,
 				ED4C014A243DE09800A1EB0A /* SplashVM.swift in Sources */,
 				EDBF21BF2300DCEE003F5DAF /* CustomImage.swift in Sources */,
+				EDF4CDB824F01AAB0046829D /* TujuanWisataPesertaCell.swift in Sources */,
 				ED3688AA24AD691500AEC88A /* TanggalCell.swift in Sources */,
 				ED053AB424B1D1F8000FAE15 /* RencanaPerjalananVM.swift in Sources */,
 				ED1304AF24EB5F3400247904 /* RangkumanDaftarAgenVC.swift in Sources */,
@@ -1187,6 +1178,7 @@
 				EDAF372424B2D34D00A27FF1 /* PilihTujuanWisataVM.swift in Sources */,
 				ED1A383324A9686900110474 /* PesananVC.swift in Sources */,
 				ED507E97243F85490038CA6E /* CustomGradientView.swift in Sources */,
+				ED07D9BB24ED66EE007CB48C /* DetailTempatWisataVC.swift in Sources */,
 				ED36210424B3337400307602 /* RencanaPerjalananModel.swift in Sources */,
 				ED28C08324BDA936008CD53D /* MetodePembayaranModel.swift in Sources */,
 			);

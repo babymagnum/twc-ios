@@ -13,15 +13,6 @@ struct HariModel {
     var selected: Bool
 }
 
-struct TujuanWisataModel {
-    var id: Int
-    var name: String
-    var image: String
-    var harga: Int
-    var durasi: Int
-    var hari: Int
-}
-
 struct RencanaPerjalananHariModel {
     var nama: String
     var tanggal: String
@@ -29,7 +20,8 @@ struct RencanaPerjalananHariModel {
 
 struct RencanaPerjalananTempatModel {
     var nama: String
-    var durasi: Int
+    var typePeserta: String
+    var peserta: Int
     var harga: Int
 }
 
