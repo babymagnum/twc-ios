@@ -57,7 +57,7 @@ class ParentTujuanWisataCell: BaseCollectionViewCell, UICollectionViewDelegate {
             self.collectionTujuanWisata.layoutSubviews()
             
             UIView.animate(withDuration: 0.2) {
-                self.collectionTujuanWisataMarginTop.constant = self.listTujuanWisata.count == 0 ? 0 : 10
+                self.collectionTujuanWisataMarginTop.constant = self.listTujuanWisata.count == 0 ? 0 : 20
                 self.viewEmptyHeight.constant = self.listTujuanWisata.count == 0 ? 10000 : 0
                 self.viewEmpty.isHidden = self.listTujuanWisata.count > 0
                 self.collectionTujuanWisataHeight.constant = self.collectionTujuanWisata.contentSize.height
@@ -86,25 +86,23 @@ extension ParentTujuanWisataCell: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TujuanWisataCell", for: indexPath) as! TujuanWisataCell
         cell.item = listTujuanWisata[indexPath.item]
+        cell.viewController = viewController
         cell.viewTambahkanPeserta.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewTambahkanPesertaClick(sender:))))
-//        cell.buttonHapus.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonHapusClick(sender:))))
-//        cell.buttonMin.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonMinClick(sender:))))
-//        cell.buttonPlus.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonPlusClick(sender:))))
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let imageSize = screenWidth * 0.2
+        let imageSize = (screenWidth - (24 * 2)) * 0.2
         let item = listTujuanWisata[indexPath.item]
-        let titleHeight = item.name.getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - (10 + 24), font: UIFont(name: "Nunito-Bold", size: 16 + PublicFunction.dynamicSize()))
-        let tambahkanPesertaHeight = "Tambahkan peserta".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - (16 * 2), font: UIFont(name: "Nunito-Regular", size: 14 + PublicFunction.dynamicSize()))
+        let titleHeight = item.name.getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - 26 - 10, font: UIFont(name: "Nunito-Bold", size: 16 + PublicFunction.dynamicSize()))
+        let tambahkanPesertaHeight = "Tambahkan peserta".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - imageSize - 26 - 10, font: UIFont(name: "Nunito-Regular", size: 14 + PublicFunction.dynamicSize()))
         var collectionHeight: CGFloat = 0
         
         item.listTicket.forEach { value in
             if value.peserta > 0 {
                 let hargaHeight = "\(value.harga)".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - (26) - imageSize - 10, font: UIFont(name: "Nunito-Bold", size: 18 + PublicFunction.dynamicSize()))
                 let pesertaHeight = "Peserta".getHeight(withConstrainedWidth: screenWidth - (24 * 2) - (26) - imageSize - 10, font: UIFont(name: "Nunito-Regular", size: 10 + PublicFunction.dynamicSize()))
-                collectionHeight += hargaHeight + pesertaHeight + 37
+                collectionHeight += (hargaHeight + pesertaHeight + 18 + 10 + 1 + 16 + 8)
             }
         }
         
@@ -116,6 +114,7 @@ extension ParentTujuanWisataCell {
     @objc func viewTambahkanPesertaClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionTujuanWisata.indexPathForItem(at: sender.location(in: collectionTujuanWisata)) else { return }
         let vc = DetailTempatWisataVC()
+        vc.fromTujuanWisata = true
         vc.selectedHari = hari
         vc.tujuanWisata = listTujuanWisata[indexPath.item]
         navigationController?.pushViewController(vc, animated: true)

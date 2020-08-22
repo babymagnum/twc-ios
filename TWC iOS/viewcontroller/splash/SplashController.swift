@@ -20,6 +20,8 @@ class SplashController: BaseViewController {
         preference.saveBool(value: true, key: constant.IS_RELEASE)
         
         changeScreen()
+        
+        print("contoh UUID \(UUID().uuidString)")
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

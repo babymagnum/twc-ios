@@ -20,6 +20,7 @@ class DetailTempatWisataVC: BaseViewController, UICollectionViewDelegate {
     
     var tujuanWisata: PilihanTujuanWisataModel?
     var selectedHari: Int?
+    var fromTujuanWisata: Bool?
     
     private var newTujuanWisata: PilihanTujuanWisataModel!
     private var hasAddNewTujuanWisata = false
@@ -42,8 +43,7 @@ class DetailTempatWisataVC: BaseViewController, UICollectionViewDelegate {
             buttonEstimasi.setTitle("Estimasi: \(_tujuanWisata.durasi) jam", for: .normal)
             self.title = _tujuanWisata.name
             listTicket = _tujuanWisata.listTicket
-            hasAddNewTujuanWisata = listTicket.contains { item -> Bool in item.peserta > 0 }
-            print("has add new tujuan \(hasAddNewTujuanWisata)")
+            hasAddNewTujuanWisata = listTicket.contains { item -> Bool in item.peserta > 0 } || fromTujuanWisata ?? false
         }
     }
     
@@ -110,13 +110,19 @@ extension DetailTempatWisataVC: UICollectionViewDataSource, UICollectionViewDele
         if rencanaPerjalananVM.listTujuanWisata.value.contains(where: { item -> Bool in
             item.id == newTujuanWisata.id
         }) {
-            print("update existing tujuan wisata \(_newTW)")
             hasAddNewTujuanWisata = true
             self.rencanaPerjalananVM.updateTujuanWisata(oldTujuanWisata: _oldTW, newTujuanWisata: _newTW)
         } else {
-            print("add new tujuan wisata \(_newTW)")
             hasAddNewTujuanWisata = true
-            self.rencanaPerjalananVM.addTujuanWisata(tujuanWisata: newTujuanWisata)
+            self.rencanaPerjalananVM.addTujuanWisata(tujuanWisata: _newTW)
+        }
+        
+        if rencanaPerjalananVM.listTujuanWisata.value.contains(where: { item -> Bool in
+            !item.listTicket.contains { itemTicket -> Bool in
+                itemTicket.peserta > 0
+            }
+        }) {
+            self.rencanaPerjalananVM.deleteTujuanWisata(tujuanWisata: _newTW)
         }
     }
     

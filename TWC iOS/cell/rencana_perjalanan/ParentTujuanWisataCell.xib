@@ -120,7 +120,7 @@ tujuan wisata di hari terpilih</string>
                                             <constraint firstItem="I2I-Hd-KZ6" firstAttribute="top" secondItem="2gh-zA-qZt" secondAttribute="bottom" constant="18" id="RtZ-dq-jQc"/>
                                             <constraint firstItem="7l2-QN-Zp6" firstAttribute="top" secondItem="I2I-Hd-KZ6" secondAttribute="bottom" constant="21" id="aX4-Mc-ySD"/>
                                             <constraint firstAttribute="trailing" secondItem="2gh-zA-qZt" secondAttribute="trailing" id="fG1-ok-MGc"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7l2-QN-Zp6" secondAttribute="bottom" constant="24" id="hdz-BR-bqY"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7l2-QN-Zp6" secondAttribute="bottom" constant="20" id="hdz-BR-bqY"/>
                                             <constraint firstItem="7l2-QN-Zp6" firstAttribute="centerX" secondItem="hs6-oV-XgT" secondAttribute="centerX" id="mIj-Dz-8nn"/>
                                             <constraint firstAttribute="trailing" secondItem="I2I-Hd-KZ6" secondAttribute="trailing" id="uFL-YT-fQF"/>
                                         </constraints>

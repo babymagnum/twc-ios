@@ -9,6 +9,7 @@
 import Foundation
 
 struct PilihanTujuanWisataModel {
+    var originId: String
     var id: Int
     var hari: Int
     var name: String
@@ -18,6 +19,7 @@ struct PilihanTujuanWisataModel {
 }
 
 struct TiketItem {
+    var id: Int
     var name: String
     var harga: Int
     var peserta: Int

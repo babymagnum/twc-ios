@@ -33,7 +33,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candi Ijo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTz-TQ-HIb" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                <rect key="frame" x="95" y="10" width="256" height="19.5"/>
+                                <rect key="frame" x="95" y="10" width="264" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -105,7 +105,7 @@
                             <constraint firstAttribute="trailing" secondItem="QuE-gu-2fs" secondAttribute="trailing" constant="16" id="V2g-VJ-K1R"/>
                             <constraint firstItem="QTz-TQ-HIb" firstAttribute="top" secondItem="eVZ-Ik-eIe" secondAttribute="top" constant="10" id="WpA-7m-Jee"/>
                             <constraint firstItem="s0W-cl-Ees" firstAttribute="leading" secondItem="0RC-ah-BMS" secondAttribute="trailing" constant="10" id="aWp-TN-vg2"/>
-                            <constraint firstAttribute="trailing" secondItem="QTz-TQ-HIb" secondAttribute="trailing" constant="24" id="mll-cG-cal"/>
+                            <constraint firstAttribute="trailing" secondItem="QTz-TQ-HIb" secondAttribute="trailing" constant="16" id="mll-cG-cal"/>
                             <constraint firstItem="s0W-cl-Ees" firstAttribute="top" secondItem="QuE-gu-2fs" secondAttribute="bottom" constant="25" id="pUS-eN-5eN"/>
                             <constraint firstItem="QuE-gu-2fs" firstAttribute="top" secondItem="QTz-TQ-HIb" secondAttribute="bottom" constant="2" id="vXT-u7-wBm"/>
                             <constraint firstItem="0RC-ah-BMS" firstAttribute="top" secondItem="eVZ-Ik-eIe" secondAttribute="top" constant="10" id="zdf-6l-5h5"/>
