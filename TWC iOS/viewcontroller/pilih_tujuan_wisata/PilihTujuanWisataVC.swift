@@ -37,7 +37,9 @@ class PilihTujuanWisataVC: BaseViewController, UICollectionViewDelegate {
         
         observeData()
         
-        pilihTujuanWisataVM.getTujuanWisata()
+        if pilihTujuanWisataVM.listDieng.value.count == 0 {
+            pilihTujuanWisataVM.getTujuanWisata()
+        }
     }
     
     private func observeData() {
@@ -142,7 +144,7 @@ extension PilihTujuanWisataVC {
     private func addTujuanWisata(item: PilihanTujuanWisataModel) {
         PublicFunction.showUnderstandDialog(self, item.name, "Yakin ingin menambah \(item.name) ke dalam tujuan wisata anda?", "Tambahkan", "Cancel") {
             var newItem = item
-            newItem.id = self.rencanaPerjalananVM.listTujuanWisataCounter.value
+            newItem.id = UUID().uuidString
             newItem.hari = self.selectedHari ?? 0
             
             self.rencanaPerjalananVM.addTujuanWisata(tujuanWisata: newItem)
@@ -151,24 +153,38 @@ extension PilihTujuanWisataVC {
     
     @objc func cellYogyakartaClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionYogyakarta.indexPathForItem(at: sender.location(in: collectionYogyakarta)) else { return }
+        let item = pilihTujuanWisataVM.listYogyakarta.value[indexPath.item]
+        
         let vc = DetailTempatWisataVC()
-        vc.tujuanWisata = pilihTujuanWisataVM.listYogyakarta.value[indexPath.item]
+        vc.tujuanWisata = rencanaPerjalananVM.listTujuanWisata.value.last(where: { _item -> Bool in
+            return _item.originId == item.originId && _item.hari == selectedHari ?? 1
+        }) ?? item
         vc.selectedHari = selectedHari
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func cellDiengClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionDieng.indexPathForItem(at: sender.location(in: collectionDieng)) else { return }
+        
+        let item = pilihTujuanWisataVM.listDieng.value[indexPath.item]
+        
         let vc = DetailTempatWisataVC()
-        vc.tujuanWisata = pilihTujuanWisataVM.listDieng.value[indexPath.item]
+        vc.tujuanWisata = rencanaPerjalananVM.listTujuanWisata.value.last(where: { _item -> Bool in
+            return _item.originId == item.originId && _item.hari == selectedHari ?? 1
+        }) ?? item
         vc.selectedHari = selectedHari
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func cellMagelangClick(sender: UITapGestureRecognizer) {
         guard let indexPath = collectionMagelang.indexPathForItem(at: sender.location(in: collectionMagelang)) else { return }
+        
+        let item = pilihTujuanWisataVM.listMagelang.value[indexPath.item]
+        
         let vc = DetailTempatWisataVC()
-        vc.tujuanWisata = pilihTujuanWisataVM.listMagelang.value[indexPath.item]
+        vc.tujuanWisata = rencanaPerjalananVM.listTujuanWisata.value.last(where: { _item -> Bool in
+            return _item.originId == item.originId && _item.hari == selectedHari ?? 1
+        }) ?? item
         vc.selectedHari = selectedHari
         navigationController?.pushViewController(vc, animated: true)
     }

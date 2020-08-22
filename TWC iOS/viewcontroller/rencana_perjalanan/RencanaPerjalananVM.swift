@@ -11,7 +11,6 @@ import RxSwift
 import RxRelay
 
 class RencanaPerjalananVM: BaseViewModel {
-    var listTujuanWisataCounter = BehaviorRelay(value: 0)
     var listTujuanWisata = BehaviorRelay(value: [PilihanTujuanWisataModel]())
     var listRencanaPerjalanan = BehaviorRelay(value: [Any]())
     var listDataPeserta = BehaviorRelay(value: [DataPesertaModel]())
@@ -23,7 +22,6 @@ class RencanaPerjalananVM: BaseViewModel {
     var dataKontakPerson = BehaviorRelay(value: DataKontakPerson())
     
     func resetAllData() {
-        listTujuanWisataCounter.accept(0)
         listTujuanWisata.accept([PilihanTujuanWisataModel]())
         listRencanaPerjalanan.accept([Any]())
         listDataPeserta.accept([DataPesertaModel]())
@@ -50,10 +48,8 @@ class RencanaPerjalananVM: BaseViewModel {
     
     func addTujuanWisata(tujuanWisata: PilihanTujuanWisataModel) {
         var list = listTujuanWisata.value
-        let counter = listTujuanWisataCounter.value
         list.append(tujuanWisata)
         listTujuanWisata.accept(list)
-        listTujuanWisataCounter.accept(counter + 1)
     }
     
     func updateTujuanWisata(oldTujuanWisata: PilihanTujuanWisataModel, newTujuanWisata: PilihanTujuanWisataModel) {
@@ -113,7 +109,9 @@ class RencanaPerjalananVM: BaseViewModel {
             }
             
             item.listTicket.forEach { tiketItem in
-                _listRencanaPerjalanan.append(RencanaPerjalananTempatModel(nama: "\(item.name) X\(tiketItem.peserta)", typePeserta: tiketItem.name, peserta: tiketItem.peserta, harga: tiketItem.harga))
+                if tiketItem.peserta > 0 {
+                    _listRencanaPerjalanan.append(RencanaPerjalananTempatModel(nama: "\(item.name) X\(tiketItem.peserta)", typePeserta: tiketItem.name, peserta: tiketItem.peserta, harga: tiketItem.harga))
+                }
             }
         }
         

@@ -10,7 +10,7 @@ import Foundation
 
 struct PilihanTujuanWisataModel {
     var originId: String
-    var id: Int
+    var id: String
     var hari: Int
     var name: String
     var durasi: Int

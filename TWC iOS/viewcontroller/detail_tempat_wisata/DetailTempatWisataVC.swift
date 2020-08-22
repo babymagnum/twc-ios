@@ -97,7 +97,7 @@ extension DetailTempatWisataVC: UICollectionViewDataSource, UICollectionViewDele
     
     private func addOrUpdateTujuanWisata() {
         if !hasAddNewTujuanWisata {
-            newTujuanWisata.id = rencanaPerjalananVM.listTujuanWisataCounter.value
+            newTujuanWisata.id = UUID().uuidString
         }
         
         let oldTujuanWisata = newTujuanWisata
