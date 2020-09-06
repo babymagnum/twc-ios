@@ -9,17 +9,18 @@
 import UIKit
 
 protocol DialogLoadingProtocol {
-    func loading(vc: UIViewController?)
+    func loading(vc: UIViewController?, nc: UINavigationController?)
 }
 
 class DialogLoadingVC: UIViewController {
 
     var delegate: DialogLoadingProtocol?
+    var nc: UINavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        delegate?.loading(vc: self)
+        delegate?.loading(vc: self, nc: nc)
     }
 
 }

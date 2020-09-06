@@ -87,6 +87,8 @@ class LoginVC: BaseViewController, UITextFieldDelegate {
 
 extension LoginVC {
     private func changeButtonMasuk() {
+        loginVM.email.accept(fieldEmail.trim())
+        loginVM.password.accept(fieldPassword.trim())
         buttonMasuk.backgroundColor = fieldEmail.trim() != "" && fieldPassword.trim() != "" ? UIColor.tangerine : UIColor.veryLightPink
         buttonMasuk.isEnabled = fieldEmail.trim() != "" && fieldPassword.trim() != ""
     }
@@ -110,7 +112,7 @@ extension LoginVC {
     
     @IBAction func masukClick(_ sender: Any) {
         loginVM.didLogin.accept(true)
-        loginVM.showLoading(originVC: self)
+        loginVM.showLoading(originVC: self, nc: navigationController)
     }
     
     @IBAction func forgotPasswordClick(_ sender: Any) {

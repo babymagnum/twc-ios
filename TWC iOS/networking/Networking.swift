@@ -11,17 +11,18 @@ import Alamofire
 import SwiftyJSON
 
 class Networking: BaseNetworking {
-//    func login(username: String, password: String, completion: @escaping(_ error: String?, _ login: Login?, _ isExpired: Bool?) -> Void) {
-//        let url = "\(baseUrl())/v1/login"
-//        let body: [String: String] = [
-//            "username": username,
-//            "password": password,
-//            "fcm": preference.getString(key: constant.FCM_TOKEN),
-//            "device_id": "\(UIDevice().identifierForVendor?.description ?? "")",
-//            "device_brand": "iPhone",
-//            "device_series": UIDevice().name
-//        ]
-//
-//        alamofirePostFormData(url: url, body: body, completion: completion)
-//    }
+    
+    func login(request: AuthRequest, completion: @escaping(_ error: String?, _ loginModel: AuthModel?, _ isExpired: Bool?) -> Void) {
+        let url = "\(baseUrl())auth/login"
+        alamofirePostJSONRequest(url: url, body: request.asDictionary, completion: completion)
+    }
+    
+    func register(request: AgentRegisterRequest, completion: @escaping(_ error: String?, _ agentRegister: AgentRegisterModel?, _ isExpired: Bool) -> Void) {
+        let url = "\(baseUrl())"
+    }
+    
+    func cluster(completion: @escaping(_ error: String?, _ cluster: ClusterModel?, _ isExpired: Bool?) -> Void) {
+        let url = "\(baseUrl())api/ticket/cluster"
+        alamofireGet(url: url, body: nil, completion: completion)
+    }
 }

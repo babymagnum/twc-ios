@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogAlert" customModule="Eoviz_Presence" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogAlert" customModule="Taman_Wisata_Candi" customModuleProvider="target">
             <connections>
                 <outlet property="imageX" destination="6tL-vM-tCH" id="itA-P4-d5N"/>
                 <outlet property="labelAction1" destination="3Hx-4z-SWM" id="SXy-U5-vhm"/>
@@ -34,17 +34,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3U-kV-eXi">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pey-T8-xu0" customClass="CustomView" customModule="Eoviz_Presence" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pey-T8-xu0" customClass="CustomView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                             <rect key="frame" x="30" y="195" width="315" height="277"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertError24Px" translatesAutoresizingMaskIntoConstraints="NO" id="6tL-vM-tCH">
-                                    <rect key="frame" x="123" y="25" width="69" height="69"/>
+                                    <rect key="frame" x="123" y="25" width="69" height="69.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="6tL-vM-tCH" secondAttribute="height" multiplier="1:1" id="mOF-Gl-Srg"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-XO-FlQ" customClass="CustomLabel" customModule="Eoviz_Presence" customModuleProvider="target">
-                                    <rect key="frame" x="20" y="119" width="275" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-XO-FlQ" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="119.5" width="275" height="21.5"/>
                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -55,10 +55,10 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </label>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCK-yB-ZF8" customClass="CustomGradientView" customModule="Eoviz_Presence" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCK-yB-ZF8" customClass="CustomGradientView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                     <rect key="frame" x="20" y="176" width="275" height="36"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mengerti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hx-4z-SWM" customClass="CustomLabel" customModule="Eoviz_Presence" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mengerti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hx-4z-SWM" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <rect key="frame" x="10" y="0.0" width="255" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,7 +73,7 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="36" id="5f1-bp-c3b" customClass="CustomMargin" customModule="Eoviz_Presence" customModuleProvider="target">
+                                        <constraint firstAttribute="height" constant="36" id="5f1-bp-c3b" customClass="CustomMargin" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="multi">
                                                     <real key="value" value="0.10000000000000001"/>
@@ -91,10 +91,10 @@
                                             <real key="value" value="18"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                            <color key="value" red="0.0" green="0.36470588240000001" blue="0.62745098040000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                            <color key="value" red="0.4039215686" green="0.76470588240000004" blue="0.80784313730000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
                                         <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
@@ -106,10 +106,10 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedAllCorner" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK5-oS-OQd" customClass="CustomGradientView" customModule="Eoviz_Presence" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK5-oS-OQd" customClass="CustomGradientView" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                     <rect key="frame" x="20" y="221" width="275" height="36"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daftar Presensi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJW-Dh-bVQ" customClass="CustomLabel" customModule="Eoviz_Presence" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daftar Presensi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJW-Dh-bVQ" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <rect key="frame" x="10" y="0.0" width="255" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.20392156859999999" green="0.4941176471" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,7 +129,7 @@
                                         <constraint firstItem="HJW-Dh-bVQ" firstAttribute="leading" secondItem="wK5-oS-OQd" secondAttribute="leading" constant="10" id="Hhd-U7-8Er"/>
                                         <constraint firstItem="HJW-Dh-bVQ" firstAttribute="centerY" secondItem="wK5-oS-OQd" secondAttribute="centerY" id="Qnk-Ba-cwx"/>
                                         <constraint firstAttribute="trailing" secondItem="HJW-Dh-bVQ" secondAttribute="trailing" constant="10" id="gtB-QM-Tc9"/>
-                                        <constraint firstAttribute="height" constant="36" id="vs0-Hy-Y5g" customClass="CustomMargin" customModule="Eoviz_Presence" customModuleProvider="target">
+                                        <constraint firstAttribute="height" constant="36" id="vs0-Hy-Y5g" customClass="CustomMargin" customModule="Taman_Wisata_Candi" customModuleProvider="target">
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="multi">
                                                     <real key="value" value="0.10000000000000001"/>

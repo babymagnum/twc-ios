@@ -144,6 +144,9 @@
 		EDC465FB24B0C3C300F4CA39 /* RangkumanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465F924B0C3C300F4CA39 /* RangkumanVC.xib */; };
 		EDC465FE24B0C3D000F4CA39 /* TujuanWisataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC465FC24B0C3D000F4CA39 /* TujuanWisataVC.swift */; };
 		EDC465FF24B0C3D000F4CA39 /* TujuanWisataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC465FD24B0C3D000F4CA39 /* TujuanWisataVC.xib */; };
+		EDC6079125030E1E0052B383 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC6079025030E1E0052B383 /* AuthModel.swift */; };
+		EDC6079325031B500052B383 /* StandartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC6079225031B500052B383 /* StandartModel.swift */; };
+		EDC6079525031D640052B383 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC6079425031D640052B383 /* Request.swift */; };
 		EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */; };
 		EDCA7AD324A6F89C007CD973 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */; };
 		EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */; };
@@ -311,6 +314,9 @@
 		EDC465F924B0C3C300F4CA39 /* RangkumanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangkumanVC.xib; sourceTree = "<group>"; };
 		EDC465FC24B0C3D000F4CA39 /* TujuanWisataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujuanWisataVC.swift; sourceTree = "<group>"; };
 		EDC465FD24B0C3D000F4CA39 /* TujuanWisataVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TujuanWisataVC.xib; sourceTree = "<group>"; };
+		EDC6079025030E1E0052B383 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		EDC6079225031B500052B383 /* StandartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartModel.swift; sourceTree = "<group>"; };
+		EDC6079425031D640052B383 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		EDCA7AD024A6F89C007CD973 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		EDCA7AD124A6F89C007CD973 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
 		EDCA7AD424A6FAB4007CD973 /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.ttf"; sourceTree = "<group>"; };
@@ -601,6 +607,7 @@
 			children = (
 				ED858B0122F313FD00016EAD /* Networking.swift */,
 				ED8F239923136B34005D700C /* BaseNetworking.swift */,
+				EDC6079425031D640052B383 /* Request.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -677,6 +684,8 @@
 				EDAF372124B2D1AD00A27FF1 /* PilihanTujuanWisataModel.swift */,
 				ED36210324B3337400307602 /* RencanaPerjalananModel.swift */,
 				EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */,
+				EDC6079025030E1E0052B383 /* AuthModel.swift */,
+				EDC6079225031B500052B383 /* StandartModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1146,11 +1155,13 @@
 				ED95909722EBF1C500D696E5 /* PublicFunction.swift in Sources */,
 				ED3688A524AD5B9D00AEC88A /* BottomSheetTanggalVC.swift in Sources */,
 				ED3353E0243FF4EF00656C25 /* CustomMargin.swift in Sources */,
+				EDC6079525031D640052B383 /* Request.swift in Sources */,
 				ED053AAB24B1B4B6000FAE15 /* ParentTujuanWisataCell.swift in Sources */,
 				EDC465FA24B0C3C300F4CA39 /* RangkumanVC.swift in Sources */,
 				ED36210924B3340B00307602 /* RencanaPerjalananTempatCell.swift in Sources */,
 				ED3B1CD124AC68C80051DD71 /* PaketFavoriteImageCell.swift in Sources */,
 				EDB0256D24C02EB40026247D /* DetailMetodePembayaranVC.swift in Sources */,
+				EDC6079325031B500052B383 /* StandartModel.swift in Sources */,
 				ED2C9752244A79B00095927D /* InteractivePopRecognizer.swift in Sources */,
 				ED1A383724A9687400110474 /* KotakMasukVC.swift in Sources */,
 				ED2A3E9C24A83E900040D24B /* DialogLoadingVC.swift in Sources */,
@@ -1162,6 +1173,7 @@
 				EDD6528024C039B600617C06 /* DetailMetodePembayaranVM.swift in Sources */,
 				ED213AAB2442C4CD00A18EBC /* ProfileVM.swift in Sources */,
 				ED1304B424EB904A00247904 /* DialogBerhasilKirimDataAgen.swift in Sources */,
+				EDC6079125030E1E0052B383 /* AuthModel.swift in Sources */,
 				EDCA7AD224A6F89C007CD973 /* OnboardingVC.swift in Sources */,
 				ED1D8FAA24EB5B65005EA0BB /* DaftarJadiAgenVM.swift in Sources */,
 				ED053AA424B1B316000FAE15 /* HariCell.swift in Sources */,
