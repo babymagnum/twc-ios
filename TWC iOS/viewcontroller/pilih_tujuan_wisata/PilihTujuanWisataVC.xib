@@ -10,15 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PilihTujuanWisataVC" customModule="Taman_Wisata_Candi" customModuleProvider="target">
             <connections>
-                <outlet property="collectionDieng" destination="ktv-uV-dA2" id="K12-UI-SSP"/>
-                <outlet property="collectionDiengHeight" destination="fji-hU-qFp" id="0Fd-ck-kp9"/>
-                <outlet property="collectionMagelang" destination="A75-en-HoG" id="M34-MK-kko"/>
-                <outlet property="collectionMagelangHeight" destination="7bF-Fr-Z1d" id="mvd-pD-lPk"/>
-                <outlet property="collectionYogyakarta" destination="fgb-MU-dGo" id="BOA-wh-cUg"/>
-                <outlet property="collectionYogyakartaHeight" destination="cXU-Cy-72X" id="sr6-ee-ojn"/>
-                <outlet property="loadingDieng" destination="anR-bF-gWZ" id="JFG-re-jlz"/>
-                <outlet property="loadingMagelang" destination="ZX1-nL-CJB" id="ugg-Pl-afL"/>
-                <outlet property="loadingYogyakarta" destination="ua0-zY-TIZ" id="hwF-Ms-Dro"/>
+                <outlet property="collectionCluster" destination="eS8-ek-fR6" id="4Qc-0R-wMS"/>
+                <outlet property="indicatorCluster" destination="U8J-Dm-skq" id="e9Q-TQ-5Ns"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,287 +23,35 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYf-iI-lOd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-Gd-n2W">
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eS8-ek-fR6">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-Xe-kOw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dr3-1q-jXf">
-                                            <rect key="frame" x="0.0" y="16" width="375" height="162"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-1L-eFs">
-                                                    <rect key="frame" x="17" y="17" width="341" height="21.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cluster Yogyakarta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGk-iA-AfS" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="221" height="21.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                                    <real key="value" value="18"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bii-JJ-HZl" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                            <rect key="frame" x="231" y="-5" width="110" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <state key="normal" title="Selengkapnya..">
-                                                                <color key="titleColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                                    <real key="value" value="16"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                            <connections>
-                                                                <action selector="selengkapnyaYogyakartaClick:" destination="-1" eventType="touchUpInside" id="phz-5M-God"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="bii-JJ-HZl" firstAttribute="leading" secondItem="xGk-iA-AfS" secondAttribute="trailing" constant="10" id="GNY-SW-2de"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ISh-7T-zoh"/>
-                                                        <constraint firstAttribute="trailing" secondItem="bii-JJ-HZl" secondAttribute="trailing" id="RSy-K2-arF"/>
-                                                        <constraint firstAttribute="bottom" secondItem="xGk-iA-AfS" secondAttribute="bottom" id="aZT-8y-5Cq"/>
-                                                        <constraint firstItem="xGk-iA-AfS" firstAttribute="leading" secondItem="qxc-1L-eFs" secondAttribute="leading" id="caJ-0v-7Sf"/>
-                                                        <constraint firstItem="xGk-iA-AfS" firstAttribute="top" secondItem="qxc-1L-eFs" secondAttribute="top" id="eA9-hI-war"/>
-                                                        <constraint firstItem="bii-JJ-HZl" firstAttribute="centerY" secondItem="qxc-1L-eFs" secondAttribute="centerY" id="tWd-sy-htE"/>
-                                                    </constraints>
-                                                </view>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fgb-MU-dGo">
-                                                    <rect key="frame" x="0.0" y="62.5" width="375" height="81.5"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="81.5" id="cXU-Cy-72X"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="iJ6-gZ-ehs">
-                                                        <size key="itemSize" width="128" height="128"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                </collectionView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ua0-zY-TIZ">
-                                                    <rect key="frame" x="177.5" y="92.5" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="ua0-zY-TIZ" secondAttribute="height" multiplier="1:1" id="Nqr-oa-1bN"/>
-                                                    </constraints>
-                                                </activityIndicatorView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="fgb-MU-dGo" firstAttribute="top" secondItem="qxc-1L-eFs" secondAttribute="bottom" constant="24" id="4ST-Ac-BKB"/>
-                                                <constraint firstItem="qxc-1L-eFs" firstAttribute="top" secondItem="Dr3-1q-jXf" secondAttribute="top" constant="17" id="AKv-V2-TQr"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ATu-er-3Ec"/>
-                                                <constraint firstAttribute="bottom" secondItem="fgb-MU-dGo" secondAttribute="bottom" constant="18" id="CWR-0Y-Zxu"/>
-                                                <constraint firstAttribute="trailing" secondItem="qxc-1L-eFs" secondAttribute="trailing" constant="17" id="HeB-pz-y9f"/>
-                                                <constraint firstItem="qxc-1L-eFs" firstAttribute="leading" secondItem="Dr3-1q-jXf" secondAttribute="leading" constant="17" id="Qqe-NQ-irm"/>
-                                                <constraint firstItem="ua0-zY-TIZ" firstAttribute="centerX" secondItem="Dr3-1q-jXf" secondAttribute="centerX" id="X9V-e1-v2m"/>
-                                                <constraint firstAttribute="trailing" secondItem="fgb-MU-dGo" secondAttribute="trailing" id="cGT-YP-xcA"/>
-                                                <constraint firstItem="fgb-MU-dGo" firstAttribute="leading" secondItem="Dr3-1q-jXf" secondAttribute="leading" id="gzD-hC-6TU"/>
-                                                <constraint firstItem="ua0-zY-TIZ" firstAttribute="top" secondItem="qxc-1L-eFs" secondAttribute="bottom" constant="54" id="nlk-yS-acp"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wm-e9-81G">
-                                            <rect key="frame" x="0.0" y="194" width="375" height="162"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBP-yu-jW2">
-                                                    <rect key="frame" x="17" y="17" width="341" height="21.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cluster Magelang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tz-bh-XwE" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="221" height="21.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                                    <real key="value" value="18"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNP-tJ-zbd" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                            <rect key="frame" x="231" y="-5" width="110" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <state key="normal" title="Selengkapnya..">
-                                                                <color key="titleColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                                    <real key="value" value="16"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                            <connections>
-                                                                <action selector="selengkapnyaMagelangClick:" destination="-1" eventType="touchUpInside" id="ly2-Ap-ctV"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="mNP-tJ-zbd" firstAttribute="leading" secondItem="5Tz-bh-XwE" secondAttribute="trailing" constant="10" id="HUG-Wk-LPv"/>
-                                                        <constraint firstAttribute="trailing" secondItem="mNP-tJ-zbd" secondAttribute="trailing" id="PRc-2J-KRD"/>
-                                                        <constraint firstAttribute="bottom" secondItem="5Tz-bh-XwE" secondAttribute="bottom" id="V4P-OA-3Mx"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Wgb-9A-2JV"/>
-                                                        <constraint firstItem="5Tz-bh-XwE" firstAttribute="leading" secondItem="ZBP-yu-jW2" secondAttribute="leading" id="c1d-dL-VMT"/>
-                                                        <constraint firstItem="mNP-tJ-zbd" firstAttribute="centerY" secondItem="ZBP-yu-jW2" secondAttribute="centerY" id="d4t-Yn-dpN"/>
-                                                        <constraint firstItem="5Tz-bh-XwE" firstAttribute="top" secondItem="ZBP-yu-jW2" secondAttribute="top" id="jsf-iv-3SB"/>
-                                                    </constraints>
-                                                </view>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="A75-en-HoG">
-                                                    <rect key="frame" x="0.0" y="62.5" width="375" height="81.5"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="81.5" id="7bF-Fr-Z1d"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="UBt-xS-7g9">
-                                                        <size key="itemSize" width="128" height="128"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                </collectionView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ZX1-nL-CJB">
-                                                    <rect key="frame" x="177.5" y="92.5" width="20" height="20"/>
-                                                </activityIndicatorView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="ZBP-yu-jW2" firstAttribute="top" secondItem="3wm-e9-81G" secondAttribute="top" constant="17" id="2av-MW-anU"/>
-                                                <constraint firstItem="A75-en-HoG" firstAttribute="leading" secondItem="3wm-e9-81G" secondAttribute="leading" id="6kP-mw-Aaz"/>
-                                                <constraint firstAttribute="trailing" secondItem="ZBP-yu-jW2" secondAttribute="trailing" constant="17" id="83z-jw-WKP"/>
-                                                <constraint firstItem="A75-en-HoG" firstAttribute="top" secondItem="ZBP-yu-jW2" secondAttribute="bottom" constant="24" id="PeW-Gy-q6l"/>
-                                                <constraint firstAttribute="trailing" secondItem="A75-en-HoG" secondAttribute="trailing" id="UwO-Vf-oYu"/>
-                                                <constraint firstItem="ZX1-nL-CJB" firstAttribute="width" secondItem="ZX1-nL-CJB" secondAttribute="height" multiplier="1:1" id="XRQ-tU-oPN"/>
-                                                <constraint firstItem="ZX1-nL-CJB" firstAttribute="top" secondItem="ZBP-yu-jW2" secondAttribute="bottom" constant="54" id="YSK-c8-heq"/>
-                                                <constraint firstItem="ZBP-yu-jW2" firstAttribute="leading" secondItem="3wm-e9-81G" secondAttribute="leading" constant="17" id="htY-Bc-l0H"/>
-                                                <constraint firstAttribute="bottom" secondItem="A75-en-HoG" secondAttribute="bottom" constant="18" id="oZX-Mf-x6s"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="xOL-Eo-lLS"/>
-                                                <constraint firstItem="ZX1-nL-CJB" firstAttribute="centerX" secondItem="3wm-e9-81G" secondAttribute="centerX" id="zB7-X5-NoQ"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvU-rC-DKx">
-                                            <rect key="frame" x="0.0" y="372" width="375" height="162"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-gw-hRA">
-                                                    <rect key="frame" x="17" y="17" width="341" height="21.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cluster Dieng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-AO-6pF" customClass="CustomLabel" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="221" height="21.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Bold"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                                    <real key="value" value="18"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhc-07-nFZ" customClass="CustomButton" customModule="Taman_Wisata_Candi" customModuleProvider="target">
-                                                            <rect key="frame" x="231" y="-5" width="110" height="32"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <state key="normal" title="Selengkapnya..">
-                                                                <color key="titleColor" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="SFProDisplay-Regular"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                                    <real key="value" value="16"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                            <connections>
-                                                                <action selector="selengkapnyaDiengClick:" destination="-1" eventType="touchUpInside" id="4zb-df-5lF"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="ZE1-AO-6pF" firstAttribute="leading" secondItem="qbG-gw-hRA" secondAttribute="leading" id="FNE-Tm-BF7"/>
-                                                        <constraint firstItem="Lhc-07-nFZ" firstAttribute="centerY" secondItem="qbG-gw-hRA" secondAttribute="centerY" id="dWE-0h-iL0"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="e55-NF-17O"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Lhc-07-nFZ" secondAttribute="trailing" id="e6D-Id-AoF"/>
-                                                        <constraint firstItem="ZE1-AO-6pF" firstAttribute="top" secondItem="qbG-gw-hRA" secondAttribute="top" id="pvO-Zk-PfX"/>
-                                                        <constraint firstItem="Lhc-07-nFZ" firstAttribute="leading" secondItem="ZE1-AO-6pF" secondAttribute="trailing" constant="10" id="vbg-tD-7ut"/>
-                                                        <constraint firstAttribute="bottom" secondItem="ZE1-AO-6pF" secondAttribute="bottom" id="yPD-LW-aeU"/>
-                                                    </constraints>
-                                                </view>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-uV-dA2">
-                                                    <rect key="frame" x="0.0" y="62.5" width="375" height="81.5"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="81.5" id="fji-hU-qFp"/>
-                                                    </constraints>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="jPq-Xr-8U4">
-                                                        <size key="itemSize" width="128" height="128"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                </collectionView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="anR-bF-gWZ">
-                                                    <rect key="frame" x="177.5" y="92.5" width="20" height="20"/>
-                                                </activityIndicatorView>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="qbG-gw-hRA" firstAttribute="top" secondItem="EvU-rC-DKx" secondAttribute="top" constant="17" id="1Xs-LD-tqa"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="4Oa-Az-Ogo"/>
-                                                <constraint firstItem="qbG-gw-hRA" firstAttribute="leading" secondItem="EvU-rC-DKx" secondAttribute="leading" constant="17" id="Dxo-fK-qPE"/>
-                                                <constraint firstAttribute="trailing" secondItem="ktv-uV-dA2" secondAttribute="trailing" id="JEi-w1-JL3"/>
-                                                <constraint firstItem="ktv-uV-dA2" firstAttribute="top" secondItem="qbG-gw-hRA" secondAttribute="bottom" constant="24" id="NTJ-Fr-Rud"/>
-                                                <constraint firstItem="anR-bF-gWZ" firstAttribute="centerX" secondItem="EvU-rC-DKx" secondAttribute="centerX" id="UNQ-Ht-3R1"/>
-                                                <constraint firstItem="ktv-uV-dA2" firstAttribute="leading" secondItem="EvU-rC-DKx" secondAttribute="leading" id="bS5-MY-dc4"/>
-                                                <constraint firstItem="anR-bF-gWZ" firstAttribute="width" secondItem="anR-bF-gWZ" secondAttribute="height" multiplier="1:1" id="boG-LH-l1h"/>
-                                                <constraint firstAttribute="bottom" secondItem="ktv-uV-dA2" secondAttribute="bottom" constant="18" id="csG-tV-jAv"/>
-                                                <constraint firstAttribute="trailing" secondItem="qbG-gw-hRA" secondAttribute="trailing" constant="17" id="eey-0K-Mbp"/>
-                                                <constraint firstItem="anR-bF-gWZ" firstAttribute="top" secondItem="qbG-gw-hRA" secondAttribute="bottom" constant="54" id="nZA-wP-zsg"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="3wm-e9-81G" firstAttribute="leading" secondItem="XUd-Xe-kOw" secondAttribute="leading" id="8RD-cY-rFZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="3wm-e9-81G" secondAttribute="trailing" id="CTR-uV-MBH"/>
-                                        <constraint firstItem="Dr3-1q-jXf" firstAttribute="leading" secondItem="XUd-Xe-kOw" secondAttribute="leading" id="Dff-mi-W44"/>
-                                        <constraint firstItem="Dr3-1q-jXf" firstAttribute="top" secondItem="XUd-Xe-kOw" secondAttribute="top" constant="16" id="GPT-HF-Auy"/>
-                                        <constraint firstAttribute="trailing" secondItem="EvU-rC-DKx" secondAttribute="trailing" id="U7n-lT-OSa"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EvU-rC-DKx" secondAttribute="bottom" constant="16" id="d4i-13-8nn"/>
-                                        <constraint firstItem="3wm-e9-81G" firstAttribute="top" secondItem="Dr3-1q-jXf" secondAttribute="bottom" constant="16" id="hl0-Fg-PIX"/>
-                                        <constraint firstAttribute="trailing" secondItem="Dr3-1q-jXf" secondAttribute="trailing" id="wGQ-dX-AJf"/>
-                                        <constraint firstItem="EvU-rC-DKx" firstAttribute="leading" secondItem="XUd-Xe-kOw" secondAttribute="leading" id="wzg-Ew-PKA"/>
-                                        <constraint firstItem="EvU-rC-DKx" firstAttribute="top" secondItem="3wm-e9-81G" secondAttribute="bottom" constant="16" id="yOi-zn-RmD"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
-                            <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstItem="XUd-Xe-kOw" firstAttribute="leading" secondItem="mQh-Gd-n2W" secondAttribute="leading" id="EhI-fu-yxX"/>
-                                <constraint firstAttribute="trailing" secondItem="XUd-Xe-kOw" secondAttribute="trailing" id="THu-09-gdS"/>
-                                <constraint firstItem="XUd-Xe-kOw" firstAttribute="height" secondItem="mQh-Gd-n2W" secondAttribute="height" priority="250" id="c7d-iU-sz1"/>
-                                <constraint firstItem="XUd-Xe-kOw" firstAttribute="width" secondItem="mQh-Gd-n2W" secondAttribute="width" id="esk-2N-sBZ"/>
-                                <constraint firstItem="XUd-Xe-kOw" firstAttribute="top" secondItem="mQh-Gd-n2W" secondAttribute="top" id="lFw-zI-CEx"/>
-                                <constraint firstAttribute="bottom" secondItem="XUd-Xe-kOw" secondAttribute="bottom" id="waK-hF-ELu"/>
-                            </constraints>
-                        </scrollView>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ry7-BK-1Nf">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="U8J-Dm-skq">
+                            <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            <color key="color" red="0.26274509800000001" green="0.68627450980000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="mQh-Gd-n2W" secondAttribute="bottom" id="1ki-Sw-T39"/>
-                        <constraint firstItem="mQh-Gd-n2W" firstAttribute="leading" secondItem="AYf-iI-lOd" secondAttribute="leading" id="3mj-Oq-F3c"/>
-                        <constraint firstAttribute="trailing" secondItem="mQh-Gd-n2W" secondAttribute="trailing" id="6GB-bp-2wB"/>
-                        <constraint firstItem="mQh-Gd-n2W" firstAttribute="top" secondItem="AYf-iI-lOd" secondAttribute="top" id="dnr-SZ-S58"/>
+                        <constraint firstAttribute="trailing" secondItem="eS8-ek-fR6" secondAttribute="trailing" id="C4t-en-g0X"/>
+                        <constraint firstItem="eS8-ek-fR6" firstAttribute="top" secondItem="AYf-iI-lOd" secondAttribute="top" id="CLR-WV-3vh"/>
+                        <constraint firstAttribute="bottom" secondItem="eS8-ek-fR6" secondAttribute="bottom" id="dmw-D4-zOO"/>
+                        <constraint firstItem="U8J-Dm-skq" firstAttribute="centerY" secondItem="AYf-iI-lOd" secondAttribute="centerY" id="f1h-ME-1MA"/>
+                        <constraint firstItem="U8J-Dm-skq" firstAttribute="centerX" secondItem="AYf-iI-lOd" secondAttribute="centerX" id="hZy-jW-v8L"/>
+                        <constraint firstItem="eS8-ek-fR6" firstAttribute="leading" secondItem="AYf-iI-lOd" secondAttribute="leading" id="lSB-Hv-99s"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="ZX1-nL-CJB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0533333" id="7kD-JK-l3W"/>
-                <constraint firstItem="ua0-zY-TIZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0533333" id="SDz-9G-XCh"/>
                 <constraint firstItem="AYf-iI-lOd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="e4b-lL-RdP"/>
-                <constraint firstItem="anR-bF-gWZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0533333" id="e90-cz-REA"/>
                 <constraint firstItem="AYf-iI-lOd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jCc-eq-ARj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AYf-iI-lOd" secondAttribute="bottom" id="lP4-EO-cYw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AYf-iI-lOd" secondAttribute="trailing" id="xkV-Iz-AK5"/>

@@ -31,6 +31,7 @@ class BerandaVC: BaseViewController, UICollectionViewDelegate {
         super.viewDidLoad()
         
         print("screen width \(screenWidth)")
+        print("token \(preference.getString(key: constant.TOKEN))")
         
         setupView()
         

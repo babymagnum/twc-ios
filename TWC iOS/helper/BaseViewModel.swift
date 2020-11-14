@@ -39,10 +39,10 @@ class BaseViewModel {
         appDelegate.setupRootController(vc: SplashController(), animationOptions: nil)
     }
     
-    func showCustomDialog(destinationVC: UIViewController, originVC: UIViewController?) {
+    func showCustomDialog(destinationVC: UIViewController, nc: UINavigationController?) {
         let popupVc = PopupViewController(contentController: destinationVC, popupWidth: screenWidth, popupHeight: screenHeight)
         popupVc.shadowEnabled = false
-        originVC?.present(popupVc, animated: true)
+        nc?.present(popupVc, animated: true)
     }
     
     func showAlertDialog(image: String?, message: String, navigationController: UINavigationController?) {
@@ -55,10 +55,10 @@ class BaseViewModel {
         navigationController?.present(popupVc, animated: true)
     }
     
-    func forceLogout(originVC: UIViewController?) {
+    func forceLogout(nc: UINavigationController?) {
         let vc = DialogAlert()
         vc.stringDescription = "please_login_again".localize()
-        showCustomDialog(destinationVC: vc, originVC: originVC)
+        showCustomDialog(destinationVC: vc, nc: nc)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.resetData()
@@ -71,7 +71,7 @@ class BaseViewModel {
         vc.stringDescription = content
         vc.nc = nc
         vc.image = image
-        showCustomDialog(destinationVC: vc, originVC: nc)
+        showCustomDialog(destinationVC: vc, nc: nc)
     }
     
     func showDelegateDialogAlertWithAction2(image: String?, action2String: String?, delegate: DialogAlertProtocol?, content: String?, nc: UINavigationController?) {
@@ -81,6 +81,6 @@ class BaseViewModel {
         vc.nc = nc
         vc.image = image
         vc.action2String = action2String
-        showCustomDialog(destinationVC: vc, originVC: nc)
+        showCustomDialog(destinationVC: vc, nc: nc)
     }
 }

@@ -112,7 +112,7 @@ extension LoginVC {
     
     @IBAction func masukClick(_ sender: Any) {
         loginVM.didLogin.accept(true)
-        loginVM.showLoading(originVC: self, nc: navigationController)
+        loginVM.showLoading(nc: navigationController)
     }
     
     @IBAction func forgotPasswordClick(_ sender: Any) {

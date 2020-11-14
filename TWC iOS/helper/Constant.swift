@@ -23,4 +23,7 @@ class Constant {
     let ENGLISH = "en"
     let CONNECTION_ERROR = "URLSessionTask failed with error: The Internet connection appears to be offline."
     let EMAIL = "EMAIL"
+    
+    /// NETWORKING CODE
+    let EXPIRED = "99"
 }

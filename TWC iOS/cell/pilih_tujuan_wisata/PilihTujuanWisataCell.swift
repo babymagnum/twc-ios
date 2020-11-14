@@ -15,12 +15,12 @@ class PilihTujuanWisataCell: UICollectionViewCell {
     @IBOutlet weak var labelNama: CustomLabel!
     @IBOutlet weak var labelDurasi: CustomButton!
     
-    var item: PilihanTujuanWisataModel? {
+    var item: SiteData? {
         didSet {
             if let _item = item {
-                image.loadUrl(_item.image)
-                labelNama.text = _item.name
-                labelDurasi.setTitle("Estimasi: \(_item.durasi) jam", for: .normal)
+                image.loadUrl(_item.site_logo ?? "")
+                labelNama.text = _item.site_name
+                labelDurasi.setTitle("Estimasi: \(_item.site_estimated ?? "")", for: .normal)
             }
         }
     }

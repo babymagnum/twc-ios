@@ -52,11 +52,11 @@ class LoginVM: BaseViewModel, DialogLoadingProtocol {
         }
     }
     
-    func showLoading(originVC: UIViewController?, nc: UINavigationController?) {
+    func showLoading(nc: UINavigationController?) {
         let vc = DialogLoadingVC()
         vc.delegate = self
         vc.nc = nc
-        showCustomDialog(destinationVC: vc, originVC: originVC)
+        showCustomDialog(destinationVC: vc, nc: nc)
     }
     
     func forgotPassword(completion: @escaping() -> Void) {

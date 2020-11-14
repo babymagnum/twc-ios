@@ -25,4 +25,9 @@ class Networking: BaseNetworking {
         let url = "\(baseUrl())api/ticket/cluster"
         alamofireGet(url: url, body: nil, completion: completion)
     }
+    
+    func clusterTicket(clusterMid: String, completion: @escaping(_ error: String?, _ listTicketModel: ListTicketModel?, _ isExpired: Bool?) -> Void) {
+        let url = "\(baseUrl())api/ticket/cluster"
+        alamofireGet(url: url, body: nil, completion: completion)
+    }
 }

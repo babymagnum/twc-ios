@@ -121,6 +121,8 @@
 		EDB0257224C034EF0026247D /* BankTransferStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB0257024C034EF0026247D /* BankTransferStepCell.swift */; };
 		EDB0257324C034EF0026247D /* BankTransferStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB0257124C034EF0026247D /* BankTransferStepCell.xib */; };
 		EDB0257624C037EA0026247D /* DetailMetodePembayaranModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */; };
+		EDB031B225046E48005CE623 /* ParentClusterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB031B025046E48005CE623 /* ParentClusterCell.swift */; };
+		EDB031B325046E48005CE623 /* ParentClusterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB031B125046E48005CE623 /* ParentClusterCell.xib */; };
 		EDB39327244471C2004BEC80 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB39326244471C2004BEC80 /* LoginVM.swift */; };
 		EDB3932924447398004BEC80 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3932824447398004BEC80 /* BaseViewModel.swift */; };
 		EDB6AC7724A7004F00457144 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6AC7524A7004F00457144 /* OnboardingCell.swift */; };
@@ -295,6 +297,8 @@
 		EDB0257024C034EF0026247D /* BankTransferStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTransferStepCell.swift; sourceTree = "<group>"; };
 		EDB0257124C034EF0026247D /* BankTransferStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTransferStepCell.xib; sourceTree = "<group>"; };
 		EDB0257524C037EA0026247D /* DetailMetodePembayaranModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMetodePembayaranModel.swift; sourceTree = "<group>"; };
+		EDB031B025046E48005CE623 /* ParentClusterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentClusterCell.swift; sourceTree = "<group>"; };
+		EDB031B125046E48005CE623 /* ParentClusterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParentClusterCell.xib; sourceTree = "<group>"; };
 		EDB39326244471C2004BEC80 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		EDB3932824447398004BEC80 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		EDB6AC7524A7004F00457144 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
@@ -761,6 +765,8 @@
 			children = (
 				EDAF371C24B2C96A00A27FF1 /* PilihTujuanWisataCell.swift */,
 				EDAF371D24B2C96A00A27FF1 /* PilihTujuanWisataCell.xib */,
+				EDB031B025046E48005CE623 /* ParentClusterCell.swift */,
+				EDB031B125046E48005CE623 /* ParentClusterCell.xib */,
 			);
 			path = pilih_tujuan_wisata;
 			sourceTree = "<group>";
@@ -970,6 +976,7 @@
 			files = (
 				ED4C0131243DAB1200A1EB0A /* Poppins-Light.ttf in Resources */,
 				ED4C012D243DAB1200A1EB0A /* Poppins-Bold.ttf in Resources */,
+				EDB031B325046E48005CE623 /* ParentClusterCell.xib in Resources */,
 				EDC465FB24B0C3C300F4CA39 /* RangkumanVC.xib in Resources */,
 				EDCA7AD924A6FAB4007CD973 /* SFProDisplay-Light.ttf in Resources */,
 				ED2A3EAD24A849C10040D24B /* Nunito-SemiBold.ttf in Resources */,
@@ -1120,6 +1127,7 @@
 				ED95907E22EBE3C500D696E5 /* Preference.swift in Sources */,
 				ED4C0147243DDDBF00A1EB0A /* LoginVC.swift in Sources */,
 				EDC465F624B0C3B700F4CA39 /* PembayaranVC.swift in Sources */,
+				EDB031B225046E48005CE623 /* ParentClusterCell.swift in Sources */,
 				ED046AB3244130950083C331 /* BaseCollectionViewCell.swift in Sources */,
 				ED858B0222F313FD00016EAD /* Networking.swift in Sources */,
 				ED28C07F24BDA76D008CD53D /* MetodePembayaranCell.swift in Sources */,

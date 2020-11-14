@@ -50,7 +50,7 @@ class BottomSheetForgotPasswordVC: BaseViewController, UITextFieldDelegate {
     
     @IBAction func sendClick(_ sender: Any) {
         loginVM.didForgotPassword.accept(true)
-        loginVM.showLoading(originVC: self, nc: navigationController)
+        loginVM.showLoading(nc: navigationController)
     }
     
     @objc func fieldEmailDidChange(textField: UITextField) {
